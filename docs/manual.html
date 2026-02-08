@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="https://chmulato.github.io/caracore-ink-releases/">
     <title>Manual do usuário — Cara Core Ink Agenda | Cara Core Informática</title>
     <meta name="description" content="Manual do Cara Core Ink Agenda: visão geral, requisitos, instalação e uso. Agenda de sessões, controle financeiro e painel para estúdios de tatuagem.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +32,8 @@
         </header>
 
         <nav class="manual-toc" aria-label="Índice do manual">
-            <h2>Índice</h2>
-            <ul>
+            <h2 class="manual-toc-title">Índice</h2>
+            <ul class="manual-toc-list">
                 <li><a href="#visao-geral">Visão geral</a></li>
                 <li><a href="#requisitos-instalacao">Requisitos e instalação</a></li>
                 <li><a href="#agenda">Agenda de sessões</a></li>
@@ -44,7 +43,8 @@
             </ul>
         </nav>
 
-        <section class="card" id="visao-geral">
+        <div class="manual-content">
+        <section class="manual-card manual-card--intro" id="visao-geral">
             <h2>Visão geral</h2>
             <p>O <strong>Cara Core Ink Agenda</strong> é um aplicativo desktop para Windows que ajuda tatuadores e estúdios a organizar agendamentos, controlar entradas e saídas e acompanhar o desempenho do negócio. Os dados ficam no seu computador; a interface é nativa (JavaFX), sem depender de navegador.</p>
             <h3>Principais recursos</h3>
@@ -56,14 +56,14 @@
             <p>O aplicativo é desenvolvido em Java 21 e JavaFX 21. Requisitos e detalhes técnicos estão em <a href="download.html">Download</a> e <a href="tecnologia.html">Tecnologia</a>.</p>
         </section>
 
-        <section class="card" id="requisitos-instalacao">
+        <section class="manual-card" id="requisitos-instalacao">
             <h2>Requisitos e instalação</h2>
             <p><strong>Requisito:</strong> ter o <strong>JDK 21</strong> (Java 21) instalado no Windows, com <code>java</code> no PATH. O aplicativo é distribuído como JAR.</p>
             <p><strong>Como obter o aplicativo:</strong> acesse a página de <a href="download.html">Download</a> e use o link para <strong>Releases → Latest (GitHub)</strong>. Baixe o JAR e execute com <code>java -jar nome-do-arquivo.jar</code> (ou duplo clique, se o Windows estiver configurado para abrir JARs com Java).</p>
             <p>Para desenvolvimento na oficina (código-fonte): <code>cd agenda-java && mvn javafx:run</code>. Ver <a href="download.html">Download</a> para mais detalhes.</p>
         </section>
 
-        <section class="card" id="agenda">
+        <section class="manual-card" id="agenda">
             <h2>Agenda de sessões</h2>
             <p>A agenda permite cadastrar e visualizar <strong>agendamentos</strong> de sessões: nome do cliente, data, horário (opcional) e valor (opcional). Use para planejar o dia e a semana e manter o histórico de atendimentos.</p>
             <h3>O que você pode fazer</h3>
@@ -75,7 +75,7 @@
             <p>O aplicativo mantém os dados localmente. Use backups do sistema de arquivos ou da pasta de dados do app se precisar preservar o histórico.</p>
         </section>
 
-        <section class="card" id="financeiro">
+        <section class="manual-card" id="financeiro">
             <h2>Controle financeiro</h2>
             <p>O módulo financeiro registra <strong>entradas</strong> (receitas) e <strong>saídas</strong> (despesas), calculando o saldo. Ideal para controlar o que entra (sessões, retoques, vendas) e o que sai (materiais, aluguel, contas).</p>
             <h3>Tipos de lançamento</h3>
@@ -91,13 +91,13 @@
             </ul>
         </section>
 
-        <section class="card" id="painel">
+        <section class="manual-card" id="painel">
             <h2>Painel de resultados</h2>
             <p>O painel reúne indicadores do negócio: faturamento no período, totais de entradas e saídas, saldo e médias (por exemplo, ticket médio). Use para acompanhar o desempenho mensal e tomar decisões.</p>
             <p>Conforme novas versões forem lançadas, o painel pode incluir gráficos e relatórios por período. A apresentação completa e a consultoria estão na matriz (caracore.com.br).</p>
         </section>
 
-        <section class="card" id="troubleshooting">
+        <section class="manual-card manual-card--troubleshoot" id="troubleshooting">
             <h2>Problemas comuns</h2>
             <ul>
                 <li><strong>O JAR não abre</strong> — Verifique se o JDK 21 está instalado e no PATH. No terminal: <code>java -version</code> deve mostrar versão 21. Reinstale o JDK 21 (OpenJDK ou Oracle) se necessário.</li>
@@ -105,6 +105,7 @@
                 <li><strong>Dúvidas ou sugestões</strong> — Use o <a href="canal-feedback.html">Canal de feedback</a> (e-mail, WhatsApp ou Telegram) para reportar problemas ou pedir ajuda.</li>
             </ul>
         </section>
+        </div>
 
         <nav class="back">
             <a href="index.html">← Voltar ao portal</a> · <a href="download.html">Download</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="canal-feedback.html">Canal de feedback</a>

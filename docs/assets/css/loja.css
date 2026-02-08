@@ -153,3 +153,111 @@ body.page-tecnologia .back a { color: var(--accent-blue); }
 .ink-cta-block .ink-cta-btn-primary:hover { opacity: 0.95; filter: brightness(1.1); color: #0d1117; }
 .ink-cta-block .ink-cta-btn-secondary { background: transparent; color: var(--accent-blue); border: 2px solid var(--accent-blue); }
 .ink-cta-block .ink-cta-btn-secondary:hover { background: rgba(88, 166, 255, 0.12); color: var(--accent-blue); }
+
+/* ========== Manual do usuário (page-manual) ========== */
+body.page-manual .wrapper { max-width: 720px; }
+body.page-manual header { padding: 40px 0 32px; border-bottom: 1px solid var(--border); }
+body.page-manual header h1 { font-size: 1.6rem; margin-bottom: 10px; }
+body.page-manual header .subtitle { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; }
+
+.manual-toc {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin: 32px 0 40px;
+    border-left: 4px solid var(--accent-green);
+}
+.manual-toc-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-green);
+    margin-bottom: 16px;
+}
+.manual-toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.manual-toc-list li { margin-bottom: 10px; }
+.manual-toc-list li:last-child { margin-bottom: 0; }
+.manual-toc-list a {
+    display: block;
+    padding: 10px 14px;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background 0.2s, color 0.2s;
+}
+.manual-toc-list a:hover {
+    background: rgba(63, 185, 80, 0.12);
+    color: var(--accent-green);
+}
+
+.manual-content { margin-bottom: 8px; }
+
+.manual-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    border-left: 4px solid var(--accent-blue);
+}
+.manual-card--intro { border-left-color: var(--accent-green); }
+.manual-card--troubleshoot { border-left-color: var(--accent-gold); }
+.manual-card h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+.manual-card h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 20px 0 10px;
+}
+.manual-card h3:first-of-type { margin-top: 0; }
+.manual-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 14px;
+}
+.manual-card p:last-child { margin-bottom: 0; }
+.manual-card p strong { color: var(--text-primary); }
+.manual-card ul {
+    margin: 12px 0 18px 1.25em;
+    padding-left: 0.25em;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.75;
+}
+.manual-card ul li { margin-bottom: 8px; }
+.manual-card ul li:last-child { margin-bottom: 0; }
+.manual-card ul strong { color: var(--text-primary); }
+.manual-card code {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 0.88em;
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, monospace;
+    color: var(--accent-cyan);
+}
+.manual-card a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+.manual-card a:hover { text-decoration: underline; }
+body.page-manual .back { margin-top: 40px; }
