@@ -51,6 +51,9 @@ body.page-tecnologia header { padding: 40px 0 32px; }
 body.page-tecnologia header h1 { font-size: 1.5rem; margin-bottom: 10px; }
 body.page-tecnologia header p { font-size: 0.95rem; color: var(--text-secondary); }
 
+.ink-launch-banner { background: linear-gradient(135deg, rgba(63, 185, 80, 0.12) 0%, rgba(63, 185, 80, 0.04) 100%); border: 1px solid var(--accent-green); border-radius: 10px; padding: 20px 26px; margin-bottom: 28px; border-left: 4px solid var(--accent-green); }
+.ink-launch-banner .ink-launch-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-green); margin-bottom: 6px; }
+.ink-launch-banner .ink-launch-date { font-size: 1rem; font-weight: 600; color: var(--text-primary); line-height: 1.5; }
 .hero-cta { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 32px 36px; margin-bottom: 40px; border-left: 4px solid var(--accent-green); }
 .hero-cta .hero-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-green); margin-bottom: 10px; }
 .hero-cta .hero-title { font-size: 1.35rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; line-height: 1.4; }
@@ -61,6 +64,9 @@ body.page-tecnologia header p { font-size: 0.95rem; color: var(--text-secondary)
 .hero-cta .cta-btn-primary:hover { opacity: 0.95; filter: brightness(1.1); }
 .hero-cta .cta-btn-secondary { background: transparent; color: var(--accent-blue); border: 2px solid var(--accent-blue); }
 .hero-cta .cta-btn-secondary:hover { background: rgba(88, 166, 255, 0.12); }
+.hero-cta .hero-contexto-cliente { margin: 20px 0 24px; text-align: center; }
+.hero-cta .hero-contexto-cliente img { max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border); }
+.hero-cta .hero-contexto-caption { font-size: 0.9rem; color: var(--text-secondary); margin-top: 10px; line-height: 1.5; }
 .hero-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 24px; font-size: 0.9rem; }
 .hero-pillar-item { background: rgba(63, 185, 80, 0.12); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .hero-pillar-item strong { color: var(--accent-green); }
@@ -120,3 +126,30 @@ body.page-tecnologia .back a { color: var(--accent-blue); }
 .page-tecnologia .card p strong { color: var(--text-primary); }
 .tech-selo { margin: 24px 0; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; font-size: 0.95rem; color: var(--text-secondary); }
 .tech-selo strong { color: var(--accent-green); }
+
+/* CTA — Call to Action (loja Ink) */
+.ink-cta-block {
+    background: linear-gradient(135deg, rgba(63, 185, 80, 0.12) 0%, rgba(63, 185, 80, 0.04) 100%);
+    border: 1px solid var(--accent-green);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin: 40px 0 32px;
+    text-align: center;
+    border-left: 4px solid var(--accent-green);
+}
+.ink-cta-block .ink-cta-title { font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
+.ink-cta-block .ink-cta-desc { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.5; }
+.ink-cta-block .ink-cta-buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center; }
+.ink-cta-block .ink-cta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: opacity 0.2s, background 0.2s;
+}
+.ink-cta-block .ink-cta-btn-primary { background: var(--accent-green); color: #0d1117; border: none; }
+.ink-cta-block .ink-cta-btn-primary:hover { opacity: 0.95; filter: brightness(1.1); color: #0d1117; }
+.ink-cta-block .ink-cta-btn-secondary { background: transparent; color: var(--accent-blue); border: 2px solid var(--accent-blue); }
+.ink-cta-block .ink-cta-btn-secondary:hover { background: rgba(88, 166, 255, 0.12); color: var(--accent-blue); }
