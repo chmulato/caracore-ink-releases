@@ -41,8 +41,16 @@ Se o GitHub ainda tiver `main` como padrão: em **Settings → General → Defau
 | Onde | O que tem |
 |------|-----------|
 | **Raiz** | README, VERSION, .gitignore. |
-| **docs/** | Portal da loja (GitHub Pages): index.html, download.html, tecnologia.html, canal-feedback.html. CSS e JS em docs/assets. |
-| **Releases** | Artefatos versionados (JAR) publicados em [Releases](https://github.com/chmulato/caracore-ink-releases/releases) quando disponíveis. |
+| **docs/** | Portal da loja (GitHub Pages): index.html, download.html, manual.html, tecnologia.html, canal-feedback.html. CSS e JS em docs/assets. |
+| **Releases** | Artefatos versionados (JAR, instalador .exe) publicados em [Releases](https://github.com/chmulato/caracore-ink-releases/releases) quando disponíveis. |
+
+## Recursos atuais (Atos I a VI)
+
+- **Arquitetura soberana:** Java 21, JavaFX 21, SQLite local (AppData/Local/CaraCore/AgendaInk). Primeiro acesso: criação automática do banco e vinculação HardwareID (app_identity).
+- **Fluxo de agenda:** Orçamento → Pago → Sessão → Aftercare. Dashboard de agendamento, tarefas e finanças.
+- **Aftercare inteligente:** Alertas 3 e 30 dias após a sessão (Virtual Threads).
+- **Cofre de Segurança (.inkbak):** Exportar Dossiê de Dados (GZIP em .inkbak), Restaurar Dossiê (com validação HardwareID), aviso se backup &gt; 7 dias. Perfil: botões Industrial-Ink.
+- **Build:** Dist local (`mvn package` → target/dist: agenda.jar, lib/, run.bat). Instalador Windows: `mvn package -Pinstaller` → target/installer (exe autocontido, winConsole=false, ícone oficial). Dossiê de Lançamento: RELEASE_NOTES.md na oficina (agenda-java).
 
 Os clientes são direcionados a este repositório para a vitrine e o download. O portal segue o **padrão das lojas do ecossistema Cara Core** (breadcrumb, rodapé, tema escuro, accent verde/ouro, evolution-status, canal de feedback).
 

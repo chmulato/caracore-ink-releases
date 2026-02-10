@@ -33,18 +33,22 @@
             <p>Windows Desktop · Java 21 + JavaFX</p>
         </header>
 
-        <p class="download-notice">Requisito: <strong>JDK 21</strong> instalado no Windows (OpenJDK ou Oracle). O aplicativo é distribuído como JAR.</p>
+        <p class="download-notice">Duas formas de entrega: <strong>dist local</strong> (JAR + run.bat + lib — exige JDK 21 no PATH) ou <strong>instalador .exe</strong> (autocontido, sem Java externo).</p>
 
         <section class="card">
-            <p>O <strong>Cara Core Ink Agenda</strong> é distribuído como <strong>JAR</strong> para execução no Windows. É necessário ter o <strong>JDK 21</strong> (Java 21) no PATH. A aplicação usa JavaFX 21 para a interface gráfica.</p>
-            <p><strong>Como executar (desenvolvimento):</strong></p>
-            <ul>
-                <li>Na oficina (caracore-ink): <code>cd agenda-java && mvn javafx:run</code></li>
-                <li>Ou gerar JAR: <code>mvn package</code> — o JAR fica em <code>agenda-java/target/</code></li>
-            </ul>
-            <p>Quando houver releases publicadas neste repositório, o artefato estará em:</p>
+            <h2>Dist local (oficina)</h2>
+            <p>Na oficina (caracore-ink): <code>cd agenda-java && mvn clean package -DskipTests</code>. Gera <code>target/dist/</code> com <strong>agenda.jar</strong>, <strong>lib/</strong> (JavaFX, SQLite) e <strong>run.bat</strong>. Executar: <code>target\dist\run.bat</code>. Requer <strong>JDK 21</strong> no PATH. O run.bat inclui os módulos javafx.controls, javafx.fxml e javafx.web (Splash com WebView).</p>
+            <p><strong>Alternativa sem dist:</strong> <code>mvn javafx:run</code> na pasta agenda-java.</p>
+        </section>
+        <section class="card">
+            <h2>Instalador Windows (.exe)</h2>
+            <p>Na oficina: <code>mvn clean package -Pinstaller</code>. Gera o instalador em <code>target/installer/</code>. Executável autocontido (jpackage inclui runtime); não exige Java instalado. Janela sem console (winConsole=false); ícone oficial em src/main/resources/icons/agenda-ink.ico.</p>
+        </section>
+        <section class="card">
+            <h2>Releases publicadas</h2>
+            <p>Quando houver releases versionadas neste repositório, os artefatos (JAR e/ou instalador) estarão em:</p>
             <a href="https://github.com/chmulato/caracore-ink-releases/releases/latest" class="btn-release btn-release-outline" target="_blank" rel="noopener">Releases → Latest (GitHub)</a>
-            <p class="card-link-margin">A <strong>apresentação completa</strong> (requisitos, instalação, uso) e a <strong>consultoria</strong> ficam na matriz: caracore.com.br.</p>
+            <p class="card-link-margin">A <strong>apresentação completa</strong> (requisitos, instalação, uso) e a <strong>consultoria</strong> ficam na matriz: caracore.com.br. Dossiê de Lançamento e manual de backup semanal: RELEASE_NOTES.md na oficina (agenda-java).</p>
         </section>
 
         <nav class="back">
@@ -53,7 +57,7 @@
     </div>
     <script src="assets/js/loja.js"></script>
     <div class="evo-beta-wrap" aria-hidden="true"><span class="evo-beta-badge" title="Versão de teste oficial">Seed<span class="evo-beta-tooltip">Esta é uma versão oficial de teste da Cara Core Informática para parceiros do Plano Premium+.</span></span></div>
-    <footer class="evo-roadmap-footer" role="contentinfo"><p class="evo-roadmap-title">Próximos passos</p><ul class="evo-roadmap-list"><li>Lançamento oficial (Windows Desktop) <span class="evo-roadmap-tag">26 de junho de 2026</span></li><li>Persistência local (SQLite)</li><li>Relatórios e exportação</li></ul></footer>
+    <footer class="evo-roadmap-footer" role="contentinfo"><p class="evo-roadmap-title">Estado atual</p><ul class="evo-roadmap-list"><li>Lançamento oficial (Windows Desktop) <span class="evo-roadmap-tag">26 de junho de 2026</span></li><li>Persistência local (SQLite, AppData)</li><li>Backup de Soberania (.inkbak) e Restauração</li><li>Aftercare (alertas 3/30 dias)</li><li>Instalador .exe autocontido (-Pinstaller)</li></ul></footer>
     <div class="evo-feedback-fab"><a href="canal-feedback.html" class="evo-feedback-btn" aria-label="Canal de feedback"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Sugira uma melhoria</a></div>
 </body>
 </html>
