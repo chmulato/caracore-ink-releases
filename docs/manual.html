@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual do usuário — Cara Core Ink Agenda | Cara Core Informática</title>
-    <meta name="description" content="Manual do Cara Core Ink Agenda: visão geral, requisitos, instalação e uso. Agenda de sessões, controle financeiro e painel para estúdios de tatuagem.">
+    <title>Manual do usuário — Ink Agenda v2.0.0 | Cara Core Informática</title>
+    <meta name="description" content="Manual do Ink Agenda v2.0.0: login por celular, calendário e lista do dia, clientes, controle financeiro, backup com senha. Windows Desktop — primeiro produto maduro Cara Core.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,12 +23,12 @@
 
         <section class="ink-launch-banner" aria-label="Data de lançamento">
             <p class="ink-launch-label">Lançamento oficial</p>
-            <p class="ink-launch-date">App Cara Core Ink Agenda para Windows Desktop — <strong>26 de junho de 2026</strong>.</p>
+            <p class="ink-launch-date"><strong>Ink Agenda v2.0.0</strong> para Windows Desktop — <strong>26 de junho de 2026</strong>. Primeiro produto Cara Core já maduro.</p>
         </section>
 
         <header>
-            <h1>Manual do usuário — Cara Core Ink Agenda</h1>
-            <p class="subtitle">Guia de uso do aplicativo: agenda de sessões, controle financeiro e painel de resultados para estúdios de tatuagem.</p>
+            <h1>Manual do usuário — Ink Agenda</h1>
+            <p class="subtitle">Guia de uso do aplicativo v2.0.0: login por celular, calendário e lista do dia, clientes, controle financeiro, backup com senha e painel de resultados.</p>
         </header>
 
         <nav class="manual-toc" aria-label="Índice do manual">
@@ -36,9 +36,11 @@
             <ul class="manual-toc-list">
                 <li><a href="#visao-geral">Visão geral</a></li>
                 <li><a href="#requisitos-instalacao">Requisitos e instalação</a></li>
-                <li><a href="#agenda">Agenda de sessões</a></li>
+                <li><a href="#login">Login e primeiro uso</a></li>
+                <li><a href="#agenda">Agenda e lista do dia</a></li>
                 <li><a href="#financeiro">Controle financeiro</a></li>
                 <li><a href="#painel">Painel de resultados</a></li>
+                <li><a href="#backup">Backup e restauração</a></li>
                 <li><a href="#troubleshooting">Problemas comuns</a></li>
             </ul>
         </nav>
@@ -46,33 +48,45 @@
         <div class="manual-content">
         <section class="manual-card manual-card--intro" id="visao-geral">
             <h2>Visão geral</h2>
-            <p>O <strong>Cara Core Ink Agenda</strong> é um aplicativo desktop para Windows que ajuda tatuadores e estúdios a organizar agendamentos, controlar entradas e saídas e acompanhar o desempenho do negócio. Os dados ficam no seu computador; a interface é nativa (JavaFX), sem depender de navegador.</p>
+            <p>O <strong>Ink Agenda</strong> é um aplicativo desktop para Windows que ajuda tatuadores e estúdios a organizar agendamentos, controlar entradas e saídas e acompanhar o desempenho do negócio. Os dados ficam no seu computador (SQLite local); a interface é nativa (Java 21 + JavaFX 21), sem depender de navegador. <strong>v2.0.0</strong> é o primeiro produto Cara Core já maduro; lançamento oficial em 26 de junho de 2026.</p>
             <h3>Principais recursos</h3>
             <ul>
-                <li><strong>Agenda de sessões</strong> — Cliente, data, horário e valor. Visualização em calendário e lista.</li>
+                <li><strong>Login por celular</strong> — Acesso com o número do tatuador (telas de login e recuperação).</li>
+                <li><strong>Agenda e lista do dia</strong> — Calendário centralizado no topo; ao clicar no dia, abre a lista de agendamentos daquele dia (ordem do mais cedo ao mais tarde). Cadastro com nome, valor, data e hora; celular do cliente opcional. Não permite sobrepor horários ao salvar.</li>
+                <li><strong>Check “Pagou” na tela Hoje</strong> — Marque rapidamente quem já pagou na visão do dia.</li>
                 <li><strong>Controle financeiro</strong> — Registro de receitas (entradas) e despesas (saídas), com saldo por período.</li>
                 <li><strong>Painel de resultados</strong> — Faturamento, médias e indicadores para acompanhar o desempenho.</li>
+                <li><strong>Backup e restauração</strong> — Exportar e importar dados em arquivo protegido por senha (CSV compactado), para soberania dos dados.</li>
             </ul>
-            <p>O aplicativo é desenvolvido em Java 21 e JavaFX 21. Requisitos e detalhes técnicos estão em <a href="download.html">Download</a> e <a href="tecnologia.html">Tecnologia</a>.</p>
+            <p>Requisitos e detalhes técnicos estão em <a href="download.html">Download</a> e <a href="tecnologia.html">Tecnologia</a>. <strong>Versão anterior (Android):</strong> <a href="https://play.google.com/store/apps/details?id=tattoo.ink.agenda&hl=pt-BR" target="_blank" rel="noopener">Ink Agenda na Google Play</a> — app em produção até o lançamento da v2.0.0 desktop.</p>
         </section>
 
         <section class="manual-card" id="requisitos-instalacao">
             <h2>Requisitos e instalação</h2>
-            <p><strong>Requisito:</strong> ter o <strong>JDK 21</strong> (Java 21) instalado no Windows, com <code>java</code> no PATH. O aplicativo é distribuído como JAR.</p>
-            <p><strong>Como obter o aplicativo:</strong> acesse a página de <a href="download.html">Download</a> e use o link para <strong>Releases → Latest (GitHub)</strong>. Baixe o JAR e execute com <code>java -jar nome-do-arquivo.jar</code> (ou duplo clique, se o Windows estiver configurado para abrir JARs com Java).</p>
-            <p>Para desenvolvimento na oficina (código-fonte): <code>cd agenda-java && mvn javafx:run</code>. Ver <a href="download.html">Download</a> para mais detalhes.</p>
+            <p><strong>Requisitos:</strong> Windows 10 ou superior. Duas formas de uso:</p>
+            <ul>
+                <li><strong>Instalador .exe (recomendado)</strong> — Baixe o instalador na página de <a href="download.html">Download</a> (Releases → Latest). Não é necessário ter Java instalado; o .exe é autocontido. Após instalar, abra o atalho do Ink Agenda.</li>
+                <li><strong>JAR (avançado)</strong> — Exige <strong>JDK 21</strong> (Java 21) no PATH. Baixe o JAR em Releases e execute com <code>java -jar nome-do-arquivo.jar</code> (ou duplo clique, se JARs estiverem associados ao Java).</li>
+            </ul>
+            <p>Os dados ficam em <code>%AppData%\Local\CaraCore\AgendaInk</code> (banco SQLite e backups automáticos). Para desenvolvimento na oficina: <code>cd agenda-java && mvn javafx:run</code>.</p>
+        </section>
+
+        <section class="manual-card" id="login">
+            <h2>Login e primeiro uso</h2>
+            <p>O acesso ao <strong>Ink Agenda</strong> é feito pelo <strong>celular do tatuador</strong>: na tela de login, informe o número de telefone (e senha, se já tiver cadastro). No primeiro uso, o aplicativo pode solicitar o cadastro do usuário. A interface exibe o nome do app como <strong>Ink Agenda</strong> na splash e nos títulos.</p>
         </section>
 
         <section class="manual-card" id="agenda">
-            <h2>Agenda de sessões</h2>
-            <p>A agenda permite cadastrar e visualizar <strong>agendamentos</strong> de sessões: nome do cliente, data, horário (opcional) e valor (opcional). Use para planejar o dia e a semana e manter o histórico de atendimentos.</p>
-            <h3>O que você pode fazer</h3>
+            <h2>Agenda e lista do dia</h2>
+            <p>A agenda mostra um <strong>calendário</strong> centralizado no topo da tela. Ao <strong>clicar em um dia</strong>, abre a <strong>lista do dia</strong>: apenas os agendamentos daquele dia, em ordem do mais cedo ao mais tarde. Use para planejar o dia e manter o histórico de atendimentos.</p>
+            <h3>Cadastro de agendamento</h3>
             <ul>
-                <li><strong>Criar agendamento</strong> — Informe cliente, data e, se quiser, horário e valor. Salve para que a sessão apareça na agenda.</li>
-                <li><strong>Editar agendamento</strong> — Abra o agendamento e altere os dados (cliente, data, horário, valor) conforme necessário.</li>
-                <li><strong>Listar e filtrar</strong> — Visualize os agendamentos por período (dia, semana, mês) para organizar a rotina.</li>
+                <li><strong>Campos:</strong> nome do cliente, valor, data e hora. Celular do cliente é opcional.</li>
+                <li><strong>Salvar:</strong> o aplicativo não permite <strong>sobreposição de horários</strong> — se o horário já estiver ocupado, será exibido aviso e você precisará escolher outro horário.</li>
+                <li><strong>Editar:</strong> abra o agendamento e altere cliente, data, horário ou valor conforme necessário.</li>
             </ul>
-            <p>O aplicativo mantém os dados localmente. Use backups do sistema de arquivos ou da pasta de dados do app se precisar preservar o histórico.</p>
+            <h3>Tela Hoje</h3>
+            <p>Na visão do dia atual, você pode marcar <strong>Pagou</strong> para cada cliente que já realizou o pagamento, facilitando o controle do caixa do dia.</p>
         </section>
 
         <section class="manual-card" id="financeiro">
@@ -93,15 +107,23 @@
 
         <section class="manual-card" id="painel">
             <h2>Painel de resultados</h2>
-            <p>O painel reúne indicadores do negócio: faturamento no período, totais de entradas e saídas, saldo e médias (por exemplo, ticket médio). Use para acompanhar o desempenho mensal e tomar decisões.</p>
-            <p>Conforme novas versões forem lançadas, o painel pode incluir gráficos e relatórios por período. A apresentação completa e a consultoria estão na matriz (caracore.com.br).</p>
+            <p>O painel reúne indicadores do negócio: faturamento no período, totais de entradas e saídas, saldo e médias (por exemplo, ticket médio). Use para acompanhar o desempenho mensal e tomar decisões. A apresentação completa e a consultoria estão na matriz (caracore.com.br).</p>
+        </section>
+
+        <section class="manual-card" id="backup">
+            <h2>Backup e restauração</h2>
+            <p>O Ink Agenda permite <strong>exportar</strong> e <strong>importar</strong> seus dados em um arquivo único (CSV compactado com GZIP), protegido por <strong>senha</strong>. Assim você mantém a soberania dos dados e pode trocar de computador ou fazer cópias de segurança.</p>
+            <p>As opções de backup e restauração ficam na área de <strong>Perfil</strong>. O aplicativo também faz backups automáticos locais (pasta de dados do app). Para mais detalhes sobre o formato e o dossiê de lançamento, consulte a matriz e o RELEASE_NOTES na oficina.</p>
         </section>
 
         <section class="manual-card manual-card--troubleshoot" id="troubleshooting">
             <h2>Problemas comuns</h2>
             <ul>
+                <li><strong>Instalador .exe não inicia</strong> — Execute como administrador se necessário; verifique se o Windows Defender ou outro antivírus não está bloqueando. Requer Windows 10 ou superior.</li>
                 <li><strong>O JAR não abre</strong> — Verifique se o JDK 21 está instalado e no PATH. No terminal: <code>java -version</code> deve mostrar versão 21. Reinstale o JDK 21 (OpenJDK ou Oracle) se necessário.</li>
-                <li><strong>Erro ao iniciar a janela</strong> — Confirme que está usando Java 21 e que o JavaFX está disponível (o JAR de release já inclui o necessário). Em caso de erro de memória, tente aumentar a heap: <code>java -Xmx512m -jar nome-do-arquivo.jar</code>.</li>
+                <li><strong>Erro ao iniciar a janela</strong> — Confirme que está usando Java 21 e que o JavaFX está disponível (o JAR de release já inclui o necessário). Em caso de erro de memória, tente: <code>java -Xmx512m -jar nome-do-arquivo.jar</code>.</li>
+                <li><strong>Horário já ocupado ao salvar</strong> — O aplicativo impede sobrepor horários. Escolha outro horário ou edite o agendamento existente.</li>
+                <li><strong>Versão anterior (Android)</strong> — O app na <a href="https://play.google.com/store/apps/details?id=tattoo.ink.agenda&hl=pt-BR" target="_blank" rel="noopener">Google Play</a> continua em produção até o lançamento da v2.0.0 desktop (26/Jun/2026).</li>
                 <li><strong>Dúvidas ou sugestões</strong> — Use o <a href="canal-feedback.html">Canal de feedback</a> (e-mail, WhatsApp ou Telegram) para reportar problemas ou pedir ajuda.</li>
             </ul>
         </section>
