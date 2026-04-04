@@ -2,7 +2,7 @@
 
 Repositório público de **delivery** e **loja** do **Cara Core Ink Agenda**: sistema profissional para estúdios de tatuagem (agenda de sessões, controle financeiro, painel de resultados).
 
-**Foco:** aplicativo **Windows Desktop** em **Java 21** e **JavaFX 21**. Dados no computador do usuário.
+**Foco:** aplicativo **Windows Desktop** em **Java 21** e **JavaFX 21**. Dados no computador do usuário. **Lançamento oficial: 26 de Junho de 2026.**
 
 ---
 
@@ -15,6 +15,14 @@ O **Ink Agenda** é uma ferramenta para tatuadores e estúdios que desejam:
 - Acompanhar o desempenho (faturamento, saldo, indicadores)
 
 O desenvolvimento e o código-fonte ficam no repositório **caracore-ink** (oficina). Este repositório (**caracore-ink-releases**) é o canal **público** de releases, vitrine e documentação de delivery.
+
+---
+
+## Branch padrão: master
+
+Este repositório usa **somente a branch `master`**. Todos os artefatos, o portal (docs/) e as releases ficam nela. Não há branch `main`.
+
+Se o GitHub ainda tiver `main` como padrão: em **Settings → General → Default branch** altere para **master** e confirme; depois pode remover a branch `main` no remoto se desejar (`git push origin --delete main`).
 
 ---
 
@@ -33,8 +41,16 @@ O desenvolvimento e o código-fonte ficam no repositório **caracore-ink** (ofic
 | Onde | O que tem |
 |------|-----------|
 | **Raiz** | README, VERSION, .gitignore. |
-| **docs/** | Portal da loja (GitHub Pages): index.html, download.html, tecnologia.html, canal-feedback.html. CSS e JS em docs/assets. |
-| **Releases** | Artefatos versionados (JAR) publicados em [Releases](https://github.com/chmulato/caracore-ink-releases/releases) quando disponíveis. |
+| **docs/** | Portal da loja (GitHub Pages): index.html, download.html, manual.html, tecnologia.html, canal-feedback.html. CSS e JS em docs/assets. |
+| **Releases** | Artefatos versionados (JAR, instalador .exe) publicados em [Releases](https://github.com/chmulato/caracore-ink-releases/releases) quando disponíveis. |
+
+## Recursos atuais (Atos I a VI)
+
+- **Arquitetura soberana:** Java 21, JavaFX 21, SQLite local (AppData/Local/CaraCore/AgendaInk). Primeiro acesso: criação automática do banco e vinculação HardwareID (app_identity).
+- **Fluxo de agenda:** Orçamento → Pago → Sessão → Aftercare. Dashboard de agendamento, tarefas e finanças.
+- **Aftercare inteligente:** Alertas 3 e 30 dias após a sessão (Virtual Threads).
+- **Cofre de Segurança (.inkbak):** Exportar Dossiê de Dados (GZIP em .inkbak), Restaurar Dossiê (com validação HardwareID), aviso se backup &gt; 7 dias. Perfil: botões Industrial-Ink.
+- **Build:** Dist local (`mvn package` → target/dist: agenda.jar, lib/, run.bat). Instalador Windows: `mvn package -Pinstaller` → target/installer (exe autocontido, winConsole=false, ícone oficial). Dossiê de Lançamento: RELEASE_NOTES.md na oficina (agenda-java).
 
 Os clientes são direcionados a este repositório para a vitrine e o download. O portal segue o **padrão das lojas do ecossistema Cara Core** (breadcrumb, rodapé, tema escuro, accent verde/ouro, evolution-status, canal de feedback).
 
@@ -47,17 +63,23 @@ Os clientes são direcionados a este repositório para a vitrine e o download. O
 - **Portfólio Cara Core Informática:** caracore.com.br
 - **Oficina (código-fonte):** repositório **caracore-ink** (módulo Java 21 em `agenda-java/`)
 
-Para ativar o portal no **GitHub Pages**: em Settings → Pages, escolha *Deploy from a branch* e pasta **docs** (ou branch main com raiz em /docs). O arquivo **.nojekyll** em docs/ evita processamento Jekyll.
+Para ativar o portal no **GitHub Pages**: em Settings → Pages, escolha *Deploy from a branch*, branch **master**, pasta **/docs**. O arquivo **.nojekyll** em docs/ evita processamento Jekyll. A loja usa somente a branch **master** (padrão); todos os artefatos e o portal ficam nela.
 
 ---
 
 ## Padrão da loja
 
 - **Breadcrumb:** Cara Core Ink Agenda — Loja · Cara Core Informática (caracore.com.br) [· página atual]
-- **Rodapé:** Loja · Repositório caracore-ink-releases · Portfólio e matriz caracore.com.br
+- **Rodapé:** Loja · Repositório caracore-ink-releases · Portfólio e matriz caracore.com.br · **Lançamento oficial: 26 de Junho de 2026**
 - **Tema:** escuro (--bg-dark, --bg-card), accent verde (#3fb950), ouro (#d4a853), azul (#58a6ff). Fonte Inter.
 - **Páginas:** index (balcão), download, tecnologia, canal-feedback. Evolution-status (badge Seed) e FAB de feedback WhatsApp.
 
 ---
 
 *Cara Core Informática — Cara Core Ink Agenda (Java 21, JavaFX, Windows Desktop).*
+
+## Licenca
+
+Este repositorio segue licenciamento proprietario institucional da Cara Core Informatica.
+Consulte [LICENSE](LICENSE).
+
