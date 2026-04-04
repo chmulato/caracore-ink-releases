@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="https://chmulato.github.io/caracore-ink-releases/">
-    <title>Tecnologia — Cara Core Ink Agenda | Java 21, JavaFX | Cara Core Informática</title>
-    <meta name="description" content="Stack do Cara Core Ink Agenda: Java 21, JavaFX 21, Maven. Aplicativo Windows Desktop para gestão de estúdios de tatuagem.">
+    <title>Tecnologia — Cara Core Ink Agenda | Cara Core Informática</title>
+    <meta name="description" content="Stack do Cara Core Ink Agenda: Java 21, JavaFX 21, Maven. App Windows Desktop para estúdios de tatuagem. Lançamento 26 de junho de 2026.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/loja.css">
-    <link rel="stylesheet" href="assets/evolution-status/evolution-status.css">
+    <link rel="stylesheet" href="assets/css/ink-portal.css">
 </head>
-<body class="page-tecnologia">
+<body class="tecnologia-page">
     <div class="wrapper">
         <nav class="breadcrumb" aria-label="Navegação">
-            <a href="index.html">Cara Core Ink Agenda — Loja</a>
+            <a href="https://caracore.com.br/">Cara Core Informática</a>
             <span> · </span>
-            <span>Cara Core Informática (caracore.com.br)</span>
+            <a href="https://caracore.com.br/ecosistema.html#garagem">Ecossistema (Garagem)</a>
+            <span> · </span>
+            <a href="index.html">Cara Core Ink Agenda</a>
             <span> · </span>
             <span>Tecnologia</span>
         </nav>
 
-        <!-- Aviso padrão: lançamento oficial do app Windows Desktop — 26/06/2026 -->
+        <!-- Aviso padrão: lançamento oficial — 26/06/2026 -->
         <section class="ink-launch-banner" aria-label="Data de lançamento">
             <p class="ink-launch-label">Lançamento oficial</p>
             <p class="ink-launch-date">App Cara Core Ink Agenda para Windows Desktop — <strong>26 de junho de 2026</strong>.</p>
@@ -58,15 +58,21 @@
             <p>Artefato principal: JAR executável. Requer <strong>JDK 21</strong> no Windows. Execução via <code>java -jar</code> ou via plugin Maven <code>javafx:run</code>. Futuramente: empacotamento com jlink/jpackage para instalador Windows sem exigir JDK instalado.</p>
         </section>
 
-        <p class="tech-selo"><strong>Ecossistema Cara Core Informática</strong> — Produtos desktop e web com foco em simplicidade, manutenção e entrega clara. Ink Agenda integra o portfólio ao lado do PDV, Seed, Hub e outros.</p>
+        <p class="tech-selo" style="margin: 24px 0; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; font-size: 0.95rem; color: var(--text-secondary);"><strong style="color: var(--accent-green);">Ecossistema Cara Core Informática</strong> — Produtos desktop e web com foco em simplicidade, manutenção e entrega clara. Ink Agenda integra o portfólio ao lado do PDV, Seed, Hub e outros.</p>
 
-        <nav class="back">
-            <a href="index.html">← Voltar ao portal</a> · <a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="canal-feedback.html">Canal de feedback</a>
+        <section class="roadmap" aria-label="Próximos passos" style="margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: 4px solid var(--accent-blue); background: rgba(37,99,235,0.06); border-radius: 0 8px 8px 0;">
+            <p style="font-weight: 600; margin-bottom: 0.5rem;">Próximos passos</p>
+            <ul style="margin: 0; padding-left: 1.25rem;">
+                <li>Lançamento oficial (Windows Desktop) <strong>26 de junho de 2026</strong></li>
+                <li>Persistência local (SQLite)</li>
+                <li>Relatórios e exportação</li>
+            </ul>
+        </section>
+
+        <nav class="download-back">
+            <a href="index.html">← Voltar ao portal</a> · <a href="download.html">Download</a> · <a href="canal-feedback.html">Canal de feedback</a> · <a href="https://caracore.com.br/ecosistema.html#garagem">Ecossistema (Garagem)</a>
         </nav>
     </div>
-    <script src="assets/js/loja.js"></script>
-    <div class="evo-beta-wrap" aria-hidden="true"><span class="evo-beta-badge" title="Versão de teste oficial">Seed<span class="evo-beta-tooltip">Esta é uma versão oficial de teste da Cara Core Informática para parceiros do Plano Premium+.</span></span></div>
-    <footer class="evo-roadmap-footer" role="contentinfo"><p class="evo-roadmap-title">Próximos passos</p><ul class="evo-roadmap-list"><li>Lançamento oficial (Windows Desktop) <span class="evo-roadmap-tag">26 de junho de 2026</span></li><li>Persistência local (SQLite)</li><li>Relatórios e exportação</li></ul></footer>
-    <div class="evo-feedback-fab"><a href="canal-feedback.html" class="evo-feedback-btn" aria-label="Canal de feedback"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Sugira uma melhoria</a></div>
+    <script src="assets/js/ink.js"></script>
 </body>
 </html>
