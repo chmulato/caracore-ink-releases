@@ -58,7 +58,7 @@ Os clientes são direcionados a este repositório para a vitrine e o download. O
 
 ## Links
 
-- **Apresentação completa na matriz:** [caracore.com.br/delivery/ink/](https://caracore.com.br/delivery/ink/) — funcionalidades, requisitos, planos e demonstração. A loja é o canal de download (releases) e feedback.
+- **Apresentação completa na matriz:** [caracore.com.br/ecosistema.html](https://caracore.com.br/ecosistema.html) — funcionalidades, requisitos, planos e demonstração. A loja é o canal de download (releases) e feedback.
 - **Portal da loja (este repo):** [docs/index.html](docs/index.html) — balcão; [docs/download.html](docs/download.html) — download.
 - **Repositório público:** [github.com/chmulato/caracore-ink-releases](https://github.com/chmulato/caracore-ink-releases)
 - **Portfólio Cara Core Informática:** caracore.com.br
