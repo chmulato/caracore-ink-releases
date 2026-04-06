@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="https://ink.caracore.com.br/">
     <title>Download — Cara Core Ink Agenda | Cara Core Informática</title>
-    <meta name="description" content="Download do Cara Core Ink Agenda para Windows. Requisitos: JDK 21. JAR e releases. Lançamento oficial 26 de junho de 2026.">
+    <meta name="description" content="Download do Cara Core Ink Agenda para Windows, macOS e Linux. Instalador nativo com runtime Java 21 embutido. Lançamento oficial 26 de junho de 2026.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,29 +23,98 @@
             <span>Download</span>
         </nav>
 
+        <!-- Banner RC1 -->
+        <section class="ink-launch-banner" aria-label="Release Candidate" style="border-left: 4px solid #ffd700; background: rgba(201,162,39,0.08);">
+            <p class="ink-launch-label">v2.0.0-RC1 — Release Candidate Windows</p>
+            <p class="ink-launch-date">Build gerado em <strong>05/04/2026</strong>. Homologacao em andamento. Lançamento oficial: <strong>26 de junho de 2026</strong>.</p>
+        </section>
+
         <!-- Aviso padrão: lançamento oficial — 26/06/2026 -->
         <section class="ink-launch-banner" aria-label="Data de lançamento">
             <p class="ink-launch-label">Lançamento oficial</p>
-            <p class="ink-launch-date">App Cara Core Ink Agenda para Windows Desktop — <strong>26 de junho de 2026</strong>.</p>
+            <p class="ink-launch-date">App Cara Core Ink Agenda — Windows · macOS · Linux — <strong>26 de junho de 2026</strong>.</p>
         </section>
 
         <header>
             <h1>Download — Cara Core Ink Agenda</h1>
-            <p>Windows Desktop · Java 21 + JavaFX</p>
+            <p>v2.0.0-RC1 · Windows · macOS · Linux · Java 21 + JavaFX · Runtime embutido · ProGuard</p>
         </header>
 
-        <p class="download-notice" style="margin-bottom: 1rem;">Requisito: <strong>JDK 21</strong> instalado no Windows (OpenJDK ou Oracle). O aplicativo é distribuído como JAR.</p>
+        <!-- Grade multi-plataforma -->
+        <section aria-label="Plataformas disponíveis" style="margin: 1.5rem 0;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
 
-        <section class="card" style="border-left: 4px solid var(--accent-green);">
-            <p>O <strong>Cara Core Ink Agenda</strong> é distribuído como <strong>JAR</strong> para execução no Windows. É necessário ter o <strong>JDK 21</strong> (Java 21) no PATH. A aplicação usa JavaFX 21 para a interface gráfica.</p>
-            <p><strong>Como executar (desenvolvimento):</strong></p>
-            <ul>
-                <li>Na oficina (caracore-ink): <code>cd agenda-java && mvn javafx:run</code></li>
-                <li>Ou gerar JAR: <code>mvn package</code> — o JAR fica em <code>agenda-java/target/</code></li>
-            </ul>
-            <p>Quando houver releases publicadas no repositório de releases, o artefato estará em:</p>
-            <span class="cta-btn cta-btn-primary" style="display: inline-block; margin-top: 8px; padding: 12px 24px; border-radius: 8px; opacity: 0.5; cursor: default;" aria-disabled="true">Disponível em 26/06/2026</span>
-            <p style="margin-top: 20px;">A <strong>apresentação completa</strong> (requisitos, instalação, uso) e a <strong>consultoria</strong> ficam no portal institucional da Cara Core. A vitrine e o download estão no <a href="index.html">canal institucional de releases</a>.</p>
+                <!-- Windows -->
+                <div class="card" style="border-left: 4px solid var(--accent-blue); position: relative;">
+                    <p style="font-size: 1.5rem; margin: 0 0 0.5rem;">🪟</p>
+                    <h3 style="margin: 0 0 0.5rem;">Windows</h3>
+                    <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">Windows 10 / 11 · 64 bits<br>Instalador com wizard (<code>.exe</code>)<br>Portable APP_IMAGE (<code>.zip</code>)</p>
+                    <p style="font-size: 0.82rem; opacity: 0.7; margin-bottom: 0.75rem;">Runtime Java 21 embutido — sem necessidade de instalar JDK.</p>
+                    <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC1/AgendaInk-2.0.0-RC1-windows.zip"
+                       class="cta-btn cta-btn-primary"
+                       style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem;"
+                       target="_blank" rel="noopener">
+                        ↓ Baixar v2.0.0-RC1 Windows (ZIP portable)
+                    </a>
+                    <p style="font-size: 0.78rem; opacity: 0.7; margin-top: 0.5rem;">Pre-release · homologacao em andamento. Instalador .exe com wizard: 26/06/2026.</p>
+                </div>
+
+                <!-- macOS -->
+                <div class="card" style="border-left: 4px solid var(--accent-gold); position: relative;">
+                    <p style="font-size: 1.5rem; margin: 0 0 0.5rem;">🍎</p>
+                    <h3 style="margin: 0 0 0.5rem;">macOS</h3>
+                    <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">macOS 13 Ventura ou superior<br>Apple Silicon (M1/M2/M3) e Intel<br>Disk Image (<code>.dmg</code>)</p>
+                    <p style="font-size: 0.82rem; opacity: 0.7; margin-bottom: 0.75rem;">Runtime Java 21 embutido — sem necessidade de instalar JDK.</p>
+                    <span class="cta-btn cta-btn-secondary"
+                          style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; opacity: 0.5; cursor: default;"
+                          aria-disabled="true">
+                        Disponível em 26/06/2026
+                    </span>
+                </div>
+
+                <!-- Linux -->
+                <div class="card" style="border-left: 4px solid var(--accent-green); position: relative;">
+                    <p style="font-size: 1.5rem; margin: 0 0 0.5rem;">🐧</p>
+                    <h3 style="margin: 0 0 0.5rem;">Linux</h3>
+                    <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">Ubuntu 20.04 LTS+ / Debian 11+<br>Pacote nativo (<code>.deb</code>)</p>
+                    <p style="font-size: 0.82rem; opacity: 0.7; margin-bottom: 0.75rem;">Runtime Java 21 embutido — sem necessidade de instalar JDK.</p>
+                    <span class="cta-btn cta-btn-secondary"
+                          style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; opacity: 0.5; cursor: default;"
+                          aria-disabled="true">
+                        Disponível em 26/06/2026
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detalhes técnicos / integridade -->
+        <section class="card" style="border-left: 4px solid var(--accent-green); margin-top: 1.5rem;">
+            <h3>Verificação de integridade (Windows ZIP)</h3>
+            <p>No PowerShell, na pasta onde o ZIP foi salvo:</p>
+            <pre style="background: rgba(0,0,0,0.15); padding: 0.75rem; border-radius: 6px; font-size: 0.85rem; overflow-x: auto;"><code># SHA256 (recomendado) — v2.0.0-RC1
+(Get-FileHash .\AgendaInk-2.0.0-RC1-windows.zip -Algorithm SHA256).Hash
+# Valor esperado:
+# 5f9f4af4c36019ccac901d495976d0cb4cb33b18aea6401d8a670f3318ace488</code></pre>
+            <p style="margin-top: 0.75rem; font-size: 0.9rem; opacity: 0.8;">Todos os artefatos são gerados com <strong>bytecode ofuscado</strong> via ProGuard — proteção do código-fonte na distribuição.</p>
+        </section>
+
+        <!-- Como usar o ZIP Windows (portable) -->
+        <section class="card" style="margin-top: 1.25rem;">
+            <h3>Como usar o ZIP Windows (modo portable)</h3>
+            <ol style="padding-left: 1.25rem; font-size: 0.95rem;">
+                <li>Baixe e salve <code>AgendaInk-2.0.0-RC1-windows.zip</code>.</li>
+                <li>Descompacte (clique direito → Extrair aqui).</li>
+                <li>Abra a pasta <code>AgendaInk\</code>.</li>
+                <li>Execute <strong><code>AgendaInk.exe</code></strong> com duplo clique.</li>
+                <li>Na primeira execução o banco de dados será criado em:<br>
+                    <code>%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db</code></li>
+            </ol>
+            <p style="font-size: 0.85rem; opacity: 0.75; margin-top: 0.75rem;">
+                Guia completo:
+                <a href="artifacts/instalacao-windows.html">Instalação Windows</a> ·
+                <a href="artifacts/instalacao-linux.html">Instalação Linux</a> ·
+                <a href="artifacts/instalacao-macos.html">Instalação macOS</a>
+            </p>
         </section>
 
         <nav class="download-back">

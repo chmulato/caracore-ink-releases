@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação Windows — Ink Agenda v2.0.0-RC1 | Cara Core Informática</title>
+    <meta name="description" content="Guia de instalação do Cara Core Ink Agenda v2.0.0-RC1 para Windows. Instalador nativo com runtime Java 21 embutido, sem necessidade de JDK.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/ink-portal.css">
+    <link rel="stylesheet" href="/assets/caracore-core-typography.css">
+    <link rel="stylesheet" href="/assets/caracore-institutional-components.css">
+</head>
+<body class="page-manual">
+    <div class="wrapper">
+        <nav class="breadcrumb" aria-label="Navegação">
+            <a href="../index.html">Cara Core Ink Agenda — Loja</a>
+            <span> · </span>
+            <a href="../download.html">Download</a>
+            <span> · </span>
+            <span>Instalação Windows</span>
+        </nav>
+
+        <section class="ink-launch-banner" aria-label="Release Candidate" style="border-left: 4px solid #ffd700; background: rgba(201,162,39,0.08);">
+            <p class="ink-launch-label">v2.0.0-RC1 — Release Candidate · Pre-release para homologação</p>
+            <p class="ink-launch-date">Build gerado em <strong>05/04/2026</strong>. Lançamento oficial: <strong>26 de junho de 2026</strong>.</p>
+        </section>
+
+        <header>
+            <h1>Instalação — Windows</h1>
+            <p class="subtitle">Cara Core Ink Agenda v2.0.0-RC1 · Windows 10 / 11 · 64 bits · Runtime Java 21 embutido</p>
+        </header>
+
+        <div class="manual-content">
+
+            <section class="manual-card manual-card--intro" id="requisitos">
+                <h2>Requisitos do sistema</h2>
+                <ul>
+                    <li><strong>Windows 10</strong> ou superior (64 bits)</li>
+                    <li>Aproximadamente <strong>400 MB</strong> de espaço livre em disco</li>
+                    <li><strong>Nenhuma instalação de Java necessária</strong> — runtime Java 21 embutido no instalador</li>
+                    <li>Conexão com internet: <strong>não necessária</strong> para uso do aplicativo</li>
+                </ul>
+            </section>
+
+            <section class="manual-card" id="download">
+                <h2>Download do artefato</h2>
+                <p>O artefato RC1 está disponível no GitHub Releases:</p>
+                <p style="margin: 1rem 0;">
+                    <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC1/AgendaInk-2.0.0-RC1-windows.zip"
+                       class="cta-btn cta-btn-primary"
+                       style="display: inline-block; padding: 10px 22px; border-radius: 6px;"
+                       target="_blank" rel="noopener">
+                        ↓ Download AgendaInk-2.0.0-RC1-windows.zip
+                    </a>
+                </p>
+                <p style="font-size: 0.9rem; opacity: 0.75;">Arquivo: <code>AgendaInk-2.0.0-RC1-windows.zip</code> · Tamanho: ~128 MB</p>
+            </section>
+
+            <section class="manual-card" id="integridade">
+                <h2>Verificação de integridade</h2>
+                <p>Antes de instalar, confirme que o arquivo não foi corrompido. No PowerShell, na pasta onde o ZIP foi salvo:</p>
+
+                <h3>SHA256 (recomendado)</h3>
+                <pre><code>(Get-FileHash .\AgendaInk-2.0.0-RC1-windows.zip -Algorithm SHA256).Hash</code></pre>
+                <p>Valor esperado:</p>
+                <pre><code>5F9F4AF4C36019CCAC901D495976D0CB4CB33B18AEA6401D8A670F3318ACE488</code></pre>
+
+                <h3>MD5</h3>
+                <pre><code>(Get-FileHash .\AgendaInk-2.0.0-RC1-windows.zip -Algorithm MD5).Hash</code></pre>
+                <p>Valor esperado:</p>
+                <pre><code>51339E6459B3ECF51C73B9A86C997D07</code></pre>
+
+                <h3>Via CertUtil (Prompt de Comando)</h3>
+                <pre><code>certutil -hashfile AgendaInk-2.0.0-RC1-windows.zip SHA256</code></pre>
+            </section>
+
+            <section class="manual-card" id="instalacao">
+                <h2>Instalação passo a passo</h2>
+                <ol style="line-height: 2;">
+                    <li>Baixe o arquivo <code>AgendaInk-2.0.0-RC1-windows.zip</code> para uma pasta de sua escolha.</li>
+                    <li>Verifique os checksums conforme seção acima.</li>
+                    <li>Clique com o botão direito no ZIP → <strong>Extrair aqui</strong> (ou use 7-Zip, WinRAR).</li>
+                    <li>Abra a pasta <code>AgendaInk\</code> extraída.</li>
+                    <li>Execute <strong><code>AgendaInk.exe</code></strong> com duplo clique.</li>
+                    <li>Na primeira execução, o banco de dados é criado automaticamente em:<br>
+                        <code>%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db</code></li>
+                </ol>
+                <p style="margin-top: 1rem; padding: 0.75rem 1rem; border-left: 4px solid var(--accent-gold, #c9a227); background: rgba(201,162,39,0.07); border-radius: 0 6px 6px 0;">
+                    <strong>Nota RC1:</strong> Esta versão é o Release Candidate 1 para homologação. O instalador com wizard (<code>.exe</code> autocontido) estará disponível no lançamento oficial em 26/06/2026.
+                </p>
+            </section>
+
+            <section class="manual-card" id="antivirus">
+                <h2>Aviso de antivírus / SmartScreen</h2>
+                <p>Por ser um artefato pré-release sem assinatura de código comercial, o Windows SmartScreen ou seu antivírus pode exibir um aviso na primeira execução. Isso é esperado para software não assinado.</p>
+                <ul>
+                    <li>Na janela do SmartScreen: clique em <strong>"Mais informações"</strong> → <strong>"Executar mesmo assim"</strong>.</li>
+                    <li>Verifique sempre os checksums antes de executar qualquer arquivo baixado.</li>
+                </ul>
+            </section>
+
+            <section class="manual-card" id="dados">
+                <h2>Localização dos dados</h2>
+                <table style="width:100%; border-collapse: collapse; font-size: 0.92rem;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid rgba(255,255,255,0.1);">
+                            <th style="text-align:left; padding: 0.5rem 0.75rem;">Item</th>
+                            <th style="text-align:left; padding: 0.5rem 0.75rem;">Caminho</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                            <td style="padding: 0.5rem 0.75rem;">Banco de dados</td>
+                            <td style="padding: 0.5rem 0.75rem;"><code>%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db</code></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                            <td style="padding: 0.5rem 0.75rem;">Backups automáticos</td>
+                            <td style="padding: 0.5rem 0.75rem;"><code>%LOCALAPPDATA%\CaraCore\AgendaInk\</code></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem 0.75rem;">Executável</td>
+                            <td style="padding: 0.5rem 0.75rem;"><code>&lt;pasta extraída&gt;\AgendaInk\AgendaInk.exe</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="manual-card" id="desinstalacao">
+                <h2>Desinstalação</h2>
+                <p>Esta versão RC1 é portable (APP_IMAGE). Para remover:</p>
+                <ol>
+                    <li>Exclua a pasta <code>AgendaInk\</code> extraída do ZIP.</li>
+                    <li>Opcionalmente, remova os dados em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\</code>.</li>
+                </ol>
+                <p style="font-size: 0.88rem; opacity: 0.75;">O instalador com wizard e desinstalador registrado no Windows chegará no lançamento oficial (26/06/2026).</p>
+            </section>
+
+            <section class="manual-card" id="nav">
+                <h2>Próximos passos</h2>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                    <a href="../manual.html" class="cta-btn cta-btn-primary" style="padding: 9px 18px; font-size: 0.9rem;">Manual do usuário</a>
+                    <a href="../download.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Página de download</a>
+                    <a href="../canal-feedback.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Canal de feedback</a>
+                    <a href="../index.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Loja</a>
+                </div>
+            </section>
+
+        </div><!-- /.manual-content -->
+
+        <footer class="site-footer" style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.82rem; opacity: 0.6; text-align: center;">
+            <p>Cara Core Informática · Cara Core Ink Agenda v2.0.0-RC1 · Windows · Build 05/04/2026 · Lançamento oficial 26/Jun/2026</p>
+            <p><a href="https://caracore.com.br" target="_blank" rel="noopener" style="opacity:0.8;">caracore.com.br</a></p>
+        </footer>
+
+    </div><!-- /.wrapper -->
+</body>
+</html>

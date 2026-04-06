@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação Linux — Ink Agenda v2.0.0 | Cara Core Informática</title>
+    <meta name="description" content="Guia de instalação do Cara Core Ink Agenda v2.0.0 para Linux. Disponível em 26 de junho de 2026. Pacote .deb para Ubuntu/Debian com runtime Java 21 embutido.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/ink-portal.css">
+    <link rel="stylesheet" href="/assets/caracore-core-typography.css">
+    <link rel="stylesheet" href="/assets/caracore-institutional-components.css">
+</head>
+<body class="page-manual">
+    <div class="wrapper">
+        <nav class="breadcrumb" aria-label="Navegação">
+            <a href="../index.html">Cara Core Ink Agenda — Loja</a>
+            <span> · </span>
+            <a href="../download.html">Download</a>
+            <span> · </span>
+            <span>Instalação Linux</span>
+        </nav>
+
+        <section class="ink-launch-banner" aria-label="Data de lançamento" style="border-left: 4px solid var(--accent-green, #3a7d44); background: rgba(58,125,68,0.08);">
+            <p class="ink-launch-label">Linux — Disponível em 26 de junho de 2026</p>
+            <p class="ink-launch-date">O artefato Linux (<code>.deb</code>) será publicado no lançamento oficial. <strong>Atualmente disponível: Windows RC1</strong> na <a href="../download.html">página de download</a>.</p>
+        </section>
+
+        <header>
+            <h1>Instalação — Linux</h1>
+            <p class="subtitle">Cara Core Ink Agenda v2.0.0 · Ubuntu 20.04 LTS+ / Debian 11+ · 64 bits · Lançamento 26/Jun/2026</p>
+        </header>
+
+        <div class="manual-content">
+
+            <section class="manual-card manual-card--intro" id="requisitos">
+                <h2>Requisitos do sistema</h2>
+                <ul>
+                    <li><strong>Ubuntu 20.04 LTS</strong> ou superior (<em>Focal, Jammy, Noble</em>) — ou distribuição Debian-compatível</li>
+                    <li>Arquitetura <strong>x86-64 (amd64)</strong></li>
+                    <li>Aproximadamente <strong>400 MB</strong> de espaço livre em disco</li>
+                    <li><strong>Nenhuma instalação de Java necessária</strong> — runtime Java 21 embutido no pacote</li>
+                    <li>Suporte a bibliotecas GTK3 (padrão no Ubuntu/Debian — normalmente já instalado)</li>
+                    <li>Conexão com internet: <strong>não necessária</strong> para uso do aplicativo</li>
+                </ul>
+            </section>
+
+            <section class="manual-card" id="download" style="opacity: 0.75;">
+                <h2>Download do artefato</h2>
+                <p>O artefato Linux será publicado no lançamento oficial (<strong>26/06/2026</strong>). Fique atento ao canal de releases:</p>
+                <p style="margin: 1rem 0;">
+                    <a href="https://github.com/chmulato/caracore-ink-releases/releases"
+                       class="cta-btn cta-btn-secondary"
+                       style="display: inline-block; padding: 10px 22px; border-radius: 6px; opacity: 0.7; cursor: default;"
+                       aria-disabled="true">
+                        Linux .deb — Disponível em 26/06/2026
+                    </a>
+                </p>
+                <p style="font-size: 0.88rem; opacity: 0.7;">
+                    Enquanto isso, você pode testar a versão RC1 Windows em um ambiente Windows ou VM.
+                    <a href="../download.html">Ver página de download</a>.
+                </p>
+            </section>
+
+            <section class="manual-card" id="artefatos">
+                <h2>Artefato previsto</h2>
+                <table style="width:100%; border-collapse: collapse; font-size: 0.92rem;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid rgba(255,255,255,0.1);">
+                            <th style="text-align:left; padding: 0.5rem 0.75rem;">Arquivo</th>
+                            <th style="text-align:left; padding: 0.5rem 0.75rem;">Distribuição</th>
+                            <th style="text-align:left; padding: 0.5rem 0.75rem;">Disponibilidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0.5rem 0.75rem;"><code>AgendaInk-2.0.0-linux.deb</code></td>
+                            <td style="padding: 0.5rem 0.75rem;">Ubuntu 20.04 LTS+ / Debian 11+</td>
+                            <td style="padding: 0.5rem 0.75rem;">26/06/2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="manual-card" id="instalacao">
+                <h2>Instalação passo a passo (prévia)</h2>
+                <p>Após baixar o arquivo <code>.deb</code>:</p>
+
+                <h3>Opção 1 — dpkg (recomendado)</h3>
+                <pre><code>sudo dpkg -i AgendaInk-2.0.0-linux.deb
+sudo apt-get install -f   # resolve dependências, se necessário</code></pre>
+
+                <h3>Opção 2 — apt</h3>
+                <pre><code>sudo apt install ./AgendaInk-2.0.0-linux.deb</code></pre>
+
+                <p>Após instalar, execute o aplicativo pelo menu ou pelo terminal:</p>
+                <pre><code>agendaink</code></pre>
+
+                <p style="margin-top: 1rem; padding: 0.75rem 1rem; border-left: 4px solid var(--accent-green, #3a7d44); background: rgba(58,125,68,0.07); border-radius: 0 6px 6px 0;">
+                    <strong>Runtime embutido:</strong> O pacote inclui o runtime Java 21 — não é necessário instalar JDK/JRE separadamente. O app roda de forma isolada.
+                </p>
+            </section>
+
+            <section class="manual-card" id="integridade">
+                <h2>Verificação de integridade</h2>
+                <p>Os checksums SHA256 serão publicados junto com o artefato no GitHub Releases. Para verificar no terminal:</p>
+                <pre><code># SHA256
+sha256sum AgendaInk-2.0.0-linux.deb
+
+# MD5
+md5sum AgendaInk-2.0.0-linux.deb</code></pre>
+                <p style="font-size: 0.88rem; opacity: 0.75;">Compare o hash calculado com o publicado na página de release antes de instalar.</p>
+            </section>
+
+            <section class="manual-card" id="dados">
+                <h2>Localização dos dados (prévia)</h2>
+                <table style="width:100%; border-collapse: collapse; font-size: 0.92rem;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid rgba(255,255,255,0.1);">
+                            <th style="text-align:left; padding: 0.5rem 0.75rem;">Item</th>
+                            <th style="text-align:left; padding: 0.5rem 0.75rem;">Caminho</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                            <td style="padding: 0.5rem 0.75rem;">Banco de dados</td>
+                            <td style="padding: 0.5rem 0.75rem;"><code>~/.local/share/CaraCore/AgendaInk/agenda.db</code></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                            <td style="padding: 0.5rem 0.75rem;">Backups automáticos</td>
+                            <td style="padding: 0.5rem 0.75rem;"><code>~/.local/share/CaraCore/AgendaInk/</code></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem 0.75rem;">Executável</td>
+                            <td style="padding: 0.5rem 0.75rem;"><code>/opt/agendaink/bin/agendaink</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="manual-card" id="desinstalacao">
+                <h2>Desinstalação</h2>
+                <pre><code>sudo apt remove agendaink
+# ou
+sudo dpkg -r agendaink</code></pre>
+                <p style="font-size: 0.88rem; opacity: 0.75;">Os dados do banco permanecem em <code>~/.local/share/CaraCore/AgendaInk/</code> e podem ser removidos separadamente.</p>
+            </section>
+
+            <section class="manual-card" id="nav">
+                <h2>Próximos passos</h2>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                    <a href="../manual.html" class="cta-btn cta-btn-primary" style="padding: 9px 18px; font-size: 0.9rem;">Manual do usuário</a>
+                    <a href="../download.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Página de download</a>
+                    <a href="../canal-feedback.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Canal de feedback</a>
+                    <a href="../index.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Loja</a>
+                </div>
+            </section>
+
+        </div><!-- /.manual-content -->
+
+        <footer class="site-footer" style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.82rem; opacity: 0.6; text-align: center;">
+            <p>Cara Core Informática · Cara Core Ink Agenda v2.0.0 · Linux · Lançamento oficial 26/Jun/2026</p>
+            <p><a href="https://caracore.com.br" target="_blank" rel="noopener" style="opacity:0.8;">caracore.com.br</a></p>
+        </footer>
+
+    </div><!-- /.wrapper -->
+</body>
+</html>

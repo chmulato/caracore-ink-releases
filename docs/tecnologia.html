@@ -50,22 +50,23 @@
 
         <section class="card">
             <h2>Build e testes</h2>
-            <p><strong>Maven</strong> para build e dependências. <strong>JUnit 5</strong> para testes unitários e <strong>JaCoCo</strong> para cobertura (mínimo 80% em domínio e core). Comandos: <code>mvn compile</code>, <code>mvn test</code>, <code>mvn javafx:run</code>, <code>mvn package</code>.</p>
+            <p><strong>Maven</strong> para build e dependências. <strong>JUnit 5</strong> para testes unitários e <strong>JaCoCo</strong> para cobertura (mínimo 80% em domínio e core). <strong>203 testes</strong> passando (v2.0.0-RC1) · 0 falhas · 5 skipped (E2E/Selenium). Comandos: <code>mvn compile</code>, <code>mvn test</code>, <code>mvn package</code>, <code>mvn clean package -Pobfuscate,installer -DskipTests</code>.</p>
         </section>
 
         <section class="card">
-            <h2>Distribuição</h2>
-            <p>Artefato principal: JAR executável. Requer <strong>JDK 21</strong> no Windows. Execução via <code>java -jar</code> ou via plugin Maven <code>javafx:run</code>. Futuramente: empacotamento com jlink/jpackage para instalador Windows sem exigir JDK instalado.</p>
+            <h2>Distribuição e segurança</h2>
+            <p>Distribuído como <strong>APP_IMAGE</strong> (pasta portátil, <code>ZIP</code>) e <strong>instalador Windows</strong> via <code>jpackage</code> — runtime Java 21 embutido, sem necessidade de JDK instalado no sistema. Código-fonte ofuscado com <strong>ProGuard</strong> antes do empacotamento: 28 classes e 106 métodos ofuscados no RC1, sem exigir JDK no host. Execução via duplo clique no <code>AgendaInk.exe</code>.</p>
         </section>
 
         <p class="tech-selo" style="margin: 24px 0; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; font-size: 0.95rem; color: var(--text-secondary);"><strong style="color: var(--accent-green);">Ecossistema Cara Core Informática</strong> — Produtos desktop e web com foco em simplicidade, manutenção e entrega clara. Ink Agenda integra o portfólio ao lado do PDV, Seed, Hub e outros.</p>
 
         <section class="roadmap" aria-label="Próximos passos" style="margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: 4px solid var(--accent-blue); background: rgba(37,99,235,0.06); border-radius: 0 8px 8px 0;">
-            <p style="font-weight: 600; margin-bottom: 0.5rem;">Próximos passos</p>
+            <p style="font-weight: 600; margin-bottom: 0.5rem;">Status e próximos passos</p>
             <ul style="margin: 0; padding-left: 1.25rem;">
+                <li><strong>v2.0.0-RC1 gerado em 05/04/2026</strong> — em homologação</li>
                 <li>Lançamento oficial (Windows Desktop) <strong>26 de junho de 2026</strong></li>
-                <li>Persistência local (SQLite)</li>
-                <li>Relatórios e exportação</li>
+                <li>Instaladores macOS (DMG) e Linux (DEB) — 26/06/2026</li>
+                <li>Evolução do painel de relatórios financeiros</li>
             </ul>
         </section>
 

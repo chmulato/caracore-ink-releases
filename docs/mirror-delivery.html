@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espelho de Delivery — Ink Agenda | Cara Core Informática</title>
+    <meta name="description" content="Documentação interna do portal de delivery do Cara Core Ink Agenda: alinhamento entre matriz (caracore.com.br) e vitrine (ink.caracore.com.br).">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/ink-portal.css">
+    <link rel="stylesheet" href="/assets/caracore-core-typography.css">
+    <link rel="stylesheet" href="/assets/caracore-institutional-components.css">
+</head>
+<body class="page-manual">
+    <div class="wrapper">
+        <nav class="breadcrumb" aria-label="Navegação">
+            <a href="index.html">Cara Core Ink Agenda — Loja</a>
+            <span> · </span>
+            <span>Espelho de Delivery</span>
+        </nav>
+
+        <section class="ink-launch-banner" aria-label="Documento interno">
+            <p class="ink-launch-label">Documento interno — alinhamento matriz / vitrine</p>
+            <p class="ink-launch-date">Descreve a estrutura do portal de delivery do <strong>Cara Core Ink Agenda</strong>. Não é uma página pública de produto.</p>
+        </section>
+
+        <header>
+            <h1>Espelho de Delivery — Cara Core Ink Agenda</h1>
+            <p class="subtitle">Alinhamento entre a matriz (caracore.com.br) e a vitrine pública (ink.caracore.com.br)</p>
+        </header>
+
+        <div class="manual-content">
+
+            <section class="manual-card manual-card--intro" id="onde-esta-o-que">
+                <h2>Onde está o quê</h2>
+                <table style="width:100%; border-collapse: collapse; font-size: 0.92rem;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid rgba(255,255,255,0.1);">
+                            <th style="text-align:left; padding: 0.5rem 0.75rem;">Local</th>
+                            <th style="text-align:left; padding: 0.5rem 0.75rem;">Papel</th>
+                            <th style="text-align:left; padding: 0.5rem 0.75rem;">URL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                            <td style="padding: 0.5rem 0.75rem;"><strong>Matriz</strong></td>
+                            <td style="padding: 0.5rem 0.75rem;">Portal completo de delivery no site Cara Core</td>
+                            <td style="padding: 0.5rem 0.75rem;"><a href="https://caracore.com.br/delivery/ink/" target="_blank" rel="noopener">caracore.com.br/delivery/ink/</a></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem 0.75rem;"><strong>Vitrine (loja)</strong></td>
+                            <td style="padding: 0.5rem 0.75rem;">Repositório público de vitrine e releases</td>
+                            <td style="padding: 0.5rem 0.75rem;"><a href="https://ink.caracore.com.br/" target="_blank" rel="noopener">ink.caracore.com.br</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="manual-card" id="conteudo">
+                <h2>Conteúdo alinhado entre matriz e vitrine</h2>
+                <ul style="line-height: 2;">
+                    <li><strong><a href="index.html">index.html</a></strong> — Apresentação do Ink Agenda (agenda, finanças, painel de resultados para estúdios de tatuagem), aviso padrão de lançamento (26 de junho de 2026), links para Download, Tecnologia, Canal de feedback, Portfólio e Vitrine.</li>
+                    <li><strong><a href="download.html">download.html</a></strong> — Requisitos, artefato RC1 Windows, link para GitHub Releases. Guias de instalação por plataforma. Aviso padrão de lançamento em todas as páginas.</li>
+                    <li><strong><a href="tecnologia.html">tecnologia.html</a></strong> — Stack: Java 21, JavaFX 21, Maven, SQLite WAL, ProGuard, jpackage; arquitetura em camadas; build e testes (203 testes, JaCoCo).</li>
+                    <li><strong><a href="canal-feedback.html">canal-feedback.html</a></strong> — E-mail suporte@caracore.com.br, WhatsApp e Telegram (assunto Cara Core Ink Agenda).</li>
+                    <li><strong><a href="manual.html">manual.html</a></strong> — Guia de uso: login, agenda, financeiro, painel, backup.</li>
+                </ul>
+                <p style="margin-top: 0.75rem; font-size: 0.9rem; opacity: 0.8;">
+                    Em ambos (matriz e vitrine), o <strong>aviso padrão</strong> é o mesmo: <em>App Cara Core Ink Agenda para Windows Desktop — 26 de junho de 2026.</em>
+                    A mensagem e a data estão alinhadas. A matriz é a fonte de apresentação completa e consultoria; a loja é a vitrine pública e o ponto de download.
+                </p>
+            </section>
+
+            <section class="manual-card" id="instalacao">
+                <h2>Guias de instalação por plataforma</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 0.75rem;">
+                    <div class="card" style="border-left: 4px solid var(--accent-blue); padding: 1rem;">
+                        <p style="font-size: 1.25rem; margin: 0 0 0.4rem;">🪟</p>
+                        <strong>Windows</strong>
+                        <p style="font-size: 0.88rem; opacity: 0.8; margin: 0.4rem 0 0.75rem;">RC1 disponível · 05/04/2026</p>
+                        <a href="artifacts/instalacao-windows.html" class="cta-btn cta-btn-primary" style="padding: 7px 14px; font-size: 0.85rem;">Ver guia</a>
+                    </div>
+                    <div class="card" style="border-left: 4px solid var(--accent-gold); padding: 1rem;">
+                        <p style="font-size: 1.25rem; margin: 0 0 0.4rem;">🍎</p>
+                        <strong>macOS</strong>
+                        <p style="font-size: 0.88rem; opacity: 0.8; margin: 0.4rem 0 0.75rem;">Lançamento 26/06/2026</p>
+                        <a href="artifacts/instalacao-macos.html" class="cta-btn cta-btn-secondary" style="padding: 7px 14px; font-size: 0.85rem;">Ver guia</a>
+                    </div>
+                    <div class="card" style="border-left: 4px solid var(--accent-green); padding: 1rem;">
+                        <p style="font-size: 1.25rem; margin: 0 0 0.4rem;">🐧</p>
+                        <strong>Linux</strong>
+                        <p style="font-size: 0.88rem; opacity: 0.8; margin: 0.4rem 0 0.75rem;">Lançamento 26/06/2026</p>
+                        <a href="artifacts/instalacao-linux.html" class="cta-btn cta-btn-secondary" style="padding: 7px 14px; font-size: 0.85rem;">Ver guia</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="manual-card" id="links-cruzados">
+                <h2>Links cruzados</h2>
+                <ul style="line-height: 2;">
+                    <li><strong>Na matriz:</strong> breadcrumb e footer apontam para o ecossistema (Garagem) em <code>caracore.com.br/ecosistema.html#garagem</code>. Ink entra no portfólio após o lançamento. Vitrine: <a href="https://ink.caracore.com.br" target="_blank" rel="noopener">ink.caracore.com.br</a>.</li>
+                    <li><strong>Na vitrine:</strong> footer e nav apontam para o portfólio e para a matriz (<code>caracore.com.br/delivery/ink/</code>) quando aplicável; link para Releases no GitHub.</li>
+                </ul>
+            </section>
+
+            <section class="manual-card" id="estilo">
+                <h2>Estilo e CSS</h2>
+                <p>O portal usa <code>assets/css/ink-portal.css</code>, alinhado ao padrão das lojas do ecossistema (Hub, RU, PDV):</p>
+                <ul>
+                    <li>Tema escuro · Fonte: Inter (Google Fonts)</li>
+                    <li>Variáveis: <code>--accent-blue</code>, <code>--accent-gold</code>, <code>--accent-green</code></li>
+                    <li>Componente <code>.ink-launch-banner</code> com borda verde e data de lançamento</li>
+                    <li>Componente <code>.manual-card</code> para seções de conteúdo (usado neste portal)</li>
+                    <li>Componente <code>.cta-btn</code> / <code>.cta-btn-primary</code> / <code>.cta-btn-secondary</code> para ações</li>
+                </ul>
+            </section>
+
+            <section class="manual-card" id="lancamento">
+                <h2>Lançamento programado</h2>
+                <ul>
+                    <li><strong>Data de lançamento oficial:</strong> 26 de junho de 2026</li>
+                    <li><strong>RC1 disponível:</strong> 05 de abril de 2026 (Windows)</li>
+                    <li><strong>Produto:</strong> App Cara Core Ink Agenda para Windows Desktop (Java 21, JavaFX 21, ProGuard, jpackage)</li>
+                    <li><strong>Oficina:</strong> caracore-ink · <strong>Loja:</strong> caracore-ink-releases</li>
+                </ul>
+            </section>
+
+            <section class="manual-card" id="nav">
+                <h2>Navegação</h2>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                    <a href="index.html" class="cta-btn cta-btn-primary" style="padding: 9px 18px; font-size: 0.9rem;">Loja</a>
+                    <a href="download.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Download</a>
+                    <a href="tecnologia.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Tecnologia</a>
+                    <a href="manual.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Manual</a>
+                    <a href="canal-feedback.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Feedback</a>
+                </div>
+            </section>
+
+        </div><!-- /.manual-content -->
+
+        <footer class="site-footer" style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.82rem; opacity: 0.6; text-align: center;">
+            <p>Cara Core Informática · Cara Core Ink Agenda · Documento interno de alinhamento · v2.0.0-RC1</p>
+            <p><a href="https://caracore.com.br" target="_blank" rel="noopener" style="opacity:0.8;">caracore.com.br</a></p>
+        </footer>
+
+    </div><!-- /.wrapper -->
+</body>
+</html>
