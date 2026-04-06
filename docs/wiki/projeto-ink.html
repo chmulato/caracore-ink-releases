@@ -20,17 +20,6 @@
     <!-- Favicon -->
     <link rel="icon" href="../assets/images/favicon.ico" type="image/ico">
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MKFC9G3CL0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-MKFC9G3CL0', {
-            page_title: 'Ink Agenda - Wiki',
-            custom_map: {'custom_parameter_1': 'project_ink'}
-        });
-    </script>
   <link rel="stylesheet" href="/assets/caracore-core-typography.css">
   <link rel="stylesheet" href="/assets/caracore-institutional-components.css">
 </head>
@@ -67,9 +56,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://caracore.com.br/wiki/" target="_blank" rel="noopener">
-                            <i class="bi bi-globe2"></i> Wiki Cara Core (completa)
-                        </a>
+                        <span class="nav-link" style="opacity:0.6; cursor:default;"><i class="bi bi-globe2"></i> Wiki Cara Core — caracore.com.br/wiki</span>
                     </li>
                 </ul>
             </div>
@@ -100,7 +87,7 @@
                         <li><a href="projeto-ink.html" class="active"><i class="bi bi-file-earmark-text"></i> Documentação do produto</a></li>
                         <li><a href="../download.html"><i class="bi bi-box-arrow-down"></i> Download / entregas</a></li>
                         <li><a href="../canal-feedback.html"><i class="bi bi-chat-dots"></i> Canal de feedback</a></li>
-                        <li><a href="https://caracore.com.br/wiki/" target="_blank" rel="noopener"><i class="bi bi-globe2"></i> Wiki completa — Cara Core</a></li>
+                        <li><span style="opacity:0.6;"><i class="bi bi-globe2"></i> Wiki completa — caracore.com.br/wiki</span></li>
                     </ul>
                 </div>
             </div>
@@ -131,13 +118,13 @@
                     </div>
 
                     <div class="alert alert-success">
-                        <i class="bi bi-star-fill"></i> <strong>RC1 disponível — 05/04/2026.</strong> Instalador nativo Windows sem JDK. Lançamento oficial: <strong>26 de junho de 2026</strong>. Vitrine e download nesta loja; portfólio Cara Core em <a href="https://caracore.com.br/ecosistema.html" target="_blank" rel="noopener">caracore.com.br/ecosistema.html</a>.
+                        <i class="bi bi-star-fill"></i> <strong>RC1 disponível — 05/04/2026.</strong> Instalador nativo Windows sem JDK. Lançamento oficial: <strong>26 de junho de 2026</strong>. Vitrine e download nesta loja; portfólio Cara Core em <strong>caracore.com.br/ecosistema.html</strong>.
                     </div>
 
                     <!-- Aviso sobre repositório privado -->
                     <div class="alert alert-warning">
                         <h5><i class="bi bi-lock-fill"></i> Repositório Privado</h5>
-                        <p class="mb-0">Este projeto possui <strong>código-fonte privado</strong> e é protegido por <strong>licença proprietária</strong> da Cara Core Informática. Vitrine e releases no canal institucional: <a href="https://ink.caracore.com.br/download.html">ink.caracore.com.br/download.html</a>. <strong>Versão anterior (Loja Android):</strong> <a href="https://play.google.com/store/apps/details?id=tattoo.ink.agenda&hl=pt-BR" target="_blank" rel="noopener">Ink Agenda na Google Play</a>.</p>
+                        <p class="mb-0">Este projeto possui <strong>código-fonte privado</strong> e é protegido por <strong>licença proprietária</strong> da Cara Core Informática. Vitrine e releases no canal institucional: <a href="../download.html">download.html</a>. <strong>Versão anterior (Loja Android):</strong> Ink Agenda na Google Play.</p>
                     </div>
 
                     <!-- Visão Geral -->
@@ -251,26 +238,23 @@
                             </div>
                             <div class="col-md-6">
                                 <h4><i class="bi bi-box-seam text-success"></i> Oficina e Loja</h4>
-                                <p><strong>Oficina:</strong> caracore-ink (repositório do app). <strong>Loja:</strong> caracore-ink-releases (vitrine, releases e download). <strong>Portfólio:</strong> <a href="https://caracore.com.br/ecosistema.html" target="_blank" rel="noopener">caracore.com.br/ecosistema.html</a>.</p>
+                                <p><strong>Oficina:</strong> caracore-ink (repositório do app). <strong>Loja:</strong> caracore-ink-releases (vitrine, releases e download). <strong>Portfólio:</strong> caracore.com.br/ecosistema.html.</p>
                             </div>
                         </div>
 
                         <div class="d-grid gap-2 d-md-block mt-4">
-                            <a href="https://caracore.com.br/ecosistema.html" class="btn-wiki me-2" target="_blank" rel="noopener">
-                                <i class="bi bi-globe"></i> Portfólio Cara Core
-                            </a>
-                            <a href="https://ink.caracore.com.br/download.html" class="btn-wiki me-2">
+                            <a href="../download.html" class="btn-wiki me-2">
                                 <i class="bi bi-shop"></i> Loja (releases)
                             </a>
-                            <a href="https://ink.caracore.com.br/download.html" class="btn-wiki me-2">
+                            <a href="../download.html" class="btn-wiki me-2">
                                 <i class="bi bi-download"></i> Download
                             </a>
-                            <a href="https://ink.caracore.com.br/tecnologia.html" class="btn-wiki me-2">
+                            <a href="../tecnologia.html" class="btn-wiki me-2">
                                 <i class="bi bi-code-slash"></i> Tecnologia
                             </a>
-                            <a href="https://play.google.com/store/apps/details?id=tattoo.ink.agenda&hl=pt-BR" class="btn-wiki" target="_blank" rel="noopener">
-                                <i class="bi bi-phone"></i> Versão anterior (Google Play)
-                            </a>
+                            <span class="btn-wiki me-2" style="opacity:0.65; cursor:default;">
+                                <i class="bi bi-phone"></i> Versão anterior: Ink Agenda (Google Play)
+                            </span>
                         </div>
                     </section>
                 </div>
