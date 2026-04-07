@@ -25,7 +25,7 @@
         <!-- Aviso padrão: lançamento oficial — 26/06/2026 -->
         <section class="ink-launch-banner" aria-label="Data de lançamento">
             <p class="ink-launch-label">Lançamento oficial</p>
-            <p class="ink-launch-date">App Cara Core Ink Agenda para Windows Desktop — <strong>26 de junho de 2026</strong>.</p>
+            <p class="ink-launch-date">App Cara Core Ink Agenda — Windows · macOS · Linux — <strong>26 de junho de 2026</strong>. RC1 disponível para Windows e Linux.</p>
         </section>
 
         <header>
@@ -50,7 +50,7 @@
 
         <section class="card">
             <h2>Build e testes</h2>
-            <p><strong>Maven</strong> para build e dependências. <strong>JUnit 5</strong> para testes unitários e <strong>JaCoCo</strong> para cobertura (mínimo 80% em domínio e core). <strong>203 testes</strong> passando (v2.0.0-RC1) · 0 falhas · 5 skipped (E2E/Selenium). Comandos: <code>mvn compile</code>, <code>mvn test</code>, <code>mvn package</code>, <code>mvn clean package -Pobfuscate,installer -DskipTests</code>.</p>
+            <p><strong>Maven</strong> para build e dependências. <strong>JUnit 5</strong> para testes unitários e <strong>JaCoCo</strong> para cobertura (mínimo 80% em domínio e core). <strong>203 testes</strong> passando (v2.0.0-RC1) · 0 falhas · 5 skipped (E2E/Selenium). Comandos: <code>mvn compile</code>, <code>mvn test</code>, <code>mvn package</code>, <code>mvn clean package -Pobfuscate,installer-exe -DskipTests</code> (Windows) e <code>mvn clean package -Pobfuscate,installer-linux -DskipTests</code> (Linux).</p>
         </section>
 
         <section class="card">
@@ -62,7 +62,7 @@
 
         <section class="card">
             <h2>Distribuição e segurança</h2>
-            <p>Distribuído como <strong>APP_IMAGE</strong> (pasta portátil, <code>ZIP</code>) e <strong>instalador Windows</strong> via <code>jpackage</code> — runtime Java 21 embutido, sem necessidade de JDK instalado no sistema. Código-fonte ofuscado com <strong>ProGuard</strong> antes do empacotamento: 28 classes e 106 métodos ofuscados no RC1, sem exigir JDK no host. Execução via duplo clique no <code>AgendaInk.exe</code>.</p>
+            <p>Distribuído como <strong>APP_IMAGE</strong> (pasta portátil, <code>ZIP</code>) para Windows e <strong>pacote DEB</strong> para Linux via <code>jpackage</code> — runtime Java 21 embutido, sem necessidade de JDK instalado no sistema. Código-fonte ofuscado com <strong>ProGuard</strong> antes do empacotamento: 28 classes e 106 métodos ofuscados no RC1, sem exigir JDK no host.</p>
         </section>
 
         <p class="tech-selo" style="margin: 24px 0; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; font-size: 0.95rem; color: var(--text-secondary);"><strong style="color: var(--accent-green);">Ecossistema Cara Core Informática</strong> — Produtos desktop e web com foco em simplicidade, manutenção e entrega clara. Ink Agenda integra o portfólio ao lado do PDV, Seed, Hub e outros.</p>
@@ -72,7 +72,7 @@
             <ul style="margin: 0; padding-left: 1.25rem;">
                 <li><strong>v2.0.0-RC1 gerado em 05/04/2026</strong> — em homologação</li>
                 <li>Lançamento oficial (Windows Desktop) <strong>26 de junho de 2026</strong></li>
-                <li>Instaladores macOS (DMG) e Linux (DEB) — 26/06/2026</li>
+                <li>Linux (DEB) publicado no RC1 · macOS (DMG) previsto para 26/06/2026</li>
                 <li>Evolução do painel de relatórios financeiros</li>
             </ul>
         </section>

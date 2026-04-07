@@ -2,7 +2,7 @@
 
 Canal público de distribuição, vitrine e documentação de delivery do **Cara Core Ink Agenda**: sistema de gestão para estúdios de tatuagem com agenda de sessões, controle financeiro e painel de resultados.
 
-Plataforma alvo: **Windows Desktop — Java 21, JavaFX 21**. Armazenamento local no computador do usuário.
+Plataforma alvo: **Desktop (Windows + Linux no RC1) — Java 21, JavaFX 21**. Armazenamento local no computador do usuário.
 Lançamento oficial: **26 de Junho de 2026**.
 
 ---
@@ -24,9 +24,9 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 | Campo | Valor |
 |-------|-------|
 | Versão | 2.0.0-RC1 |
-| Artefato | AgendaInk-2.0.0-RC1-windows.zip (ZIP portátil, Windows) |
+| Artefatos | AgendaInk-2.0.0-RC1-windows.zip (Windows) · agenda-ink_2.0.0_amd64.deb (Linux) |
 | Status | Pré-lançamento — stable em 26/06/2026 |
-| Plataforma | Windows 10/11, 64 bits, sem instalação |
+| Plataforma | Windows 10/11 64 bits (ZIP) · Ubuntu/Debian amd64 (DEB) |
 | Repositório de release | github.com/chmulato/caracore-ink-releases/releases |
 
 ---
