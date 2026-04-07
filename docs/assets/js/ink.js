@@ -13,4 +13,13 @@
             });
         }
     });
+
+    document.querySelectorAll('[data-external-url]').forEach(function (element) {
+        var url = element.getAttribute('data-external-url');
+        if (!url) return;
+
+        element.addEventListener('click', function () {
+            window.location.assign(url);
+        });
+    });
 })();

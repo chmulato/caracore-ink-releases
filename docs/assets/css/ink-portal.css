@@ -20,6 +20,8 @@
     --pillar-title-green: #8fdca1;
     --pillar-title-gold: #e4c27a;
     --pillar-copy: #c7d3df;
+    --whatsapp: #25d366;
+    --telegram: #229ed9;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -55,6 +57,22 @@ body {
 .hero-cta { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 32px 36px; margin-bottom: 40px; border-left: 4px solid var(--accent-green); }
 .hero-cta .hero-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-green); margin-bottom: 10px; }
 .hero-cta .hero-title { font-size: 1.35rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; line-height: 1.4; }
+.hero-contexto-cliente {
+    margin: 20px auto 24px;
+    width: min(100%, 640px);
+}
+
+.hero-contexto-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    object-fit: cover;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+}
+
 .hero-contexto-caption {
     margin-top: 0.75rem;
     font-size: 0.92rem;
@@ -175,11 +193,51 @@ footer a:hover { text-decoration: underline; }
 .intro p { margin-bottom: 10px; }
 .intro p:last-child { margin-bottom: 0; }
 .channels { display: flex; flex-direction: column; gap: 16px; margin: 28px 0; }
-.channel-card { display: block; padding: 20px 24px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; text-decoration: none; color: inherit; transition: border-color 0.2s, box-shadow 0.2s; }
+.channel-card { display: block; padding: 20px 24px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; text-decoration: none; color: inherit; transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s; }
 .channel-card:hover { border-color: var(--accent-green); box-shadow: 0 0 20px rgba(63, 185, 80, 0.15); }
+.channel-card-action {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+}
+
+.channel-card-action:hover {
+    transform: translateY(-1px);
+}
+
+.channel-card-action:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 3px;
+}
+
+.channel-card.email:hover,
+.channel-card.email:focus-visible {
+    border-color: var(--accent-blue);
+}
+
+.channel-card.whatsapp:hover,
+.channel-card.whatsapp:focus-visible {
+    border-color: var(--whatsapp);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.18);
+}
+
+.channel-card.telegram:hover,
+.channel-card.telegram:focus-visible {
+    border-color: var(--telegram);
+    box-shadow: 0 0 20px rgba(34, 158, 217, 0.18);
+}
+
 .channel-card .icon { font-size: 1.75rem; margin-bottom: 8px; }
 .channel-card .title { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
 .channel-card .desc { font-size: 0.9rem; color: var(--text-secondary); }
+.channel-card .channel-meta {
+    margin-top: 10px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    opacity: 0.86;
+}
 .cta-btn { display: inline-block; padding: 14px 24px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: opacity 0.2s, background 0.2s; }
 .cta-btn-primary { background: var(--accent-green); color: #0d1117; border: none; }
 .cta-btn-primary:hover { opacity: 0.95; filter: brightness(1.1); }
@@ -187,3 +245,64 @@ footer a:hover { text-decoration: underline; }
 body.download-page .wrapper { max-width: 720px; }
 body.canal-page .wrapper { max-width: 640px; }
 body.tecnologia-page .wrapper { max-width: 720px; }
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 14px 32px;
+    }
+
+    .hero-cta {
+        padding: 24px 20px;
+    }
+
+    .hero-cta .hero-title {
+        font-size: 1.2rem;
+    }
+
+    .hero-pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons,
+    .ink-cta-block .ink-cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-btn,
+    .ink-cta-block .ink-cta-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-contexto-caption {
+        font-size: 0.88rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .breadcrumb {
+        line-height: 1.6;
+    }
+
+    .ink-launch-banner,
+    .hero-cta,
+    .card,
+    .intro,
+    .channel-card {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-cta .hero-title {
+        font-size: 1.08rem;
+    }
+
+    .channel-card .title {
+        font-size: 1rem;
+    }
+}
