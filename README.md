@@ -2,7 +2,7 @@
 
 Canal público de distribuição, vitrine e documentação de delivery do **Cara Core Ink Agenda**: sistema de gestão para estúdios de tatuagem com agenda de sessões, controle financeiro e painel de resultados.
 
-Plataforma alvo: **Desktop (Windows + Linux no RC1) — Java 21, JavaFX 21**. Armazenamento local no computador do usuário.
+Plataforma alvo: **Desktop (Windows + Linux + macOS no RC1) — Java 21, JavaFX 21**. Armazenamento local no computador do usuário.
 Lançamento oficial: **26 de Junho de 2026**.
 
 ---
@@ -24,17 +24,19 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 | Campo | Valor |
 |-------|-------|
 | Versão | 2.0.0-RC1 |
-| Artefatos | AgendaInk-2.0.0-RC1-windows.zip (Windows) · agenda-ink_2.0.0_amd64.deb (Linux) |
+| Artefatos | AgendaInk-2.0.0-RC1-windows.zip (Windows) · agenda-ink_2.0.0_amd64.deb (Linux) · AgendaInk-2.0.0-RC1.dmg (macOS) |
 | Status | Pré-lançamento — stable em 26/06/2026 |
-| Plataforma | Windows 10/11 64 bits (ZIP) · Ubuntu/Debian amd64 (DEB) |
+| Plataforma | Windows 10/11 64 bits (ZIP) · Ubuntu/Debian amd64 (DEB) · macOS 13+ (DMG) |
 | Repositório de release | github.com/chmulato/caracore-ink-releases/releases |
 
 ### Atualização operacional — 07/04/2026
 
 - Delivery Linux RC1 efetuado anteriormente no mesmo dia.
 - Delivery Windows RC1 concluído em 07/04/2026 na mesma tag `v2.0.0-RC1`, sem recriação da release.
+- Delivery macOS RC1 concluído em 07/04/2026 via GitHub Actions na mesma tag `v2.0.0-RC1`, sem impacto nos assets Windows/Linux.
 - Checksum SHA256 vigente do artefato Windows: `5f9f4af4c36019ccac901d495976d0cb4cb33b18aea6401d8a670f3318ace488`
 - Checksum MD5 vigente do artefato Windows: `51339e6459b3ecf51c73b9a86c997d07`
+- Checksum SHA256 vigente do artefato macOS: `89b8edfcd1bc85c4155fe9cc986a794cde34862c9357c3c56d5f3fac30f7b8b6`
 
 O processo de delivery agora aceita publicação por plataforma na mesma release, preservando assets já publicados de outros sistemas operacionais.
 
