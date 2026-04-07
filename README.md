@@ -36,6 +36,7 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 - Delivery macOS RC1 concluído em 07/04/2026 via GitHub Actions na mesma tag `v2.0.0-RC1`, sem impacto nos assets Windows/Linux.
 - Checksum SHA256 vigente do artefato Windows: `5f9f4af4c36019ccac901d495976d0cb4cb33b18aea6401d8a670f3318ace488`
 - Checksum MD5 vigente do artefato Windows: `51339e6459b3ecf51c73b9a86c997d07`
+- Checksum SHA256 vigente do artefato Linux: `2691fa2ab5ec17e497b3b82c4688311b5356ce89d96fa058663fab4d38a71efb`
 - Checksum SHA256 vigente do artefato macOS: `89b8edfcd1bc85c4155fe9cc986a794cde34862c9357c3c56d5f3fac30f7b8b6`
 
 O processo de delivery agora aceita publicação por plataforma na mesma release, preservando assets já publicados de outros sistemas operacionais.
