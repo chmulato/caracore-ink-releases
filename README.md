@@ -29,6 +29,15 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 | Plataforma | Windows 10/11 64 bits (ZIP) · Ubuntu/Debian amd64 (DEB) |
 | Repositório de release | github.com/chmulato/caracore-ink-releases/releases |
 
+### Atualização operacional — 07/04/2026
+
+- Delivery Linux RC1 efetuado anteriormente no mesmo dia.
+- Delivery Windows RC1 concluído em 07/04/2026 na mesma tag `v2.0.0-RC1`, sem recriação da release.
+- Checksum SHA256 vigente do artefato Windows: `5f9f4af4c36019ccac901d495976d0cb4cb33b18aea6401d8a670f3318ace488`
+- Checksum MD5 vigente do artefato Windows: `51339e6459b3ecf51c73b9a86c997d07`
+
+O processo de delivery agora aceita publicação por plataforma na mesma release, preservando assets já publicados de outros sistemas operacionais.
+
 ---
 
 ## Funcionalidades implementadas (v2.0.0-RC1)
