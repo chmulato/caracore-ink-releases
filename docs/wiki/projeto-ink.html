@@ -246,9 +246,6 @@
                             <a href="../download.html" class="btn-wiki me-2">
                                 <i class="bi bi-shop"></i> Loja (releases)
                             </a>
-                            <a href="../download.html" class="btn-wiki me-2">
-                                <i class="bi bi-download"></i> Download
-                            </a>
                             <a href="../tecnologia.html" class="btn-wiki me-2">
                                 <i class="bi bi-code-slash"></i> Tecnologia
                             </a>
@@ -256,6 +253,89 @@
                                 <i class="bi bi-phone"></i> Versão anterior: Ink Agenda (Google Play)
                             </span>
                         </div>
+                    </section>
+
+                    <section class="mb-5" id="implantacao-local">
+                        <h2><i class="bi bi-pc-display text-secondary"></i> Implantação local (guia rápido)</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4><i class="bi bi-check2-square"></i> Pré-requisitos mínimos</h4>
+                                <ul class="feature-list">
+                                    <li>Windows 10/11 atualizado</li>
+                                    <li>Perfil de usuário com permissão de instalação local</li>
+                                    <li>Espaço livre para app, banco SQLite e backups</li>
+                                    <li>Internet apenas para baixar instalador (operação pode ser local)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4><i class="bi bi-play-circle"></i> Validação pós-instalação</h4>
+                                <ul class="feature-list">
+                                    <li>Abrir o Ink Agenda e confirmar carregamento da tela inicial</li>
+                                    <li>Criar 1 cliente de teste e 1 agendamento</li>
+                                    <li>Registrar 1 receita e 1 despesa</li>
+                                    <li>Executar 1 exportação de backup com senha</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-5" id="operacao-diaria">
+                        <h2><i class="bi bi-clipboard2-check text-success"></i> Operação diária do estúdio</h2>
+                        <div class="alert alert-light border">
+                            <strong>Checklist recomendado por turno:</strong>
+                            <ul class="mb-0 mt-2">
+                                <li>Conferir agenda do dia e evitar conflitos de horário antes de abrir atendimento</li>
+                                <li>Atualizar status de pagamento na lista do dia ao finalizar sessão</li>
+                                <li>Lançar despesas operacionais no mesmo dia para manter saldo real</li>
+                                <li>Fechar turno conferindo saldo e número de atendimentos executados</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="mb-5" id="backup-restauracao">
+                        <h2><i class="bi bi-shield-check text-primary"></i> Backup e restauração (governança local)</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4><i class="bi bi-save2"></i> Política sugerida</h4>
+                                <ul class="feature-list">
+                                    <li>Backup diário no encerramento do expediente</li>
+                                    <li>Senha forte no arquivo de exportação</li>
+                                    <li>Cópia adicional em mídia externa/segura</li>
+                                    <li>Retenção mínima: últimos 7 dias úteis</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4><i class="bi bi-arrow-repeat"></i> Teste de restauração</h4>
+                                <ul class="feature-list">
+                                    <li>Executar teste de importação semanal em ambiente controlado</li>
+                                    <li>Confirmar integridade de clientes, agenda e financeiro após importação</li>
+                                    <li>Registrar data/hora do teste para rastreabilidade operacional</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-5">
+                        <h2><i class="bi bi-diagram-3 text-warning"></i> Canal de release e versionamento</h2>
+                        <p>Distribuição oficial centralizada em <strong>caracore-ink-releases</strong>. A loja local referencia um único canal para download e histórico de versões, evitando duplicidade de artefatos.</p>
+                        <div class="d-grid gap-2 d-md-block">
+                            <a href="https://github.com/chmulato/caracore-ink-releases/releases/latest" target="_blank" rel="noopener" class="btn-wiki me-2">
+                                <i class="bi bi-box-arrow-down"></i> Release estável mais recente
+                            </a>
+                            <a href="https://github.com/chmulato/caracore-ink-releases/releases" target="_blank" rel="noopener" class="btn-wiki me-2">
+                                <i class="bi bi-clock-history"></i> Histórico de releases
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="mb-5" id="diagnostico-rapido">
+                        <h2><i class="bi bi-tools text-danger"></i> Diagnóstico rápido local (N1)</h2>
+                        <ul class="feature-list">
+                            <li><strong>Aplicativo não inicia:</strong> reiniciar Windows e executar novamente como usuário local</li>
+                            <li><strong>Lentidão:</strong> validar tamanho da base local e executar backup + manutenção preventiva</li>
+                            <li><strong>Erro em dados:</strong> restaurar último backup validado e repetir operação</li>
+                            <li><strong>Persistindo falha:</strong> acionar <a href="../canal-feedback.html">canal de feedback</a> com horário do incidente e evidências</li>
+                        </ul>
                     </section>
                 </div>
             </div>
