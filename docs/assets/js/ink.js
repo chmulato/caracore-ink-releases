@@ -1,5 +1,5 @@
 /**
- * Cara Core Ink Agenda — Delivery matriz (caracore.com.br/delivery/ink)
+ * Cara Core Ink Agenda — Portal da loja (ink.caracore.com.br)
  */
 (function () {
     document.querySelectorAll('a[href^="#"]').forEach(function (a) {
