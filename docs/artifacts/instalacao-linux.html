@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instalação Linux — Ink Agenda v2.0.0 | Cara Core Informática</title>
-    <meta name="description" content="Guia de instalação do Cara Core Ink Agenda v2.0.0-RC1 para Linux. Pacote .deb para Ubuntu/Debian com runtime Java 21 embutido.">
+    <title>Instalação Linux — Ink Agenda v2.0.0-RC3 | Cara Core Informática</title>
+    <meta name="description" content="Guia de instalação do Cara Core Ink Agenda v2.0.0-RC3 para Linux. Pacote .deb para Ubuntu/Debian com runtime Java 21 embutido.">
     <link rel="stylesheet" href="../assets/css/ink-portal.css">
     <link rel="stylesheet" href="/assets/caracore-core-typography.css">
     <link rel="stylesheet" href="/assets/caracore-institutional-components.css">
@@ -20,13 +20,13 @@
         </nav>
 
         <section class="ink-launch-banner" aria-label="Data de lançamento" style="border-left: 4px solid var(--accent-green, #3a7d44); background: rgba(58,125,68,0.08);">
-            <p class="ink-launch-label">Linux RC1 disponível</p>
-            <p class="ink-launch-date">O artefato Linux (<code>.deb</code>) da versão <strong>v2.0.0-RC1</strong> já está publicado na <a href="../download.html">página de download</a> e no GitHub Releases.</p>
+            <p class="ink-launch-label">Linux RC3 disponível</p>
+            <p class="ink-launch-date">O artefato Linux (<code>.deb</code>) da versão <strong>v2.0.0-RC3</strong> já está publicado na <a href="../download.html">página de download</a> e no GitHub Releases.</p>
         </section>
 
         <header>
             <h1>Instalação — Linux</h1>
-            <p class="subtitle">Cara Core Ink Agenda v2.0.0-RC1 · Ubuntu 20.04 LTS+ / Debian 11+ · 64 bits · Artefato disponível</p>
+            <p class="subtitle">Cara Core Ink Agenda v2.0.0-RC3 · Ubuntu 20.04 LTS+ / Debian 11+ · 64 bits · Artefato disponível</p>
         </header>
 
         <div class="manual-content">
@@ -45,12 +45,12 @@
 
             <section class="manual-card" id="download">
                 <h2>Download do artefato</h2>
-                <p>Baixe o artefato Linux RC1 no canal oficial de releases:</p>
+                <p>Baixe o artefato Linux RC3 no canal oficial de releases:</p>
                 <p style="margin: 1rem 0;">
-                    <span class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 22px; border-radius: 6px;">agenda-ink_2.0.0_amd64.deb</span>
+                    <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 22px; border-radius: 6px;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC3/agenda-ink_2.0.0_amd64.deb">agenda-ink_2.0.0_amd64.deb</a>
                 </p>
                 <p style="font-size: 0.88rem; opacity: 0.7;">
-                    URL do artefato: <code>github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC1/agenda-ink_2.0.0_amd64.deb</code>.
+                    URL do artefato: <code>github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC3/agenda-ink_2.0.0_amd64.deb</code>.
                     <a href="../download.html">Ver página de download</a>.
                 </p>
             </section>
@@ -69,7 +69,7 @@
                         <tr>
                             <td style="padding: 0.5rem 0.75rem;"><code>agenda-ink_2.0.0_amd64.deb</code></td>
                             <td style="padding: 0.5rem 0.75rem;">Ubuntu 20.04 LTS+ / Debian 11+</td>
-                            <td style="padding: 0.5rem 0.75rem;">Publicado em v2.0.0-RC1</td>
+                            <td style="padding: 0.5rem 0.75rem;">Publicado em v2.0.0-RC3</td>
                         </tr>
                     </tbody>
                 </table>
@@ -96,15 +96,11 @@ sudo apt-get install -f   # resolve dependências, se necessário</code></pre>
 
             <section class="manual-card" id="integridade">
                 <h2>Verificação de integridade</h2>
-                <p>Checksums oficiais do artefato Linux RC1:</p>
-                <pre><code>SHA256: 5d1f893d3795c7dff945d567e04d91bd44469de522e032cbd016fe831f6c792d
-MD5:    85fa9a70b4f3adac7978e093d6a1d496</code></pre>
+                <p>Checksum oficial do artefato Linux RC3:</p>
+                <pre><code>SHA256: 8574c57112d652e1e944b1bdca6145b772dfb63111a8075ede4897e558aa44d7</code></pre>
                 <p>Para verificar no terminal:</p>
                 <pre><code># SHA256
-sha256sum agenda-ink_2.0.0_amd64.deb
-
-# MD5
-md5sum agenda-ink_2.0.0_amd64.deb</code></pre>
+sha256sum agenda-ink_2.0.0_amd64.deb</code></pre>
                 <p style="font-size: 0.88rem; opacity: 0.75;">Compare o hash calculado com o publicado na página de release antes de instalar.</p>
             </section>
 
@@ -155,7 +151,7 @@ sudo dpkg -r agendaink</code></pre>
         </div><!-- /.manual-content -->
 
         <footer class="site-footer" style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.82rem; opacity: 0.6; text-align: center;">
-            <p>Cara Core Informática · Cara Core Ink Agenda v2.0.0-RC1 · Linux · Artefato DEB publicado</p>
+            <p>Cara Core Informática · Cara Core Ink Agenda v2.0.0-RC3 · Linux · Artefato DEB publicado</p>
             <p><span style="opacity:0.8;">caracore.com.br</span></p>
         </footer>
 
