@@ -26,34 +26,38 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 
 | Campo | Valor |
 |-------|-------|
-| Versão | `2.0.0-RC3` |
-| Publicação | 28/04/2026 |
+| Versão | `2.0.0-RC4` |
+| Publicação | 05/05/2026 |
 | Status | Release Candidate em homologação; stable previsto para 26/06/2026 |
 | Plataformas | Windows 10/11 64 bits (ZIP), macOS 13+ (DMG) e Ubuntu/Debian amd64 (DEB) |
-| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC3> |
+| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC4> |
 | Loja | <https://ink.caracore.com.br/> |
 
-### Artefatos RC3
+### Artefatos RC4
 
 | Plataforma | Artefato | SHA256 |
 |------------|----------|--------|
-| Windows | `AgendaInk-2.0.0-RC3-windows.zip` | `c25b6ee8e5853a2a31aafba387aede31fb51bd0b6a9368b7343c7cb9ea2039a9` |
-| macOS | `AgendaInk-2.0.0-RC3.dmg` | `57f5bc7257204b352389f51db231707408706f5d01102a6cafc86b2de112ca45` |
-| Linux | `agenda-ink_2.0.0_amd64.deb` | `8574c57112d652e1e944b1bdca6145b772dfb63111a8075ede4897e558aa44d7` |
+| Windows | `AgendaInk-2.0.0-RC4-windows.zip` | `44b07c5ae53fccfd32e362f4a5e9793a05e7ae590d6b8d9f71e047cd1ac4257f` |
+| macOS | `AgendaInk-2.0.0-RC4.dmg` | `80fd26b1a2caf5fa2b98ce21f08b67f986ed941801f8c8c71f2169ec937ce689` |
+| Linux | `agenda-ink_2.0.0_amd64.deb` | `76137a1fa7da0e7c35ab4d1b205d75f291b9607f9b98cb95002c3e17d26bb3a8` |
 
 Os builds são distribuídos com runtime Java 21 embutido. O usuário final não precisa instalar JDK.
 
-### Atualização operacional - 28/04/2026
+### Atualização operacional - 05/05/2026
 
-- RC3 publicado para Windows, macOS e Linux na tag `v2.0.0-RC3`.
-- Portal da loja atualizado para comunicar o RC3 como versão de homologação.
-- Página de download aponta para os artefatos nativos por plataforma.
-- Checksums SHA256 vigentes estão documentados em `docs/download.html`.
+- RC4 publicada na tag `v2.0.0-RC4`.
+- Portal da loja atualizado para comunicar RC4 como versão de homologação.
+- Página de download aponta para os artefatos RC4 por plataforma.
+- Checksums SHA256 vigentes dos artefatos RC4 estão documentados em `docs/download.html`.
 - Linha de lançamento mantém a data oficial de 26/06/2026.
+
+### Histórico operacional (RC3)
+
+- RC3 permanece registrada como marco anterior da homologação (28/04/2026).
 
 ---
 
-## Funcionalidades implementadas (v2.0.0-RC3)
+## Funcionalidades implementadas (v2.0.0-RC4)
 
 ### Arquitetura e dados
 
