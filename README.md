@@ -26,11 +26,11 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 
 | Campo | Valor |
 |-------|-------|
-| Versão | `2.0.0-RC4` |
-| Publicação | 05/05/2026 |
+| Versão | `2.0.0-RC5` |
+| Publicação | 06/05/2026 |
 | Status | Release Candidate em homologação; stable previsto para 26/06/2026 |
-| Plataformas | Windows 10/11 64 bits (ZIP), macOS 13+ (DMG) e Ubuntu/Debian amd64 (DEB) |
-| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC4> |
+| Plataformas | iPhone iOS (IPA), macOS 13+ (DMG), Windows 10/11 64 bits (ZIP) e Ubuntu/Debian amd64 (DEB) |
+| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC5> |
 | Loja | <https://ink.caracore.com.br/> |
 
 ### Artefatos RC4
@@ -43,7 +43,10 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 
 Os builds são distribuídos com runtime Java 21 embutido. O usuário final não precisa instalar JDK.
 
-### Atualização operacional - 05/05/2026
+### Atualização operacional - 06/05/2026
+
+- RC5 publicada na tag `v2.0.0-RC5`.
+- Versionamento oficial da entrega iPhone (iOS/IPA) e macOS (DMG) concluído.
 
 - RC4 publicada na tag `v2.0.0-RC4`.
 - Portal da loja atualizado para comunicar RC4 como versão de homologação.
