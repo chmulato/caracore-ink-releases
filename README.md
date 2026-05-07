@@ -58,7 +58,15 @@ Os builds são distribuídos com runtime Java 21 embutido. O usuário final não
 - Portal `ink.caracore.com.br` atualizado; linha de lançamento oficial mantida: 26/06/2026.
 - Próximo ciclo: inclusão de Linux DEB, macOS DMG e melhorias de primeiro acesso.
 
-### Histórico operacional
+### Comunicação externa (público)
+
+- Canal vigente para download: `v2.0.0-RC7`.
+- Artefato já publicado: `AgendaInk-2.0.0-RC7-windows.zip`.
+- Status atual: homologação pública em andamento; lançamento oficial previsto para 26/06/2026.
+
+### Histórico operacional (registro)
+
+As entradas abaixo são mantidas para rastreabilidade de entrega e auditoria técnica.
 
 - RC5 publicada em 06/05/2026 — versionamento iPhone (IPA) e macOS (DMG).
 - RC4 publicada com portal da loja e checksums documentados.
