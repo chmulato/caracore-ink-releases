@@ -1,7 +1,7 @@
 # Cara Core Ink Agenda - Loja e Releases
 
 [![Loja oficial](https://img.shields.io/badge/Loja-ink.caracore.com.br-gold?style=for-the-badge)](https://ink.caracore.com.br/)
-[![Download RC6](https://img.shields.io/badge/Download-v2.0.0--RC6-blue?style=for-the-badge&logo=windows)](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC6)
+[![Download RC7](https://img.shields.io/badge/Download-v2.0.0--RC7-blue?style=for-the-badge&logo=windows)](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7)
 [![Lançamento oficial](https://img.shields.io/badge/Lançamento%20oficial-26%2F06%2F2026-green?style=for-the-badge)](https://ink.caracore.com.br/download.html)
 
 Canal público de distribuição, vitrine e documentação de delivery do **Cara Core Ink Agenda**, sistema de gestão para estúdios de tatuagem com agenda de sessões, controle financeiro e painel de resultados.
@@ -10,7 +10,7 @@ Plataforma alvo: **Desktop Windows, macOS e Linux - Java 21 + JavaFX 21**. O apl
 
 Lançamento oficial: **26 de junho de 2026**.
 
-> **Download direto (Windows):** [`AgendaInk-2.0.0-RC6-windows.zip`](https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC6/AgendaInk-2.0.0-RC6-windows.zip) — Runtime Java 21 embutido. Sem necessidade de instalar JDK.
+> **Download direto (Windows):** [`AgendaInk-2.0.0-RC7-windows.zip`](https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/AgendaInk-2.0.0-RC7-windows.zip) — Runtime Java 21 embutido. Sem necessidade de instalar JDK.
 
 ---
 
@@ -32,31 +32,31 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 
 | Campo | Valor |
 |-------|-------|
-| Versão | `2.0.0-RC6` |
-| Publicação | 06/05/2026 |
+| Versão | `2.0.0-RC7` |
+| Publicação | 07/05/2026 |
 | Status | Release Candidate em homologação; stable previsto para 26/06/2026 |
-| Plataformas | macOS 13+ (DMG), Windows 10/11 64 bits (ZIP) — Linux DEB em preparação para RC7 |
-| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC6> |
+| Plataformas | Windows 10/11 64 bits (ZIP) — macOS DMG e Linux DEB em preparação |
+| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7> |
 | Loja | <https://ink.caracore.com.br/> |
 
-### Artefatos RC6
+### Artefatos RC7
 
 | Plataforma | Artefato | SHA256 |
 |------------|----------|--------|
-| Windows | `AgendaInk-2.0.0-RC6-windows.zip` | `2d5dc0583105e5afcaf059c6f459e807b60ac98c1464c053b7eb9b00c7d2c9f8` |
-| macOS | `AgendaInk-2.0.0-RC6.dmg` | `276541b12f57578004984bd9a925b48a2020f53c2286c5e843412f4ae6aac1d9` |
-| Linux | `.deb` | — pendente RC7 |
+| Windows | `AgendaInk-2.0.0-RC7-windows.zip` | `eda86861c480f00da097d49c1d90dbcacfc65880b968d84dbfae0b6f6faac253` |
+| macOS | `.dmg` | — não publicado nesta RC |
+| Linux | `.deb` | — não publicado nesta RC |
 
 Os builds são distribuídos com runtime Java 21 embutido. O usuário final não precisa instalar JDK.
 
 ### Atualização operacional - 07/05/2026
 
-- RC6 publicada na tag `v2.0.0-RC6` em 06/05/2026.
-- Artefatos disponíveis: Windows ZIP e macOS DMG com runtime Java 21 embutido.
+- RC7 publicada na tag `v2.0.0-RC7` em 07/05/2026.
+- Artefatos disponíveis: Windows ZIP com runtime Java 21 embutido.
 - Checksums SHA256 oficiais disponíveis em `checksum.sha256` nos assets da release.
 - Galeria de screenshots da loja atualizada com 10 capturas (telas de login, recuperação, clientes, hoje, calendário, agendamento, cadastro, projeção, config e config rodapé).
 - Portal `ink.caracore.com.br` atualizado; linha de lançamento oficial mantida: 26/06/2026.
-- RC7 em preparação: inclusão de Linux DEB e melhorias de primeiro acesso.
+- Próximo ciclo: inclusão de Linux DEB, macOS DMG e melhorias de primeiro acesso.
 
 ### Histórico operacional
 
@@ -66,7 +66,7 @@ Os builds são distribuídos com runtime Java 21 embutido. O usuário final não
 
 ---
 
-## Funcionalidades implementadas (v2.0.0-RC6)
+## Funcionalidades implementadas (v2.0.0-RC7)
 
 ### Arquitetura e dados
 
