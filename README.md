@@ -1,16 +1,16 @@
 # Cara Core Ink Agenda - Loja e Releases
 
 [![Loja oficial](https://img.shields.io/badge/Loja-ink.caracore.com.br-gold?style=for-the-badge)](https://ink.caracore.com.br/)
-[![Download RC7](https://img.shields.io/badge/Download-v2.0.0--RC7-blue?style=for-the-badge&logo=windows)](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7)
+[![Download RC4](https://img.shields.io/badge/Download-v2.0.0--RC4-blue?style=for-the-badge&logo=windows)](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC4)
 [![Lançamento oficial](https://img.shields.io/badge/Lançamento%20oficial-26%2F06%2F2026-green?style=for-the-badge)](https://ink.caracore.com.br/download.html)
 
 Canal público de distribuição, vitrine e documentação de delivery do **Cara Core Ink Agenda**, sistema de gestão para estúdios de tatuagem com agenda de sessões, controle financeiro e painel de resultados.
 
-Plataforma alvo: **Desktop Windows, macOS e Linux - Java 21 + JavaFX 21**. O aplicativo usa armazenamento local no computador do usuário e funciona offline por padrão.
+Plataforma alvo: **Desktop Windows, macOS e Linux - Java 21 + JavaFX 21.0.11**. O aplicativo usa armazenamento local no computador do usuário e funciona offline por padrão.
 
 Lançamento oficial: **26 de junho de 2026**.
 
-> **Download direto (Windows):** [`AgendaInk-2.0.0-RC7-windows.zip`](https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/AgendaInk-2.0.0-RC7-windows.zip) — Runtime Java 21 embutido. Sem necessidade de instalar JDK.
+> **Canal público de download:** [`v2.0.0-RC4`](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC4) — artefatos Windows, macOS e Linux com runtime Java 21 embutido.
 
 ---
 
@@ -31,54 +31,54 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 ## Versão atual
 
 | Campo | Valor |
-|-------|-------|
-| Versão | `2.0.0-RC7` |
-| Publicação | 07/05/2026 |
+| ----- | ----- |
+| Versão | `2.0.0-RC4` |
+| Publicação | 05/05/2026 |
 | Status | Release Candidate em homologação; stable previsto para 26/06/2026 |
-| Plataformas | Windows 10/11 64 bits (ZIP) — macOS DMG e Linux DEB em preparação |
-| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7> |
+| Plataformas | Windows 10/11 64 bits (ZIP), macOS 13+ (DMG) e Linux Debian/Ubuntu amd64 (DEB) |
+| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC4> |
 | Loja | <https://ink.caracore.com.br/> |
 
-### Artefatos RC7
+### Artefatos RC4
 
 | Plataforma | Artefato | SHA256 |
-|------------|----------|--------|
-| Windows | `AgendaInk-2.0.0-RC7-windows.zip` | `eda86861c480f00da097d49c1d90dbcacfc65880b968d84dbfae0b6f6faac253` |
-| macOS | `.dmg` | — não publicado nesta RC |
-| Linux | `.deb` | — não publicado nesta RC |
+| ---------- | -------- | ------ |
+| Windows | `ZIP Windows (consultar assets da RC4)` | `44b07c5ae53fccfd32e362f4a5e9793a05e7ae590d6b8d9f71e047cd1ac4257f` |
+| macOS | `DMG macOS (consultar assets da RC4)` | `80fd26b1a2caf5fa2b98ce21f08b67f986ed941801f8c8c71f2169ec937ce689` |
+| Linux | `DEB Linux (consultar assets da RC4)` | `76137a1fa7da0e7c35ab4d1b205d75f291b9607f9b98cb95002c3e17d26bb3a8` |
 
 Os builds são distribuídos com runtime Java 21 embutido. O usuário final não precisa instalar JDK.
 
-### Atualização operacional - 07/05/2026
+### Atualização operacional - 10/05/2026
 
-- RC7 publicada na tag `v2.0.0-RC7` em 07/05/2026.
-- Artefatos disponíveis: Windows ZIP com runtime Java 21 embutido.
-- Checksums SHA256 oficiais disponíveis em `checksum.sha256` nos assets da release.
+- RC4 mantida como canal público oficial na tag `v2.0.0-RC4`.
+- Artefatos públicos confirmados: Windows ZIP, macOS DMG e Linux DEB com checksums SHA256 documentados.
+- Base técnica validada na Matriz com JavaFX `21.0.11`; o próximo refresh público absorverá esse hardening sem alterar o canal público atual.
 - Galeria de screenshots da loja atualizada com 10 capturas (telas de login, recuperação, clientes, hoje, calendário, agendamento, cadastro, projeção, config e config rodapé).
 - Portal `ink.caracore.com.br` atualizado; linha de lançamento oficial mantida: 26/06/2026.
-- Próximo ciclo: inclusão de Linux DEB, macOS DMG e melhorias de primeiro acesso.
+- Próximo ciclo: refresh público da vitrine com o hardening já validado na oficina.
 
 ### Comunicação externa (público)
 
-- Canal vigente para download: `v2.0.0-RC7`.
-- Artefato já publicado: `AgendaInk-2.0.0-RC7-windows.zip`.
+- Canal vigente para download: `v2.0.0-RC4`.
+- Artefatos públicos confirmados: Windows ZIP, macOS DMG e Linux DEB.
 - Status atual: homologação pública em andamento; lançamento oficial previsto para 26/06/2026.
 
 ### Histórico operacional (registro)
 
 As entradas abaixo são mantidas para rastreabilidade de entrega e auditoria técnica.
 
-- RC5 publicada em 06/05/2026 — versionamento iPhone (IPA) e macOS (DMG).
+- RC5 publicada em 06/05/2026 — ciclo intermediário de homologação antes da consolidação pública em RC4.
 - RC4 publicada com portal da loja e checksums documentados.
 - RC3 marco anterior de homologação (28/04/2026).
 
 ---
 
-## Funcionalidades implementadas (v2.0.0-RC7)
+## Funcionalidades implementadas (v2.0.0-RC4)
 
 ### Arquitetura e dados
 
-Aplicação desktop em Java 21 e JavaFX 21, com persistência local em SQLite. O banco é criado no primeiro uso em `%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db` no Windows, com estratégia offline-first.
+Aplicação desktop em Java 21 e JavaFX 21.x, com persistência local em SQLite. O banco é criado no primeiro uso em `%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db` no Windows, com estratégia offline-first. A linha atualmente validada na oficina está em JavaFX `21.0.11`.
 
 ### Agenda e clientes
 
@@ -108,7 +108,7 @@ Exportação e importação de dados em arquivo compactado protegido por senha, 
 ## Estrutura do repositório
 
 | Caminho | Conteúdo |
-|---------|----------|
+| ------- | -------- |
 | Raiz | `README.md`, `LICENSE` e arquivos de controle do repositório |
 | `docs/` | Portal da loja em GitHub Pages: `index.html`, `download.html`, `tecnologia.html`, `manual.html`, `canal-feedback.html`, `wiki/` e `artifacts/` |
 | `docs/assets/` | CSS, JS, imagens e componentes visuais do portal |
@@ -140,7 +140,7 @@ Para ativar o GitHub Pages em um fork ou repositório novo: Settings -> Pages ->
 ## Ecossistema Cara Core
 
 | Papel | Repositório / Endereço |
-|-------|------------------------|
+| ----- | ---------------------- |
 | Oficina (código-fonte) | `caracore-ink` |
 | Loja (vitrine e releases) | `caracore-ink-releases` (este repositório) |
 | Matriz (portfólio institucional) | <https://caracore.com.br/> |
@@ -156,4 +156,3 @@ Este repositório utiliza exclusivamente a branch `master`. Não existe branch `
 ## Licença
 
 Licenciamento proprietário institucional da Cara Core Informática. Consulte [LICENSE](LICENSE).
-

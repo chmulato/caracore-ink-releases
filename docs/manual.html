@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual do usuário — Ink Agenda v2.0.0 | Cara Core Informática</title>
-    <meta name="description" content="Manual do Ink Agenda v2.0.0: login por celular, calendário e lista do dia, clientes, financeiro, backup com senha. Desktop (Windows publicado na RC7; macOS e Linux em preparação) — primeiro produto maduro Cara Core.">
+    <meta name="description" content="Manual do Ink Agenda v2.0.0: login por celular, calendário e lista do dia, clientes, financeiro, backup com senha. Canal público RC4 para desktop Windows, macOS e Linux.">
     <link rel="stylesheet" href="assets/css/loja.css">
         <link rel="stylesheet" href="assets/css/evolution-status.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
@@ -22,7 +22,7 @@
 
         <section class="ink-launch-banner" aria-label="Data de lançamento">
             <p class="ink-launch-label">Lançamento oficial</p>
-            <p class="ink-launch-date"><strong>Ink Agenda v2.0.0</strong> para desktop (Windows · macOS · Linux) — <strong>26 de junho de 2026</strong>. RC7 em homologação; Windows já publicado e demais plataformas em preparação.</p>
+            <p class="ink-launch-date"><strong>Ink Agenda v2.0.0</strong> para desktop (Windows · macOS · Linux) — <strong>26 de junho de 2026</strong>. Canal público atual: <strong>RC4</strong>.</p>
         </section>
 
         <header>
@@ -47,7 +47,7 @@
         <div class="manual-content">
         <section class="manual-card manual-card--intro" id="visao-geral">
             <h2>Visão geral</h2>
-            <p>O <strong>Ink Agenda</strong> é um aplicativo desktop que ajuda tatuadores e estúdios a organizar agendamentos, controlar entradas e saídas e acompanhar o desempenho do negócio. Os dados ficam no seu computador (SQLite local); a interface é nativa (Java 21 + JavaFX 21), sem depender de navegador. <strong>v2.0.0</strong> é o primeiro produto Cara Core já maduro; lançamento oficial em 26 de junho de 2026. Na RC7, a homologação segue ativa com Windows já publicado e macOS/Linux em preparação.</p>
+            <p>O <strong>Ink Agenda</strong> é um aplicativo desktop que ajuda tatuadores e estúdios a organizar agendamentos, controlar entradas e saídas e acompanhar o desempenho do negócio. Os dados ficam no seu computador (SQLite local); a interface é nativa (Java 21 + JavaFX 21.0.11), sem depender de navegador. <strong>v2.0.0</strong> é o primeiro produto Cara Core já maduro; lançamento oficial em 26 de junho de 2026. O canal público atual da loja permanece na <strong>RC4</strong>.</p>
             <h3>Principais recursos</h3>
             <ul>
                 <li><strong>Login por celular</strong> — Acesso com o número do tatuador (telas de login e recuperação).</li>
@@ -62,10 +62,10 @@
 
         <section class="manual-card" id="requisitos-instalacao">
             <h2>Requisitos e instalação</h2>
-            <p><strong>Requisitos:</strong> Windows 10 ou superior. Duas formas de uso:</p>
+            <p><strong>Requisitos:</strong> Windows 10 ou superior. Para a vitrine pública atual:</p>
             <ul>
-                <li><strong>Instalador .exe (recomendado)</strong> — Baixe o instalador na página de <a href="download.html">Download</a> (Releases → Latest). Não é necessário ter Java instalado; o .exe é autocontido. Após instalar, abra o atalho do Ink Agenda.</li>
-                <li><strong>JAR (avançado)</strong> — Exige <strong>JDK 21</strong> (Java 21) no PATH. Baixe o JAR em Releases e execute com <code>java -jar nome-do-arquivo.jar</code> (ou duplo clique, se JARs estiverem associados ao Java).</li>
+                <li><strong>ZIP Windows (recomendado na RC4)</strong> — Baixe o asset Windows na página de <a href="download.html">Download</a>. Não é necessário ter Java instalado; o runtime já vai embutido.</li>
+                <li><strong>Guias por plataforma</strong> — A mesma página também documenta os artefatos públicos para macOS (DMG) e Linux (DEB).</li>
             </ul>
             <p>Os dados ficam em <code>%AppData%\Local\CaraCore\AgendaInk</code> (banco SQLite e backups automáticos). Para desenvolvimento na oficina: <code>cd agenda-java && mvn javafx:run</code>.</p>
         </section>
@@ -120,9 +120,8 @@
         <section class="manual-card manual-card--troubleshoot" id="troubleshooting">
             <h2>Problemas comuns</h2>
             <ul>
-                <li><strong>Instalador .exe não inicia</strong> — Execute como administrador se necessário; verifique se o Windows Defender ou outro antivírus não está bloqueando. Requer Windows 10 ou superior.</li>
-                <li><strong>O JAR não abre</strong> — Verifique se o JDK 21 está instalado e no PATH. No terminal: <code>java -version</code> deve mostrar versão 21. Reinstale o JDK 21 (OpenJDK ou Oracle) se necessário.</li>
-                <li><strong>Erro ao iniciar a janela</strong> — Confirme que está usando Java 21 e que o JavaFX está disponível (o JAR de release já inclui o necessário). Em caso de erro de memória, tente: <code>java -Xmx512m -jar nome-do-arquivo.jar</code>.</li>
+                <li><strong>ZIP/DMG/DEB não inicia</strong> — Confirme que o artefato veio da release pública RC4 e valide o checksum antes de executar.</li>
+                <li><strong>Erro ao iniciar a janela</strong> — Confirme que você extraiu/instalou corretamente o artefato da release pública e que o sistema operacional atende aos requisitos mínimos.</li>
                 <li><strong>Horário já ocupado ao salvar</strong> — O aplicativo impede sobrepor horários. Escolha outro horário ou edite o agendamento existente.</li>
                 <li><strong>Versão anterior (Android)</strong> — O app na Google Play continua em produção até o lançamento da v2.0.0 desktop (26/Jun/2026).</li>
                 <li><strong>Dúvidas ou sugestões</strong> — Use o <a href="canal-feedback.html">Canal de feedback</a> (e-mail, WhatsApp ou Telegram) para reportar problemas ou pedir ajuda.</li>
