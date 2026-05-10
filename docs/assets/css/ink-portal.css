@@ -69,7 +69,8 @@ body {
 .hero-pillar-item.is-gold { background: rgba(212, 168, 83, 0.1); }
 .hero-pillar-item.is-gold strong { color: var(--text-primary); }
 .hero-pillar-item.is-blue strong { color: var(--text-primary); }
-.hero-cta .tagline { grid-area: meta; font-size: 0.92rem; color: var(--text-soft); margin-top: 0; line-height: 1.65; }
+.hero-cta .hero-meta { grid-area: meta; display: grid; gap: 8px; }
+.hero-cta .tagline { font-size: 0.92rem; color: var(--text-soft); margin: 0; line-height: 1.65; }
 .hero-cta .tagline a { color: var(--accent-gold); }
 
 header { padding: 44px 0 36px; text-align: center; border-bottom: 1px solid var(--border); }
