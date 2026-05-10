@@ -1,7 +1,7 @@
 # Cara Core Ink Agenda - Loja e Releases
 
 [![Loja oficial](https://img.shields.io/badge/Loja-ink.caracore.com.br-gold?style=for-the-badge)](https://ink.caracore.com.br/)
-[![Download RC4](https://img.shields.io/badge/Download-v2.0.0--RC4-blue?style=for-the-badge&logo=windows)](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC4)
+[![Download RC7](https://img.shields.io/badge/Download-v2.0.0--RC7-blue?style=for-the-badge&logo=windows)](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7)
 [![Lançamento oficial](https://img.shields.io/badge/Lançamento%20oficial-26%2F06%2F2026-green?style=for-the-badge)](https://ink.caracore.com.br/download.html)
 
 Canal público de distribuição, vitrine e documentação de delivery do **Cara Core Ink Agenda**, sistema de gestão para estúdios de tatuagem com agenda de sessões, controle financeiro e painel de resultados.
@@ -10,7 +10,7 @@ Plataforma alvo: **Desktop Windows, macOS e Linux - Java 21 + JavaFX 21.0.11**. 
 
 Lançamento oficial: **26 de junho de 2026**.
 
-> **Canal público de download:** [`v2.0.0-RC4`](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC4) — artefatos Windows, macOS e Linux com runtime Java 21 embutido.
+> **Canal público de download:** [`v2.0.0-RC7`](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7) — artefato Windows publicado com runtime Java 21 embutido; macOS e Linux seguem em preparação.
 
 ---
 
@@ -32,49 +32,51 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 
 | Campo | Valor |
 | ----- | ----- |
-| Versão | `2.0.0-RC4` |
-| Publicação | 05/05/2026 |
+| Versão | `2.0.0-RC7` |
+| Publicação | 07/05/2026 |
 | Status | Release Candidate em homologação; stable previsto para 26/06/2026 |
-| Plataformas | Windows 10/11 64 bits (ZIP), macOS 13+ (DMG) e Linux Debian/Ubuntu amd64 (DEB) |
-| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC4> |
+| Plataformas | Windows 10/11 64 bits (ZIP) publicado; macOS DMG e Linux DEB em preparação |
+| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7> |
 | Loja | <https://ink.caracore.com.br/> |
 
-### Artefatos RC4
+### Artefatos RC7
 
 | Plataforma | Artefato | SHA256 |
 | ---------- | -------- | ------ |
-| Windows | `ZIP Windows (consultar assets da RC4)` | `44b07c5ae53fccfd32e362f4a5e9793a05e7ae590d6b8d9f71e047cd1ac4257f` |
-| macOS | `DMG macOS (consultar assets da RC4)` | `80fd26b1a2caf5fa2b98ce21f08b67f986ed941801f8c8c71f2169ec937ce689` |
-| Linux | `DEB Linux (consultar assets da RC4)` | `76137a1fa7da0e7c35ab4d1b205d75f291b9607f9b98cb95002c3e17d26bb3a8` |
+| Windows | `AgendaInk-2.0.0-RC7-windows.zip` | `eda86861c480f00da097d49c1d90dbcacfc65880b968d84dbfae0b6f6faac253` |
+| macOS | `DMG macOS` | `— não publicado nesta RC` |
+| Linux | `DEB Linux` | `— não publicado nesta RC` |
 
 Os builds são distribuídos com runtime Java 21 embutido. O usuário final não precisa instalar JDK.
 
 ### Atualização operacional - 10/05/2026
 
-- RC4 mantida como canal público oficial na tag `v2.0.0-RC4`.
-- Artefatos públicos confirmados: Windows ZIP, macOS DMG e Linux DEB com checksums SHA256 documentados.
-- Base técnica validada na Matriz com JavaFX `21.0.11`; o próximo refresh público absorverá esse hardening sem alterar o canal público atual.
+- RC7 publicada na tag `v2.0.0-RC7` em 07/05/2026.
+- Artefato público já publicado: `AgendaInk-2.0.0-RC7-windows.zip` com checksum SHA256 oficial.
+- macOS DMG e Linux DEB seguem planejados para ciclo subsequente da mesma linha de homologação.
+- Base técnica validada na Matriz com JavaFX `21.0.11`; o próximo refresh público absorverá esse hardening sem mudar a linha de versão vigente.
 - Galeria de screenshots da loja atualizada com 10 capturas (telas de login, recuperação, clientes, hoje, calendário, agendamento, cadastro, projeção, config e config rodapé).
 - Portal `ink.caracore.com.br` atualizado; linha de lançamento oficial mantida: 26/06/2026.
 - Próximo ciclo: refresh público da vitrine com o hardening já validado na oficina.
 
 ### Comunicação externa (público)
 
-- Canal vigente para download: `v2.0.0-RC4`.
-- Artefatos públicos confirmados: Windows ZIP, macOS DMG e Linux DEB.
+- Canal vigente para download: `v2.0.0-RC7`.
+- Artefato público vigente: `AgendaInk-2.0.0-RC7-windows.zip`.
 - Status atual: homologação pública em andamento; lançamento oficial previsto para 26/06/2026.
 
 ### Histórico operacional (registro)
 
 As entradas abaixo são mantidas para rastreabilidade de entrega e auditoria técnica.
 
-- RC5 publicada em 06/05/2026 — ciclo intermediário de homologação antes da consolidação pública em RC4.
+- RC7 publicada em 07/05/2026 — Windows ZIP com checksum oficial.
+- RC5 publicada em 06/05/2026 — ciclo intermediário de homologação.
 - RC4 publicada com portal da loja e checksums documentados.
 - RC3 marco anterior de homologação (28/04/2026).
 
 ---
 
-## Funcionalidades implementadas (v2.0.0-RC4)
+## Funcionalidades implementadas (v2.0.0-RC7)
 
 ### Arquitetura e dados
 
