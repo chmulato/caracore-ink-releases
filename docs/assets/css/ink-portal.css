@@ -43,11 +43,11 @@ body {
 .ink-launch-banner .ink-launch-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-green); margin-bottom: 6px; }
 .ink-launch-banner .ink-launch-date { font-size: 1rem; font-weight: 600; color: var(--text-primary); line-height: 1.5; }
 
-.hero-cta { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr); grid-template-areas: "label image" "title image" "desc desc" "tagline tagline" "pillars pillars" "buttons buttons"; column-gap: 28px; row-gap: 0; align-items: start; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 32px 36px; margin-bottom: 40px; border-left: 4px solid var(--accent-green); }
+.hero-cta { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr); grid-template-areas: "label image" "title image" "desc image" "tagline image" "pillars pillars" "buttons buttons" "meta meta"; column-gap: 32px; row-gap: 18px; align-items: start; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 32px 36px; margin-bottom: 40px; border-left: 4px solid var(--accent-green); }
 .hero-cta .hero-label { grid-area: label; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-green); margin-bottom: 10px; }
-.hero-cta .hero-title { font-family: var(--cc-font-heading, var(--cc-font-body, system-ui, sans-serif)); font-size: clamp(1.55rem, 2.4vw, 2.15rem); font-weight: 700; color: var(--text-primary); margin-bottom: 12px; line-height: 1.25; max-width: 18ch; align-self: end; }
+.hero-cta .hero-title { font-family: var(--cc-font-heading, var(--cc-font-body, system-ui, sans-serif)); font-size: clamp(1.55rem, 2.4vw, 2.15rem); font-weight: 700; color: var(--text-primary); margin-bottom: 0; line-height: 1.25; max-width: 18ch; align-self: start; }
 .hero-cta .hero-title { grid-area: title; }
-.hero-cta .hero-desc { grid-area: desc; font-size: 1rem; color: var(--text-primary); margin-bottom: 20px; line-height: 1.75; max-width: none; margin-top: 18px; }
+.hero-cta .hero-desc { grid-area: desc; font-size: 1rem; color: var(--text-primary); margin: 0; line-height: 1.75; max-width: 58ch; }
 .hero-cta .cta-buttons { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
 .hero-cta .cta-buttons { grid-area: buttons; }
 .hero-cta .cta-btn { display: inline-block; padding: 14px 24px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: opacity 0.2s, background 0.2s; }
@@ -59,7 +59,7 @@ body {
 .hero-cta .hero-contexto-image { display: block; width: 100%; max-width: 100%; height: auto; max-height: min(40vh, 360px); margin: 0 auto; border-radius: 12px; border: 1px solid var(--border); object-fit: cover; object-position: center; box-shadow: 0 18px 36px rgba(13, 17, 23, 0.26); }
 .hero-cta .hero-contexto-caption { max-width: 36ch; margin: 0 auto; font-size: 0.95rem; color: var(--text-primary); line-height: 1.65; }
 .hero-cta .hero-contexto-caption strong { color: var(--text-primary); }
-.hero-cta .hero-tagline { grid-area: tagline; font-family: var(--cc-font-heading, var(--cc-font-body, system-ui, sans-serif)); font-size: clamp(1.05rem, 1.8vw, 1.2rem); font-weight: 600; color: var(--text-primary); margin: 0 0 18px; line-height: 1.5; }
+.hero-cta .hero-tagline { grid-area: tagline; font-family: var(--cc-font-heading, var(--cc-font-body, system-ui, sans-serif)); font-size: clamp(1.05rem, 1.8vw, 1.2rem); font-weight: 600; color: var(--text-primary); margin: 0; line-height: 1.5; max-width: 30ch; }
 .hero-pillars { grid-area: pillars; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 0 0 24px; }
 .hero-pillar-item { display: flex; flex-direction: column; gap: 6px; min-height: 100%; padding: 14px 16px; background: rgba(88, 166, 255, 0.08); border: 1px solid var(--border); border-radius: 10px; }
 .hero-pillar-item strong { font-family: var(--cc-font-heading, var(--cc-font-body, system-ui, sans-serif)); font-size: 0.98rem; color: var(--text-primary); }
@@ -69,7 +69,7 @@ body {
 .hero-pillar-item.is-gold { background: rgba(212, 168, 83, 0.1); }
 .hero-pillar-item.is-gold strong { color: var(--text-primary); }
 .hero-pillar-item.is-blue strong { color: var(--text-primary); }
-.hero-cta .tagline { grid-column: 1 / -1; font-size: 0.92rem; color: var(--text-soft); margin-top: 16px; line-height: 1.65; }
+.hero-cta .tagline { grid-area: meta; font-size: 0.92rem; color: var(--text-soft); margin-top: 0; line-height: 1.65; }
 .hero-cta .tagline a { color: var(--accent-gold); }
 
 header { padding: 44px 0 36px; text-align: center; border-bottom: 1px solid var(--border); }
@@ -131,7 +131,7 @@ body.tecnologia-page .wrapper { max-width: 720px; }
 
 @media (max-width: 900px) {
     .wrapper { max-width: 100%; }
-    .hero-cta { grid-template-columns: 1fr; grid-template-areas: "label" "title" "image" "desc" "tagline" "pillars" "buttons"; padding: 26px 22px; }
+    .hero-cta { grid-template-columns: 1fr; grid-template-areas: "label" "title" "image" "desc" "tagline" "pillars" "buttons" "meta"; padding: 26px 22px; row-gap: 16px; }
     .hero-pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .hero-cta .hero-contexto-cliente { margin: 8px 0 16px; }
     .hero-cta .hero-contexto-image { max-height: 52vh; }
