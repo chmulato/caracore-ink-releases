@@ -55,8 +55,8 @@
                     <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/AgendaInk-2.0.0-RC7-windows.zip">
                         ↓ AgendaInk-2.0.0-RC7-windows.zip
                     </a>
-                    <a class="cta-btn cta-btn-secondary" style="display: inline-block; margin-top: 0.5rem; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/AgendaInk-2.0.0.exe">
-                        ↓ AgendaInk-2.0.0.exe (instalador)
+                    <a class="cta-btn cta-btn-secondary" style="display: inline-block; margin-top: 0.5rem; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/AgendaInk-2.0.0-RC7-windows.exe">
+                        ↓ AgendaInk-2.0.0-RC7-windows.exe (instalador)
                     </a>
                     <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem;">Use o instalador <code>.exe</code> para instalação padrão no Windows 10/11. O ZIP segue disponível para uso portable.</p>
                 </div>
@@ -67,8 +67,8 @@
                     <h3 style="margin: 0 0 0.5rem;">macOS</h3>
                     <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">macOS 13 Ventura ou superior<br>Apple Silicon (M1/M2/M3) e Intel<br>Disk Image (<code>.dmg</code>)</p>
                     <p style="font-size: 0.82rem; opacity: 0.7; margin-bottom: 0.75rem;">Runtime Java 21 embutido — sem necessidade de instalar JDK.</p>
-                    <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/AgendaInk-2.0.0-RC7.dmg">
-                        ↓ AgendaInk-2.0.0-RC7.dmg
+                    <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/AgendaInk-2.0.0-RC7-macos.dmg">
+                        ↓ AgendaInk-2.0.0-RC7-macos.dmg
                     </a>
                     <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem;">Valide o hash do DMG com base no <code>checksum.sha256</code> da release RC7.</p>
                 </div>
@@ -79,8 +79,8 @@
                     <h3 style="margin: 0 0 0.5rem;">Linux</h3>
                     <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">Ubuntu 20.04 LTS+ / Debian 11+<br>Pacote nativo (<code>.deb</code>)</p>
                     <p style="font-size: 0.82rem; opacity: 0.7; margin-bottom: 0.75rem;">Runtime Java 21 embutido — sem necessidade de instalar JDK.</p>
-                    <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/agenda-ink_2.0.0_amd64.deb">
-                        ↓ agenda-ink_2.0.0_amd64.deb
+                    <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/AgendaInk-2.0.0-RC7-linux.deb">
+                        ↓ AgendaInk-2.0.0-RC7-linux.deb
                     </a>
                     <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem;">Valide o hash do DEB com base no <code>checksum.sha256</code> da release RC7.</p>
                 </div>
@@ -92,12 +92,12 @@
             <h3>Verificação de integridade (RC7)</h3>
             <p>No PowerShell ou terminal, na pasta onde os arquivos foram salvos:</p>
             <pre style="background: rgba(0,0,0,0.15); padding: 0.75rem; border-radius: 6px; font-size: 0.85rem; overflow-x: auto;"><code># Windows
-(Get-FileHash .\AgendaInk-2.0.0.exe -Algorithm SHA256).Hash
+(Get-FileHash .\AgendaInk-2.0.0-RC7-windows.exe -Algorithm SHA256).Hash
 (Get-FileHash .\AgendaInk-2.0.0-RC7-windows.zip -Algorithm SHA256).Hash
 
 # Linux/macOS
-sha256sum agenda-ink_2.0.0_amd64.deb
-shasum -a 256 AgendaInk-2.0.0-RC7.dmg
+sha256sum AgendaInk-2.0.0-RC7-linux.deb
+shasum -a 256 AgendaInk-2.0.0-RC7-macos.dmg
 
 # Compare com o arquivo checksum.sha256 publicado na release RC7.</code></pre>
             <p style="margin-top: 0.75rem; font-size: 0.9rem; opacity: 0.8;">Todos os artefatos são gerados com <strong>bytecode ofuscado</strong> via ProGuard — proteção do código-fonte na distribuição.</p>
@@ -107,7 +107,7 @@ shasum -a 256 AgendaInk-2.0.0-RC7.dmg
         <section class="card" style="margin-top: 1.25rem;">
             <h3>Instalação padrão no Windows 10/11</h3>
             <ol style="padding-left: 1.25rem; font-size: 0.95rem;">
-                <li>Baixe <code>AgendaInk-2.0.0.exe</code>.</li>
+                <li>Baixe <code>AgendaInk-2.0.0-RC7-windows.exe</code>.</li>
                 <li>Opcionalmente, valide o hash com o <code>checksum.sha256</code> da release.</li>
                 <li>Execute o instalador e avance no assistente.</li>
                 <li>Abra o app pelo Menu Iniciar (atalho <code>AgendaInk</code>).</li>
