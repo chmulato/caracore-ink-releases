@@ -33,7 +33,7 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 | Campo | Valor |
 | ----- | ----- |
 | Versão | `2.0.0-RC7` |
-| Publicação | 07/05/2026 |
+| Publicação | 12/05/2026 (refresh RC7) |
 | Status | Release Candidate em homologação; stable previsto para 26/06/2026 |
 | Plataformas | Windows 10/11 64 bits (EXE + ZIP), macOS DMG e Linux DEB publicados |
 | Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7> |
@@ -43,8 +43,8 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 
 | Plataforma | Artefato | SHA256 |
 | ---------- | -------- | ------ |
-| Windows ZIP | `AgendaInk-2.0.0-RC7-windows.zip` | `617cee13ae0c11dbb8765a13c5e5eb956620516f6b3713f67ccde1ad82edb663` |
-| Windows EXE | `AgendaInk-2.0.0.exe` | `3290a0655161150ded6ec208a7bfd8a12384fddf090b2f475a15bf121af28399` |
+| Windows ZIP | `AgendaInk-2.0.0-RC7-windows.zip` | `consulte checksum.sha256 da release` |
+| Windows EXE | `AgendaInk-2.0.0.exe` | `consulte checksum.sha256 da release` |
 | macOS | `AgendaInk-2.0.0-RC7.dmg` | `consulte checksum.sha256 da release` |
 | Linux | `agenda-ink_2.0.0_amd64.deb` | `consulte checksum.sha256 da release` |
 
@@ -57,7 +57,7 @@ Os builds são distribuídos com runtime Java 21 embutido. O usuário final não
   - Implementado: Dedicated non-JavaFX launcher (AgendaInkLauncher) como entry point.
   - Resultado: Ambos APP_IMAGE (ZIP) e installer EXE agora executam saudavelmente.
   - Validado: Smoke test RUNNING_AFTER_20S; processo UI inicia e persiste.
-  - Artefatos: ZIP atualizado com checksum SHA256: `617cee13ae0c11dbb8765a13c5e5eb956620516f6b3713f67ccde1ad82edb663`; installer EXE adicionado como asset alternativo para deploy tradicional.
+  - Artefatos: refresh de distribuição RC7 publicado (Windows EXE+ZIP, macOS DMG e Linux DEB); checksums oficiais centralizados em `checksum.sha256` da release.
 
 ### Atualização operacional - 10/05/2026
 
