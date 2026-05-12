@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instalação Windows — Ink Agenda v2.0.0-RC7 | Cara Core Informática</title>
-    <meta name="description" content="Guia de instalação do Cara Core Ink Agenda v2.0.0-RC7 para Windows. ZIP portable com runtime Java 21 embutido e checksum oficial.">
+    <meta name="description" content="Guia de instalação do Cara Core Ink Agenda v2.0.0-RC7 para Windows. Instalador padrão EXE e ZIP portable com runtime Java 21 embutido.">
     <link rel="stylesheet" href="../assets/css/ink-portal.css">
     <link rel="stylesheet" href="../assets/css/caracore-core-typography.css">
     <link rel="stylesheet" href="../assets/css/caracore-institutional-components.css">
@@ -36,21 +36,24 @@
                 <ul>
                     <li><strong>Windows 10</strong> ou superior (64 bits)</li>
                     <li>Aproximadamente <strong>400 MB</strong> de espaço livre em disco</li>
-                    <li><strong>Nenhuma instalação de Java necessária</strong> — runtime Java 21 embutido no instalador</li>
+                    <li><strong>Nenhuma instalação de Java necessária</strong> — runtime Java 21 embutido no instalador e no pacote ZIP</li>
+                    <li><strong>Permissão de administrador</strong> recomendada para instalação via <code>.exe</code></li>
                     <li>Conexão com internet: <strong>não necessária</strong> para uso do aplicativo</li>
                 </ul>
             </section>
 
             <section class="manual-card" id="download">
                 <h2>Download do artefato</h2>
-                <p>Canal oficial da RC7: <a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7" target="_blank" rel="noopener">v2.0.0-RC7</a>. Artefato Windows:</p>
+                <p>Canal oficial da RC7: <a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7" target="_blank" rel="noopener">v2.0.0-RC7</a>. Artefatos Windows:</p>
                 <p style="margin: 1rem 0;">
+                    <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 22px; border-radius: 6px; margin-right: 0.5rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/AgendaInk-2.0.0.exe">
+                        ↓ AgendaInk-2.0.0.exe (instalador)
+                    </a>
                     <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 22px; border-radius: 6px;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/AgendaInk-2.0.0-RC7-windows.zip">
                         ↓ AgendaInk-2.0.0-RC7-windows.zip
                     </a>
-                    <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem;">URL: <code style="word-break:break-all; font-size:0.78rem;">github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC7/AgendaInk-2.0.0-RC7-windows.zip</code></p>
                 </p>
-                <p style="font-size: 0.9rem; opacity: 0.75;">Arquivo: <code>AgendaInk-2.0.0-RC7-windows.zip</code> · valide o checksum antes de executar.</p>
+                <p style="font-size: 0.9rem; opacity: 0.75;">Arquivos: <code>AgendaInk-2.0.0.exe</code> e <code>AgendaInk-2.0.0-RC7-windows.zip</code> · valide os checksums antes de executar.</p>
             </section>
 
             <section class="manual-card" id="integridade">
@@ -58,27 +61,28 @@
                 <p>Antes de instalar, confirme que o arquivo não foi corrompido. No PowerShell, na pasta onde o ZIP foi salvo:</p>
 
                 <h3>SHA256 (recomendado)</h3>
-                <pre><code>(Get-FileHash .\AgendaInk-2.0.0-RC7-windows.zip -Algorithm SHA256).Hash</code></pre>
-                <p>Valor esperado:</p>
-                <pre><code>EDA86861C480F00DA097D49C1D90DBCACFC65880B968D84DBFAE0B6F6FAAC253</code></pre>
+                <pre><code>(Get-FileHash .\AgendaInk-2.0.0.exe -Algorithm SHA256).Hash
+(Get-FileHash .\AgendaInk-2.0.0-RC7-windows.zip -Algorithm SHA256).Hash</code></pre>
+                <p>Compare com os valores oficiais no arquivo <code>checksum.sha256</code> da release RC7.</p>
 
                 <h3>Via CertUtil (Prompt de Comando)</h3>
-                <pre><code>certutil -hashfile AgendaInk-2.0.0-RC7-windows.zip SHA256</code></pre>
+                <pre><code>certutil -hashfile AgendaInk-2.0.0.exe SHA256
+certutil -hashfile AgendaInk-2.0.0-RC7-windows.zip SHA256</code></pre>
             </section>
 
             <section class="manual-card" id="instalacao">
                 <h2>Instalação passo a passo</h2>
                 <ol style="line-height: 2;">
-                    <li>Baixe o arquivo <code>AgendaInk-2.0.0-RC7-windows.zip</code> para uma pasta de sua escolha.</li>
+                    <li>Baixe <code>AgendaInk-2.0.0.exe</code> (instalação padrão) ou <code>AgendaInk-2.0.0-RC7-windows.zip</code> (portable).</li>
                     <li>Verifique os checksums conforme seção acima.</li>
-                    <li>Clique com o botão direito no ZIP → <strong>Extrair aqui</strong> (ou use 7-Zip, WinRAR).</li>
-                    <li>Abra a pasta <code>AgendaInk\</code> extraída.</li>
-                    <li>Execute <strong><code>AgendaInk.exe</code></strong> com duplo clique.</li>
+                    <li>Para instalação padrão: execute o <code>.exe</code> e avance no assistente.</li>
+                    <li>Para modo portable: extraia o ZIP, abra a pasta <code>AgendaInk\</code> e execute <code>AgendaInk.exe</code>.</li>
+                    <li>Na instalação padrão, abra o app pelo Menu Iniciar; no modo portable, execute pela pasta extraída.</li>
                     <li>Na primeira execução, o banco de dados é criado automaticamente em:<br>
                         <code>%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db</code></li>
                 </ol>
                 <p style="margin-top: 1rem; padding: 0.75rem 1rem; border-left: 4px solid var(--accent-gold, #c9a227); background: rgba(201,162,39,0.07); border-radius: 0 6px 6px 0;">
-                    <strong>Nota:</strong> Esta versão pública é a RC7, entregue como ZIP portable com runtime Java 21 embutido.
+                    <strong>Nota:</strong> Esta versão pública é a RC7, entregue com instalador padrão Windows e alternativa ZIP portable.
                 </p>
             </section>
 
@@ -119,12 +123,13 @@
 
             <section class="manual-card" id="desinstalacao">
                 <h2>Desinstalação</h2>
-            <p>Esta distribuição RC7 é portable (APP_IMAGE). Para remover:</p>
+            <p>Para remover a distribuição RC7:</p>
                 <ol>
-                    <li>Exclua a pasta <code>AgendaInk\</code> extraída do ZIP.</li>
+                <li>Se instalado por <code>.exe</code>: use Configurações do Windows → Aplicativos → <strong>AgendaInk</strong> → Desinstalar.</li>
+                <li>Se usado em modo portable: exclua a pasta <code>AgendaInk\</code> extraída do ZIP.</li>
                     <li>Opcionalmente, remova os dados em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\</code>.</li>
                 </ol>
-                <p style="font-size: 0.88rem; opacity: 0.75;">O instalador com wizard e desinstalador registrado no Windows chegará no lançamento oficial (26/06/2026).</p>
+                <p style="font-size: 0.88rem; opacity: 0.75;">A RC7 já inclui instalador padrão com registro de desinstalação no Windows.</p>
             </section>
 
             <section class="manual-card" id="nav">

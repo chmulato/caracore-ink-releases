@@ -10,7 +10,7 @@ Plataforma alvo: **Desktop Windows, macOS e Linux - Java 21 + JavaFX 21.0.11**. 
 
 Lançamento oficial: **26 de junho de 2026**.
 
-> **Canal público de download:** [`v2.0.0-RC7`](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7) — artefato Windows publicado com runtime Java 21 embutido; macOS e Linux seguem em preparação.
+> **Canal público de download:** [`v2.0.0-RC7`](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7) — distribuições publicadas para Windows (EXE + ZIP), macOS (DMG) e Linux (DEB), com runtime Java 21 embutido.
 
 ---
 
@@ -35,7 +35,7 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 | Versão | `2.0.0-RC7` |
 | Publicação | 07/05/2026 |
 | Status | Release Candidate em homologação; stable previsto para 26/06/2026 |
-| Plataformas | Windows 10/11 64 bits (ZIP) publicado; macOS DMG e Linux DEB em preparação |
+| Plataformas | Windows 10/11 64 bits (EXE + ZIP), macOS DMG e Linux DEB publicados |
 | Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7> |
 | Loja | <https://ink.caracore.com.br/> |
 
@@ -45,8 +45,8 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 | ---------- | -------- | ------ |
 | Windows ZIP | `AgendaInk-2.0.0-RC7-windows.zip` | `617cee13ae0c11dbb8765a13c5e5eb956620516f6b3713f67ccde1ad82edb663` |
 | Windows EXE | `AgendaInk-2.0.0.exe` | `3290a0655161150ded6ec208a7bfd8a12384fddf090b2f475a15bf121af28399` |
-| macOS | `DMG macOS` | `— não publicado nesta RC` |
-| Linux | `DEB Linux` | `— não publicado nesta RC` |
+| macOS | `AgendaInk-2.0.0-RC7.dmg` | `consulte checksum.sha256 da release` |
+| Linux | `agenda-ink_2.0.0_amd64.deb` | `consulte checksum.sha256 da release` |
 
 Os builds são distribuídos com runtime Java 21 embutido. O usuário final não precisa instalar JDK.
 
@@ -63,7 +63,7 @@ Os builds são distribuídos com runtime Java 21 embutido. O usuário final não
 
 - RC7 publicada na tag `v2.0.0-RC7` em 07/05/2026.
 - Artefato público já publicado: `AgendaInk-2.0.0-RC7-windows.zip` com checksum SHA256 oficial.
-- macOS DMG e Linux DEB seguem planejados para ciclo subsequente da mesma linha de homologação.
+- macOS DMG e Linux DEB publicados na linha RC7.
 - Base técnica validada na Matriz com JavaFX `21.0.11`; o próximo refresh público absorverá esse hardening sem mudar a linha de versão vigente.
 - Galeria de screenshots da loja atualizada com 10 capturas (telas de login, recuperação, clientes, hoje, calendário, agendamento, cadastro, projeção, config e config rodapé).
 - Portal `ink.caracore.com.br` atualizado; linha de lançamento oficial mantida: 26/06/2026.
