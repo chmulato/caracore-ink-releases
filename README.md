@@ -43,11 +43,21 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 
 | Plataforma | Artefato | SHA256 |
 | ---------- | -------- | ------ |
-| Windows | `AgendaInk-2.0.0-RC7-windows.zip` | `eda86861c480f00da097d49c1d90dbcacfc65880b968d84dbfae0b6f6faac253` |
+| Windows ZIP | `AgendaInk-2.0.0-RC7-windows.zip` | `617cee13ae0c11dbb8765a13c5e5eb956620516f6b3713f67ccde1ad82edb663` |
+| Windows EXE | `AgendaInk-2.0.0.exe` | `3290a0655161150ded6ec208a7bfd8a12384fddf090b2f475a15bf121af28399` |
 | macOS | `DMG macOS` | `— não publicado nesta RC` |
 | Linux | `DEB Linux` | `— não publicado nesta RC` |
 
 Os builds são distribuídos com runtime Java 21 embutido. O usuário final não precisa instalar JDK.
+
+### Atualização operacional - 12/05/2026
+
+- **RC7 launcher fix publicada** em 12/05/2026.
+  - Corrigido: jpackage launcher incompatibility com JavaFX Application subclass (EXIT=1).
+  - Implementado: Dedicated non-JavaFX launcher (AgendaInkLauncher) como entry point.
+  - Resultado: Ambos APP_IMAGE (ZIP) e installer EXE agora executam saudavelmente.
+  - Validado: Smoke test RUNNING_AFTER_20S; processo UI inicia e persiste.
+  - Artefatos: ZIP atualizado com checksum SHA256: `617cee13ae0c11dbb8765a13c5e5eb956620516f6b3713f67ccde1ad82edb663`; installer EXE adicionado como asset alternativo para deploy tradicional.
 
 ### Atualização operacional - 10/05/2026
 
@@ -62,8 +72,10 @@ Os builds são distribuídos com runtime Java 21 embutido. O usuário final não
 ### Comunicação externa (público)
 
 - Canal vigente para download: `v2.0.0-RC7`.
-- Artefato público vigente: `AgendaInk-2.0.0-RC7-windows.zip`.
-- Status atual: homologação pública em andamento; lançamento oficial previsto para 26/06/2026.
+- Artefatos públicos vigentes: 
+  - `AgendaInk-2.0.0-RC7-windows.zip` — distribuição portável (descompacte e execute; ideal para USB, rede local, backup).
+  - `AgendaInk-2.0.0.exe` — instalador tradicional Windows (wizard, atalhos no menu iniciar; requer admin).
+- Status atual: homologação pública em andamento; ambos artefatos validados como saudáveis (launcher fix 12/05/2026); lançamento oficial previsto para 26/06/2026.
 
 ### Histórico operacional (registro)
 
