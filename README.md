@@ -1,7 +1,7 @@
 # Cara Core Ink Agenda - Loja e Releases
 
 [![Loja oficial](https://img.shields.io/badge/Loja-ink.caracore.com.br-gold?style=for-the-badge)](https://ink.caracore.com.br/)
-[![Download RC7](https://img.shields.io/badge/Download-v2.0.0--RC7-blue?style=for-the-badge&logo=windows)](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7)
+[![Download RC8](https://img.shields.io/badge/Download-v2.0.0--RC8-blue?style=for-the-badge&logo=windows)](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC8)
 [![Lançamento oficial](https://img.shields.io/badge/Lançamento%20oficial-26%2F06%2F2026-green?style=for-the-badge)](https://ink.caracore.com.br/download.html)
 
 Canal público de distribuição, vitrine e documentação de delivery do **Cara Core Ink Agenda**, sistema de gestão para estúdios de tatuagem com agenda de sessões, controle financeiro e painel de resultados.
@@ -10,7 +10,7 @@ Plataforma alvo: **Desktop Windows, macOS e Linux - Java 21 + JavaFX 21.0.11**. 
 
 Lançamento oficial: **26 de junho de 2026**.
 
-> **Canal público de download:** [`v2.0.0-RC7`](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7) — distribuições publicadas para Windows (EXE + ZIP), macOS (DMG) e Linux (DEB), com runtime Java 21 embutido.
+> **Canal público de download:** [`v2.0.0-RC8`](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC8) — distribuições publicadas para Windows (EXE + ZIP), macOS (DMG) e Linux (DEB), com runtime Java 21 embutido.
 
 ---
 
@@ -32,38 +32,38 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 
 | Campo | Valor |
 | ----- | ----- |
-| Versão | `2.0.0-RC7` |
-| Publicação | 12/05/2026 (refresh RC7) |
+| Versão | `2.0.0-RC8` |
+| Publicação | 15/05/2026 (refresh RC8) |
 | Status | Release Candidate em homologação; stable previsto para 26/06/2026 |
 | Plataformas | Windows 10/11 64 bits (EXE + ZIP), macOS DMG e Linux DEB publicados |
-| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC7> |
+| Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC8> |
 | Loja | <https://ink.caracore.com.br/> |
 
-### Artefatos RC7
+### Artefatos RC8
 
 | Plataforma | Artefato | SHA256 |
 | ---------- | -------- | ------ |
-| Windows ZIP | `AgendaInk-2.0.0-RC7-windows.zip` | `consulte checksum.sha256 da release` |
+| Windows ZIP | `AgendaInk-2.0.0-RC8-windows.zip` | `consulte checksum.sha256 da release` |
 | Windows EXE | `AgendaInk-2.0.0.exe` | `consulte checksum.sha256 da release` |
-| macOS | `AgendaInk-2.0.0-RC7.dmg` | `consulte checksum.sha256 da release` |
+| macOS | `AgendaInk-2.0.0-RC8.dmg` | `consulte checksum.sha256 da release` |
 | Linux | `agenda-ink_2.0.0_amd64.deb` | `consulte checksum.sha256 da release` |
 
 Os builds são distribuídos com runtime Java 21 embutido. O usuário final não precisa instalar JDK.
 
-### Atualização operacional - 12/05/2026
+### Atualização operacional - 15/05/2026
 
-- **RC7 launcher fix publicada** em 12/05/2026.
+- **RC8 launcher fix publicada** em 15/05/2026.
   - Corrigido: jpackage launcher incompatibility com JavaFX Application subclass (EXIT=1).
   - Implementado: Dedicated non-JavaFX launcher (AgendaInkLauncher) como entry point.
   - Resultado: Ambos APP_IMAGE (ZIP) e installer EXE agora executam saudavelmente.
   - Validado: Smoke test RUNNING_AFTER_20S; processo UI inicia e persiste.
-  - Artefatos: refresh de distribuição RC7 publicado (Windows EXE+ZIP, macOS DMG e Linux DEB); checksums oficiais centralizados em `checksum.sha256` da release.
+  - Artefatos: refresh de distribuição RC8 publicado (Windows EXE+ZIP, macOS DMG e Linux DEB); checksums oficiais centralizados em `checksum.sha256` da release.
 
 ### Atualização operacional - 10/05/2026
 
-- RC7 publicada na tag `v2.0.0-RC7` em 07/05/2026.
-- Artefato público já publicado: `AgendaInk-2.0.0-RC7-windows.zip` com checksum SHA256 oficial.
-- macOS DMG e Linux DEB publicados na linha RC7.
+- RC8 publicada na tag `v2.0.0-RC8` em 15/05/2026.
+- Artefato público já publicado: `AgendaInk-2.0.0-RC8-windows.zip` com checksum SHA256 oficial.
+- macOS DMG e Linux DEB publicados na linha RC8.
 - Base técnica validada na Matriz com JavaFX `21.0.11`; o próximo refresh público absorverá esse hardening sem mudar a linha de versão vigente.
 - Galeria de screenshots da loja atualizada com 10 capturas (telas de login, recuperação, clientes, hoje, calendário, agendamento, cadastro, projeção, config e config rodapé).
 - Portal `ink.caracore.com.br` atualizado; linha de lançamento oficial mantida: 26/06/2026.
@@ -71,24 +71,24 @@ Os builds são distribuídos com runtime Java 21 embutido. O usuário final não
 
 ### Comunicação externa (público)
 
-- Canal vigente para download: `v2.0.0-RC7`.
+- Canal vigente para download: `v2.0.0-RC8`.
 - Artefatos públicos vigentes: 
-  - `AgendaInk-2.0.0-RC7-windows.zip` — distribuição portável (descompacte e execute; ideal para USB, rede local, backup).
+  - `AgendaInk-2.0.0-RC8-windows.zip` — distribuição portável (descompacte e execute; ideal para USB, rede local, backup).
   - `AgendaInk-2.0.0.exe` — instalador tradicional Windows (wizard, atalhos no menu iniciar; requer admin).
-- Status atual: homologação pública em andamento; ambos artefatos validados como saudáveis (launcher fix 12/05/2026); lançamento oficial previsto para 26/06/2026.
+- Status atual: homologação pública em andamento; ambos artefatos validados como saudáveis (launcher fix 15/05/2026); lançamento oficial previsto para 26/06/2026.
 
 ### Histórico operacional (registro)
 
 As entradas abaixo são mantidas para rastreabilidade de entrega e auditoria técnica.
 
-- RC7 publicada em 07/05/2026 — Windows ZIP com checksum oficial.
+- RC8 publicada em 15/05/2026 — Windows ZIP com checksum oficial.
 - RC5 publicada em 06/05/2026 — ciclo intermediário de homologação.
 - RC4 publicada com portal da loja e checksums documentados.
 - RC3 marco anterior de homologação (28/04/2026).
 
 ---
 
-## Funcionalidades implementadas (v2.0.0-RC7)
+## Funcionalidades implementadas (v2.0.0-RC8)
 
 ### Arquitetura e dados
 
