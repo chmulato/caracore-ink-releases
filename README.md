@@ -10,7 +10,7 @@ Plataforma alvo: **Desktop Windows, macOS e Linux - Java 21 + JavaFX 21.0.11**. 
 
 Lançamento oficial: **26 de junho de 2026**.
 
-> **Canal público de download:** [`v2.0.0-RC8`](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC8) — distribuições publicadas para Windows (EXE + ZIP), macOS (DMG) e Linux (DEB), com runtime Java 21 embutido.
+> **Canal público de download:** [`v2.0.0-RC8`](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC8) — distribuições publicadas para Windows (ZIP), macOS (DMG) e Linux (DEB), com runtime Java 21 embutido.
 
 ---
 
@@ -35,7 +35,7 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 | Versão | `2.0.0-RC8` |
 | Publicação | 15/05/2026 (refresh RC8) |
 | Status | Release Candidate em homologação; stable previsto para 26/06/2026 |
-| Plataformas | Windows 10/11 64 bits (EXE + ZIP), macOS DMG e Linux DEB publicados |
+| Plataformas | Windows 10/11 64 bits (ZIP), macOS DMG e Linux DEB publicados |
 | Release | <https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC8> |
 | Loja | <https://ink.caracore.com.br/> |
 
@@ -44,7 +44,7 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 | Plataforma | Artefato | SHA256 |
 | ---------- | -------- | ------ |
 | Windows ZIP | `AgendaInk-2.0.0-RC8-windows.zip` | `consulte checksum.sha256 da release` |
-| Windows EXE | `AgendaInk-2.0.0.exe` | `consulte checksum.sha256 da release` |
+| Windows executável | `AgendaInk.exe` (dentro do ZIP) | `consulte checksum.sha256 da release` |
 | macOS | `AgendaInk-2.0.0-RC8.dmg` | `consulte checksum-macos-2.0.0-RC8.txt da release` |
 | Linux | `agenda-ink-2.0.0-RC8-linux.deb` | `consulte checksum-linux-2.0.0-RC8.txt da release` |
 
@@ -55,9 +55,9 @@ Os builds são distribuídos com runtime Java 21 embutido. O usuário final não
 - **RC8 launcher fix publicada** em 15/05/2026.
   - Corrigido: jpackage launcher incompatibility com JavaFX Application subclass (EXIT=1).
   - Implementado: Dedicated non-JavaFX launcher (AgendaInkLauncher) como entry point.
-  - Resultado: Ambos APP_IMAGE (ZIP) e installer EXE agora executam saudavelmente.
+  - Resultado: APP_IMAGE (ZIP) executa saudavelmente.
   - Validado: Smoke test RUNNING_AFTER_20S; processo UI inicia e persiste.
-  - Artefatos: refresh de distribuição RC8 publicado (Windows EXE+ZIP, macOS DMG e Linux DEB); checksums oficiais centralizados em `checksum.sha256` da release.
+  - Artefatos: refresh de distribuição RC8 publicado (Windows ZIP, macOS DMG e Linux DEB); checksums oficiais centralizados em `checksum.sha256` da release.
 
 ### Atualização operacional - 10/05/2026
 
@@ -72,10 +72,10 @@ Os builds são distribuídos com runtime Java 21 embutido. O usuário final não
 ### Comunicação externa (público)
 
 - Canal vigente para download: `v2.0.0-RC8`.
-- Artefatos públicos vigentes: 
+- Artefatos públicos vigentes:
   - `AgendaInk-2.0.0-RC8-windows.zip` — distribuição portável (descompacte e execute; ideal para USB, rede local, backup).
-  - `AgendaInk-2.0.0.exe` — instalador tradicional Windows (wizard, atalhos no menu iniciar; requer admin).
-- Status atual: homologação pública em andamento; ambos artefatos validados como saudáveis (launcher fix 15/05/2026); lançamento oficial previsto para 26/06/2026.
+  - `AgendaInk.exe` (dentro do ZIP) — executável desktop para iniciar o app em Windows.
+- Status atual: homologação pública em andamento; artefatos publicados e validados como saudáveis (launcher fix 15/05/2026); lançamento oficial previsto para 26/06/2026.
 
 ### Histórico operacional (registro)
 

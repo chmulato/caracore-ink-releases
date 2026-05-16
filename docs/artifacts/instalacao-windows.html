@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instalação Windows — Ink Agenda v2.0.0-RC8 | Cara Core Informática</title>
-    <meta name="description" content="Guia de instalação do Cara Core Ink Agenda v2.0.0-RC8 para Windows. Instalador padrão EXE e ZIP portable com runtime Java 21 embutido.">
+    <meta name="description" content="Guia de instalação do Cara Core Ink Agenda v2.0.0-RC8 para Windows. Pacote ZIP portable com runtime Java 21 embutido.">
     <link rel="stylesheet" href="../assets/css/ink-portal.css">
     <link rel="stylesheet" href="../assets/css/caracore-core-typography.css">
     <link rel="stylesheet" href="../assets/css/caracore-institutional-components.css">
@@ -21,12 +21,12 @@
 
         <section class="ink-launch-banner" aria-label="Release Candidate" style="border-left: 4px solid #ffd700; background: rgba(201,162,39,0.08);">
             <p class="ink-launch-label">v2.0.0-RC8 — Release Candidate</p>
-            <p class="ink-launch-date">Artefato Windows publicado na release pública RC8. Lançamento oficial: <strong>26 de junho de 2026</strong>.</p>
+            <p class="ink-launch-date">Artefato Windows (ZIP) publicado na release pública RC8. Lançamento oficial: <strong>26 de junho de 2026</strong>.</p>
         </section>
 
         <header>
             <h1>Instalação — Windows</h1>
-            <p class="subtitle">Cara Core Ink Agenda v2.0.0-RC8 · Windows 10 / 11 · 64 bits · Runtime Java 21 embutido</p>
+            <p class="subtitle">Cara Core Ink Agenda v2.0.0-RC8 · Windows 10 / 11 · 64 bits · Pacote ZIP com runtime Java 21 embutido</p>
         </header>
 
         <div class="manual-content">
@@ -36,24 +36,21 @@
                 <ul>
                     <li><strong>Windows 10</strong> ou superior (64 bits)</li>
                     <li>Aproximadamente <strong>400 MB</strong> de espaço livre em disco</li>
-                    <li><strong>Nenhuma instalação de Java necessária</strong> — runtime Java 21 embutido no instalador e no pacote ZIP</li>
-                    <li><strong>Permissão de administrador</strong> recomendada para instalação via <code>.exe</code></li>
+                    <li><strong>Nenhuma instalação de Java necessária</strong> — runtime Java 21 embutido no pacote ZIP</li>
+                    <li><strong>Permissão de administrador</strong> não é necessária para uso em modo portable (ZIP)</li>
                     <li>Conexão com internet: <strong>não necessária</strong> para uso do aplicativo</li>
                 </ul>
             </section>
 
             <section class="manual-card" id="download">
                 <h2>Download do artefato</h2>
-                <p>Canal oficial da RC8: <a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC8" target="_blank" rel="noopener">v2.0.0-RC8</a>. Artefatos Windows:</p>
+                <p>Canal oficial da RC8: <a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0-RC8" target="_blank" rel="noopener">v2.0.0-RC8</a>. Artefato Windows publicado:</p>
                 <p style="margin: 1rem 0;">
-                    <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 22px; border-radius: 6px; margin-right: 0.5rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC8/AgendaInk-2.0.0-RC8-windows.exe">
-                        ↓ AgendaInk-2.0.0-RC8-windows.exe (instalador)
-                    </a>
                     <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 22px; border-radius: 6px;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0-RC8/AgendaInk-2.0.0-RC8-windows.zip">
                         ↓ AgendaInk-2.0.0-RC8-windows.zip
                     </a>
                 </p>
-                <p style="font-size: 0.9rem; opacity: 0.75;">Arquivos: <code>AgendaInk-2.0.0-RC8-windows.exe</code> e <code>AgendaInk-2.0.0-RC8-windows.zip</code> · valide os checksums antes de executar.</p>
+                <p style="font-size: 0.9rem; opacity: 0.75;">Arquivo: <code>AgendaInk-2.0.0-RC8-windows.zip</code> · valide os checksums antes de executar.</p>
             </section>
 
             <section class="manual-card" id="integridade">
@@ -61,34 +58,31 @@
                 <p>Antes de instalar, confirme que o arquivo não foi corrompido. No PowerShell, na pasta onde o ZIP foi salvo:</p>
 
                 <h3>SHA256 (recomendado)</h3>
-                <pre><code>(Get-FileHash .\AgendaInk-2.0.0-RC8-windows.exe -Algorithm SHA256).Hash
-(Get-FileHash .\AgendaInk-2.0.0-RC8-windows.zip -Algorithm SHA256).Hash</code></pre>
+                <pre><code>(Get-FileHash .\AgendaInk-2.0.0-RC8-windows.zip -Algorithm SHA256).Hash</code></pre>
                 <p>Compare com os valores oficiais no arquivo <code>checksum.sha256</code> da release RC8.</p>
 
                 <h3>Via CertUtil (Prompt de Comando)</h3>
-                <pre><code>certutil -hashfile AgendaInk-2.0.0-RC8-windows.exe SHA256
-certutil -hashfile AgendaInk-2.0.0-RC8-windows.zip SHA256</code></pre>
+                <pre><code>certutil -hashfile AgendaInk-2.0.0-RC8-windows.zip SHA256</code></pre>
             </section>
 
             <section class="manual-card" id="instalacao">
                 <h2>Instalação passo a passo</h2>
                 <ol style="line-height: 2;">
-                    <li>Baixe <code>AgendaInk-2.0.0-RC8-windows.exe</code> (instalação padrão) ou <code>AgendaInk-2.0.0-RC8-windows.zip</code> (portable).</li>
+                    <li>Baixe <code>AgendaInk-2.0.0-RC8-windows.zip</code> (portable).</li>
                     <li>Verifique os checksums conforme seção acima.</li>
-                    <li>Para instalação padrão: execute o <code>.exe</code> e avance no assistente.</li>
-                    <li>Para modo portable: extraia o ZIP, abra a pasta <code>AgendaInk\</code> e execute <code>AgendaInk.exe</code>.</li>
-                    <li>Na instalação padrão, abra o app pelo Menu Iniciar; no modo portable, execute pela pasta extraída.</li>
+                    <li>Extraia o ZIP, abra a pasta <code>AgendaInk\</code> e execute <code>AgendaInk.exe</code>.</li>
+                    <li>Para facilitar, crie um atalho do executável na Área de Trabalho ou Menu Iniciar.</li>
                     <li>Na primeira execução, o banco de dados é criado automaticamente em:<br>
                         <code>%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db</code></li>
                 </ol>
                 <p style="margin-top: 1rem; padding: 0.75rem 1rem; border-left: 4px solid var(--accent-gold, #c9a227); background: rgba(201,162,39,0.07); border-radius: 0 6px 6px 0;">
-                    <strong>Nota:</strong> Esta versão pública é a RC8, entregue com instalador padrão Windows e alternativa ZIP portable.
+                    <strong>Nota:</strong> Esta versão pública RC8 está publicada com pacote ZIP portable no canal oficial.
                 </p>
             </section>
 
             <section class="manual-card" id="antivirus">
                 <h2>Aviso de antivírus / SmartScreen</h2>
-                <p>Por ser um artefato pré-release sem assinatura de código comercial, o Windows SmartScreen ou seu antivírus pode exibir um aviso na primeira execução. Isso é esperado para software não assinado.</p>
+                <p>Por ser um artefato pré-release sem assinatura de código comercial, o Windows SmartScreen ou seu antivírus pode exibir um aviso ao executar o <code>AgendaInk.exe</code>. Isso é esperado para software não assinado.</p>
                 <ul>
                     <li>Na janela do SmartScreen: clique em <strong>"Mais informações"</strong> → <strong>"Executar mesmo assim"</strong>.</li>
                     <li>Verifique sempre os checksums antes de executar qualquer arquivo baixado.</li>
@@ -123,13 +117,12 @@ certutil -hashfile AgendaInk-2.0.0-RC8-windows.zip SHA256</code></pre>
 
             <section class="manual-card" id="desinstalacao">
                 <h2>Desinstalação</h2>
-            <p>Para remover a distribuição RC8:</p>
+            <p>Para remover a distribuição RC8 (modo ZIP):</p>
                 <ol>
-                <li>Se instalado por <code>.exe</code>: use Configurações do Windows → Aplicativos → <strong>AgendaInk</strong> → Desinstalar.</li>
-                <li>Se usado em modo portable: exclua a pasta <code>AgendaInk\</code> extraída do ZIP.</li>
+                <li>Exclua a pasta <code>AgendaInk\</code> extraída do ZIP.</li>
                     <li>Opcionalmente, remova os dados em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\</code>.</li>
                 </ol>
-                <p style="font-size: 0.88rem; opacity: 0.75;">A RC8 já inclui instalador padrão com registro de desinstalação no Windows.</p>
+                <p style="font-size: 0.88rem; opacity: 0.75;">Por ser distribuição portable, a remoção é manual (exclusão da pasta e, opcionalmente, dos dados locais).</p>
             </section>
 
             <section class="manual-card" id="nav">
