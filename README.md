@@ -45,8 +45,8 @@ O código-fonte e o desenvolvimento ficam no repositório **caracore-ink** (ofic
 | ---------- | -------- | ------ |
 | Windows ZIP | `AgendaInk-2.0.0-RC8-windows.zip` | `consulte checksum.sha256 da release` |
 | Windows EXE | `AgendaInk-2.0.0.exe` | `consulte checksum.sha256 da release` |
-| macOS | `AgendaInk-2.0.0-RC8.dmg` | `consulte checksum.sha256 da release` |
-| Linux | `agenda-ink_2.0.0_amd64.deb` | `consulte checksum.sha256 da release` |
+| macOS | `AgendaInk-2.0.0-RC8.dmg` | `consulte checksum-macos-2.0.0-RC8.txt da release` |
+| Linux | `agenda-ink-2.0.0-RC8-linux.deb` | `consulte checksum-linux-2.0.0-RC8.txt da release` |
 
 Os builds são distribuídos com runtime Java 21 embutido. O usuário final não precisa instalar JDK.
 
