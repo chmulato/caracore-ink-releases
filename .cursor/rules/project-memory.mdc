@@ -1,0 +1,25 @@
+---
+description: Memória da loja Ink Agenda — caracore-ink-releases; vitrine ink.caracore.com.br; v2.0.0-RC8
+alwaysApply: true
+---
+
+# Memória da Loja — caracore-ink-releases
+
+## Repositório e papel
+- **caracore-ink-releases:** loja (vitrine e releases) do **Ink Agenda**.
+- **URL:** https://ink.caracore.com.br/
+- **Publicação:** GitHub Pages a partir de **docs/**.
+- **Oficina:** caracore-ink
+- **Versão loja:** v2.0.0-RC8 (`VERSION`)
+
+## Matriz
+- **Portfólio:** `portfolio.html#caracore-ink-agenda`
+- **Espelho:** `docs/mirror-delivery.html`
+- **Lançamento desktop:** 26/06/2026
+
+## Estrutura (docs/)
+- index · download · wiki/ · canal-feedback · licenca-uso (conforme molde)
+
+## Convenções
+- Footer → portfólio `#caracore-ink-agenda`
+- Alinhar RC/tag com oficina e CHANGELOG antes de deploy.
