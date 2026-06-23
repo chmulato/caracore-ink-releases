@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual do usuário — Ink Agenda v2.0.0 | Cara Core Informática</title>
-    <meta name="description" content="Manual do Ink Agenda v2.0.0: login por celular, calendário e lista do dia, clientes, financeiro, backup com senha. Canal público RC8 para desktop com distribuição em Windows, macOS e Linux.">
+    <meta name="description" content="Manual do Ink Agenda v2.0.0: login por celular, calendário e lista do dia, clientes, financeiro, backup com senha. Versão estável v2.0.0 para desktop com distribuição em Windows, macOS e Linux.">
     <link rel="stylesheet" href="assets/css/loja.css">
         <link rel="stylesheet" href="assets/css/evolution-status.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
@@ -22,7 +22,7 @@
 
         <section class="ink-launch-banner" aria-label="Data de lançamento">
             <p class="ink-launch-label">Lançamento oficial</p>
-            <p class="ink-launch-date"><strong>Ink Agenda v2.0.0</strong> para desktop (Windows · macOS · Linux) — <strong>26 de junho de 2026</strong>. Canal público atual: <strong>RC8</strong>, com distribuição publicada nas três plataformas.</p>
+            <p class="ink-launch-date"><strong>Ink Agenda v2.0.0</strong> para desktop (Windows · macOS · Linux) — lançado oficialmente em <strong>26 de junho de 2026</strong> com distribuição publicada nas três plataformas.</p>
         </section>
 
         <header>
@@ -47,7 +47,7 @@
         <div class="manual-content">
         <section class="manual-card manual-card--intro" id="visao-geral">
             <h2>Visão geral</h2>
-            <p>O <strong>Ink Agenda</strong> é um aplicativo desktop que ajuda tatuadores e estúdios a organizar agendamentos, controlar entradas e saídas e acompanhar o desempenho do negócio. Os dados ficam no seu computador (SQLite local); a interface é nativa (Java 21 + JavaFX 21.0.11), sem depender de navegador. <strong>v2.0.0</strong> é o primeiro produto Cara Core já maduro; lançamento oficial em 26 de junho de 2026. O canal público atual da loja permanece na <strong>RC8</strong>.</p>
+            <p>O <strong>Ink Agenda</strong> é um aplicativo desktop que ajuda tatuadores e estúdios a organizar agendamentos, controlar entradas e saídas e acompanhar o desempenho do negócio. Os dados ficam no seu computador (SQLite local); a interface é nativa (Java + JavaFX), sem depender de navegador. <strong>v2.0.0</strong> é o primeiro produto Cara Core já maduro, lançado oficialmente em 26 de junho de 2026.</p>
             <h3>Principais recursos</h3>
             <ul>
                 <li><strong>Login por celular</strong> — Acesso com o número do tatuador (telas de login e recuperação).</li>
@@ -64,7 +64,7 @@
             <h2>Requisitos e instalação</h2>
             <p><strong>Requisitos:</strong> Windows 10 ou superior. Para a vitrine pública atual:</p>
             <ul>
-                <li><strong>ZIP Windows (recomendado na RC8)</strong> — Baixe o asset Windows na página de <a href="download.html">Download</a>. Não é necessário ter Java instalado; o runtime já vai embutido.</li>
+                <li><strong>Instalador Windows (recomendado)</strong> — Baixe o instalador Windows na página de <a href="download.html">Download</a>. Não é necessário ter Java instalado; o runtime já vai embutido.</li>
                 <li><strong>Guias por plataforma</strong> — A mesma página documenta os artefatos publicados para Windows (ZIP), macOS (DMG) e Linux (DEB).</li>
             </ul>
             <p>Os dados ficam em <code>%AppData%\Local\CaraCore\AgendaInk</code> (banco SQLite e backups automáticos). Para desenvolvimento na oficina: <code>cd agenda-java && mvn javafx:run</code>.</p>
@@ -119,8 +119,8 @@
         <section class="manual-card manual-card--troubleshoot" id="troubleshooting">
             <h2>Problemas comuns</h2>
             <ul>
-                <li><strong>ZIP/DMG/DEB não inicia</strong> — Confirme que o artefato veio da release pública RC8 e valide o checksum antes de executar.</li>
-                <li><strong>Erro ao iniciar a janela</strong> — Confirme que você extraiu corretamente o ZIP Windows RC8 e que o sistema operacional atende aos requisitos mínimos.</li>
+                <li><strong>ZIP/DMG/DEB não inicia</strong> — Confirme que o artefato veio da release pública v2.0.0 e valide o checksum antes de executar.</li>
+                <li><strong>Erro ao iniciar a janela</strong> — Confirme que você instalou corretamente no Windows e que o sistema operacional atende aos requisitos mínimos.</li>
                 <li><strong>Horário já ocupado ao salvar</strong> — O aplicativo impede sobrepor horários. Escolha outro horário ou edite o agendamento existente.</li>
                 <li><strong>Dúvidas ou sugestões</strong> — Use o <a href="canal-feedback.html">Canal de feedback</a> (e-mail, WhatsApp ou Telegram) para reportar problemas ou pedir ajuda.</li>
             </ul>
