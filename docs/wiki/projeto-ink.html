@@ -1,487 +1,487 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ink Agenda - Wiki Cara Core</title>
-    <meta name="description" content="Ink Agenda v2.0.0 - Sistema de gestão para estúdios de tatuagem. Agenda, clientes e financeiro. Desktop Windows, macOS e Linux (Java 25 + JavaFX 21), SQLite local. Lançamento oficial 26/Jun/2026.">
-    
-    <!-- Bootstrap CSS -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
-    <!-- Wiki CSS -->
-    <link rel="stylesheet" href="../assets/css/wiki.css">
-    <!-- Projeto Ink CSS -->
-    <link rel="stylesheet" href="../assets/css/projeto-ink.css">
-    <!-- Wiki Unified (overrides) -->
-    <link rel="stylesheet" href="../assets/css/wiki-unified.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
-    
-    <link rel="stylesheet" href="../assets/css/caracore-core-typography.css">
-    <link rel="stylesheet" href="../assets/css/caracore-institutional-components.css">
-</head>
-<body>
-    <!-- NavegaÃ§Ã£o -->
-    <nav class="navbar navbar-expand-lg navbar-dark wiki-nav">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="bi bi-journal-code"></i> Wiki Cara Core
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWiki" aria-label="Alternar navegaÃ§Ã£o" title="Menu de navegaÃ§Ã£o">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarWiki">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">
-                            <i class="bi bi-shop"></i> Loja
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <i class="bi bi-journal-text"></i> Wiki da loja
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../download.html">
-                            <i class="bi bi-download"></i> Download / entregas
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../canal-feedback.html">
-                            <i class="bi bi-chat-dots"></i> Canal de feedback
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <span class="nav-link" style="opacity:0.6; cursor:default;"><i class="bi bi-globe2"></i> Wiki do Ink â€” ink.caracore.com.br</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Breadcrumb -->
-    <div class="wiki-breadcrumb">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="../index.html">Loja</a></li>
-                    <li class="breadcrumb-item"><a href="index.html">Wiki</a></li>
-                    <li class="breadcrumb-item active">Ink Agenda</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-
-    <div class="wiki-container">
-        <div class="row">
-            <!-- Sidebar -->
-            <div class="col-lg-3 col-md-4">
-                                <div class="wiki-sidebar">
-                    <h4><i class="bi bi-list-ul"></i> Nesta loja</h4>
-                    <ul class="wiki-menu">
-                        <li><a href="index.html"><i class="bi bi-journal-text"></i> InÃ­cio do wiki</a></li>
-                        <li><a href="projeto-ink.html" class="active"><i class="bi bi-file-earmark-text"></i> DocumentaÃ§Ã£o do produto</a></li>
-                        <li><a href="../download.html"><i class="bi bi-box-arrow-down"></i> Download / entregas</a></li>
-                        <li><a href="../canal-feedback.html"><i class="bi bi-chat-dots"></i> Canal de feedback</a></li>
-                        <li><span style="opacity:0.6;"><i class="bi bi-globe2"></i> Wiki do Ink â€” apenas nesta vitrine</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- ConteÃºdo Principal -->
-            <div class="col-lg-9 col-md-8">
-                <div class="wiki-content">
-                    <div class="project-card">
-                        <div class="project-header ink">
-                            <h1><i class="bi bi-calendar-check"></i> Ink Agenda</h1>
-                            <p><strong>v2.0.0</strong> — Gestão para estúdios de tatuagem; versão oficial estável lançada para Windows, macOS e Linux (Java + JavaFX)</p>
-                        </div>
-                        <div class="project-body">
-                            <div class="project-status">
-                                <span class="badge badge-private">Privado</span>
-                                <span class="badge badge-proprietary">LicenÃ§a ProprietÃ¡ria</span>
-                                <span class="badge badge-stable">Produto maduro</span>
-                                <span class="badge badge-java">Java 25</span>
-                                <span class="badge badge-sqlite">SQLite</span>
-                                <span class="badge badge-template">Windows Desktop</span>
-                            </div>
-                            <div class="mt-2">
-                                <span class="tech-badge">JavaFX 21.0.11</span>
-                                <span class="tech-badge">v2.0.0</span>
-                                <span class="tech-badge">LanÃ§amento 26/Jun/2026</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="alert alert-success">
-                        <i class="bi bi-star-fill"></i> <strong>Versão v2.0.0 oficial publicada em 26/06/2026.</strong> Distribuições já disponíveis na release oficial para Windows, macOS e Linux. A base técnica mais recente foi validada com JavaFX na Matriz. Vitrine, download e esta wiki ficam em <strong>ink.caracore.com.br</strong>.
-                    </div>
-
-                    <!-- Aviso sobre repositÃ³rio privado -->
-                    <div class="alert alert-warning">
-                        <h5><i class="bi bi-lock-fill"></i> RepositÃ³rio Privado</h5>
-                        <p class="mb-0">Este projeto possui <strong>cÃ³digo-fonte privado</strong> e Ã© protegido por <strong>licenÃ§a proprietÃ¡ria</strong> da Cara Core InformÃ¡tica. Vitrine e releases no canal institucional: <a href="../download.html">download.html</a>.</p>
-                    </div>
-
-                    <!-- VisÃ£o Geral -->
-                    <section class="mb-5">
-                        <h2><i class="bi bi-eye text-info"></i> VisÃ£o Geral</h2>
-                        
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="leigos-section">
-                                    <h3><i class="bi bi-people"></i> O que Ã© o Ink Agenda?</h3>
-                                    <p>O <strong>Ink Agenda</strong> Ã© um aplicativo de computador (Windows, macOS e Linux) para tatuadores e estÃºdios: agenda de sessÃµes, cadastro de clientes, controle de receitas e despesas, saldo por perÃ­odo e indicadores. Tudo fica no seu PC, sem depender de internet para funcionar.</p>
-                                    <p><strong>Em resumo:</strong></p>
-                                    <ul class="feature-list">
-                                        <li>ðŸ“… <strong>Agenda:</strong> CalendÃ¡rio visual e lista do dia (ordem por horÃ¡rio)</li>
-                                        <li>ðŸ‘¤ <strong>Clientes:</strong> Nome, valor, data/hora; celular opcional; check Pagou na tela Hoje</li>
-                                        <li>ðŸ’° <strong>Financeiro:</strong> Entradas, saÃ­das, saldo e histÃ³rico</li>
-                                        <li>ðŸ’¾ <strong>Backup:</strong> Export/import CSV GZIP com senha; soberania dos dados</li>
-                                        <li>ðŸ–¥ï¸ <strong>Desktop multiplataforma:</strong> Windows, macOS e Linux; Java 21 + JavaFX; dados em SQLite local</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="estagiario-section">
-                                    <h3><i class="bi bi-mortarboard"></i> Arquitetura TÃ©cnica</h3>
-                                    <p>AplicaÃ§Ã£o desktop nativa em <strong>Java 21</strong> e <strong>JavaFX 21.0.11</strong>, com banco <strong>SQLite</strong> local. MÃ³dulos: agenda (calendÃ¡rio, lista do dia), clientes, financeiro (receitas/despesas), backup CSV GZIP. Oficina: <code>caracore-ink</code>; loja e releases: <code>caracore-ink-releases</code>.</p>
-                                    <p><strong>Stack:</strong></p>
-                                    <ul class="feature-list">
-                                        <li><strong>Runtime:</strong> Java 21, JavaFX 21.0.11</li>
-                                        <li><strong>Banco:</strong> SQLite (Ãºnico no escopo)</li>
-                                        <li><strong>Plataforma:</strong> Desktop (Windows, macOS, Linux)</li>
-                                        <li><strong>Build:</strong> Maven; testes unitÃ¡rios (JUnit 5, cobertura â‰¥80% em core/domain)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Funcionalidades principais -->
-                    <section class="mb-5">
-                        <h2><i class="bi bi-star text-warning"></i> Funcionalidades Principais</h2>
-                        
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <div class="feature-card">
-                                    <div class="feature-header">
-                                        <i class="bi bi-calendar-week text-primary"></i>
-                                        <h4>Agenda e lista do dia</h4>
-                                    </div>
-                                    <div class="feature-content">
-                                        <p><strong>Para leigos:</strong> Veja o mÃªs no calendÃ¡rio; ao clicar no dia, abre a lista de agendamentos daquele dia, do mais cedo ao mais tarde. NÃ£o permite sobrepor horÃ¡rios ao salvar.</p>
-                                        <p><strong>TÃ©cnico:</strong> DayAgendaTab com lista ordenada por <code>appointmentTime</code>; validaÃ§Ã£o de horÃ¡rio ocupado (CODE_CLIENTE_003).</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 mb-4">
-                                <div class="feature-card">
-                                    <div class="feature-header">
-                                        <i class="bi bi-person-badge text-success"></i>
-                                        <h4>Cadastro de clientes</h4>
-                                    </div>
-                                    <div class="feature-content">
-                                        <p><strong>Para leigos:</strong> Cadastre nome, valor, data e hora; celular opcional. Na tela Hoje, marque quem jÃ¡ pagou.</p>
-                                        <p><strong>TÃ©cnico:</strong> ClientFormTab; login por celular (tatuador); entidade Cliente com validaÃ§Ãµes.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 mb-4">
-                                <div class="feature-card">
-                                    <div class="feature-header">
-                                        <i class="bi bi-cash-stack text-warning"></i>
-                                        <h4>Financeiro</h4>
-                                    </div>
-                                    <div class="feature-content">
-                                        <p><strong>Para leigos:</strong> Registre entradas e despesas; acompanhe saldo e histÃ³rico por perÃ­odo.</p>
-                                        <p><strong>TÃ©cnico:</strong> Receitas/despesas, saldo, indicadores mensais; persistÃªncia em SQLite.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 mb-4">
-                                <div class="feature-card">
-                                    <div class="feature-header">
-                                        <i class="bi bi-archive text-info"></i>
-                                        <h4>Backup e recuperaÃ§Ã£o</h4>
-                                    </div>
-                                    <div class="feature-content">
-                                        <p><strong>Para leigos:</strong> Exporte e importe seus dados em arquivo protegido por senha (CSV compactado).</p>
-                                        <p><strong>TÃ©cnico:</strong> CSV GZIP com senha; formato Ãºnico; CsvBackupService, validateCsvSanity.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Stack e links -->
-                    <section class="mb-5">
-                        <h2><i class="bi bi-image text-success"></i> Capturas de Tela</h2>
-                        <p>VisualizaÃ§Ã£o das principais telas do Ink Agenda na linha pÃºblica atual da loja:</p>
-                        
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="screenshot-card">
-                                    <div class="screenshot-header">
-                                        <h5><i class="bi bi-box-arrow-in-right"></i> Tela de Login</h5>
-                                    </div>
-                                    <img src="../assets/img/tela_de_login.png" alt="Tela de Login" class="img-fluid rounded border">
-                                    <small class="text-muted">Acesso com celular e senha (desktop atual)</small>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="screenshot-card">
-                                    <div class="screenshot-header">
-                                        <h5><i class="bi bi-key"></i> RecuperaÃ§Ã£o de Senha</h5>
-                                    </div>
-                                    <img src="../assets/img/tela_de_recuperacao_de_senha.png" alt="RecuperaÃ§Ã£o de Senha" class="img-fluid rounded border">
-                                    <small class="text-muted">Fluxo de redefiniÃ§Ã£o de senha por celular</small>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="screenshot-card">
-                                    <div class="screenshot-header">
-                                        <h5><i class="bi bi-speedometer2"></i> Dashboard</h5>
-                                    </div>
-                                    <img src="../assets/img/tela_de_dashboard.png" alt="Dashboard do Ink Agenda" class="img-fluid rounded border">
-                                    <small class="text-muted">Painel inicial com visÃ£o consolidada de agenda e operaÃ§Ã£o</small>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-6">
-                                <div class="screenshot-card">
-                                    <div class="screenshot-header">
-                                        <h5><i class="bi bi-cash-stack"></i> Financeiro (Parte 1)</h5>
-                                    </div>
-                                    <img src="../assets/img/tela_de_financa_parte_01.png" alt="Financeiro parte 1" class="img-fluid rounded border">
-                                    <small class="text-muted">VisÃ£o inicial do mÃ³dulo financeiro com entradas e saÃ­das</small>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="screenshot-card">
-                                    <div class="screenshot-header">
-                                        <h5><i class="bi bi-cash-coin"></i> Financeiro (Parte 2)</h5>
-                                    </div>
-                                    <img src="../assets/img/tela_de_financa_parte_02.png" alt="Financeiro parte 2" class="img-fluid rounded border">
-                                    <small class="text-muted">Detalhamento operacional do fluxo financeiro do estÃºdio</small>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="screenshot-card">
-                                    <div class="screenshot-header">
-                                        <h5><i class="bi bi-bar-chart-line"></i> Financeiro (Parte 3)</h5>
-                                    </div>
-                                    <img src="../assets/img/tela_de_financa_parte_03.png" alt="Financeiro parte 3" class="img-fluid rounded border">
-                                    <small class="text-muted">Indicadores e acompanhamento visual do resultado financeiro</small>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-6">
-                                <div class="screenshot-card">
-                                    <div class="screenshot-header">
-                                        <h5><i class="bi bi-sliders2-vertical"></i> ConfiguraÃ§Ãµes (Atualizada)</h5>
-                                    </div>
-                                    <img src="../assets/img/tela_de_config.png" alt="ConfiguraÃ§Ãµes atualizadas" class="img-fluid rounded border">
-                                    <small class="text-muted">VersÃ£o mais recente do painel de configuraÃ§Ã£o</small>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-6">
-                                <div class="screenshot-card">
-                                    <div class="screenshot-header">
-                                        <h5><i class="bi bi-person-gear"></i> GestÃ£o de UsuÃ¡rio</h5>
-                                    </div>
-                                    <img src="../assets/img/tela_de_usuario.png" alt="GestÃ£o de usuÃ¡rio" class="img-fluid rounded border">
-                                    <small class="text-muted">Tela de usuÃ¡rio com dados de perfil e manutenÃ§Ã£o de acesso</small>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="screenshot-card">
-                                    <div class="screenshot-header">
-                                        <h5><i class="bi bi-receipt"></i> OrÃ§amentos</h5>
-                                    </div>
-                                    <img src="../assets/img/tela_de_orcamentos.png" alt="Tela de orÃ§amentos" class="img-fluid rounded border">
-                                    <small class="text-muted">GestÃ£o de orÃ§amentos para planejamento de atendimentos</small>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="screenshot-card">
-                                    <div class="screenshot-header">
-                                        <h5><i class="bi bi-file-earmark-pdf"></i> RelatÃ³rio em PDF</h5>
-                                    </div>
-                                    <img src="../assets/img/tela_de_relatorio_pdf.png" alt="RelatÃ³rio em PDF" class="img-fluid rounded border">
-                                    <small class="text-muted">PrÃ©-visualizaÃ§Ã£o e exportaÃ§Ã£o de relatÃ³rio para PDF</small>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="screenshot-card">
-                                    <div class="screenshot-header">
-                                        <h5><i class="bi bi-printer"></i> RelatÃ³rio para ImpressÃ£o</h5>
-                                    </div>
-                                    <img src="../assets/img/tela_de_relatorio_imprimir.png" alt="RelatÃ³rio para impressÃ£o" class="img-fluid rounded border">
-                                    <small class="text-muted">Modo de impressÃ£o para relatÃ³rios operacionais do estÃºdio</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="alert alert-info mt-4">
-                            <i class="bi bi-info-circle"></i> <strong>Capturas atualizadas em:</strong> 15/05/2026 â€” vitrine pÃºblica com o conjunto mais recente de telas.
-                        </div>
-                    </section>
-
-                    <!-- Stack e links -->
-                    <section class="mb-5">
-                        <h2><i class="bi bi-stack text-primary"></i> Stack e Entrega</h2>
-                        
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4><i class="bi bi-code-slash text-info"></i> Tecnologias</h4>
-                                <ul class="tech-list">
-                                    <li><strong>Java 21:</strong> Linguagem e runtime</li>
-                                    <li><strong>JavaFX 21.0.11:</strong> Interface grÃ¡fica desktop</li>
-                                    <li><strong>SQLite:</strong> Banco de dados local</li>
-                                    <li><strong>Maven:</strong> Build e dependÃªncias</li>
-                                    <li><strong>JUnit 5 / Mockito:</strong> Testes unitÃ¡rios; JaCoCo (cobertura)</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <h4><i class="bi bi-box-seam text-success"></i> Oficina e Loja</h4>
-                                <p><strong>Oficina:</strong> caracore-ink (repositÃ³rio do app). <strong>Loja:</strong> caracore-ink-releases (vitrine, releases e download em <strong>ink.caracore.com.br</strong>).</p>
-                            </div>
-                        </div>
-
-                        <div class="d-grid gap-2 d-md-block mt-4">
-                            <a href="../download.html" class="btn-wiki me-2">
-                                <i class="bi bi-shop"></i> Loja (releases)
-                            </a>
-                            <a href="../tecnologia.html" class="btn-wiki me-2">
-                                <i class="bi bi-code-slash"></i> Tecnologia
-                            </a>
-                            <span class="btn-wiki me-2" style="opacity:0.65; cursor:default;">
-                                <i class="bi bi-phone"></i> Linha atual desktop (Windows, macOS e Linux)
-                            </span>
-                        </div>
-                    </section>
-
-                    <section class="mb-5" id="implantacao-local">
-                        <h2><i class="bi bi-pc-display text-secondary"></i> ImplantaÃ§Ã£o local (guia rÃ¡pido)</h2>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4><i class="bi bi-check2-square"></i> PrÃ©-requisitos mÃ­nimos</h4>
-                                <ul class="feature-list">
-                                    <li>Windows 10/11 atualizado</li>
-                                    <li>Perfil de usuÃ¡rio com permissÃ£o de instalaÃ§Ã£o local</li>
-                                    <li>EspaÃ§o livre para app, banco SQLite e backups</li>
-                                    <li>Internet apenas para baixar instalador (operaÃ§Ã£o pode ser local)</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <h4><i class="bi bi-play-circle"></i> ValidaÃ§Ã£o pÃ³s-instalaÃ§Ã£o</h4>
-                                <ul class="feature-list">
-                                    <li>Abrir o Ink Agenda e confirmar carregamento da tela inicial</li>
-                                    <li>Criar 1 cliente de teste e 1 agendamento</li>
-                                    <li>Registrar 1 receita e 1 despesa</li>
-                                    <li>Executar 1 exportaÃ§Ã£o de backup com senha</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="mb-5" id="operacao-diaria">
-                        <h2><i class="bi bi-clipboard2-check text-success"></i> OperaÃ§Ã£o diÃ¡ria do estÃºdio</h2>
-                        <div class="alert alert-light border">
-                            <strong>Checklist recomendado por turno:</strong>
-                            <ul class="mb-0 mt-2">
-                                <li>Conferir agenda do dia e evitar conflitos de horÃ¡rio antes de abrir atendimento</li>
-                                <li>Atualizar status de pagamento na lista do dia ao finalizar sessÃ£o</li>
-                                <li>LanÃ§ar despesas operacionais no mesmo dia para manter saldo real</li>
-                                <li>Fechar turno conferindo saldo e nÃºmero de atendimentos executados</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section class="mb-5" id="backup-restauracao">
-                        <h2><i class="bi bi-shield-check text-primary"></i> Backup e restauraÃ§Ã£o (governanÃ§a local)</h2>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4><i class="bi bi-save2"></i> PolÃ­tica sugerida</h4>
-                                <ul class="feature-list">
-                                    <li>Backup diÃ¡rio no encerramento do expediente</li>
-                                    <li>Senha forte no arquivo de exportaÃ§Ã£o</li>
-                                    <li>CÃ³pia adicional em mÃ­dia externa/segura</li>
-                                    <li>RetenÃ§Ã£o mÃ­nima: Ãºltimos 7 dias Ãºteis</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <h4><i class="bi bi-arrow-repeat"></i> Teste de restauraÃ§Ã£o</h4>
-                                <ul class="feature-list">
-                                    <li>Executar teste de importaÃ§Ã£o semanal em ambiente controlado</li>
-                                    <li>Confirmar integridade de clientes, agenda e financeiro apÃ³s importaÃ§Ã£o</li>
-                                    <li>Registrar data/hora do teste para rastreabilidade operacional</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="mb-5">
-                        <h2><i class="bi bi-diagram-3 text-warning"></i> Canal de release e versionamento</h2>
-                        <p>DistribuiÃ§Ã£o oficial centralizada em <strong>caracore-ink-releases</strong>. A loja local referencia um Ãºnico canal para download e histÃ³rico de versÃµes, evitando duplicidade de artefatos.</p>
-                        <div class="d-grid gap-2 d-md-block">
-                            <a href="../download.html" class="btn-wiki me-2">
-                                <i class="bi bi-box-arrow-down"></i> Download e artefatos (vitrine)
-                            </a>
-                            <a href="../download.html#integridade-artefatos" class="btn-wiki me-2">
-                                <i class="bi bi-shield-check"></i> Integridade (checksums)
-                            </a>
-                        </div>
-                    </section>
-
-                    <section class="mb-5" id="diagnostico-rapido">
-                        <h2><i class="bi bi-tools text-danger"></i> DiagnÃ³stico rÃ¡pido local (N1)</h2>
-                        <ul class="feature-list">
-                            <li><strong>Aplicativo nÃ£o inicia:</strong> reiniciar Windows e executar novamente como usuÃ¡rio local</li>
-                            <li><strong>LentidÃ£o:</strong> validar tamanho da base local e executar backup + manutenÃ§Ã£o preventiva</li>
-                            <li><strong>Erro em dados:</strong> restaurar Ãºltimo backup validado e repetir operaÃ§Ã£o</li>
-                            <li><strong>Persistindo falha:</strong> acionar <a href="../canal-feedback.html">canal de feedback</a> com horÃ¡rio do incidente e evidÃªncias</li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="wiki-footer">
-        <div class="container">
-            <p>&copy; 2025 Cara Core InformÃ¡tica - CNPJ: 23.969.028/0001-37</p>
-            <p>Ink Agenda v2.0.0 — Versão estável oficial lançada em 26/Jun/2026</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Wiki JS -->
-    <script src="../assets/js/wiki.js"></script>
-</body>
-</html>
-
-
-
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink Agenda - Wiki Cara Core</title>
+    <meta name="description" content="Ink Agenda v2.0.0 - Sistema de gestão para estúdios de tatuagem. Agenda, clientes e financeiro. Desktop Windows, macOS e Linux (Java 25 + JavaFX 21), SQLite local. Lançamento oficial 26/Jun/2026.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
+    <!-- Wiki CSS -->
+    <link rel="stylesheet" href="../assets/css/wiki.css">
+    <!-- Projeto Ink CSS -->
+    <link rel="stylesheet" href="../assets/css/projeto-ink.css">
+    <!-- Wiki Unified (overrides) -->
+    <link rel="stylesheet" href="../assets/css/wiki-unified.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+    
+    <link rel="stylesheet" href="../assets/css/caracore-core-typography.css">
+    <link rel="stylesheet" href="../assets/css/caracore-institutional-components.css">
+</head>
+<body>
+    <!-- NavegaÃ§Ã£o -->
+    <nav class="navbar navbar-expand-lg navbar-dark wiki-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-journal-code"></i> Wiki Cara Core
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWiki" aria-label="Alternar navegaÃ§Ã£o" title="Menu de navegaÃ§Ã£o">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarWiki">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="bi bi-shop"></i> Loja
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-journal-text"></i> Wiki da loja
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../download.html">
+                            <i class="bi bi-download"></i> Download / entregas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../canal-feedback.html">
+                            <i class="bi bi-chat-dots"></i> Canal de feedback
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link" style="opacity:0.6; cursor:default;"><i class="bi bi-globe2"></i> Wiki do Ink â€” ink.caracore.com.br</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="wiki-breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="../index.html">Loja</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Wiki</a></li>
+                    <li class="breadcrumb-item active">Ink Agenda</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="wiki-container">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3 col-md-4">
+                                <div class="wiki-sidebar">
+                    <h4><i class="bi bi-list-ul"></i> Nesta loja</h4>
+                    <ul class="wiki-menu">
+                        <li><a href="index.html"><i class="bi bi-journal-text"></i> InÃ­cio do wiki</a></li>
+                        <li><a href="projeto-ink.html" class="active"><i class="bi bi-file-earmark-text"></i> DocumentaÃ§Ã£o do produto</a></li>
+                        <li><a href="../download.html"><i class="bi bi-box-arrow-down"></i> Download / entregas</a></li>
+                        <li><a href="../canal-feedback.html"><i class="bi bi-chat-dots"></i> Canal de feedback</a></li>
+                        <li><span style="opacity:0.6;"><i class="bi bi-globe2"></i> Wiki do Ink â€” apenas nesta vitrine</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ConteÃºdo Principal -->
+            <div class="col-lg-9 col-md-8">
+                <div class="wiki-content">
+                    <div class="project-card">
+                        <div class="project-header ink">
+                            <h1><i class="bi bi-calendar-check"></i> Ink Agenda</h1>
+                            <p><strong>v2.0.0</strong> — Gestão para estúdios de tatuagem; versão oficial estável lançada para Windows, macOS e Linux (Java + JavaFX)</p>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-status">
+                                <span class="badge badge-private">Privado</span>
+                                <span class="badge badge-proprietary">LicenÃ§a ProprietÃ¡ria</span>
+                                <span class="badge badge-stable">Produto maduro</span>
+                                <span class="badge badge-java">Java 25</span>
+                                <span class="badge badge-sqlite">SQLite</span>
+                                <span class="badge badge-template">Windows Desktop</span>
+                            </div>
+                            <div class="mt-2">
+                                <span class="tech-badge">JavaFX 21.0.11</span>
+                                <span class="tech-badge">v2.0.0</span>
+                                <span class="tech-badge">LanÃ§amento 26/Jun/2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-success">
+                        <i class="bi bi-star-fill"></i> <strong>Versão v2.0.0 oficial publicada em 26/06/2026.</strong> Distribuições já disponíveis na release oficial para Windows, macOS e Linux. A base técnica mais recente foi validada com JavaFX na Matriz. Vitrine, download e esta wiki ficam em <strong>ink.caracore.com.br</strong>.
+                    </div>
+
+                    <!-- Aviso sobre repositÃ³rio privado -->
+                    <div class="alert alert-warning">
+                        <h5><i class="bi bi-lock-fill"></i> RepositÃ³rio Privado</h5>
+                        <p class="mb-0">Este projeto possui <strong>cÃ³digo-fonte privado</strong> e Ã© protegido por <strong>licenÃ§a proprietÃ¡ria</strong> da Cara Core InformÃ¡tica. Vitrine e releases no canal institucional: <a href="../download.html">download.html</a>.</p>
+                    </div>
+
+                    <!-- VisÃ£o Geral -->
+                    <section class="mb-5">
+                        <h2><i class="bi bi-eye text-info"></i> VisÃ£o Geral</h2>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="leigos-section">
+                                    <h3><i class="bi bi-people"></i> O que Ã© o Ink Agenda?</h3>
+                                    <p>O <strong>Ink Agenda</strong> Ã© um aplicativo de computador (Windows, macOS e Linux) para tatuadores e estÃºdios: agenda de sessÃµes, cadastro de clientes, controle de receitas e despesas, saldo por perÃ­odo e indicadores. Tudo fica no seu PC, sem depender de internet para funcionar.</p>
+                                    <p><strong>Em resumo:</strong></p>
+                                    <ul class="feature-list">
+                                        <li>ðŸ“… <strong>Agenda:</strong> CalendÃ¡rio visual e lista do dia (ordem por horÃ¡rio)</li>
+                                        <li>ðŸ‘¤ <strong>Clientes:</strong> Nome, valor, data/hora; celular opcional; check Pagou na tela Hoje</li>
+                                        <li>ðŸ’° <strong>Financeiro:</strong> Entradas, saÃ­das, saldo e histÃ³rico</li>
+                                        <li>ðŸ’¾ <strong>Backup:</strong> Export/import CSV GZIP com senha; soberania dos dados</li>
+                                        <li>ðŸ–¥ï¸ <strong>Desktop multiplataforma:</strong> Windows, macOS e Linux; Java 21 + JavaFX; dados em SQLite local</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="estagiario-section">
+                                    <h3><i class="bi bi-mortarboard"></i> Arquitetura TÃ©cnica</h3>
+                                    <p>AplicaÃ§Ã£o desktop nativa em <strong>Java 21</strong> e <strong>JavaFX 21.0.11</strong>, com banco <strong>SQLite</strong> local. MÃ³dulos: agenda (calendÃ¡rio, lista do dia), clientes, financeiro (receitas/despesas), backup CSV GZIP. Oficina: <code>caracore-ink</code>; loja e releases: <code>caracore-ink-releases</code>.</p>
+                                    <p><strong>Stack:</strong></p>
+                                    <ul class="feature-list">
+                                        <li><strong>Runtime:</strong> Java 21, JavaFX 21.0.11</li>
+                                        <li><strong>Banco:</strong> SQLite (Ãºnico no escopo)</li>
+                                        <li><strong>Plataforma:</strong> Desktop (Windows, macOS, Linux)</li>
+                                        <li><strong>Build:</strong> Maven; testes unitÃ¡rios (JUnit 5, cobertura â‰¥80% em core/domain)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Funcionalidades principais -->
+                    <section class="mb-5">
+                        <h2><i class="bi bi-star text-warning"></i> Funcionalidades Principais</h2>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="feature-card">
+                                    <div class="feature-header">
+                                        <i class="bi bi-calendar-week text-primary"></i>
+                                        <h4>Agenda e lista do dia</h4>
+                                    </div>
+                                    <div class="feature-content">
+                                        <p><strong>Para leigos:</strong> Veja o mÃªs no calendÃ¡rio; ao clicar no dia, abre a lista de agendamentos daquele dia, do mais cedo ao mais tarde. NÃ£o permite sobrepor horÃ¡rios ao salvar.</p>
+                                        <p><strong>TÃ©cnico:</strong> DayAgendaTab com lista ordenada por <code>appointmentTime</code>; validaÃ§Ã£o de horÃ¡rio ocupado (CODE_CLIENTE_003).</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="feature-card">
+                                    <div class="feature-header">
+                                        <i class="bi bi-person-badge text-success"></i>
+                                        <h4>Cadastro de clientes</h4>
+                                    </div>
+                                    <div class="feature-content">
+                                        <p><strong>Para leigos:</strong> Cadastre nome, valor, data e hora; celular opcional. Na tela Hoje, marque quem jÃ¡ pagou.</p>
+                                        <p><strong>TÃ©cnico:</strong> ClientFormTab; login por celular (tatuador); entidade Cliente com validaÃ§Ãµes.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="feature-card">
+                                    <div class="feature-header">
+                                        <i class="bi bi-cash-stack text-warning"></i>
+                                        <h4>Financeiro</h4>
+                                    </div>
+                                    <div class="feature-content">
+                                        <p><strong>Para leigos:</strong> Registre entradas e despesas; acompanhe saldo e histÃ³rico por perÃ­odo.</p>
+                                        <p><strong>TÃ©cnico:</strong> Receitas/despesas, saldo, indicadores mensais; persistÃªncia em SQLite.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="feature-card">
+                                    <div class="feature-header">
+                                        <i class="bi bi-archive text-info"></i>
+                                        <h4>Backup e recuperaÃ§Ã£o</h4>
+                                    </div>
+                                    <div class="feature-content">
+                                        <p><strong>Para leigos:</strong> Exporte e importe seus dados em arquivo protegido por senha (CSV compactado).</p>
+                                        <p><strong>TÃ©cnico:</strong> CSV GZIP com senha; formato Ãºnico; CsvBackupService, validateCsvSanity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Stack e links -->
+                    <section class="mb-5">
+                        <h2><i class="bi bi-image text-success"></i> Capturas de Tela</h2>
+                        <p>VisualizaÃ§Ã£o das principais telas do Ink Agenda na linha pÃºblica atual da loja:</p>
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-header">
+                                        <h5><i class="bi bi-box-arrow-in-right"></i> Tela de Login</h5>
+                                    </div>
+                                    <img src="../assets/img/tela_de_login.png" alt="Tela de Login" class="img-fluid rounded border">
+                                    <small class="text-muted">Acesso com celular e senha (desktop atual)</small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-header">
+                                        <h5><i class="bi bi-key"></i> RecuperaÃ§Ã£o de Senha</h5>
+                                    </div>
+                                    <img src="../assets/img/tela_de_recuperacao_de_senha.png" alt="RecuperaÃ§Ã£o de Senha" class="img-fluid rounded border">
+                                    <small class="text-muted">Fluxo de redefiniÃ§Ã£o de senha por celular</small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-header">
+                                        <h5><i class="bi bi-speedometer2"></i> Dashboard</h5>
+                                    </div>
+                                    <img src="../assets/img/tela_de_dashboard.png" alt="Dashboard do Ink Agenda" class="img-fluid rounded border">
+                                    <small class="text-muted">Painel inicial com visÃ£o consolidada de agenda e operaÃ§Ã£o</small>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-header">
+                                        <h5><i class="bi bi-cash-stack"></i> Financeiro (Parte 1)</h5>
+                                    </div>
+                                    <img src="../assets/img/tela_de_financa_parte_01.png" alt="Financeiro parte 1" class="img-fluid rounded border">
+                                    <small class="text-muted">VisÃ£o inicial do mÃ³dulo financeiro com entradas e saÃ­das</small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-header">
+                                        <h5><i class="bi bi-cash-coin"></i> Financeiro (Parte 2)</h5>
+                                    </div>
+                                    <img src="../assets/img/tela_de_financa_parte_02.png" alt="Financeiro parte 2" class="img-fluid rounded border">
+                                    <small class="text-muted">Detalhamento operacional do fluxo financeiro do estÃºdio</small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-header">
+                                        <h5><i class="bi bi-bar-chart-line"></i> Financeiro (Parte 3)</h5>
+                                    </div>
+                                    <img src="../assets/img/tela_de_financa_parte_03.png" alt="Financeiro parte 3" class="img-fluid rounded border">
+                                    <small class="text-muted">Indicadores e acompanhamento visual do resultado financeiro</small>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-header">
+                                        <h5><i class="bi bi-sliders2-vertical"></i> ConfiguraÃ§Ãµes (Atualizada)</h5>
+                                    </div>
+                                    <img src="../assets/img/tela_de_config.png" alt="ConfiguraÃ§Ãµes atualizadas" class="img-fluid rounded border">
+                                    <small class="text-muted">VersÃ£o mais recente do painel de configuraÃ§Ã£o</small>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-header">
+                                        <h5><i class="bi bi-person-gear"></i> GestÃ£o de UsuÃ¡rio</h5>
+                                    </div>
+                                    <img src="../assets/img/tela_de_usuario.png" alt="GestÃ£o de usuÃ¡rio" class="img-fluid rounded border">
+                                    <small class="text-muted">Tela de usuÃ¡rio com dados de perfil e manutenÃ§Ã£o de acesso</small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-header">
+                                        <h5><i class="bi bi-receipt"></i> OrÃ§amentos</h5>
+                                    </div>
+                                    <img src="../assets/img/tela_de_orcamentos.png" alt="Tela de orÃ§amentos" class="img-fluid rounded border">
+                                    <small class="text-muted">GestÃ£o de orÃ§amentos para planejamento de atendimentos</small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-header">
+                                        <h5><i class="bi bi-file-earmark-pdf"></i> RelatÃ³rio em PDF</h5>
+                                    </div>
+                                    <img src="../assets/img/tela_de_relatorio_pdf.png" alt="RelatÃ³rio em PDF" class="img-fluid rounded border">
+                                    <small class="text-muted">PrÃ©-visualizaÃ§Ã£o e exportaÃ§Ã£o de relatÃ³rio para PDF</small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-header">
+                                        <h5><i class="bi bi-printer"></i> RelatÃ³rio para ImpressÃ£o</h5>
+                                    </div>
+                                    <img src="../assets/img/tela_de_relatorio_imprimir.png" alt="RelatÃ³rio para impressÃ£o" class="img-fluid rounded border">
+                                    <small class="text-muted">Modo de impressÃ£o para relatÃ³rios operacionais do estÃºdio</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-4">
+                            <i class="bi bi-info-circle"></i> <strong>Capturas atualizadas em:</strong> 15/05/2026 â€” vitrine pÃºblica com o conjunto mais recente de telas.
+                        </div>
+                    </section>
+
+                    <!-- Stack e links -->
+                    <section class="mb-5">
+                        <h2><i class="bi bi-stack text-primary"></i> Stack e Entrega</h2>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4><i class="bi bi-code-slash text-info"></i> Tecnologias</h4>
+                                <ul class="tech-list">
+                                    <li><strong>Java 21:</strong> Linguagem e runtime</li>
+                                    <li><strong>JavaFX 21.0.11:</strong> Interface grÃ¡fica desktop</li>
+                                    <li><strong>SQLite:</strong> Banco de dados local</li>
+                                    <li><strong>Maven:</strong> Build e dependÃªncias</li>
+                                    <li><strong>JUnit 5 / Mockito:</strong> Testes unitÃ¡rios; JaCoCo (cobertura)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4><i class="bi bi-box-seam text-success"></i> Oficina e Loja</h4>
+                                <p><strong>Oficina:</strong> caracore-ink (repositÃ³rio do app). <strong>Loja:</strong> caracore-ink-releases (vitrine, releases e download em <strong>ink.caracore.com.br</strong>).</p>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-block mt-4">
+                            <a href="../download.html" class="btn-wiki me-2">
+                                <i class="bi bi-shop"></i> Loja (releases)
+                            </a>
+                            <a href="../tecnologia.html" class="btn-wiki me-2">
+                                <i class="bi bi-code-slash"></i> Tecnologia
+                            </a>
+                            <span class="btn-wiki me-2" style="opacity:0.65; cursor:default;">
+                                <i class="bi bi-phone"></i> Linha atual desktop (Windows, macOS e Linux)
+                            </span>
+                        </div>
+                    </section>
+
+                    <section class="mb-5" id="implantacao-local">
+                        <h2><i class="bi bi-pc-display text-secondary"></i> ImplantaÃ§Ã£o local (guia rÃ¡pido)</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4><i class="bi bi-check2-square"></i> PrÃ©-requisitos mÃ­nimos</h4>
+                                <ul class="feature-list">
+                                    <li>Windows 10/11 atualizado</li>
+                                    <li>Perfil de usuÃ¡rio com permissÃ£o de instalaÃ§Ã£o local</li>
+                                    <li>EspaÃ§o livre para app, banco SQLite e backups</li>
+                                    <li>Internet apenas para baixar instalador (operaÃ§Ã£o pode ser local)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4><i class="bi bi-play-circle"></i> ValidaÃ§Ã£o pÃ³s-instalaÃ§Ã£o</h4>
+                                <ul class="feature-list">
+                                    <li>Abrir o Ink Agenda e confirmar carregamento da tela inicial</li>
+                                    <li>Criar 1 cliente de teste e 1 agendamento</li>
+                                    <li>Registrar 1 receita e 1 despesa</li>
+                                    <li>Executar 1 exportaÃ§Ã£o de backup com senha</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-5" id="operacao-diaria">
+                        <h2><i class="bi bi-clipboard2-check text-success"></i> OperaÃ§Ã£o diÃ¡ria do estÃºdio</h2>
+                        <div class="alert alert-light border">
+                            <strong>Checklist recomendado por turno:</strong>
+                            <ul class="mb-0 mt-2">
+                                <li>Conferir agenda do dia e evitar conflitos de horÃ¡rio antes de abrir atendimento</li>
+                                <li>Atualizar status de pagamento na lista do dia ao finalizar sessÃ£o</li>
+                                <li>LanÃ§ar despesas operacionais no mesmo dia para manter saldo real</li>
+                                <li>Fechar turno conferindo saldo e nÃºmero de atendimentos executados</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="mb-5" id="backup-restauracao">
+                        <h2><i class="bi bi-shield-check text-primary"></i> Backup e restauraÃ§Ã£o (governanÃ§a local)</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4><i class="bi bi-save2"></i> PolÃ­tica sugerida</h4>
+                                <ul class="feature-list">
+                                    <li>Backup diÃ¡rio no encerramento do expediente</li>
+                                    <li>Senha forte no arquivo de exportaÃ§Ã£o</li>
+                                    <li>CÃ³pia adicional em mÃ­dia externa/segura</li>
+                                    <li>RetenÃ§Ã£o mÃ­nima: Ãºltimos 7 dias Ãºteis</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4><i class="bi bi-arrow-repeat"></i> Teste de restauraÃ§Ã£o</h4>
+                                <ul class="feature-list">
+                                    <li>Executar teste de importaÃ§Ã£o semanal em ambiente controlado</li>
+                                    <li>Confirmar integridade de clientes, agenda e financeiro apÃ³s importaÃ§Ã£o</li>
+                                    <li>Registrar data/hora do teste para rastreabilidade operacional</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-5">
+                        <h2><i class="bi bi-diagram-3 text-warning"></i> Canal de release e versionamento</h2>
+                        <p>DistribuiÃ§Ã£o oficial centralizada em <strong>caracore-ink-releases</strong>. A loja local referencia um Ãºnico canal para download e histÃ³rico de versÃµes, evitando duplicidade de artefatos.</p>
+                        <div class="d-grid gap-2 d-md-block">
+                            <a href="../download.html" class="btn-wiki me-2">
+                                <i class="bi bi-box-arrow-down"></i> Download e artefatos (vitrine)
+                            </a>
+                            <a href="../download.html#integridade-artefatos" class="btn-wiki me-2">
+                                <i class="bi bi-shield-check"></i> Integridade (checksums)
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="mb-5" id="diagnostico-rapido">
+                        <h2><i class="bi bi-tools text-danger"></i> DiagnÃ³stico rÃ¡pido local (N1)</h2>
+                        <ul class="feature-list">
+                            <li><strong>Aplicativo nÃ£o inicia:</strong> reiniciar Windows e executar novamente como usuÃ¡rio local</li>
+                            <li><strong>LentidÃ£o:</strong> validar tamanho da base local e executar backup + manutenÃ§Ã£o preventiva</li>
+                            <li><strong>Erro em dados:</strong> restaurar Ãºltimo backup validado e repetir operaÃ§Ã£o</li>
+                            <li><strong>Persistindo falha:</strong> acionar <a href="../canal-feedback.html">canal de feedback</a> com horÃ¡rio do incidente e evidÃªncias</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="wiki-footer">
+        <div class="container">
+            <p>&copy; 2025 Cara Core InformÃ¡tica - CNPJ: 23.969.028/0001-37</p>
+            <p>Ink Agenda v2.0.0 — Versão estável oficial lançada em 26/Jun/2026</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Wiki JS -->
+    <script src="../assets/js/wiki.js"></script>
+</body>
+</html>
+
+
+
+
