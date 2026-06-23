@@ -10,7 +10,7 @@ Todos os cambios notáveis neste projeto são documentados neste arquivo.
   - Windows: Setup executable (`.exe`) e Portable ZIP
   - macOS: Universal DMG (Intel & Apple Silicon M1/M2/M3)
   - Linux: Debian package (`.deb`) para Ubuntu 20.04+ e Debian 11+
-- ✅ **Runtime Java 21 embutido** em todas as plataformas
+- ✅ **Runtime Java 25 embutido** em todas as plataformas
 - ✅ **Obfuscação de bytecode** com ProGuard para segurança
 - ✅ **Verificação de integridade** com SHA256 checksums
 - ✅ **Release notes oficial** com instruções de instalação por plataforma
