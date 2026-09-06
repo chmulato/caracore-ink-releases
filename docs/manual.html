@@ -16,7 +16,7 @@
     <title>Manual do usuário — Ink Agenda v2.0.0 | Cara Core Informática</title>
 
 
-    <meta name="description" content="Manual do Ink Agenda v2.0.0: login por celular, calendário e lista do dia, clientes, financeiro, backup com senha. Versão estável v2.0.0 para desktop com distribuição em Windows, macOS e Linux.">
+    <meta name="description" content="Manual do Ink Agenda v2.0.0: login por celular, calendário e lista do dia, clientes, financeiro, backup com senha. Versão estável com Windows publicado e macOS/Linux em breve.">
 
 
     <link rel="stylesheet" href="assets/css/loja.css">
@@ -70,7 +70,7 @@
             <p class="ink-launch-label">Lançamento oficial</p>
 
 
-            <p class="ink-launch-date"><strong>Ink Agenda v2.0.0</strong> para desktop (Windows · macOS · Linux) — lançado oficialmente em <strong>26 de junho de 2026</strong> com distribuição publicada nas três plataformas.</p>
+            <p class="ink-launch-date"><strong>Ink Agenda v2.0.0</strong> para desktop (Windows publicado; macOS/Linux em breve) — lançado oficialmente em <strong>26 de junho de 2026</strong>.</p>
 
 
         </section>
@@ -199,13 +199,13 @@
                 <li><strong>Instalador Windows (recomendado)</strong> — Baixe o instalador Windows na página de <a href="download.html">Download</a>. Não é necessário ter Java instalado; o runtime já vai embutido.</li>
 
 
-                <li><strong>Guias por plataforma</strong> — A mesma página documenta os artefatos publicados para Windows (ZIP), macOS (DMG) e Linux (DEB).</li>
+                <li><strong>Escopo publicado da release</strong> — A página de Download documenta os artefatos públicos atuais: Windows (ZIP + setup).</li>
 
 
             </ul>
 
 
-            <p>Os dados ficam em <code>%AppData%\Local\CaraCore\AgendaInk</code> (banco SQLite e backups automáticos). Para desenvolvimento na oficina: <code>cd agenda-java && mvn javafx:run</code>.</p>
+            <p>Os dados ficam em <code>%AppData%\Local\CaraCore\AgendaInk</code> (banco SQLite e arquivos de backup manual/exportação). Para desenvolvimento na oficina: <code>cd agenda-java && mvn javafx:run</code>.</p>
 
 
         </section>
@@ -343,7 +343,7 @@
             <p>O Ink Agenda permite <strong>exportar</strong> e <strong>importar</strong> seus dados em um arquivo único (CSV compactado com GZIP), protegido por <strong>senha</strong>. Assim você mantém a soberania dos dados e pode trocar de computador ou fazer cópias de segurança.</p>
 
 
-            <p>As opções de backup e restauração ficam na área de <strong>Perfil</strong>. O aplicativo também faz backups automáticos locais (pasta de dados do app). Para mais detalhes sobre o formato e o dossiê de lançamento, consulte a matriz e o RELEASE_NOTES na oficina.</p>
+            <p>As opções de backup e restauração ficam na área de <strong>Perfil</strong>. Na linha 2.0.0, o fluxo suportado é exportação/importação e backup manual local. Para mais detalhes sobre o formato e o dossiê de lançamento, consulte a matriz e o RELEASE_NOTES na oficina.</p>
 
 
         </section>
@@ -361,7 +361,7 @@
             <ul>
 
 
-                <li><strong>ZIP/DMG/DEB não inicia</strong> — Confirme que o artefato veio da release pública v2.0.0 e valide o checksum antes de executar.</li>
+                <li><strong>ZIP/EXE não inicia</strong> — Confirme que o artefato veio da release pública v2.0.0 e valide o checksum antes de executar.</li>
 
 
                 <li><strong>Erro ao iniciar a janela</strong> — Confirme que você instalou corretamente no Windows e que o sistema operacional atende aos requisitos mínimos.</li>
