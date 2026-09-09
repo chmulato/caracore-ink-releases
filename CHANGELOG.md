@@ -5,7 +5,7 @@ Todos os cambios notáveis neste projeto são documentados neste arquivo.
 ## [loja] - 09 de setembro de 2026
 
 ### Alterado
-- **Novidade:** PWA em **26/06/2027** (browser; **sem** `.dmg`/`.deb` nativos). Página `pwa.html`. Não substitui o download Windows v2.0.0.
+- **Roadmap:** PWA depois do Hub e do FRO (**não antes de 2028**; browser; **sem** `.dmg`/`.deb` nativos). Página `pwa.html`. Não substitui o download Windows v2.0.0.
 - Home: um cartão de novidade; CTAs e grelha de links ficam no **Baixar Windows** (PWA não compete como segundo produto). `download.html` só Windows + uma linha honesta: sem nativo Mac/Linux.
 - A linha «macOS/Linux em breve» da tag 2.0.0 é histórica: **não** haverá DMG/DEB.
 - Guia `artifacts/instalacao-windows.html` alinhado à v2.0.0 estável (setup + ZIP, Java 25, SHA oficiais). Sem RC8 / Java 21.

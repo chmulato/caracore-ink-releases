@@ -4,7 +4,7 @@
 **Data de lançamento:** 26 de junho de 2026
 **Status:** Desktop Windows publicado.
 
-Somente Windows nativo nesta tag. **Novidade:** [PWA](https://ink.caracore.com.br/pwa.html) em **26/06/2027** (sem DMG/DEB nativos).
+Somente Windows nativo nesta tag. PWA em roadmap: [pwa.html](https://ink.caracore.com.br/pwa.html) — depois do Hub e do FRO; **não antes de 2028** (sem DMG/DEB nativos).
 
 ## Artefatos publicados (Windows)
 
@@ -25,7 +25,7 @@ Runtime embarcado: Java 25 (não requer JDK no PATH). Interface: JavaFX 21.0.11.
 ## Plataformas nesta tag
 
 - **Windows:** pronto para uso (ZIP + setup).
-- **Novidade PWA (26/06/2027):** Mac, Linux, Android e tablet no browser. Sem DMG nem DEB nativos.
+- **PWA (não antes de 2028):** Mac, Linux, Android e tablet no browser. Sem DMG nem DEB nativos.
 
 ## Produto
 

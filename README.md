@@ -12,7 +12,7 @@ Canal público de distribuição, vitrine e download do **Cara Core Ink Agenda**
 
 ## Novidade
 
-**PWA em 26/06/2027** — o mesmo Ink da v2, instalável no browser (Windows, Mac, Linux, Android e tablet). Não haverá `.dmg` nem `.deb` nativos. Página: [pwa.html](https://ink.caracore.com.br/pwa.html). Não altera o download Windows desta loja.
+**PWA em roadmap (não antes de 2028)** — o mesmo Ink da v2, instalável no browser (Windows, Mac, Linux, Android e tablet). Não haverá `.dmg` nem `.deb` nativos. Página: [pwa.html](https://ink.caracore.com.br/pwa.html). Não altera o download Windows desta loja.
 
 ---
 
