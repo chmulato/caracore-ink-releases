@@ -1,2 +1,3 @@
-# PENDENTE: publique os hashes oficiais da RC8 apos upload dos artefatos
-<SHA256_AQUI>  AgendaInk-2.0.0-RC8-windows.zip
+# SHA256 oficiais da tag v2.0.0 (Windows). Fonte: release checksum.sha256
+3f331dcf8d7f70769debc15f32879338677cfe62c30d19182b931ac07f554832  AgendaInk-2.0.0-windows.zip
+7fb35a24a79a05115d021bce6428c938425216a1fcd75a07ff569dd978ff1bba  AgendaInk-2.0.0-windows-setup.exe
