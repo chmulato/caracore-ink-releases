@@ -1,415 +1,122 @@
 <!DOCTYPE html>
-
-
 <html lang="pt-BR">
-
-
 <head>
-
-
     <meta charset="UTF-8">
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <base href="https://ink.caracore.com.br/">
-
-
     <title>Download — Cara Core Ink Agenda | Cara Core Informática</title>
-
-
     <meta name="description" content="Download do Cara Core Ink Agenda para Windows. Instalador e ZIP com runtime Java 25 embutido. Versão v2.0.0 estável.">
-
-
     <link rel="stylesheet" href="assets/css/ink-portal.css">
-
-
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
-
-
     <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
-
-
 </head>
-
-
 <body class="download-page">
-
-
     <div class="wrapper">
-
-
         <nav class="breadcrumb" aria-label="Navegação">
-
-
             <a href="index.html">Cara Core Ink Agenda — Loja</a>
-
-
             <span> · </span>
-
-
             <span>Download</span>
-
-
         </nav>
 
-
-
-
-
-        <!-- Banner Lançamento v2.0.0 -->
-
-
-        <section class="ink-launch-banner" aria-label="Lançamento Oficial" style="border-left: 4px solid #22c55e; background: rgba(34,197,94,0.08);">
-
-
-            <p class="ink-launch-label">v2.0.0 — Versão Estável</p>
-
-
-            <p class="ink-launch-date">Build final estável publicado para Windows (ZIP/EXE). macOS (DMG) e Linux (DEB) serão publicados após geração de artefatos reais. Lançamento oficial: <strong>26 de junho de 2026</strong>.</p>
-
-
+        <section class="ink-launch-banner" aria-label="Lançamento oficial">
+            <p class="ink-launch-label">v2.0.0 — Windows publicado</p>
+            <p class="ink-launch-date">Windows ZIP + setup nesta release. macOS/Linux em breve. Lançamento oficial: <strong>26 de junho de 2026</strong>.</p>
         </section>
-
-
-
-
-
-        <!-- Aviso padrão: lançamento oficial — 26/06/2026 -->
-
-
-        <section class="ink-launch-banner" aria-label="Data de lançamento">
-
-
-            <p class="ink-launch-label">Lançamento oficial</p>
-
-
-            <p class="ink-launch-date">App Cara Core Ink Agenda — Windows publicado · macOS/Linux em breve — <strong>26 de junho de 2026</strong>.</p>
-
-
-        </section>
-
-
-
-
 
         <header>
-
-
             <h1>Download — Cara Core Ink Agenda</h1>
-
-
-            <p>v2.0.0 · Windows · Java 25 embutido · JavaFX 21.0.11 · ProGuard</p>
-
-
+            <p>Runtime Java 25 embutido — sem JDK no sistema.</p>
         </header>
 
-
-
-
-
-        <section class="card" style="border-left: 4px solid var(--accent-gold); margin-top: 1.25rem;">
-
-
-            <h3>Canal oficial de Releases</h3>
-
-
-            <p>Artefatos da versão estável publicados na release oficial:</p>
-
-
-            <p><a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0" target="_blank" rel="noopener">github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0</a></p>
-
-
-            <p style="font-size: 0.88rem; opacity: 0.8; margin-bottom: 0;">A release v2.0.0 publica hoje os artefatos reais de Windows (ZIP/EXE). Valide os hashes no arquivo <code>checksum.sha256</code> da release antes de instalar.</p>
-
-
-        </section>
-
-
-
-
-
-        <!-- Grade multi-plataforma -->
-
+        <p style="font-size: 0.92rem; margin: 0 0 1rem;">
+            Windows ZIP + setup publicados nesta release; valide
+            <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0/checksum.sha256">checksum.sha256</a>
+            da tag
+            <a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0">v2.0.0</a>.
+        </p>
 
         <section aria-label="Plataformas disponíveis" style="margin: 1.5rem 0;">
-
-
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
-
-
-
-
-
-                <!-- Windows -->
-
-
-                <div class="card" style="border-left: 4px solid var(--accent-blue); position: relative;">
-
-
+                <div class="card" style="border-left: 4px solid var(--accent-blue); position: relative; margin: 0;">
                     <p style="font-size: 1.5rem; margin: 0 0 0.5rem;">🪟</p>
-
-
                     <h3 style="margin: 0 0 0.5rem;">Windows</h3>
-
-
-                    <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">Windows 10 / 11 · 64 bits<br>Instalador (<code>.exe</code>) & Portable (<code>.zip</code>)<br>Release pública v2.0.0</p>
-
-
+                    <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">Windows 10 / 11 · 64 bits<br>Instalador (<code>.exe</code>) e portable (<code>.zip</code>)</p>
                     <p style="font-size: 0.82rem; opacity: 0.7; margin-bottom: 0.75rem;">Runtime Java embutido — sem necessidade de instalar JDK.</p>
-
-
-                    <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; margin-bottom: 0.5rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0/AgendaInk-2.0.0-windows-setup.exe">
-
-
+                    <a class="cta-btn cta-btn-primary" style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; margin-bottom: 0.35rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0/AgendaInk-2.0.0-windows-setup.exe">
                         ↓ AgendaInk-2.0.0-windows-setup.exe
-
-
                     </a>
-
-
+                    <p class="artifact-sha">SHA256 7fb35a24a79a05115d021bce6428c938425216a1fcd75a07ff569dd978ff1bba</p>
                     <a class="cta-btn cta-btn-secondary" style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0/AgendaInk-2.0.0-windows.zip">
-
-
-                        ↓ AgendaInk-2.0.0-windows.zip (Portable)
-
-
+                        ↓ AgendaInk-2.0.0-windows.zip (portable)
                     </a>
-
-
-                    <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem;">Use o instalador exe ou extraia a pasta do ZIP portátil e execute <code>AgendaInk.exe</code>.</p>
-
-
+                    <p class="artifact-sha">SHA256 3f331dcf8d7f70769debc15f32879338677cfe62c30d19182b931ac07f554832</p>
+                    <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem;">Use o instalador ou extraia o ZIP e execute <code>AgendaInk.exe</code>. Dados em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\</code>.</p>
                 </div>
 
-
-
-
-
-                <!-- macOS -->
-
-
-                <div class="card" style="border-left: 4px solid var(--accent-gold); position: relative;">
-
-
+                <div class="card" style="border-left: 4px solid var(--accent-gold); position: relative; margin: 0;">
                     <p style="font-size: 1.5rem; margin: 0 0 0.5rem;">🍎</p>
-
-
                     <h3 style="margin: 0 0 0.5rem;">macOS</h3>
-
-
-                    <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">macOS 13 Ventura ou superior<br>Apple Silicon (M1/M2/M3) e Intel<br>Disk Image (<code>.dmg</code>)</p>
-
-
-                    <p style="font-size: 0.82rem; opacity: 0.7; margin-bottom: 0.75rem;">Status: em breve. O DMG será publicado junto do hash oficial.</p>
-
-
+                    <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">macOS 13 Ventura ou superior<br>Apple Silicon e Intel<br>Disk Image (<code>.dmg</code>)</p>
+                    <p style="font-size: 0.82rem; opacity: 0.7; margin-bottom: 0.75rem;">Status: em breve. Sem download ativo nesta release.</p>
                     <span class="cta-btn cta-btn-secondary" style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; opacity: 0.75; cursor: not-allowed;">
-
-
                         Em breve (DMG)
-
-
                     </span>
-
-
-                    <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem;">Sem download ativo nesta release.</p>
-
-
                 </div>
 
-
-
-
-
-                <!-- Linux -->
-
-
-                <div class="card" style="border-left: 4px solid var(--accent-green); position: relative;">
-
-
+                <div class="card" style="border-left: 4px solid var(--accent-green); position: relative; margin: 0;">
                     <p style="font-size: 1.5rem; margin: 0 0 0.5rem;">🐧</p>
-
-
                     <h3 style="margin: 0 0 0.5rem;">Linux</h3>
-
-
                     <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">Ubuntu 20.04 LTS+ / Debian 11+<br>Pacote nativo (<code>.deb</code>)</p>
-
-
-                    <p style="font-size: 0.82rem; opacity: 0.7; margin-bottom: 0.75rem;">Status: em breve. O DEB será publicado junto do hash oficial.</p>
-
-
+                    <p style="font-size: 0.82rem; opacity: 0.7; margin-bottom: 0.75rem;">Status: em breve. Sem download ativo nesta release.</p>
                     <span class="cta-btn cta-btn-secondary" style="display: inline-block; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; opacity: 0.75; cursor: not-allowed;">
-
-
                         Em breve (DEB)
-
-
                     </span>
-
-
-                    <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem;">Sem download ativo nesta release.</p>
-
-
                 </div>
-
-
             </div>
-
-
         </section>
-
-
-
-
-
-        <!-- Detalhes técnicos / integridade -->
-
 
         <section id="integridade-artefatos" class="card" style="border-left: 4px solid var(--accent-green); margin-top: 1.5rem;">
-
-
             <h3>Verificação de integridade (v2.0.0)</h3>
-
-
-            <p>No PowerShell ou terminal, na pasta onde os arquivos foram salvos:</p>
-
-
-            <p>No PowerShell ou terminal, na pasta onde os arquivos foram salvos:</p>
-
-
-            <pre style="background: rgba(0,0,0,0.15); padding: 0.75rem; border-radius: 6px; font-size: 0.85rem; overflow-x: auto;"><code># Windows
-
-
-(Get-FileHash .\AgendaInk-2.0.0-windows-setup.exe -Algorithm SHA256).Hash
-
-
+            <p>No PowerShell, na pasta onde os arquivos foram salvos:</p>
+            <pre style="background: rgba(0,0,0,0.15); padding: 0.75rem; border-radius: 6px; font-size: 0.85rem; overflow-x: auto;"><code>(Get-FileHash .\AgendaInk-2.0.0-windows-setup.exe -Algorithm SHA256).Hash
 (Get-FileHash .\AgendaInk-2.0.0-windows.zip -Algorithm SHA256).Hash
 
-
-
-
-
-# Linux/macOS
-# Em breve: os comandos serão publicados junto dos artefatos reais.
-
-
-# Compare com o arquivo checksum.sha256 publicado na release v2.0.0.</code></pre>
-
-
-            <p style="margin-top: 0.75rem; font-size: 0.9rem; opacity: 0.8;">Todos os artefatos são gerados com <strong>bytecode ofuscado</strong> via ProGuard — proteção do código-fonte na distribuição.</p>
-
-
+# Compare com checksum.sha256 da tag v2.0.0
+# (hashes também estão nesta página, acima dos botões Windows).</code></pre>
+            <p style="margin-top: 0.75rem; font-size: 0.9rem;">Arquivo oficial:
+                <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0/checksum.sha256">checksum.sha256</a>
+            </p>
         </section>
-
-
-
-
-
-        <!-- Como usar o ZIP Windows (portable) -->
-
 
         <section class="card" style="margin-top: 1.25rem;">
-
-
             <h3>Instalação padrão no Windows 10/11</h3>
-
-
             <ol style="padding-left: 1.25rem; font-size: 0.95rem;">
-
-
-                <li>Baixe <code>AgendaInk-2.0.0-windows-setup.exe</code> ou o zip <code>AgendaInk-2.0.0-windows.zip</code>.</li>
-
-
-                <li>Opcionalmente, valide o hash com o <code>checksum.sha256</code> da release v2.0.0.</li>
-
-
-                <li>Execute o instalador exe para instalar, ou descompacte o arquivo ZIP portátil.</li>
-
-
+                <li>Baixe <code>AgendaInk-2.0.0-windows-setup.exe</code> ou o ZIP <code>AgendaInk-2.0.0-windows.zip</code>.</li>
+                <li>Opcionalmente, valide o hash com o <code>checksum.sha256</code> da release v2.0.0 (ou com os SHA256 desta página).</li>
+                <li>Execute o instalador, ou descompacte o ZIP portátil e abra <code>AgendaInk.exe</code>.</li>
             </ol>
-
-
-
-
 
             <h3 style="margin-top: 1rem;">Como usar o ZIP Windows (modo portable)</h3>
-
-
             <ol style="padding-left: 1.25rem; font-size: 0.95rem;">
-
-
                 <li>Baixe e salve <code>AgendaInk-2.0.0-windows.zip</code>.</li>
-
-
                 <li>Descompacte (clique direito → Extrair aqui).</li>
-
-
                 <li>Abra a pasta <code>AgendaInk\</code>.</li>
-
-
                 <li>Execute <strong><code>AgendaInk.exe</code></strong> com duplo clique.</li>
-
-
                 <li>Na primeira execução o banco de dados será criado em:<br>
-
-
                     <code>%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db</code></li>
-
-
             </ol>
-
-
             <p style="font-size: 0.85rem; opacity: 0.75; margin-top: 0.75rem;">
-
-
                 Guia completo:
-
-
                 <a href="artifacts/instalacao-windows.html">Instalação Windows</a> ·
-
-
                 <span>Instalação Linux (em breve)</span> ·
-
-
                 <span>Instalação macOS (em breve)</span>
-
-
             </p>
-
-
         </section>
 
-
-
-
-
         <nav class="download-back">
-
-
             <a href="index.html">← Voltar ao portal</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="canal-feedback.html">Canal de feedback</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Documentação do produto (wiki)</a>
-
-
         </nav>
-
-
     </div>
-
-
     <script src="assets/js/ink.js"></script>
-
-
 </body>
-
-
 </html>
-
-
-
-
-
-
-
-

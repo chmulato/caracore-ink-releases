@@ -2,15 +2,21 @@
 
 Todos os cambios notáveis neste projeto são documentados neste arquivo.
 
+## [loja] - 09 de setembro de 2026
+
+### Alterado
+- Home e `download.html`: markup sem vazamento de comentário; v2.0.0 / Windows dito uma vez no banner; menos eco de versão/stack.
+- `download.html`: sem “publica hoje”; um só bloco PowerShell; SHA256 do ZIP e do setup visíveis na página; macOS/Linux continuam Em breve.
+- README e release notes da loja: somente Windows nesta tag; macOS/Linux em breve (sem artefato real).
+
 ## [2.0.0] - 26 de junho de 2026
 
 ### Adicionado
 - ✅ **Versão estável oficial** para produção
-- ✅ **Distribuição multiplataforma** completa:
-  - Windows: Setup executable (`.exe`) e Portable ZIP
-  - macOS: Universal DMG (Intel & Apple Silicon M1/M2/M3)
-  - Linux: Debian package (`.deb`) para Ubuntu 20.04+ e Debian 11+
-- ✅ **Runtime Java 25 embutido** em todas as plataformas
+- ✅ **Distribuição Windows** na tag v2.0.0:
+  - Windows: setup (`.exe`) e portable ZIP (runtime Java 25 embutido)
+  - macOS/Linux: em breve (sem artefato real nesta tag)
+- ✅ **Runtime Java 25 embutido** no pacote Windows (setup + ZIP)
 - ✅ **Obfuscação de bytecode** com ProGuard para segurança
 - ✅ **Verificação de integridade** com SHA256 checksums
 - ✅ **Release notes oficial** com instruções de instalação por plataforma
