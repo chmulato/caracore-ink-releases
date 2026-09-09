@@ -8,7 +8,11 @@ Canal público de distribuição, vitrine e download do **Cara Core Ink Agenda**
 
 **Lançamento oficial:** 26 de junho de 2026.
 
-> **Canal público:** [`v2.0.0`](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0) — **somente Windows nesta tag** (setup + ZIP, runtime Java 25 embutido). **macOS/Linux em breve.** Ignore DMG/DEB até existir artefato real.
+> **Canal público:** [`v2.0.0`](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0) — **Desktop Windows** (setup + ZIP, runtime Java 25 embutido).
+
+## Novidade
+
+**PWA em 26/06/2027** — o mesmo Ink da v2, instalável no browser (Windows, Mac, Linux, Android e tablet). Não haverá `.dmg` nem `.deb` nativos. Página: [pwa.html](https://ink.caracore.com.br/pwa.html). Não altera o download Windows desta loja.
 
 ---
 
@@ -32,7 +36,7 @@ O código-fonte fica no repositório **caracore-ink** (oficina). Este repositór
 | ----- | ----- |
 | Versão | `2.0.0` (estável) |
 | Publicação | 26 de junho de 2026 |
-| Status | Windows publicado; macOS/Linux em breve |
+| Status | Desktop Windows no ar (único download desta loja) |
 | Plataformas nesta tag | Windows 10/11 64 bits (setup + ZIP) |
 | Release | [v2.0.0 no GitHub](https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0) |
 | Loja | [ink.caracore.com.br](https://ink.caracore.com.br/) |
@@ -45,8 +49,6 @@ O código-fonte fica no repositório **caracore-ink** (oficina). Este repositór
 | Windows (portable) | `AgendaInk-2.0.0-windows.zip` (~76 MB) | `3f331dcf8d7f70769debc15f32879338677cfe62c30d19182b931ac07f554832` |
 | Checksums | [`checksum.sha256`](https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0/checksum.sha256) | arquivo oficial da tag |
 
-macOS (DMG) e Linux (DEB) **não** estão publicados nesta tag.
-
 Runtime Java 25 embutido. O usuário final não precisa instalar JDK. Dados em `%LOCALAPPDATA%\CaraCore\AgendaInk\`.
 
 ---
@@ -56,10 +58,6 @@ Runtime Java 25 embutido. O usuário final não precisa instalar JDK. Dados em `
 1. Baixe `AgendaInk-2.0.0-windows-setup.exe` **ou** `AgendaInk-2.0.0-windows.zip`.
 2. Valide o hash com [`checksum.sha256`](https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0/checksum.sha256).
 3. Setup: execute o instalador. Portable: extraia o ZIP e abra `AgendaInk\AgendaInk.exe`.
-
-### macOS / Linux
-
-Em breve. Sem download ativo nesta release.
 
 ---
 
@@ -79,7 +77,8 @@ Compare com `checksum.sha256` da tag v2.0.0.
 ## Documentação
 
 - [Loja](https://ink.caracore.com.br/)
-- [Download](https://ink.caracore.com.br/download.html)
+- [Download Windows](https://ink.caracore.com.br/download.html)
+- [PWA](https://ink.caracore.com.br/pwa.html)
 - [Wiki do produto](https://wiki.caracore.com.br/projeto-ink.html)
 - [Oficina (código)](https://github.com/chmulato/caracore-ink)
 

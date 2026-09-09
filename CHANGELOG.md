@@ -5,12 +5,14 @@ Todos os cambios notáveis neste projeto são documentados neste arquivo.
 ## [loja] - 09 de setembro de 2026
 
 ### Alterado
+- **Novidade:** PWA em **26/06/2027** (browser; **sem** `.dmg`/`.deb` nativos). Página `pwa.html`. Não substitui o download Windows v2.0.0.
+- Home: um cartão de novidade; CTAs e grelha de links ficam no **Baixar Windows** (PWA não compete como segundo produto). `download.html` só Windows + uma linha honesta: sem nativo Mac/Linux.
+- A linha «macOS/Linux em breve» da tag 2.0.0 é histórica: **não** haverá DMG/DEB.
 - Guia `artifacts/instalacao-windows.html` alinhado à v2.0.0 estável (setup + ZIP, Java 25, SHA oficiais). Sem RC8 / Java 21.
+- Guias macOS/Linux apontam para a novidade PWA, não para DMG/DEB “em breve”.
 - Página `primeiro-acesso.html` e seção no guia: criar responsável com celular + senha local (fluxo real do app; sem usuário seed; sem credenciais de PDV).
 - Wiki (`projeto-ink.html#primeiros-passos`) espelha o mesmo fluxo.
 - Home e `download.html`: markup sem vazamento de comentário; v2.0.0 / Windows dito uma vez no banner; menos eco de versão/stack.
-- `download.html`: sem “publica hoje”; um só bloco PowerShell; SHA256 do ZIP e do setup visíveis na página; macOS/Linux continuam Em breve.
-- README e release notes da loja: somente Windows nesta tag; macOS/Linux em breve (sem artefato real).
 
 ## [2.0.0] - 26 de junho de 2026
 

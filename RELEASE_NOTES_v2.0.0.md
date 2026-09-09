@@ -2,9 +2,9 @@
 
 **Versão:** 2.0.0 (estável)
 **Data de lançamento:** 26 de junho de 2026
-**Status:** Windows publicado com binários reais; macOS/Linux em breve
+**Status:** Desktop Windows publicado.
 
-Somente Windows nesta tag. macOS/Linux em breve — ignore DMG/DEB até artefato real. Os artefatos Windows desta tag não foram republicados neste corte de copy da loja.
+Somente Windows nativo nesta tag. **Novidade:** [PWA](https://ink.caracore.com.br/pwa.html) em **26/06/2027** (sem DMG/DEB nativos).
 
 ## Artefatos publicados (Windows)
 
@@ -25,7 +25,7 @@ Runtime embarcado: Java 25 (não requer JDK no PATH). Interface: JavaFX 21.0.11.
 ## Plataformas nesta tag
 
 - **Windows:** pronto para uso (ZIP + setup).
-- **macOS / Linux:** publicação em corte dedicado, com artefatos reais. Sem download ativo aqui.
+- **Novidade PWA (26/06/2027):** Mac, Linux, Android e tablet no browser. Sem DMG nem DEB nativos.
 
 ## Produto
 
@@ -38,5 +38,6 @@ Runtime embarcado: Java 25 (não requer JDK no PATH). Interface: JavaFX 21.0.11.
 ## Documentação
 
 - [Loja](https://ink.caracore.com.br/)
-- [Download](https://ink.caracore.com.br/download.html)
+- [Download Windows](https://ink.caracore.com.br/download.html)
+- [PWA](https://ink.caracore.com.br/pwa.html)
 - [Wiki](https://wiki.caracore.com.br/projeto-ink.html)
