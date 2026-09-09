@@ -25,8 +25,15 @@ alwaysApply: true
 - macOS/Linux: copy **Em breve**; sem link de download ativo.
 - Não anunciar DMG/DEB nesta tag. Não republicar Windows em cortes só de copy.
 
+## Primeiro acesso (v2.0.0, fiel ao app)
+- Sem usuário seed. Não documentar admin/admin nem admin/admin123.
+- 1ª abertura: assistente (celular) → perfil + senha (mín. 8) + frase de recuperação (mín. 10) → login celular+senha.
+- Dados: `%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db`
+- Recuperação: só neste PC (frase + código 6 dígitos; sem SMS/e-mail).
+- Páginas: `primeiro-acesso.html` · `artifacts/instalacao-windows.html#primeiro-acesso` · wiki `#primeiros-passos`
+
 ## Estrutura (docs/)
-- index · download · tecnologia · canal-feedback · wiki/ (redirect para o portal)
+- index · download · primeiro-acesso · tecnologia · canal-feedback · artifacts/instalacao-windows · wiki/ (redirect para o portal)
 
 ## Convenções
 - Footer → portfólio `#caracore-ink-agenda`

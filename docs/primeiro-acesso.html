@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://ink.caracore.com.br/">
+    <title>Primeiro acesso — Ink Agenda v2.0.0 | Cara Core Informática</title>
+    <meta name="description" content="Primeiro acesso do Ink Agenda v2.0.0: criar usuário com celular e senha local, offline, no Windows.">
+    <link rel="stylesheet" href="assets/css/ink-portal.css">
+    <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
+    <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
+</head>
+<body class="download-page">
+    <div class="wrapper">
+        <nav class="breadcrumb" aria-label="Navegação">
+            <a href="index.html">Cara Core Ink Agenda — Loja</a>
+            <span> · </span>
+            <a href="download.html">Download</a>
+            <span> · </span>
+            <span>Primeiro acesso</span>
+        </nav>
+
+        <section class="ink-launch-banner" aria-label="Primeiro acesso">
+            <p class="ink-launch-label">v2.0.0 — primeiro acesso</p>
+            <p class="ink-launch-date">Celular + senha local neste computador. Sem conta na nuvem. Windows publicado · macOS/Linux em breve.</p>
+        </section>
+
+        <header>
+            <h1>Primeiro acesso (login)</h1>
+            <p>Fiel ao Ink Agenda v2.0.0 no Windows. Não é o PDV Cara Core.</p>
+        </header>
+
+        <section class="card" style="border-left: 4px solid var(--accent-gold);">
+            <h2>Isto não é o PDV</h2>
+            <p>Não use <code>admin</code>/<code>admin</code> (PDV Java) nem <code>admin</code>/<code>admin123</code> (PDV Rust). O Ink <strong>não cria usuário de fábrica</strong>: na primeira abertura você cadastra o responsável.</p>
+        </section>
+
+        <section class="card">
+            <h2>Antes de abrir</h2>
+            <ol>
+                <li>Baixe o setup ou o ZIP em <a href="download.html">download.html</a> e, se quiser, valide o SHA256.</li>
+                <li>Instale ou extraia. Passo a passo: <a href="artifacts/instalacao-windows.html">Instalação Windows</a>.</li>
+                <li>Abra <code>AgendaInk.exe</code>. O Java 25 já vem no pacote — não instale JDK.</li>
+            </ol>
+        </section>
+
+        <section class="card" id="primeira-abertura">
+            <h2>O que a primeira abertura mostra</h2>
+            <ol>
+                <li>Tela de login com o quadro <strong>Primeiro acesso (assistido)</strong>.</li>
+                <li>Texto: informe o celular do responsável e clique em <strong>Continuar para primeiro acesso</strong>.</li>
+                <li>Campo <strong>Celular</strong> (máscara tipo <code>(11) 99999-9999</code>). A senha ainda não aparece.</li>
+                <li>Tela seguinte: confirme o celular. Mensagem: “Tudo ocorre neste dispositivo: nenhuma conta externa é necessária.”</li>
+                <li>Tela de configuração: perfil (<strong>Proprietário</strong>, <strong>Tatuador Sr</strong> ou <strong>Tatuador Jr</strong>), senha (mínimo 8 caracteres + confirmação) e frase de recuperação (mínimo 10 caracteres + confirmação). Opcional: códigos de emergência — anote; o app mostra uma vez.</li>
+                <li>Volta ao login. Agora entre com o <strong>mesmo celular</strong> e a <strong>senha</strong> que acabou de criar (<strong>Entrar com celular</strong>).</li>
+            </ol>
+            <p>Não é e-mail obrigatório. Não é conta Cara Core online.</p>
+        </section>
+
+        <section class="card" id="reinstalacao">
+            <h2>Já instalei de novo — como entro?</h2>
+            <p>Os dados ficam em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db</code>, fora da pasta do ZIP/setup. Se o banco já tiver usuário, a tela pede celular e senha de imediato. “Lembrar da minha senha” vale só neste PC (até 12 horas ou até sair). Cinco senhas erradas bloqueiam cerca de 10 minutos.</p>
+        </section>
+
+        <section class="card" id="esqueci">
+            <h2>Esqueci a senha</h2>
+            <p><strong>Não há recuperação remota</strong> (sem SMS, e-mail ou site). No login, <strong>Esqueci a minha senha</strong> gera um código de 6 dígitos <strong>neste computador</strong> (cerca de 15 minutos), depois da frase de recuperação do primeiro acesso. Código de emergência, se você gerou, é uso único. Sem frase nem código: restaure um backup local ou apague a pasta de dados (a agenda deste PC some).</p>
+        </section>
+
+        <section class="card" id="checklist">
+            <h2>Checklist depois de entrar</h2>
+            <ul>
+                <li>1 cliente</li>
+                <li>1 agendamento</li>
+                <li>1 receita ou despesa</li>
+                <li>1 backup manual (exportação na linha 2.0.0)</li>
+            </ul>
+            <p>O mesmo fluxo está na <a href="https://wiki.caracore.com.br/projeto-ink.html#primeiros-passos">wiki</a>.</p>
+        </section>
+
+        <nav class="download-back">
+            <a href="download.html">← Download</a> ·
+            <a href="artifacts/instalacao-windows.html">Instalação Windows</a> ·
+            <a href="tecnologia.html">Tecnologia</a> ·
+            <a href="canal-feedback.html">Canal de feedback</a>
+        </nav>
+    </div>
+    <script src="assets/js/ink.js"></script>
+</body>
+</html>
