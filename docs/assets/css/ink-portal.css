@@ -126,6 +126,14 @@ footer a:hover { text-decoration: underline; }
 .cta-btn-primary { background: var(--accent-green); color: #0d1117; border: none; }
 .cta-btn-primary:hover { opacity: 0.95; filter: brightness(1.1); }
 
+.artifact-sha {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    word-break: break-all;
+    opacity: 0.8;
+    margin: 0.35rem 0 0.85rem;
+}
+
 body.download-page .wrapper { max-width: 720px; }
 body.canal-page .wrapper { max-width: 640px; }
 body.tecnologia-page .wrapper { max-width: 720px; }
