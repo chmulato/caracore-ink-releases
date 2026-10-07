@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="https://ink.caracore.com.br/">
     <title>Cara Core Ink Agenda — Loja | Cara Core Informática</title>
-    <meta name="description" content="Cara Core Ink Agenda v2.0.0: agenda, financeiro e painel de resultados para estúdios de tatuagem. Download Windows disponível.">
+    <meta name="description" content="Cara Core Ink Agenda v2.0.1: agenda, clientes, orçamentos, financeiro e painel de resultados para estúdios de tatuagem. Download Windows disponível.">
     <link rel="stylesheet" href="assets/css/ink-portal.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
     <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
@@ -21,8 +21,8 @@
         </nav>
 
         <section class="ink-launch-banner" aria-label="Lançamento oficial">
-            <p class="ink-launch-label">v2.0.0 estável</p>
-            <p class="ink-launch-date"><strong>Ink Agenda v2.0.0</strong> — Windows publicado. Lançamento oficial em <strong>26/06/2026</strong>.</p>
+            <p class="ink-launch-label">v2.0.1</p>
+            <p class="ink-launch-date"><strong>Ink Agenda v2.0.1</strong> — Windows, com as correções do QA da v2.0.0. Linha 2.0 lançada em <strong>26/06/2026</strong>.</p>
         </section>
 
         <section class="hero-cta" aria-label="O que é o Ink Agenda?">
@@ -35,7 +35,7 @@
             <p class="hero-desc">O <strong>Cara Core Ink Agenda</strong> organiza agendamentos, controla entradas e saídas e mostra o desempenho do estúdio. Calendário visual, financeiro e painel de resultados — dados no seu computador Windows.</p>
             <p class="hero-tagline">Sua arte é única, a segurança da sua agenda também deve ser.</p>
             <div class="hero-pillars">
-                <div class="hero-pillar-item is-blue"><strong>Agenda de sessões</strong><span class="hero-pillar-copy">Cliente, data, horário e valor.</span></div>
+                <div class="hero-pillar-item is-blue"><strong>Agenda de sessões</strong><span class="hero-pillar-copy">Cliente, data, horário, duração, valor e check de pago.</span></div>
                 <div class="hero-pillar-item is-green"><strong>Financeiro</strong><span class="hero-pillar-copy">Entradas, saídas e saldo.</span></div>
                 <div class="hero-pillar-item is-gold"><strong>Painel de resultados</strong><span class="hero-pillar-copy">Faturamento e médias por período.</span></div>
             </div>
@@ -57,7 +57,7 @@
         <section class="methodology">
             <div class="card">
                 <h2>O que é o Cara Core Ink Agenda?</h2>
-                <p>Ferramenta para tatuadores autônomos e estúdios: calendário visual de sessões, registro de receitas e despesas, saldo por período e indicadores mensais. Os dados ficam no seu computador, sem depender de internet.</p>
+                <p>Ferramenta para tatuadores autônomos e estúdios: calendário visual de sessões, cadastro de clientes, orçamentos, registro de receitas e despesas, saldo por período e faturamento com médias por mês e ano. Os dados ficam no seu computador, sem depender de internet. Veja o <a href="manual.html">manual</a>.</p>
             </div>
             <div class="card card-differential">
                 <h2>Para quem é</h2>
@@ -65,7 +65,7 @@
             </div>
             <div class="card card-differential" style="border-left: 4px solid var(--accent-gold, #c9a227);">
                 <h2>Dados no seu computador</h2>
-                <p>Agenda, financeiro e painel continuam a funcionar sem internet. Backup e restauração manuais na linha 2.0.0: se o computador falhar, o estúdio restaura a partir da cópia local. Detalhe da stack e da persistência na página <a href="tecnologia.html">Tecnologia</a> e na <a href="https://wiki.caracore.com.br/projeto-ink.html">wiki</a>.</p>
+                <p>Agenda, financeiro e painel continuam a funcionar sem internet. Backup com senha (<code>.inkbak</code>, criptografado) e backup automático a cada hora e ao fechar: se o computador falhar, o estúdio restaura a partir da cópia. Detalhe da stack e da persistência na página <a href="tecnologia.html">Tecnologia</a> e na <a href="https://wiki.caracore.com.br/projeto-ink.html">wiki</a>.</p>
             </div>
             <div class="card card-differential">
                 <h2>Portfólio e loja</h2>
@@ -74,7 +74,7 @@
             </div>
             <div class="card card-differential" style="border-left: 4px solid var(--accent-gold, #c9a227);">
                 <h2>Ink Agenda 3.0 — depois do Hub</h2>
-                <p>A próxima versão é em PWA: web, Android, iPhone, Mac e Linux pelo browser, com as regras da v2.0.0, <strong>não antes de 2028</strong>. Não haverá instalador nativo para Mac nem Linux. O produto de hoje continua o Desktop Windows. <a href="pwa.html">Ler o roadmap</a>.</p>
+                <p>A próxima versão é em PWA: web, Android, iPhone, Mac e Linux pelo browser, com as regras da v2, <strong>não antes de 2028</strong>. Não haverá instalador nativo para Mac nem Linux. O produto de hoje continua o Desktop Windows. <a href="pwa.html">Ler o roadmap</a>.</p>
             </div>
         </section>
 
@@ -96,7 +96,7 @@
                     </svg>
                 </span>
                 <h3>Download</h3>
-                <p>ZIP e setup Windows + checksum.sha256 da tag v2.0.0.</p>
+                <p>ZIP e setup Windows + checksum.sha256 da tag v2.0.1.</p>
             </a>
             <a href="tecnologia.html" class="nav-card" title="Tecnologia">
                 <span class="icon" aria-hidden="true">
@@ -106,7 +106,7 @@
                     </svg>
                 </span>
                 <h3>Tecnologia</h3>
-                <p>Java 25, JavaFX 21.0.11, Maven e SQLite local.</p>
+                <p>Java 25, JavaFX 21.0.11, SQLite local, backup criptografado e log com rotação.</p>
             </a>
             <a href="canal-feedback.html" class="nav-card" title="Suporte e feedback">
                 <span class="icon" aria-hidden="true">
@@ -136,14 +136,14 @@
                 <h3>Ecossistema Cara Core</h3>
                 <p>Visão do produto e documentação no <strong>portal wiki</strong> (<strong>wiki.caracore.com.br</strong>).</p>
             </a>
-            <a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.0" class="nav-card" title="Release v2.0.0 no GitHub">
+            <a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.1" class="nav-card" title="Release v2.0.1 no GitHub">
                 <span class="icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
                     </svg>
                 </span>
                 <h3>Release no GitHub</h3>
-                <p>Tag v2.0.0: artefatos Windows e checksum.sha256.</p>
+                <p>Tag v2.0.1: artefatos Windows e checksum.sha256.</p>
             </a>
         </div>
 

@@ -33,7 +33,7 @@ Runtime embarcado: Java 25 (não requer JDK no PATH). Interface: JavaFX 21.0.11.
 - Financeiro (entradas, saídas e saldo)
 - Painel de resultados (faturamento e médias)
 - Persistência local SQLite (offline por padrão)
-- Backup/restauração manuais na linha 2.0.0 (automação marcada para 2.1)
+- Backup `.inkbak` manual e backup automático local (a cada hora e ao fechar, `backups\agenda_*.db.gz`, 30 cópias). A v2.0.1 acrescenta senha no `.inkbak` e a opção de desligar o automático.
 
 ## Documentação
 

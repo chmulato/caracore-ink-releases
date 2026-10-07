@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologia — Cara Core Ink Agenda | Cara Core Informática</title>
-    <meta name="description" content="Stack do Cara Core Ink Agenda: Java 25, JavaFX 21, Maven e SQLite. Versão estável v2.0.0.">
+    <meta name="description" content="Stack do Cara Core Ink Agenda v2.0.1: Java 25, JavaFX 21, SQLite com Flyway, backup criptografado, log com rotação e runtime embutido no Windows.">
     <link rel="stylesheet" href="assets/css/ink-portal.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
     <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
@@ -18,7 +18,7 @@
         </nav>
 
         <section class="ink-launch-banner" aria-label="Stack atual">
-            <p class="ink-launch-label">Tecnologia</p>
+            <p class="ink-launch-label">Tecnologia · v2.0.1</p>
             <p class="ink-launch-date">Java 25 · JavaFX 21.0.11 · SQLite local · runtime embutido no pacote Windows.</p>
         </section>
 
@@ -29,33 +29,52 @@
 
         <section class="card">
             <h2>Java 25 e JavaFX 21.0.11</h2>
-            <p>O Ink Agenda é desenvolvido em <strong>Java 25</strong> (LTS) com interface gráfica em <strong>JavaFX 21.0.11</strong>. Recursos modernos da linguagem (records, sealed interfaces) e UI nativa desktop no Windows.</p>
+            <p>O Ink Agenda é desenvolvido em <strong>Java 25</strong> (LTS) com interface em <strong>JavaFX 21.0.11</strong>. Moeda, datas e meses usam o locale fixo <strong>pt-BR</strong> (R$ 350,00 · 07/10/2026 · outubro de 2026) na tela, no gráfico e no PDF.</p>
         </section>
 
         <section class="card">
-            <h2>Banco local e Blindagem de Dados</h2>
-            <p>Persistência em <strong>SQLite</strong> no seu computador: o sistema não depende de internet para funcionar. A linha 2.0.0 usa WAL, verificação de integridade na abertura e backup manual (exportação/importação). Detalhe de produto e operação na <a href="https://wiki.caracore.com.br/projeto-ink.html">wiki</a>.</p>
+            <h2>Banco local</h2>
+            <p>Persistência em <strong>SQLite</strong> (<code>%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db</code>) com WAL, verificação de integridade na abertura e migrações versionadas com <strong>Flyway</strong>. O app não abre porta nem faz conexão: funciona 100% offline.</p>
         </section>
 
         <section class="card">
             <h2>Arquitetura em camadas</h2>
-            <p><strong>Domínio:</strong> entidades (Appointment, Expense, ExpenseType) e contratos de repositório (AppointmentRepository, ExpenseRepository). <strong>Core:</strong> tipo Result para operações que podem falhar. <strong>Desktop:</strong> aplicação JavaFX com janela principal. Persistência em SQLite local; integrações futuras em implementações dos repositórios.</p>
+            <ul>
+                <li><strong>Telas (JavaFX):</strong> Hoje, Calendário, Finanças, Dashboard, Orçamentos, Clientes, Usuário e Config.</li>
+                <li><strong>Controladores e serviços:</strong> regras de agenda (sem sobreposição de sessões, duração e valor), cadastro de clientes e orçamentos, indicadores do painel, importação idempotente e relatórios.</li>
+                <li><strong>Domínio:</strong> clientes, agendamentos, orçamentos, cobranças, recebimentos e lançamentos financeiros. Operações que podem falhar devolvem um tipo <code>Result</code>.</li>
+                <li><strong>Infraestrutura:</strong> repositórios SQLite, backup, PDF (OpenPDF com fonte Unicode embutida) e log.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Senhas e acesso</h2>
+            <p>Acesso por <strong>celular + senha local</strong>, sem conta na nuvem. A senha <strong>não fica no SQLite</strong>: fica em um arquivo com hash PBKDF2-HMAC-SHA256 e sal aleatório. A frase de recuperação e os códigos de emergência também são guardados só como hash. “Esqueci minha senha” gera um código de 6 dígitos válido por 15 minutos.</p>
+            <p>“Lembrar senha” guarda a credencial criptografada (AES-GCM) com uma chave derivada de um segredo aleatório criado em cada instalação. O app não traz usuário de fábrica: na primeira abertura vai direto ao <a href="primeiro-acesso.html">primeiro acesso</a>.</p>
+        </section>
+
+        <section class="card">
+            <h2>Backup</h2>
+            <ul>
+                <li><strong>.inkbak:</strong> cópia completa do banco, compactada e criptografada com AES-256-GCM, com chave derivada da senha do backup (PBKDF2). Backups <code>.inkbak</code> da v2.0.0 continuam restaurando.</li>
+                <li><strong>Automático:</strong> a cada hora e ao fechar, <code>agenda_*.db.gz</code> em <code>backups\</code>, mantendo os 30 mais recentes. Pode ser desligado em Config.</li>
+                <li><strong>CSV:</strong> agendamentos e lançamentos financeiros, compactado e criptografado com senha. Importar duas vezes não duplica nada.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Log</h2>
+            <p>Registro técnico em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\logs\</code> (<code>agenda-0.log</code> a <code>agenda-4.log</code>, até 1 MB cada, com rotação). Senhas, telefones e e-mails são mascarados antes de gravar.</p>
         </section>
 
         <section class="card">
             <h2>Build e testes</h2>
-            <p><strong>Maven</strong> para build e dependências. <strong>JUnit 5</strong> para testes unitários e <strong>JaCoCo</strong> para cobertura (mínimo 80% em domínio e core). O gate oficial recente foi validado com <code>mvn verify</code> e bootstrap demo oficial após o hardening do JavaFX. Comandos usuais: <code>mvn compile</code>, <code>mvn test</code>, <code>mvn package</code> e <code>mvn verify</code>.</p>
+            <p><strong>Maven</strong> para build e dependências. <strong>JUnit 5</strong> e <strong>TestFX</strong> para testes; <strong>JaCoCo</strong> exige no mínimo 80% de cobertura de linhas nos serviços e no domínio, com metas próprias para persistência e log. O pacote de produção passa por um teste que barra dados de demonstração, credenciais e scripts de desenvolvimento.</p>
         </section>
 
         <section class="card">
-            <h2>Autenticação — offline-first</h2>
-            <p>O Ink Agenda opera <strong>100% offline por padrão</strong>: nenhuma funcionalidade depende de internet. Este é o princípio central dos produtos Cara Core Informática.</p>
-            <p><strong>Modo padrão (sempre ativo):</strong> acesso por <strong>celular + senha local</strong>, armazenados em SQLite no computador do tatuador. Sem conta na nuvem. Na primeira abertura o app pede para criar o responsável (assistente) — passo a passo em <a href="primeiro-acesso.html">Primeiro acesso</a>.</p>
-        </section>
-
-        <section class="card">
-            <h2>Distribuição e segurança</h2>
-            <p>Distribuído como <strong>APP_IMAGE</strong> (pasta portátil, <code>ZIP</code>) e instalador <code>.exe</code> para Windows via <code>jpackage</code> — runtime Java 25 embutido, sem necessidade de JDK instalado no sistema. Código-fonte ofuscado com <strong>ProGuard</strong> antes do empacotamento, sem exigir JDK no host.</p>
+            <h2>Distribuição</h2>
+            <p>ZIP portátil e instalador <code>.exe</code> para Windows gerados com <code>jpackage</code>. O runtime Java 25 vem embutido (jlink, com os dados de locale e sem ferramentas de desenvolvimento como depurador, jshell e compilador): não é preciso instalar JDK. O jar da aplicação é ofuscado com <strong>ProGuard</strong> antes do empacotamento.</p>
         </section>
 
         <p class="tech-selo" style="margin: 24px 0; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; font-size: 0.95rem; color: var(--text-secondary);"><strong style="color: var(--accent-green);">Ecossistema Cara Core Informática</strong> — Produtos desktop e web com foco em simplicidade, manutenção e entrega clara. Ink Agenda integra o portfólio ao lado do PDV, Seed, Hub e outros.</p>
@@ -63,18 +82,16 @@
         <section class="roadmap" aria-label="Próximos passos" style="margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: 4px solid var(--accent-blue); background: rgba(37,99,235,0.06); border-radius: 0 8px 8px 0;">
             <p style="font-weight: 600; margin-bottom: 0.5rem;">Status e próximos passos</p>
             <ul style="margin: 0; padding-left: 1.25rem;">
-                <li><strong>v2.0.0 estável</strong> — Desktop Windows (EXE/ZIP) publicado</li>
-                <li>Lançamento oficial (Windows) <strong>26 de junho de 2026</strong></li>
-                <li>Roadmap: <a href="pwa.html">Ink Agenda 3.0 em PWA</a> depois do Hub (<strong>não antes de 2028</strong>) — web, Android, iPhone, Windows, Mac e Linux pelo browser, com as regras da v2.0.0. <strong>Sem</strong> instalador nativo Mac/Linux. Servidor na nuvem com HTTPS e uma base SQLite por estúdio. Substitui o Desktop depois de existir a importação dos dados da v2</li>
+                <li><strong>v2.0.1</strong> — Desktop Windows (EXE/ZIP), correções do QA da v2.0.0</li>
+                <li>Lançamento oficial da linha 2.0 (Windows) <strong>26 de junho de 2026</strong></li>
+                <li>Roadmap: <a href="pwa.html">Ink Agenda 3.0 em PWA</a> depois do Hub (<strong>não antes de 2028</strong>) — web, Android, iPhone, Windows, Mac e Linux pelo browser, com as regras da v2. <strong>Sem</strong> instalador nativo Mac/Linux. Servidor na nuvem com HTTPS e uma base SQLite por estúdio. Substitui o Desktop depois de existir a importação dos dados da v2</li>
             </ul>
         </section>
 
         <nav class="download-back">
-            <a href="index.html">← Voltar ao portal</a> · <a href="download.html">Download</a> · <a href="canal-feedback.html">Canal de feedback</a>
+            <a href="index.html">← Voltar ao portal</a> · <a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="canal-feedback.html">Canal de feedback</a>
         </nav>
     </div>
     <script src="assets/js/ink.js"></script>
 </body>
 </html>
-
-

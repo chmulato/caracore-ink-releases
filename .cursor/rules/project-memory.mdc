@@ -1,16 +1,17 @@
 ---
-description: Memória da loja Ink Agenda — caracore-ink-releases; vitrine ink.caracore.com.br; v2.0.0
+description: Memória da loja Ink Agenda — caracore-ink-releases; vitrine ink.caracore.com.br; v2.0.0 publicada; v2.0.1 gerada localmente (aprovação pendente)
 alwaysApply: true
 ---
 
 # Memória da Loja — caracore-ink-releases
 
 ## Repositório e papel
-- **caracore-ink-releases:** loja (vitrine e releases) do **Ink Agenda**.
+- **caracore-ink-releases:** loja (vitrine e releases) do **Ink Agenda**. Branch padrão **master**.
 - **URL:** https://ink.caracore.com.br/
 - **Publicação:** GitHub Pages a partir de **docs/**.
 - **Oficina:** caracore-ink
-- **Versão loja:** v2.0.0 (`VERSION`) — Windows publicado; macOS/Linux em breve.
+- **Versão no checkout:** v2.0.1 (`VERSION`), correções do QA da v2.0.0 (07/10/2026). **Ainda não publicada:** tag, release, edição de corpo de releases e deploy da loja só com aprovação do dono.
+- **Publicada no GitHub:** v2.0.0 (Windows). Não haverá macOS/Linux nativos (PWA não antes de 2028).
 
 ## Matriz
 - **Portfólio:** `portfolio.html#caracore-ink-agenda`
@@ -18,28 +19,32 @@ alwaysApply: true
 - **Lançamento desktop:** 26/06/2026
 
 ## Canal público (não misturar)
-- Tag **v2.0.0**: ZIP + setup Windows reais; `checksum.sha256`.
-- SHA Windows ZIP: `3f331dcf8d7f70769debc15f32879338677cfe62c30d19182b931ac07f554832`
-- SHA Windows setup: `7fb35a24a79a05115d021bce6428c938425216a1fcd75a07ff569dd978ff1bba`
-- Dados do app: `%LOCALAPPDATA%\CaraCore\AgendaInk\`
-- macOS/Linux: copy **Em breve**; sem link de download ativo.
-- Não anunciar DMG/DEB nesta tag. Não republicar Windows em cortes só de copy.
+- Tag **v2.0.0** (publicada): ZIP `3f331dcf8d7f70769debc15f32879338677cfe62c30d19182b931ac07f554832` · setup `7fb35a24a79a05115d021bce6428c938425216a1fcd75a07ff569dd978ff1bba`. Não apagar a tag.
+- Tag **v2.0.1** (local): `AgendaInk-2.0.1-windows.zip` e `AgendaInk-2.0.1-windows-setup.exe`. O SHA256 tem de ser idêntico em `download.html`, `artifacts/instalacao-windows.html`, `artifacts/checksum.sha256`, `checksum.sha256` da raiz, `RELEASE_NOTES_v2.0.1.md`, README e release GitHub.
+- Dados do app: `%LOCALAPPDATA%\CaraCore\AgendaInk\` (`agenda.db`, `backups\`, `logs\`).
+- Não anunciar DMG/DEB. `.dmg`/`.deb` com Java 21 só com aprovação do dono. RC1–RC8 substituídas pela linha 2.0.
 
 ## Ink Agenda 3.0 em PWA (roadmap, não antes de 2028)
 - Página `pwa.html`; cartão na `index.html`; linha em `tecnologia.html`. Sem botão Instalar até o GA.
-- Copy de 07/10/2026 (checkout): a 3.0 é nova aplicação de lançamento em PWA, sobre as regras da v2.0.0; web, Android, iPhone, Windows, Mac e Linux pelo browser; servidor na nuvem com HTTPS, **uma base SQLite por estúdio**; internet necessária.
-- A 3.0 **substitui** o Desktop v2.0.0. O download da v2 só sai da loja depois da importação dos dados e de aviso com data (S9). Não apagar a tag `v2.0.0`.
+- A 3.0 é nova aplicação de lançamento em PWA, sobre as regras da v2; web, Android, iPhone, Windows, Mac e Linux pelo browser; servidor na nuvem com HTTPS, **uma base SQLite por estúdio**; internet necessária.
+- A 3.0 **substitui** o Desktop v2. O download da v2 só sai da loja depois da importação dos dados e de aviso com data (S9).
 - Não prometer a 3.0 offline-first nem disponível. Canónico: `caracore-ink/docs/PLANO_PWA.md`.
 
-## Primeiro acesso (v2.0.0, fiel ao app)
-- Sem usuário seed. Não documentar admin/admin nem admin/admin123.
-- 1ª abertura: assistente (celular) → perfil + senha (mín. 8) + frase de recuperação (mín. 10) → login celular+senha.
-- Dados: `%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db`
-- Recuperação: só neste PC (frase + código 6 dígitos; sem SMS/e-mail).
-- Páginas: `primeiro-acesso.html` · `artifacts/instalacao-windows.html#primeiro-acesso` · wiki `#primeiros-passos`
+## Primeiro acesso (v2.0.1, fiel ao app)
+- Sem usuário seed nem credencial na tela. Não documentar admin/admin nem admin/admin123.
+- 1ª abertura: aviso “Seus dados ficam só neste computador” → **Passo 1 de 3 — Identificação** (celular, Continuar) → **Passo 2 de 3 — Senha e recuperação local** (perfil, senha 8+, frase 10+, 8 códigos de emergência, “Concluir configuração”) → só então o login.
+- “Esqueci minha senha”: código de 6 dígitos válido por 15 minutos, só neste PC (frase ou código de emergência; sem SMS/e-mail).
+- Páginas: `primeiro-acesso.html` · `artifacts/instalacao-windows.html#primeiro-acesso` · `manual.html` · wiki `#primeiros-passos`
+
+## Funções que a loja promete (todas existem na v2.0.1)
+- Sessão com horário em minutos, duração (30 min a 8 h) e valor; check “Pagou”; sem sobreposição.
+- Dashboard → Resultados: faturamento, ticket médio e saldo do mês; faturamento, média mensal e ticket médio do ano.
+- Orçamentos (Novo/Editar) e aba Clientes (lista, busca, novo, editar).
+- `.inkbak` com senha (AES-256-GCM), pasta/nome escolhidos, sem sobrescrever; backup automático a cada hora e ao fechar (30 cópias, pode desligar); CSV criptografado e idempotente (agendamentos + lançamentos).
+- Senha em arquivo com hash PBKDF2 (não no SQLite); log com rotação em `logs\`; ProGuard no jar.
 
 ## Estrutura (docs/)
-- index · download · primeiro-acesso · tecnologia · canal-feedback · artifacts/instalacao-windows · wiki/ (redirect para o portal)
+- index · download · primeiro-acesso · manual · tecnologia · pwa · canal-feedback · mirror-delivery · artifacts/instalacao-windows · wiki/ (redirect para o portal)
 
 ## Convenções
 - Footer → portfólio `#caracore-ink-agenda`

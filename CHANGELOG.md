@@ -2,6 +2,29 @@
 
 Todos os cambios notáveis neste projeto são documentados neste arquivo.
 
+## [2.0.1] - 07 de outubro de 2026
+
+Correções do QA da v2.0.0 (07/10/2026). Detalhe em [`RELEASE_NOTES_v2.0.1.md`](RELEASE_NOTES_v2.0.1.md).
+
+### Corrigido
+- Importação CSV idempotente; conflitos de horário viram aviso com lista de ignorados.
+- pt-BR fixo na tela, no gráfico e no PDF (R$ 350,00 · 07/10/2026 · outubro de 2026).
+- Pacote sem login de demonstração, seeds, scripts de desenvolvimento nem formulário de exemplo.
+- PDF: data sem quebra, “−” e “·” visíveis, mês em português.
+- Contraste, acentos e termos pt-BR; janela cabe em 1366×768; diálogos escuros.
+
+### Adicionado
+- Sessão com horário em minutos, duração (30 min a 8 h) e valor; check “Pagou”.
+- Dashboard → Resultados (faturamento, ticket médio, saldo e média mensal).
+- Orçamentos: Novo/Editar. Aba Clientes: lista, busca, novo e editar.
+- `.inkbak` com senha (AES-256-GCM), pasta/nome escolhidos, sem sobrescrever; backup automático com opção de desligar.
+- Log em arquivo com rotação; “Lembrar senha” com segredo por instalação; runtime sem jdwp/jshell/compiler.
+- Jar ofuscado com ProGuard (a v2.0.0 publicada saiu sem ofuscação).
+
+### Loja
+- Download, guia de instalação, primeiro acesso (passo 1 de 3 direto na primeira abertura), manual, tecnologia e home alinhados à v2.0.1.
+- Notas da v2.0.0: removida a promessa de automação de backup na 2.1 (o backup automático já existia).
+
 ## [loja] - 09 de setembro de 2026
 
 ### Alterado

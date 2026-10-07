@@ -1,423 +1,161 @@
 <!DOCTYPE html>
-
-
 <html lang="pt-BR">
-
-
 <head>
-
-
     <meta charset="UTF-8">
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <title>Manual do usuário — Ink Agenda v2.0.0 | Cara Core Informática</title>
-
-
-    <meta name="description" content="Manual do Ink Agenda v2.0.0: login por celular, calendário, clientes, financeiro, backup. Desktop Windows disponível.">
-
-
+    <title>Manual do usuário — Ink Agenda v2.0.1 | Cara Core Informática</title>
+    <meta name="description" content="Manual do Ink Agenda v2.0.1: primeiro acesso, agenda com horário, duração e valor, clientes, orçamentos, financeiro, painel de resultados e backup com senha.">
     <link rel="stylesheet" href="assets/css/loja.css">
-
-
-        <link rel="stylesheet" href="assets/css/evolution-status.css">
-
-
+    <link rel="stylesheet" href="assets/css/evolution-status.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
-
-
     <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
-
-
 </head>
-
-
 <body class="page-manual">
-
-
     <div class="wrapper">
-
-
         <nav class="breadcrumb" aria-label="Navegação">
-
-
             <a href="index.html">Cara Core Ink Agenda — Loja</a>
-
-
             <span> · </span>
-
-
-            <span>Cara Core Informática (ink.caracore.com.br)</span>
-
-
-            <span> · </span>
-
-
             <span>Manual</span>
-
-
         </nav>
 
-
-
-
-
-        <section class="ink-launch-banner" aria-label="Data de lançamento">
-
-
-            <p class="ink-launch-label">Lançamento oficial</p>
-
-
-            <p class="ink-launch-date"><strong>Ink Agenda v2.0.0</strong> para Windows — lançado oficialmente em <strong>26 de junho de 2026</strong>.</p>
-
-
+        <section class="ink-launch-banner" aria-label="Versão">
+            <p class="ink-launch-label">Manual v2.0.1</p>
+            <p class="ink-launch-date"><strong>Ink Agenda v2.0.1</strong> para Windows. Linha 2.0 lançada em <strong>26 de junho de 2026</strong>.</p>
         </section>
-
-
-
-
 
         <header>
-
-
             <h1>Manual do usuário — Ink Agenda</h1>
-
-
-            <p class="subtitle">Guia de uso do aplicativo v2.0.0: login por celular, calendário e lista do dia, clientes, financeiro, backup com senha e painel de resultados.</p>
-
-
+            <p class="subtitle">Primeiro acesso, agenda do dia, calendário, clientes, orçamentos, financeiro, painel de resultados e backup.</p>
         </header>
 
-
-
-
-
         <nav class="manual-toc" aria-label="Índice do manual">
-
-
             <h2 class="manual-toc-title">Índice</h2>
-
-
             <ul class="manual-toc-list">
-
-
                 <li><a href="#visao-geral">Visão geral</a></li>
-
-
                 <li><a href="#requisitos-instalacao">Requisitos e instalação</a></li>
-
-
-                <li><a href="#login">Login e primeiro uso</a></li>
-
-
-                <li><a href="#agenda">Agenda e lista do dia</a></li>
-
-
-                <li><a href="#financeiro">Financeiro</a></li>
-
-
-                <li><a href="#painel">Painel de resultados</a></li>
-
-
+                <li><a href="#login">Primeiro acesso e login</a></li>
+                <li><a href="#agenda">Hoje e calendário</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#orcamentos">Orçamentos</a></li>
+                <li><a href="#financeiro">Finanças</a></li>
+                <li><a href="#painel">Dashboard (resultados)</a></li>
                 <li><a href="#backup">Backup e restauração</a></li>
-
-
                 <li><a href="#troubleshooting">Problemas comuns</a></li>
-
-
             </ul>
-
-
         </nav>
-
-
-
-
 
         <div class="manual-content">
-
-
-        <section class="manual-card manual-card--intro" id="visao-geral">
-
-
-            <h2>Visão geral</h2>
-
-
-            <p>O <strong>Ink Agenda</strong> é um aplicativo desktop que ajuda tatuadores e estúdios a organizar agendamentos, controlar entradas e saídas e acompanhar o desempenho do negócio. Os dados ficam no seu computador (SQLite local); a interface é nativa (Java + JavaFX), sem depender de navegador. <strong>v2.0.0</strong> é o primeiro produto Cara Core já maduro, lançado oficialmente em 26 de junho de 2026.</p>
-
-
-            <h3>Principais recursos</h3>
-
-
-            <ul>
-
-
-                <li><strong>Login por celular</strong> — Acesso com o número do tatuador (telas de login e recuperação).</li>
-
-
-                <li><strong>Agenda e lista do dia</strong> — Calendário centralizado no topo; ao clicar no dia, abre a lista de agendamentos daquele dia (ordem do mais cedo ao mais tarde). Cadastro com nome, valor, data e hora; celular do cliente opcional. Não permite sobrepor horários ao salvar.</li>
-
-
-                <li><strong>Check “Pagou” na tela Hoje</strong> — Marque rapidamente quem já pagou na visão do dia.</li>
-
-
-                <li><strong>Financeiro</strong> — Registro de receitas (entradas) e despesas (saídas), com saldo por período.</li>
-
-
-                <li><strong>Painel de resultados</strong> — Faturamento, médias e indicadores para acompanhar o desempenho.</li>
-
-
-                <li><strong>Backup e restauração</strong> — Exportar e importar dados em arquivo protegido por senha (CSV compactado), para soberania dos dados.</li>
-
-
-            </ul>
-
-
-            <p>Requisitos e detalhes técnicos estão em <a href="download.html">Download</a> e <a href="tecnologia.html">Tecnologia</a>.</p>
-
-
-        </section>
-
-
-
-
-
-        <section class="manual-card" id="requisitos-instalacao">
-
-
-            <h2>Requisitos e instalação</h2>
-
-
-            <p><strong>Requisitos:</strong> Windows 10 ou superior. Para a vitrine pública atual:</p>
-
-
-            <ul>
-
-
-                <li><strong>Instalador Windows (recomendado)</strong> — Baixe o instalador Windows na página de <a href="download.html">Download</a>. Não é necessário ter Java instalado; o runtime já vai embutido.</li>
-
-
-                <li><strong>Escopo publicado da release</strong> — A página de Download documenta os artefatos públicos atuais: Windows (ZIP + setup).</li>
-
-
-            </ul>
-
-
-            <p>Os dados ficam em <code>%AppData%\Local\CaraCore\AgendaInk</code> (banco SQLite e arquivos de backup manual/exportação). Para desenvolvimento na oficina: <code>cd agenda-java && mvn javafx:run</code>.</p>
-
-
-        </section>
-
-
-
-
-
-        <section class="manual-card" id="login">
-
-
-            <h2>Login e primeiro uso</h2>
-
-
-            <p>O acesso ao <strong>Ink Agenda</strong> é feito pelo <strong>celular do tatuador</strong>: na tela de login, informe o número de telefone e a senha. No primeiro uso, o aplicativo solicita o cadastro do usuário.</p>
-
-
-            <p><strong>O app funciona 100% offline</strong> — nenhuma funcionalidade depende de internet. A autenticação padrão é sempre por celular + senha local, armazenada no seu computador.</p>
-
-
-        </section>
-
-
-
-
-
-        <section class="manual-card" id="agenda">
-
-
-            <h2>Agenda e lista do dia</h2>
-
-
-            <p>A agenda mostra um <strong>calendário</strong> centralizado no topo da tela. Ao <strong>clicar em um dia</strong>, abre a <strong>lista do dia</strong>: apenas os agendamentos daquele dia, em ordem do mais cedo ao mais tarde. Use para planejar o dia e manter o histórico de atendimentos.</p>
-
-
-            <h3>Cadastro de agendamento</h3>
-
-
-            <ul>
-
-
-                <li><strong>Campos:</strong> nome do cliente, valor, data e hora. Celular do cliente é opcional.</li>
-
-
-                <li><strong>Salvar:</strong> o aplicativo não permite <strong>sobreposição de horários</strong> — se o horário já estiver ocupado, será exibido aviso e você precisará escolher outro horário.</li>
-
-
-                <li><strong>Editar:</strong> abra o agendamento e altere cliente, data, horário ou valor conforme necessário.</li>
-
-
-            </ul>
-
-
-            <h3>Tela Hoje</h3>
-
-
-            <p>Na visão do dia atual, você pode marcar <strong>Pagou</strong> para cada cliente que já realizou o pagamento, facilitando o controle do caixa do dia.</p>
-
-
-        </section>
-
-
-
-
-
-        <section class="manual-card" id="financeiro">
-
-
-            <h2>Financeiro</h2>
-
-
-            <p>O módulo Financeiro registra <strong>entradas</strong> (receitas) e <strong>saídas</strong> (despesas), calculando o saldo. Ideal para controlar o que entra (sessões, retoques, vendas) e o que sai (materiais, aluguel, contas).</p>
-
-
-            <h3>Tipos de lançamento</h3>
-
-
-            <ul>
-
-
-                <li><strong>Entrada (receita)</strong> — Valores que entram: sessão de tatuagem, retoque, venda de produtos, etc.</li>
-
-
-                <li><strong>Saída (despesa)</strong> — Valores que saem: materiais, aluguel, energia, manutenção, etc.</li>
-
-
-            </ul>
-
-
-            <h3>Uso básico</h3>
-
-
-            <ul>
-
-
-                <li>Registre cada receita ou despesa com descrição, valor e data.</li>
-
-
-                <li>O aplicativo calcula o saldo (receitas menos despesas) no período.</li>
-
-
-                <li>Consulte a lista de lançamentos para revisar ou editar.</li>
-
-
-            </ul>
-
-
-        </section>
-
-
-
-
-
-        <section class="manual-card" id="painel">
-
-
-            <h2>Painel de resultados</h2>
-
-
-            <p>O painel reúne indicadores do negócio: faturamento no período, totais de entradas e saídas, saldo e médias (por exemplo, ticket médio). Use para acompanhar o desempenho mensal e tomar decisões. A apresentação completa e a consultoria estão na matriz (caracore.com.br).</p>
-
-
-        </section>
-
-
-
-
-
-        <section class="manual-card" id="backup">
-
-
-            <h2>Backup e restauração</h2>
-
-
-            <p>O Ink Agenda permite <strong>exportar</strong> e <strong>importar</strong> seus dados em um arquivo único (CSV compactado com GZIP), protegido por <strong>senha</strong>. Assim você mantém a soberania dos dados e pode trocar de computador ou fazer cópias de segurança.</p>
-
-
-            <p>As opções de backup e restauração ficam na área de <strong>Perfil</strong>. Na linha 2.0.0, o fluxo suportado é exportação/importação e backup manual local. Para mais detalhes sobre o formato e o dossiê de lançamento, consulte a matriz e o RELEASE_NOTES na oficina.</p>
-
-
-        </section>
-
-
-
-
-
-        <section class="manual-card manual-card--troubleshoot" id="troubleshooting">
-
-
-            <h2>Problemas comuns</h2>
-
-
-            <ul>
-
-
-                <li><strong>ZIP/EXE não inicia</strong> — Confirme que o artefato veio da release pública v2.0.0 e valide o checksum antes de executar.</li>
-
-
-                <li><strong>Erro ao iniciar a janela</strong> — Confirme que você instalou corretamente no Windows e que o sistema operacional atende aos requisitos mínimos.</li>
-
-
-                <li><strong>Horário já ocupado ao salvar</strong> — O aplicativo impede sobrepor horários. Escolha outro horário ou edite o agendamento existente.</li>
-
-
-                <li><strong>Dúvidas ou sugestões</strong> — Use o <a href="canal-feedback.html">Canal de feedback</a> (e-mail, WhatsApp ou Telegram) para reportar problemas ou pedir ajuda.</li>
-
-
-            </ul>
-
-
-        </section>
-
-
+            <section class="manual-card manual-card--intro" id="visao-geral">
+                <h2>Visão geral</h2>
+                <p>O <strong>Ink Agenda</strong> é um aplicativo desktop para tatuadores e estúdios: agenda de sessões, clientes, orçamentos, entradas e saídas e o desempenho do negócio. Os dados ficam no seu computador (SQLite local). O app funciona 100% offline: não abre porta nem faz conexão.</p>
+                <p>O menu inferior tem as abas <strong>Hoje</strong>, <strong>Calendário</strong>, <strong>Finanças</strong>, <strong>Dashboard</strong>, <strong>Orçamentos</strong>, <strong>Clientes</strong>, <strong>Usuário</strong>, <strong>Config</strong> e <strong>Sair</strong>.</p>
+                <p>Valores em reais (R$ 350,00) e datas no formato brasileiro (07/10/2026) na tela, no gráfico e no PDF.</p>
+            </section>
+
+            <section class="manual-card" id="requisitos-instalacao">
+                <h2>Requisitos e instalação</h2>
+                <ul>
+                    <li>Windows 10 ou 11, 64 bits. Não precisa instalar Java: o runtime vem no pacote.</li>
+                    <li>Setup (<code>.exe</code>) ou ZIP portátil na página de <a href="download.html">Download</a>. Passo a passo: <a href="artifacts/instalacao-windows.html">Instalação Windows</a>.</li>
+                    <li>A janela cabe em telas de 1366×768 e pode ser redimensionada.</li>
+                </ul>
+                <p>Dados em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\</code>: banco <code>agenda.db</code>, backup automático em <code>backups\</code> e registro técnico em <code>logs\</code>.</p>
+            </section>
+
+            <section class="manual-card" id="login">
+                <h2>Primeiro acesso e login</h2>
+                <p>O app não traz usuário de fábrica. Na primeira abertura ele vai direto ao <strong>Passo 1 de 3 — Identificação</strong> (celular do responsável), depois ao <strong>Passo 2 de 3 — Senha e recuperação local</strong> (perfil, senha de 8+ caracteres, frase de recuperação de 10+ caracteres e, recomendado, 8 códigos de emergência). Só então aparece o login com celular e senha. Detalhes em <a href="primeiro-acesso.html">Primeiro acesso</a>.</p>
+                <p><strong>Esqueci minha senha</strong> gera um código de 6 dígitos válido por 15 minutos, só neste computador, depois da frase de recuperação.</p>
+            </section>
+
+            <section class="manual-card" id="agenda">
+                <h2>Hoje e calendário</h2>
+                <p>A aba <strong>Hoje</strong> mostra os agendamentos do dia, do mais cedo ao mais tarde, com o intervalo de horário (ex.: 14:30–16:00) e o valor.</p>
+                <h3>Novo agendamento</h3>
+                <ul>
+                    <li>Clique em <strong>✚ Novo agendamento</strong>. Campos: cliente (nome e celular), data, <strong>horário</strong>, <strong>duração</strong> e <strong>valor</strong>.</li>
+                    <li><strong>Horário:</strong> escolha na lista (de 15 em 15 minutos, das 06:00 às 23:45) ou digite, por exemplo, <code>9:30</code> ou <code>1430</code>.</li>
+                    <li><strong>Duração:</strong> 30 min, 1 h, 1 h 30, 2 h, 3 h, 4 h, 5 h, 6 h ou 8 h. Agendamentos antigos ficam com 1 h.</li>
+                    <li>O app <strong>não deixa sobrepor sessões</strong>: se o intervalo encostar em outra sessão, mostra o conflito e pede outro horário.</li>
+                </ul>
+                <h3>Check “Pagou”</h3>
+                <p>Em cada sessão da lista do dia, marque <strong>Pagou</strong> quando o cliente pagar. O valor entra no Financeiro e no Dashboard como recebimento; desmarcar volta a sessão para pendente.</p>
+                <h3>Calendário</h3>
+                <p>A aba <strong>Calendário</strong> mostra o mês; clique em um dia para ver e editar as sessões daquele dia.</p>
+            </section>
+
+            <section class="manual-card" id="clientes">
+                <h2>Clientes</h2>
+                <p>A aba <strong>Clientes</strong> lista todos os clientes com nome, telefone, contato preferido (WhatsApp, ligação, Instagram, e-mail ou outro) e situação (ativo ou inativo).</p>
+                <ul>
+                    <li><strong>Buscar:</strong> por nome (com ou sem acento) ou pelos dígitos do telefone.</li>
+                    <li><strong>Novo cliente</strong> e <strong>Editar</strong> (ou duplo clique na linha): nome, celular, outro telefone, contato preferido, ativo e observações.</li>
+                    <li>Não aceita dois clientes com o mesmo telefone.</li>
+                    <li>Ao editar nome ou telefone, as sessões desse cliente na agenda são atualizadas.</li>
+                </ul>
+            </section>
+
+            <section class="manual-card" id="orcamentos">
+                <h2>Orçamentos</h2>
+                <p>A aba <strong>Orçamentos</strong> lista os orçamentos com cliente, descrição, valores, validade, situação e origem (manual, agendamento ou ficha do cliente).</p>
+                <ul>
+                    <li><strong>Novo orçamento:</strong> cliente (existente ou novo, com telefone), descrição, valor total, sinal, validade (padrão: 15 dias), situação e observações.</li>
+                    <li><strong>Editar</strong> (ou duplo clique): orçamentos criados nesta aba. Os que vêm de um agendamento são ajustados pelo agendamento, na aba Hoje.</li>
+                </ul>
+            </section>
+
+            <section class="manual-card" id="financeiro">
+                <h2>Finanças</h2>
+                <p>Registre <strong>entradas</strong> (sessões, retoques, vendas) e <strong>saídas</strong> (materiais, aluguel, contas) com descrição, valor, data e categoria. O app calcula o saldo e mostra o gráfico anual.</p>
+                <ul>
+                    <li><strong>Novo lançamento</strong>, <strong>Alterar</strong> e <strong>Excluir</strong> na lista de movimentações.</li>
+                    <li><strong>Exportar PDF do balanço:</strong> balanço mensal com receitas, despesas, resultado e despesas por categoria. O mês sai em português (ex.: “outubro de 2026”).</li>
+                </ul>
+            </section>
+
+            <section class="manual-card" id="painel">
+                <h2>Dashboard (resultados)</h2>
+                <p>A seção <strong>Resultados</strong> do Dashboard mostra:</p>
+                <ul>
+                    <li><strong>Faturamento do mês</strong>, <strong>ticket médio do mês</strong> (faturamento ÷ entradas recebidas) e <strong>saldo do mês</strong> (faturamento menos saídas);</li>
+                    <li><strong>Faturamento do ano</strong>, <strong>média mensal do ano</strong> (faturamento ÷ meses até agora) e <strong>ticket médio do ano</strong>.</li>
+                </ul>
+                <p>Faturamento segue a regra do Financeiro: recebimentos (inclusive os das sessões marcadas como pagas) mais entradas lançadas à mão. Os números atualizam ao abrir a aba.</p>
+            </section>
+
+            <section class="manual-card" id="backup">
+                <h2>Backup e restauração</h2>
+                <h3>Backup com senha (.inkbak)</h3>
+                <p>Em <strong>Config → Backup do estúdio</strong>:</p>
+                <ul>
+                    <li><strong>Salvar backup com senha:</strong> você escolhe pasta e nome (sugestão <code>backup_AAAA-MM-DD_HH-MM.inkbak</code> em <code>Documentos\AgendaInk\Backups</code>). Nada é sobrescrito: se o nome existir, o app grava “(2)”, “(3)”… O arquivo é criptografado com a senha (mínimo 8 caracteres). <strong>Sem a senha ele não abre.</strong> No fim, o app mostra o caminho salvo.</li>
+                    <li><strong>Restaurar backup:</strong> escolha o arquivo e digite a senha. Backups da v2.0.0 (sem senha) também restauram. O app confere o arquivo antes de trocar os dados e fecha ao terminar; abra de novo.</li>
+                </ul>
+                <p>O app lembra você quando o último backup com senha tem mais de 7 dias.</p>
+                <h3>Backup automático</h3>
+                <p>Ligado de fábrica: a cada hora e ao fechar o app, uma cópia <code>agenda_*.db.gz</code> vai para <code>%LOCALAPPDATA%\CaraCore\AgendaInk\backups\</code>. Ficam as 30 mais recentes. Essas cópias ficam no mesmo computador e não têm senha. Para desligar, desmarque <strong>“Fazer backup automático a cada hora e ao fechar”</strong> em <strong>Config → Backup do estúdio</strong>.</p>
+                <h3>Backup CSV</h3>
+                <p>Em <strong>Config</strong>, a exportação CSV (compactada e criptografada com senha) leva agendamentos e lançamentos do Financeiro. Clientes, orçamentos, cobranças e recebimentos ficam só no <code>.inkbak</code>. Importar o mesmo arquivo duas vezes não muda nada; horários em conflito viram aviso e lista de ignorados.</p>
+            </section>
+
+            <section class="manual-card manual-card--troubleshoot" id="troubleshooting">
+                <h2>Problemas comuns</h2>
+                <ul>
+                    <li><strong>ZIP/EXE não inicia</strong> — Confirme que o arquivo veio da release v2.0.1 e confira o SHA256 antes de executar.</li>
+                    <li><strong>Horário já ocupado ao salvar</strong> — O app impede sobrepor sessões. Escolha outro horário, encurte a duração ou edite a sessão existente.</li>
+                    <li><strong>“Senha incorreta” ao restaurar</strong> — Use a senha digitada ao salvar aquele backup (não é a senha de login, a menos que você tenha usado a mesma).</li>
+                    <li><strong>Precisa de ajuda</strong> — O registro técnico fica em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\logs\</code> (sem senhas, telefones ou e-mails). Fale pelo <a href="canal-feedback.html">Canal de feedback</a>.</li>
+                </ul>
+            </section>
         </div>
 
-
-
-
-
         <nav class="back">
-
-
             <a href="index.html">← Voltar ao portal</a> · <a href="download.html">Download</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="canal-feedback.html">Canal de feedback</a>
-
-
         </nav>
-
-
     </div>
-
-
     <script src="assets/js/loja.js"></script>
-
-
-    <div class="evo-beta-wrap" aria-hidden="true"><span class="evo-beta-badge" title="Loja oficial">Oficial<span class="evo-beta-tooltip">Cara Core Ink Agenda v2.0.0 — loja oficial Cara Core Informática.</span></span></div>
-
-
+    <div class="evo-beta-wrap" aria-hidden="true"><span class="evo-beta-badge" title="Loja oficial">Oficial<span class="evo-beta-tooltip">Cara Core Ink Agenda v2.0.1 — loja oficial Cara Core Informática.</span></span></div>
     <footer class="evo-roadmap-footer" role="contentinfo"><p class="evo-roadmap-title">Próximos passos</p><ul class="evo-roadmap-list"><li>Desktop Windows no ar <span class="evo-roadmap-tag">26/06/2026</span></li><li>PWA no browser (sem Mac/Linux nativos) <span class="evo-roadmap-tag">não antes de 2028</span></li></ul></footer>
-
-
     <div class="evo-feedback-fab"><a href="canal-feedback.html" class="evo-feedback-btn" aria-label="Canal de feedback"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Sugira uma melhoria</a></div>
-
-
 </body>
-
-
 </html>
-
-
-
-
-
-
-
-
