@@ -2,7 +2,7 @@
 
 **Versão:** 2.0.0 (estável)
 **Data de lançamento:** 26 de junho de 2026
-**Status:** Desktop Windows publicado.
+**Status:** Desktop Windows. Substituída pela [v2.0.1](RELEASE_NOTES_v2.0.1.md), que corrige os achados do QA de 07/10/2026.
 
 Somente Windows nativo nesta tag. PWA em roadmap: [pwa.html](https://ink.caracore.com.br/pwa.html) — depois do Hub e do FRO; **não antes de 2028** (sem DMG/DEB nativos).
 
