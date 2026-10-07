@@ -11,7 +11,8 @@ alwaysApply: true
 - **Publicação:** GitHub Pages a partir de **docs/**.
 - **Oficina:** caracore-ink
 - **Versão no checkout:** v2.0.1 (`VERSION`), correções do QA da v2.0.0 (07/10/2026). **Ainda não publicada:** tag, release, edição de corpo de releases e deploy da loja só com aprovação do dono.
-- **Publicada no GitHub:** v2.0.0 (Windows). Não haverá macOS/Linux nativos (PWA não antes de 2028).
+- **Publicada no GitHub:** v2.0.1 (Windows, Latest desde 07/10/2026; jar ofuscado). v2.0.0 no histórico, corpo da release aponta para a v2.0.1. Não haverá macOS/Linux nativos (PWA não antes de 2028).
+- **Suporte ao Desktop:** correções 2.0.x (achados de QA, sem funcionalidade nova) até o S9 da 3.0.
 
 ## Matriz
 - **Portfólio:** `portfolio.html#caracore-ink-agenda`
