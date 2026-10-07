@@ -25,6 +25,12 @@ alwaysApply: true
 - macOS/Linux: copy **Em breve**; sem link de download ativo.
 - Não anunciar DMG/DEB nesta tag. Não republicar Windows em cortes só de copy.
 
+## Ink Agenda 3.0 em PWA (roadmap, não antes de 2028)
+- Página `pwa.html`; cartão na `index.html`; linha em `tecnologia.html`. Sem botão Instalar até o GA.
+- Copy de 07/10/2026 (checkout): a 3.0 é nova aplicação de lançamento em PWA, sobre as regras da v2.0.0; web, Android, iPhone, Windows, Mac e Linux pelo browser; servidor na nuvem com HTTPS, **uma base SQLite por estúdio**; internet necessária.
+- A 3.0 **substitui** o Desktop v2.0.0. O download da v2 só sai da loja depois da importação dos dados e de aviso com data (S9). Não apagar a tag `v2.0.0`.
+- Não prometer a 3.0 offline-first nem disponível. Canónico: `caracore-ink/docs/PLANO_PWA.md`.
+
 ## Primeiro acesso (v2.0.0, fiel ao app)
 - Sem usuário seed. Não documentar admin/admin nem admin/admin123.
 - 1ª abertura: assistente (celular) → perfil + senha (mín. 8) + frase de recuperação (mín. 10) → login celular+senha.
