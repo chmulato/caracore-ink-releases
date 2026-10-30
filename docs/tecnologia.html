@@ -34,7 +34,7 @@
 
         <section class="card">
             <h2>Banco local</h2>
-            <p>Persistência em <strong>SQLite</strong> (<code>%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db</code>) com WAL, verificação de integridade na abertura e migrações versionadas com <strong>Flyway</strong>. O app não abre porta nem faz conexão: funciona 100% offline.</p>
+            <p>Persistência em <strong>SQLite</strong> (<code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>agenda.db</code>) com WAL, verificação de integridade na abertura e migrações versionadas com <strong>Flyway</strong>. O app não abre porta nem faz conexão: funciona 100% offline.</p>
         </section>
 
         <section class="card">
@@ -64,7 +64,7 @@
 
         <section class="card">
             <h2>Log</h2>
-            <p>Registro técnico em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\logs\</code> (<code>agenda-0.log</code> a <code>agenda-4.log</code>, até 1 MB cada, com rotação). Senhas, telefones e e-mails são mascarados antes de gravar.</p>
+            <p>Registro técnico em <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>logs\<wbr></code> (<code>agenda-0.log</code> a <code>agenda-4.log</code>, até 1 MB cada, com rotação). Senhas, telefones e e-mails são mascarados antes de gravar.</p>
         </section>
 
         <section class="card">
@@ -77,20 +77,25 @@
             <p>ZIP portátil e instalador <code>.exe</code> para Windows gerados com <code>jpackage</code>. O runtime Java 25 vem embutido (jlink, com os dados de locale e sem ferramentas de desenvolvimento como depurador, jshell e compilador): não é preciso instalar JDK. O jar da aplicação é ofuscado com <strong>ProGuard</strong> antes do empacotamento.</p>
         </section>
 
-        <p class="tech-selo" style="margin: 24px 0; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; font-size: 0.95rem; color: var(--text-secondary);"><strong style="color: var(--accent-green);">Ecossistema Cara Core Informática</strong> — Produtos desktop e web com foco em simplicidade, manutenção e entrega clara. Ink Agenda integra o portfólio ao lado do PDV, Seed, Hub e outros.</p>
+        <p class="tech-selo" style="margin: 24px 0; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; font-size: 0.95rem; color: var(--text-secondary);"><strong style="color: var(--accent-green);">Ecossistema Cara Core Informática</strong> — Produtos desktop e web com foco em simplicidade, manutenção e entrega clara. Ink Agenda integra o portfólio Cara Core.</p>
 
         <section class="roadmap" aria-label="Próximos passos" style="margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: 4px solid var(--accent-blue); background: rgba(37,99,235,0.06); border-radius: 0 8px 8px 0;">
             <p style="font-weight: 600; margin-bottom: 0.5rem;">Status e próximos passos</p>
             <ul style="margin: 0; padding-left: 1.25rem;">
-                <li><strong>v2.0.1</strong> — Desktop Windows (EXE/ZIP), correções do QA da v2.0.0</li>
+                <li><strong>v2.0.1</strong> — Desktop Windows (EXE/ZIP)</li>
                 <li>Lançamento oficial da linha 2.0 (Windows) <strong>26 de junho de 2026</strong></li>
-                <li>Roadmap: <a href="pwa.html">Ink Agenda 3.0 em PWA</a> depois do Hub (<strong>não antes de 2028</strong>) — web, Android, iPhone, Windows, Mac e Linux pelo browser, com as regras da v2. <strong>Sem</strong> instalador nativo Mac/Linux. Servidor na nuvem com HTTPS e uma base SQLite por estúdio. Substitui o Desktop depois de existir a importação dos dados da v2</li>
+                <li>Roadmap: <a href="pwa.html">Ink Agenda 3.0 em PWA</a> (<strong>não antes de 2028</strong>) — web, Android, iPhone, Windows, Mac e Linux pelo browser, com as regras da v2. <strong>Sem</strong> instalador nativo para desktop. Servidor na nuvem com HTTPS e uma base SQLite por estúdio. Substitui o Desktop depois de existir a importação dos dados da v2</li>
             </ul>
         </section>
 
         <nav class="download-back">
-            <a href="index.html">← Voltar ao portal</a> · <a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="canal-feedback.html">Canal de feedback</a>
+            <a href="index.html">← Voltar ao portal</a>
         </nav>
+
+        <footer>
+            <p><a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="pwa.html">Roadmap</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Wiki</a> · <a href="canal-feedback.html">Contato</a></p>
+            <p class="footer-legal">Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/">caracore.com.br</a></p>
+        </footer>
     </div>
     <script src="assets/js/ink.js"></script>
 </body>

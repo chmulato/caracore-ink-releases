@@ -24,12 +24,24 @@ body {
     padding: 0 20px 40px;
 }
 
+/* O CSS institucional define --cc-i-text escuro para fundo claro; estas páginas são escuras. */
+body.cc-i-page { --cc-i-text: var(--text-primary); }
+
 .wrapper { max-width: 900px; margin: 0 auto; }
+
+code { overflow-wrap: anywhere; }
+pre code { overflow-wrap: normal; }
+
+a { color: var(--accent-blue); }
 
 .breadcrumb { font-size: 0.85rem; margin-bottom: 24px; padding-top: 16px; }
 .breadcrumb a { color: var(--accent-blue); text-decoration: none; }
 .breadcrumb a:hover { text-decoration: underline; }
 .breadcrumb span { color: var(--text-secondary); }
+
+.topbar { padding-top: 16px; margin-bottom: 20px; }
+.topbar a { color: var(--text-secondary); text-decoration: none; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
+.topbar a:hover { color: var(--text-primary); }
 
 /* Aviso padrão: lançamento 26 de junho de 2026 */
 .ink-launch-banner {
@@ -47,6 +59,7 @@ body {
 .hero-cta .hero-label { grid-area: label; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-green); margin-bottom: 10px; }
 .hero-cta .hero-title { font-family: var(--cc-font-heading, var(--cc-font-body, system-ui, sans-serif)); font-size: clamp(1.55rem, 2.4vw, 2.15rem); font-weight: 700; color: var(--text-primary); margin-bottom: 0; line-height: 1.25; max-width: 18ch; align-self: start; }
 .hero-cta .hero-title { grid-area: title; }
+.hero-cta--simple { grid-template-areas: "label image" "title image" "desc image" "buttons image" "meta image"; }
 .hero-cta .hero-desc { grid-area: desc; font-size: 1rem; color: var(--text-primary); margin: 0; line-height: 1.75; max-width: 58ch; }
 .hero-cta .cta-buttons { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
 .hero-cta .cta-buttons { grid-area: buttons; }
@@ -70,6 +83,10 @@ body {
 .hero-pillar-item.is-gold strong { color: var(--text-primary); }
 .hero-pillar-item.is-blue strong { color: var(--text-primary); }
 .hero-cta .hero-meta { grid-area: meta; display: grid; gap: 8px; }
+.hero-micro { font-size: 0.9rem; color: var(--text-secondary); margin: 0; line-height: 1.5; }
+.hero-cta .hero-secondary { font-size: 0.92rem; margin: 0; }
+.hero-cta .hero-secondary a { color: var(--accent-blue); text-decoration: none; font-weight: 600; }
+.hero-cta .hero-secondary a:hover { text-decoration: underline; }
 .hero-cta .tagline { font-size: 0.92rem; color: var(--text-soft); margin: 0; line-height: 1.65; }
 .hero-cta .tagline a { color: var(--accent-gold); }
 
@@ -82,6 +99,8 @@ header .subtitle { font-size: 1rem; font-weight: 400; color: var(--text-primary)
 .methodology .card h2 { font-size: 1rem; font-weight: 600; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 14px; }
 .methodology .card p { font-size: 0.96rem; color: var(--text-primary); line-height: 1.75; }
 .methodology .card p strong { color: var(--text-primary); }
+.methodology .card ul, .methodology .card ol { padding-left: 1.25rem; font-size: 0.96rem; line-height: 1.75; color: var(--text-primary); }
+.methodology .card li { color: var(--text-primary); }
 .methodology .card.card-differential { margin-top: 20px; border-left: 4px solid var(--accent-green); }
 .methodology .card a { color: var(--accent-blue); text-decoration: none; }
 .methodology .card a:hover { text-decoration: underline; }
@@ -108,6 +127,11 @@ footer a:hover { text-decoration: underline; }
 .card p { font-size: 0.95rem; color: var(--text-primary); line-height: 1.75; }
 .card p strong { color: var(--text-primary); }
 .card a { color: var(--accent-blue); }
+.ink-cta-block { margin: 2rem 0; padding: 1.5rem; border: 1px solid var(--accent-blue); border-radius: 8px; background: rgba(37, 99, 235, 0.08); }
+.ink-cta-secondary { margin: 14px 0 0; font-size: 0.95rem; }
+.ink-cta-secondary a { color: var(--accent-blue); text-decoration: none; font-weight: 600; }
+.ink-cta-secondary a:hover { text-decoration: underline; }
+
 .download-back { margin-top: 32px; }
 .download-back a { color: var(--accent-blue); text-decoration: none; font-weight: 600; }
 .download-back a:hover { text-decoration: underline; }
@@ -125,6 +149,8 @@ footer a:hover { text-decoration: underline; }
 .cta-btn { display: inline-block; padding: 14px 24px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: opacity 0.2s, background 0.2s; }
 .cta-btn-primary { background: var(--accent-green); color: #0d1117; border: none; }
 .cta-btn-primary:hover { opacity: 0.95; filter: brightness(1.1); }
+.cta-btn-secondary { background: transparent; color: var(--accent-blue); border: 2px solid var(--accent-blue); }
+.cta-btn-secondary:hover { background: rgba(88, 166, 255, 0.12); }
 
 .artifact-sha {
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -134,6 +160,13 @@ footer a:hover { text-decoration: underline; }
     margin: 0.35rem 0 0.85rem;
 }
 
+.download-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0 12px; }
+.integrity { margin: 24px 0; padding: 0 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; }
+.integrity summary { cursor: pointer; padding: 16px 0; font-weight: 600; color: var(--accent-blue); }
+.integrity summary:hover { text-decoration: underline; }
+.integrity[open] summary { border-bottom: 1px solid var(--border); margin-bottom: 16px; }
+.integrity pre { background: rgba(0, 0, 0, 0.2); padding: 12px; border-radius: 6px; font-size: 0.82rem; overflow-x: auto; margin-bottom: 12px; }
+
 body.download-page .wrapper { max-width: 720px; }
 body.canal-page .wrapper { max-width: 640px; }
 body.tecnologia-page .wrapper { max-width: 720px; }
@@ -141,6 +174,7 @@ body.tecnologia-page .wrapper { max-width: 720px; }
 @media (max-width: 900px) {
     .wrapper { max-width: 100%; }
     .hero-cta { grid-template-columns: 1fr; grid-template-areas: "label" "title" "image" "desc" "tagline" "pillars" "buttons" "meta"; padding: 26px 22px; row-gap: 16px; }
+    .hero-cta.hero-cta--simple { grid-template-areas: "label" "title" "image" "desc" "buttons" "meta"; }
     .hero-pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .hero-cta .hero-contexto-cliente { margin: 8px 0 16px; }
     .hero-cta .hero-contexto-image { max-height: 52vh; }

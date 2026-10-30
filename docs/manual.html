@@ -59,7 +59,7 @@
                     <li>Setup (<code>.exe</code>) ou ZIP portátil na página de <a href="download.html">Download</a>. Passo a passo: <a href="artifacts/instalacao-windows.html">Instalação Windows</a>.</li>
                     <li>A janela cabe em telas de 1366×768 e pode ser redimensionada.</li>
                 </ul>
-                <p>Dados em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\</code>: banco <code>agenda.db</code>, backup automático em <code>backups\</code> e registro técnico em <code>logs\</code>.</p>
+                <p>Dados em <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr></code>: banco <code>agenda.db</code>, backup automático em <code>backups\</code> e registro técnico em <code>logs\</code>.</p>
             </section>
 
             <section class="manual-card" id="login">
@@ -133,7 +133,7 @@
                 </ul>
                 <p>O app lembra você quando o último backup com senha tem mais de 7 dias.</p>
                 <h3>Backup automático</h3>
-                <p>Ligado de fábrica: a cada hora e ao fechar o app, uma cópia <code>agenda_*.db.gz</code> vai para <code>%LOCALAPPDATA%\CaraCore\AgendaInk\backups\</code>. Ficam as 30 mais recentes. Essas cópias ficam no mesmo computador e não têm senha. Para desligar, desmarque <strong>“Fazer backup automático a cada hora e ao fechar”</strong> em <strong>Config → Backup do estúdio</strong>.</p>
+                <p>Ligado de fábrica: a cada hora e ao fechar o app, uma cópia <code>agenda_*.db.gz</code> vai para <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>backups\<wbr></code>. Ficam as 30 mais recentes. Essas cópias ficam no mesmo computador e não têm senha. Para desligar, desmarque <strong>“Fazer backup automático a cada hora e ao fechar”</strong> em <strong>Config → Backup do estúdio</strong>.</p>
                 <h3>Backup CSV</h3>
                 <p>Em <strong>Config</strong>, a exportação CSV (compactada e criptografada com senha) leva agendamentos e lançamentos do Financeiro. Clientes, orçamentos, cobranças e recebimentos ficam só no <code>.inkbak</code>. Importar o mesmo arquivo duas vezes não muda nada; horários em conflito viram aviso e lista de ignorados.</p>
             </section>
@@ -144,18 +144,22 @@
                     <li><strong>ZIP/EXE não inicia</strong> — Confirme que o arquivo veio da release v2.0.1 e confira o SHA256 antes de executar.</li>
                     <li><strong>Horário já ocupado ao salvar</strong> — O app impede sobrepor sessões. Escolha outro horário, encurte a duração ou edite a sessão existente.</li>
                     <li><strong>“Senha incorreta” ao restaurar</strong> — Use a senha digitada ao salvar aquele backup (não é a senha de login, a menos que você tenha usado a mesma).</li>
-                    <li><strong>Precisa de ajuda</strong> — O registro técnico fica em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\logs\</code> (sem senhas, telefones ou e-mails). Fale pelo <a href="canal-feedback.html">Canal de feedback</a>.</li>
+                    <li><strong>Precisa de ajuda</strong> — O registro técnico fica em <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>logs\<wbr></code> (sem senhas, telefones ou e-mails). Fale pelo <a href="canal-feedback.html">Canal de feedback</a>.</li>
                 </ul>
             </section>
         </div>
 
         <nav class="back">
-            <a href="index.html">← Voltar ao portal</a> · <a href="download.html">Download</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="canal-feedback.html">Canal de feedback</a>
+            <a href="index.html">← Voltar ao portal</a>
         </nav>
+
+        <footer>
+            <p><a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="pwa.html">Roadmap</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Wiki</a> · <a href="canal-feedback.html">Contato</a></p>
+            <p class="footer-legal">Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/">caracore.com.br</a></p>
+        </footer>
     </div>
     <script src="assets/js/loja.js"></script>
     <div class="evo-beta-wrap" aria-hidden="true"><span class="evo-beta-badge" title="Loja oficial">Oficial<span class="evo-beta-tooltip">Cara Core Ink Agenda v2.0.1 — loja oficial Cara Core Informática.</span></span></div>
-    <footer class="evo-roadmap-footer" role="contentinfo"><p class="evo-roadmap-title">Próximos passos</p><ul class="evo-roadmap-list"><li>Desktop Windows no ar <span class="evo-roadmap-tag">26/06/2026</span></li><li>PWA no browser (sem Mac/Linux nativos) <span class="evo-roadmap-tag">não antes de 2028</span></li></ul></footer>
     <div class="evo-feedback-fab"><a href="canal-feedback.html" class="evo-feedback-btn" aria-label="Canal de feedback"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Sugira uma melhoria</a></div>
 </body>
 </html>

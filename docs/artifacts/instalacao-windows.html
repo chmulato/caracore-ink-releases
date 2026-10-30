@@ -87,7 +87,7 @@
             <section class="manual-card" id="dados">
                 <h2>Onde ficam os dados</h2>
                 <p>Na primeira execução o banco é criado em:</p>
-                <p><code>%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db</code></p>
+                <p><code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>agenda.db</code></p>
                 <p>Reinstalar o setup ou apagar a pasta do ZIP <strong>não apaga</strong> essa pasta. Quem vem da v2.0.0 continua com a mesma agenda: na primeira abertura da v2.0.1 o banco ganha a coluna de duração da sessão (60 minutos para as sessões antigas).</p>
                 <p>Na mesma pasta ficam a subpasta <code>backups\</code> (backup automático) e a subpasta <code>logs\</code> (registro técnico, sem senha, telefone ou e-mail; 5 arquivos de até 1 MB, o mais antigo é apagado).</p>
             </section>
@@ -135,14 +135,14 @@
                 <p>Em <strong>Config → Backup do estúdio → Salvar backup com senha</strong> você escolhe a pasta e o nome do arquivo (sugestão: <code>backup_AAAA-MM-DD_HH-MM.inkbak</code> em <code>Documentos\AgendaInk\Backups</code>). Se já existir um arquivo com o mesmo nome, o app grava ao lado com “(2)”, “(3)”… — nunca sobrescreve. O arquivo é criptografado com a senha que você digitar (mínimo 8 caracteres). <strong>Sem essa senha o backup não abre.</strong> Ao terminar, o app mostra o caminho onde salvou.</p>
                 <p>Para restaurar: <strong>Restaurar backup</strong>, escolha o arquivo e digite a senha. Backups <code>.inkbak</code> da v2.0.0 (sem senha) também restauram. O app confere o arquivo antes de trocar os dados e fecha ao terminar; abra de novo para continuar.</p>
                 <h3>Backup automático</h3>
-                <p>Ligado de fábrica: a cada hora e ao fechar o app, uma cópia <code>agenda_AAAA-MM-DD_HH-MM-SS.db.gz</code> vai para <code>%LOCALAPPDATA%\CaraCore\AgendaInk\backups\</code>. O app guarda as <strong>30 mais recentes</strong> e apaga as mais antigas. Essas cópias ficam neste computador e não têm senha. Para desligar ou religar, desmarque ou marque <strong>“Fazer backup automático a cada hora e ao fechar”</strong> em <strong>Config → Backup do estúdio</strong>.</p>
+                <p>Ligado de fábrica: a cada hora e ao fechar o app, uma cópia <code>agenda_AAAA-MM-DD_HH-MM-SS.db.gz</code> vai para <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>backups\<wbr></code>. O app guarda as <strong>30 mais recentes</strong> e apaga as mais antigas. Essas cópias ficam neste computador e não têm senha. Para desligar ou religar, desmarque ou marque <strong>“Fazer backup automático a cada hora e ao fechar”</strong> em <strong>Config → Backup do estúdio</strong>.</p>
                 <h3>Backup CSV</h3>
                 <p>Em <strong>Config</strong> há também a exportação CSV compactada e criptografada com senha. O CSV leva agendamentos (com valor e duração) e os lançamentos do Financeiro; clientes, orçamentos, cobranças e recebimentos ficam só no backup <code>.inkbak</code>. Importar o mesmo arquivo duas vezes não duplica nada; horários em conflito viram aviso e lista de ignorados.</p>
             </section>
 
             <section class="manual-card" id="desinstalacao">
                 <h2>Desinstalação</h2>
-                <p><strong>Setup:</strong> use Aplicativos do Windows para remover o programa. <strong>ZIP:</strong> apague a pasta extraída. Os dados em <code>%LOCALAPPDATA%\CaraCore\AgendaInk\</code> só saem se você apagar essa pasta.</p>
+                <p><strong>Setup:</strong> use Aplicativos do Windows para remover o programa. <strong>ZIP:</strong> apague a pasta extraída. Os dados em <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr></code> só saem se você apagar essa pasta.</p>
             </section>
 
             <section class="manual-card" id="nav">
@@ -157,8 +157,9 @@
             </section>
         </div>
 
-        <footer class="site-footer" style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.82rem; opacity: 0.6; text-align: center;">
-            <p>Cara Core Informática · Ink Agenda v2.0.1 · Windows · CNPJ 23.969.028/0001-37</p>
+        <footer>
+            <p><a href="../download.html">Download</a> · <a href="../manual.html">Manual</a> · <a href="../tecnologia.html">Tecnologia</a> · <a href="../pwa.html">Roadmap</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Wiki</a> · <a href="../canal-feedback.html">Contato</a></p>
+            <p class="footer-legal">Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/">caracore.com.br</a></p>
         </footer>
     </div>
 </body>
