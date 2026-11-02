@@ -2,6 +2,17 @@
 
 Todos os cambios notáveis neste projeto são documentados neste arquivo.
 
+## [2.0.2] - Prerelease para homologação (não estável)
+
+Correções propostas para o Desktop Windows, disponíveis em prerelease para homologação. A build não tem assinatura digital e ainda não foi aprovada como estável; a v2.0.1 continua Latest.
+
+### Corrigido
+- Digitação de valores em reais com centavos pela direita e colagem de valores formatados.
+- Pagamento de sessões refletido nas entradas de Finanças.
+- Lembrete de backup quando ainda não existe backup anterior.
+- Exibição completa dos códigos de emergência, com opções para copiar ou salvar.
+- Retorno ao login oculto antes do cadastro e nome completo do cliente acessível na lista do dia.
+
 ## [2.0.1] - 07 de outubro de 2026
 
 Correções do QA da v2.0.0 (07/10/2026). Detalhe em [`RELEASE_NOTES_v2.0.1.md`](RELEASE_NOTES_v2.0.1.md).

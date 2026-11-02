@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download — Cara Core Ink Agenda | Cara Core Informática</title>
-    <meta name="description" content="Download do Cara Core Ink Agenda v2.0.1 para Windows. Instalador e ZIP com runtime Java 25 embutido.">
+    <meta name="description" content="Download da prerelease Cara Core Ink Agenda v2.0.2 para homologação no Windows. A v2.0.1 continua estável/Latest.">
     <link rel="stylesheet" href="assets/css/ink-portal.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
     <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
@@ -23,30 +23,44 @@
         </header>
 
         <div class="download-actions">
-            <a class="cta-btn cta-btn-primary" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.1/AgendaInk-2.0.1-windows-setup.exe">↓ Instalador (recomendado)</a>
-            <a class="cta-btn cta-btn-secondary" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.1/AgendaInk-2.0.1-windows.zip">↓ ZIP portátil</a>
+            <a class="cta-btn cta-btn-primary" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.2/AgendaInk-2.0.2-windows-setup.exe">↓ Candidata v2.0.2 — instalador</a>
+            <a class="cta-btn cta-btn-secondary" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.2/AgendaInk-2.0.2-windows.zip">↓ Candidata v2.0.2 — ZIP portátil</a>
         </div>
-        <p class="hero-micro">Versão 2.0.1.</p>
+        <p class="hero-micro">Candidata v2.0.2 para homologação · a v2.0.1 continua sendo a versão estável/Latest.</p>
+
+        <section class="card" role="note" style="margin-top: 1.5rem;">
+            <h2>Candidata v2.0.2</h2>
+            <p>Esta prerelease está disponível para homologação; não é uma versão estável. Os executáveis não têm assinatura digital, e o SmartScreen ou antivírus pode avisar ou bloquear a abertura. Faça backup dos dados antes de testar; para uso regular, a versão estável continua sendo a v2.0.1.</p>
+            <ul>
+                <li>Digitação de valores com entrada de centavos pela direita; colagem de valores formatados.</li>
+                <li>Pagamento de sessões refletido nas entradas de Finanças.</li>
+                <li>Lembrete de backup coerente quando ainda não existe backup.</li>
+                <li>Códigos de emergência completos, com opções para copiar ou salvar.</li>
+                <li>Ajustes no primeiro acesso e na exibição do nome do cliente.</li>
+            </ul>
+        </section>
 
         <section class="card" style="margin-top: 1.5rem;">
             <h2>Como começar</h2>
             <ol style="padding-left: 1.25rem; font-size: 0.95rem;">
                 <li>Baixe o instalador (recomendado) ou o ZIP portátil.</li>
-                <li>Execute o setup, ou extraia o ZIP e abra a pasta <code>AgendaInk\</code>.</li>
-                <li>Abra o <code>AgendaInk.exe</code> e conclua o <a href="primeiro-acesso.html">primeiro acesso</a> em 3 passos.</li>
+                <li>Execute o setup, ou extraia o ZIP, abra a pasta <code>AgendaInk\</code> e execute <code>AgendaInk.exe</code>.</li>
+                <li>Conclua o <a href="primeiro-acesso.html">primeiro acesso</a> em 3 passos.</li>
             </ol>
             <p style="font-size: 0.9rem; margin-top: 1rem;">Os dados ficam em <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr></code>. Quem usa a v2.0.0 mantém a mesma agenda.</p>
         </section>
 
+        <p class="hero-micro" role="note">O setup e o executável Windows não têm assinatura digital. O SmartScreen ou o antivírus pode avisar ou bloquear a abertura. Veja as <a href="artifacts/instalacao-windows.html#antivirus">orientações para Windows</a>; não há promessa de instalação sem alertas.</p>
+
         <details class="integrity">
             <summary>Verificar integridade (opcional)</summary>
-            <p>Compare os arquivos baixados com os SHA256 oficiais da v2.0.1:</p>
-            <p class="artifact-sha">setup.exe · 49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b</p>
-            <p class="artifact-sha">windows.zip · 3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3</p>
+            <p>Compare os arquivos candidatos com os SHA256 publicados na release:</p>
+            <p class="artifact-sha">setup.exe · f9dde7c521dd64c39ee5dfa3c62bdb8c09f000bf7083c34e15fe47bc0a6cfa54</p>
+            <p class="artifact-sha">windows.zip · ab66a21bb39ab597757374ac1b4e280c1129171de54b71f36bacfe90e9171a94</p>
             <p>No PowerShell, na pasta onde os arquivos foram salvos:</p>
-            <pre><code>(Get-FileHash .\AgendaInk-2.0.1-windows-setup.exe -Algorithm SHA256).Hash
-(Get-FileHash .\AgendaInk-2.0.1-windows.zip -Algorithm SHA256).Hash</code></pre>
-            <p>Arquivo oficial: <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.1/checksum.sha256">checksum.sha256</a> · <a href="https://github.com/chmulato/caracore-ink-releases/blob/master/RELEASE_NOTES_v2.0.1.md">notas da v2.0.1</a>.</p>
+            <pre><code>(Get-FileHash .\AgendaInk-2.0.2-windows-setup.exe -Algorithm SHA256).Hash
+(Get-FileHash .\AgendaInk-2.0.2-windows.zip -Algorithm SHA256).Hash</code></pre>
+            <p>Arquivos oficiais: <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.2/checksum.sha256">checksum.sha256 da candidata</a> · <a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.2">release para homologação</a> · <a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.1">versão estável v2.0.1</a>.</p>
         </details>
 
         <p style="font-size: 0.9rem; opacity: 0.8; margin: 1.5rem 0 0;">Somente Windows. Mac e Linux: veja o <a href="pwa.html">roadmap</a>.</p>
