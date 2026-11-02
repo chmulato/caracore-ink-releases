@@ -1,6 +1,6 @@
 # Cara Core Ink Agenda v2.0.3 — rascunho (NÃO PUBLICAR ainda)
 
-> Rascunho para a loja. Publicar somente depois de: pipeline de instaladores verde, artefatos finais gerados e hashes conferidos, validação visual de Configurações e decisão sobre assinatura. Substituir os hashes abaixo pelos do pipeline.
+> Artefatos gerados pelo pipeline (Windows e Linux). O pacote macOS ainda não foi concluído e não está listado.
 
 Atualização corretiva do Desktop Windows. Bases da 2.0.1 e da 2.0.2 abrem na 2.0.3 sem perda de dados. O executável **não tem assinatura digital**: o SmartScreen ou o antivírus pode avisar ou bloquear a abertura. Não há promessa de instalação sem alertas.
 
@@ -22,8 +22,9 @@ Atualização corretiva do Desktop Windows. Bases da 2.0.1 e da 2.0.2 abrem na 2
 ## Integridade dos artefatos
 
 ```text
-<sha256 do setup gerado pelo pipeline>  AgendaInk-2.0.3-windows-setup.exe
-<sha256 do ZIP gerado pelo pipeline>  AgendaInk-2.0.3-windows.zip
+709032228fe47ebf21e69237f82204094e58bd313b6035f907798952a9b9c407  AgendaInk-2.0.3-windows-setup.exe
+8e65aedf79acd6c9f36f4474a7ed04700021852a106652b381f0fc2ef8541ccd  AgendaInk-2.0.3-windows.zip
+a0e4ad1d0a4738a3343f2e8e61c4dcbf5202b7814d7c7368734ad4d700229440  agenda-ink-2.0.3-linux.deb
 ```
 
 O runtime Java 25 está embutido. Faça backup dos dados antes de atualizar.
