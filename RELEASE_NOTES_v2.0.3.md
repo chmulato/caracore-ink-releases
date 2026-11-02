@@ -1,6 +1,6 @@
-# Cara Core Ink Agenda v2.0.3 — rascunho (NÃO PUBLICAR ainda)
+# Cara Core Ink Agenda v2.0.3
 
-> Artefatos gerados pelo pipeline (Windows e Linux). O pacote macOS ainda não foi concluído e não está listado.
+> Windows (instalador e ZIP) e Linux (.deb). O pacote macOS não faz parte desta versão.
 
 Atualização corretiva do Desktop Windows. Bases da 2.0.1 e da 2.0.2 abrem na 2.0.3 sem perda de dados. O executável **não tem assinatura digital**: o SmartScreen ou o antivírus pode avisar ou bloquear a abertura. Não há promessa de instalação sem alertas.
 
