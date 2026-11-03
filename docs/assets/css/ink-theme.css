@@ -55,6 +55,29 @@ body.page-manual {
   color: #ffffff;
 }
 
+/* Fora do hero, o par primário/secundário não tem regra de contexto em
+   ink-portal.css; sem isto o gradiente de .cta-btn vence o "transparent".
+   Mantém o primário preenchido e o secundário em contorno. */
+.download-actions .cta-btn {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.download-actions .cta-btn-secondary {
+  background: transparent;
+  color: var(--accent-blue, #58a6ff);
+  border: 2px solid var(--accent-blue, #58a6ff);
+}
+
+.download-actions .cta-btn-secondary:hover {
+  background: rgba(88, 166, 255, 0.12);
+  color: var(--accent-blue, #58a6ff);
+}
+
 /* Breadcrumb institucional, sobre o fundo escuro da loja. */
 .cc-breadcrumb {
   max-width: 1180px;
@@ -218,7 +241,9 @@ body.page-manual header.cc-header {
 
 /* Compensa o cabeçalho fixo ao saltar para uma âncora do menu. */
 #especialidades,
-#novidades {
+#novidades,
+#dados,
+#lgpd {
   scroll-margin-top: 96px;
 }
 

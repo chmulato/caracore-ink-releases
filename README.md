@@ -29,6 +29,16 @@ O Ink Agenda é para estúdios de tatuagem, consultórios odontológicos e espa�
 - cadastrar clientes e orçamentos;
 - manter dados locais com backup `.inkbak` com senha e backup automático.
 
+### Proteção de dados e domínio local
+
+- Dados de clientes em SQLite no computador do estúdio, sem conta na nuvem.
+- O aplicativo não envia dados de clientes para servidores. A verificação manual de atualizações transmite apenas a versão instalada e o sistema operacional.
+- Backup manual `.inkbak` criptografado com AES-256-GCM e senha; backup automático local, compactado e sem senha.
+- Registro técnico mascara senhas, telefones e e-mails.
+- Esses recursos apoiam o dever do estúdio perante a LGPD. A conformidade depende também dos processos e do uso do sistema; o Ink não substitui essa responsabilidade.
+
+Na loja: [Proteção de dados e domínio local](https://ink.caracore.com.br/index.html#dados).
+
 O código-fonte fica no repositório **caracore-ink** (oficina). Este repositório, **caracore-ink-releases**, é a loja (GitHub Pages = [ink.caracore.com.br](https://ink.caracore.com.br/)) e o canal de artefatos.
 
 ---

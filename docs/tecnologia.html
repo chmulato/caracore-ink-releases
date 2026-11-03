@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologia — Cara Core Ink Agenda | Cara Core Informática</title>
-    <meta name="description" content="Stack do Cara Core Ink Agenda: Java 25, JavaFX, SQLite local, backup criptografado e atualização verificada por assinatura.">
+    <meta name="description" content="Stack do Cara Core Ink Agenda: Java 25, JavaFX, SQLite local, dados de clientes no computador, backup .inkbak criptografado e atualização verificada por assinatura.">
     <link rel="stylesheet" href="assets/css/ink-portal.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
     <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
@@ -37,6 +37,7 @@
                 <div class="cc-menu" id="cc-menu">
                     <a href="index.html#novidades">Novidades v2.1.0</a>
                     <a href="index.html#especialidades">Especialidades</a>
+                    <a href="tecnologia.html#lgpd">Proteção de dados</a>
                     <a href="manual.html">Manual</a>
                     <a href="tecnologia.html">Tecnologia</a>
                     <a href="versoes.html" class="cta-link">Notas da versão</a>
@@ -64,7 +65,14 @@
 
         <section class="card">
             <h2>Banco local</h2>
-            <p>Persistência em <strong>SQLite</strong> (<code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>agenda.db</code>) com WAL, verificação de integridade na abertura e migrações versionadas com <strong>Flyway</strong>. O app não abre porta nem faz conexão: funciona 100% offline.</p>
+            <p>Persistência em <strong>SQLite</strong> (<code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>agenda.db</code>) com WAL, verificação de integridade na abertura e migrações versionadas com <strong>Flyway</strong>. O app não abre porta e não faz conexão em segundo plano: funciona offline. A única conexão é a verificação manual de atualizações, explicada abaixo.</p>
+        </section>
+
+        <section class="card" id="lgpd">
+            <h2>LGPD e domínio local</h2>
+            <p>Agenda, clientes, orçamentos e financeiro ficam em SQLite no computador do estúdio, sem conta na nuvem. O aplicativo não envia dados de clientes para servidores; a verificação manual de atualizações transmite apenas a versão instalada e o sistema operacional.</p>
+            <p>O backup manual <code>.inkbak</code> é criptografado com AES-256-GCM e senha; o backup automático é local, compactado e sem senha. O registro técnico mascara senhas, telefones e e-mails. Esses recursos apoiam o seu dever de proteger dados pessoais. A conformidade com a LGPD depende também dos seus processos, do controle de acesso ao computador e do uso do sistema; o Ink não substitui essa responsabilidade.</p>
+            <p><a href="download.html">Baixar e manter os dados no meu computador</a></p>
         </section>
 
         <section class="card">
@@ -85,7 +93,7 @@
 
         <section class="card">
             <h2>Atualizações</h2>
-            <p>A verificação é manual, em <strong>Configurações → Verificar atualizações</strong>: ao abrir o app, nenhuma conexão é feita. A resposta do canal oficial é conferida com uma assinatura digital Ed25519 embutida no aplicativo; links de download só são aceitos de <code>github.com/chmulato</code> e de <code>*.caracore.com.br</code>, sempre por HTTPS, e o SHA-256 é conferido antes de abrir o instalador. Se a assinatura ou o hash não baterem, o app não oferece o download.</p>
+            <p>A verificação é manual, em <strong>Configurações → Verificar atualizações</strong>: ao abrir o app, nenhuma conexão é feita. Quando você pede a verificação, o app envia apenas a versão instalada e o sistema operacional; nenhum dado de cliente. A resposta do canal oficial é conferida com uma assinatura digital Ed25519 embutida no aplicativo; links de download só são aceitos de <code>github.com/chmulato</code> e de <code>*.caracore.com.br</code>, sempre por HTTPS, e o SHA-256 é conferido antes de abrir o instalador. Se a assinatura ou o hash não baterem, o app não oferece o download.</p>
         </section>
 
         <section class="card">
@@ -140,7 +148,7 @@
                         Gestão offline e segura para profissionais com hora marcada — Estúdios de Tatuagem, Consultórios e Salões de Beleza.
                     </p>
                     <p class="cc-footer-text cc-footer-meta">
-                        Dados 100% locais no computador do cliente, com backup criptografado (.inkbak).
+                        Dados de clientes no computador do estúdio, com backup .inkbak criptografado.
                     </p>
                 </div>
 

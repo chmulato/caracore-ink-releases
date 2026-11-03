@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cara Core Ink Agenda — Agenda e financeiro para estúdios, consultórios e espaços de beleza</title>
-    <meta name="description" content="Cara Core Ink Agenda: agenda, clientes, orçamentos, financeiro e painel de resultados para estúdios de tatuagem, consultórios odontológicos e espaços de beleza. Funciona offline, com backup criptografado. Download para Windows 10/11.">
+    <meta name="description" content="Cara Core Ink Agenda: agenda, clientes, orçamentos, financeiro e painel de resultados para estúdios, consultórios e espaços de beleza. Funciona offline; os dados de clientes ficam no seu computador, com backup .inkbak criptografado. Download para Windows 10/11 e Linux.">
     <link rel="stylesheet" href="assets/css/ink-portal.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
     <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
@@ -38,6 +38,7 @@
                 <div class="cc-menu" id="cc-menu">
                     <a href="index.html#novidades">Novidades v2.1.0</a>
                     <a href="index.html#especialidades">Especialidades</a>
+                    <a href="index.html#dados">Proteção de dados</a>
                     <a href="manual.html">Manual</a>
                     <a href="tecnologia.html">Tecnologia</a>
                     <a href="versoes.html" class="cta-link">Notas da versão</a>
@@ -79,9 +80,10 @@
             <figure class="hero-contexto-cliente">
                 <img class="hero-contexto-image" src="assets/img/caracore_ink.png" alt="Profissional organizando a agenda no computador" width="640" height="427" />
             </figure>
-            <p class="hero-desc"><span data-term="sessions">Sessões</span>, <span data-term="clients">clientes</span>, orçamentos e financeiro em um só lugar. Funciona sem internet, com backup criptografado.</p>
+            <p class="hero-desc"><span data-term="sessions">Sessões</span>, <span data-term="clients">clientes</span>, orçamentos e financeiro em um só lugar. Funciona offline. Os dados de clientes ficam no seu computador, sem conta na nuvem; o backup com senha (<code>.inkbak</code>) é criptografado.</p>
             <div class="cta-buttons">
                 <a href="download.html" class="cta-btn cta-btn-primary">Baixar para <span data-term="target">Tatuadores</span></a>
+                <a href="#dados" class="cta-btn cta-btn-secondary">Dados locais e LGPD</a>
             </div>
             <div class="hero-meta">
                 <p class="hero-micro">Windows 10/11 e Linux · <span data-canal-versao>v2.1.0</span> · funciona offline</p>
@@ -161,15 +163,26 @@
                 <h2>O que você controla</h2>
                 <p>Agenda de <span data-term="sessions" data-term-case="lower">sessões</span> com <span data-term="client" data-term-case="lower">cliente</span>, data, horário, duração, valor e pagamento; <span data-term="client-plural" data-term-case="lower">clientes</span> e orçamentos; financeiro com entradas, saídas e saldo; e painel com faturamento e médias por período.</p>
             </div>
-            <div class="card card-differential">
-                <h2>Seus dados no seu computador</h2>
-                <p>O aplicativo funciona sem internet. O backup com senha (<code>.inkbak</code>) é criptografado, e o backup automático acontece a cada hora e ao fechar o programa.</p>
+            <div class="card card-differential" id="dados">
+                <h2>Proteção de dados e domínio local</h2>
+                <p>O Ink Agenda foi desenhado para manter os dados de clientes sob o seu controle — no seu computador, não na nuvem.</p>
+                <ul>
+                    <li><strong>Dados no seu computador:</strong> agenda, clientes, orçamentos e financeiro ficam em um banco SQLite local. Não há conta do estúdio na nuvem.</li>
+                    <li><strong>Nenhum dado de cliente na internet:</strong> o aplicativo não envia clientes, agendamentos ou valores para servidores. A verificação manual de atualizações transmite apenas a versão do app e o sistema operacional.</li>
+                    <li><strong>Backup com senha:</strong> o arquivo <code>.inkbak</code> é criptografado com AES-256-GCM e chave derivada da sua senha. O backup automático é local, compactado e sem senha.</li>
+                    <li><strong>Registro técnico sem dados pessoais:</strong> senhas, telefones e e-mails são mascarados antes de gravar os logs.</li>
+                </ul>
+                <p><strong>LGPD:</strong> esses recursos apoiam o seu dever de proteger dados pessoais. A conformidade depende também dos seus processos e do uso do sistema; o Ink não substitui essa responsabilidade.</p>
+                <div class="download-actions">
+                    <a href="download.html" class="cta-btn cta-btn-primary">Baixar e manter os dados no meu computador</a>
+                    <a href="tecnologia.html#lgpd" class="cta-btn cta-btn-secondary">Ver como funciona</a>
+                </div>
             </div>
             <div class="card card-differential">
                 <h2>Como começar em 3 passos</h2>
                 <ol>
-                    <li>Baixe o Windows nesta página.</li>
-                    <li>Abra o <code>AgendaInk.exe</code>.</li>
+                    <li>Baixe a versão para Windows ou Linux nesta página.</li>
+                    <li>Windows: abra o <code>AgendaInk.exe</code>; Linux: instale o <code>.deb</code>.</li>
                     <li>Faça o primeiro acesso em 3 passos: celular, senha e login.</li>
                 </ol>
             </div>
@@ -178,7 +191,7 @@
         <section class="ink-cta-block" aria-label="Baixar o Ink Agenda">
             <p class="ink-cta-title">Pronto para organizar o seu <span data-term="workspace" data-term-case="lower">estúdio</span>?</p>
             <a href="download.html" class="cta-btn cta-btn-primary">Baixar para <span data-term="target">Tatuadores</span></a>
-            <p class="ink-cta-secondary"><a href="canal-feedback.html">Fale com a Cara Core</a></p>
+            <p class="ink-cta-secondary"><a href="#dados">Proteção de dados e domínio local</a> · <a href="canal-feedback.html">Fale com a Cara Core</a></p>
         </section>
 
     </div>
@@ -192,14 +205,15 @@
                         Gestão offline e segura para profissionais com hora marcada — Estúdios de Tatuagem, Consultórios e Salões de Beleza.
                     </p>
                     <p class="cc-footer-text cc-footer-meta">
-                        Dados 100% locais no computador do cliente, com backup criptografado (.inkbak).
+                        Dados de clientes no computador do estúdio, com backup .inkbak criptografado.
                     </p>
                 </div>
 
                 <div class="cc-footer-col">
                     <h3 class="cc-footer-heading">O produto</h3>
                     <ul class="cc-footer-links">
-                        <li><a href="download.html">Download para Windows</a></li>
+                        <li><a href="download.html">Download para Windows e Linux</a></li>
+                        <li><a href="index.html#dados">Proteção de dados e domínio local</a></li>
                         <li><a href="primeiro-acesso.html">Primeiro acesso assistido</a></li>
                         <li><a href="versoes.html">Versões e changelog</a></li>
                         <li><a href="tecnologia.html">Tecnologia e arquitetura</a></li>
