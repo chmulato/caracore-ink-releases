@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download — Cara Core Ink Agenda | Cara Core Informática</title>
-    <meta name="description" content="Download do Cara Core Ink Agenda v2.0.3 para Windows, com instalador e ZIP portátil e checksums SHA-256.">
+    <meta name="description" content="Download do Cara Core Ink Agenda para Windows, com instalador e ZIP portátil e checksums SHA-256.">
     <link rel="stylesheet" href="assets/css/ink-portal.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
     <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
@@ -23,23 +23,15 @@
         </header>
 
         <div class="download-actions">
-            <a class="cta-btn cta-btn-primary" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.3/AgendaInk-2.0.3-windows-setup.exe">↓ v2.0.3 — instalador</a>
-            <a class="cta-btn cta-btn-secondary" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.3/AgendaInk-2.0.3-windows.zip">↓ v2.0.3 — ZIP portátil</a>
+            <a class="cta-btn cta-btn-primary" data-canal-link="windows-setup" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.3/AgendaInk-2.0.3-windows-setup.exe">↓ <span data-canal-versao>v2.0.3</span> — instalador</a>
+            <a class="cta-btn cta-btn-secondary" data-canal-link="windows-zip" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.3/AgendaInk-2.0.3-windows.zip">↓ <span data-canal-versao>v2.0.3</span> — ZIP portátil</a>
         </div>
-        <p class="hero-micro">Versão 2.0.3 · Windows 10/11 · sem assinatura digital.</p>
+        <p class="hero-micro">Versão <span data-canal-versao-semv>2.0.3</span> · Windows 10/11 · sem assinatura digital.</p>
 
         <section class="card" role="note" style="margin-top: 1.5rem;">
-            <h2>Novidades da v2.0.3</h2>
-            <p>Os executáveis não têm assinatura digital, e o SmartScreen ou antivírus pode avisar ou bloquear a abertura. Faça backup dos dados antes de atualizar; agendas das versões 2.0.1 e 2.0.2 abrem na 2.0.3 sem perda.</p>
-            <ul>
-                <li>Finanças: entradas lançadas manualmente não são mais somadas em dobro ao reiniciar; duplicatas da v2.0.2 são corrigidas na primeira abertura.</li>
-                <li>A caixa «Pagou» na lista do dia reflete o pagamento real.</li>
-                <li>Lembrete de backup só aparece quando faz sentido.</li>
-                <li>«Lembrar da minha senha» preenche o login por até 12 horas, com a senha protegida pelo Windows.</li>
-                <li>Mensagem de bloqueio por tentativas com o tempo restante.</li>
-                <li>Novo orçamento rolável em telas pequenas; código de emergência mascarado; nomes longos com reticências.</li>
-                <li>Configurações: botão para verificar atualizações, que consulta o canal oficial só quando você clica, sem baixar nem instalar nada sozinho.</li>
-            </ul>
+            <h2>Antes de atualizar</h2>
+            <p>Os executáveis não têm assinatura digital, e o SmartScreen ou antivírus pode avisar ou bloquear a abertura. Faça backup dos dados antes de atualizar: agendas das versões 2.0.x abrem na versão atual sem perda.</p>
+            <p>O que mudou em cada versão publicada está em <a href="versoes.html">Versões</a>, com data e links das notas oficiais.</p>
         </section>
 
         <section class="card" style="margin-top: 1.5rem;">
@@ -57,26 +49,27 @@
         <details class="integrity">
             <summary>Verificar integridade (opcional)</summary>
             <p>Compare os arquivos baixados com os SHA-256 publicados na release:</p>
-            <p class="artifact-sha">setup.exe · 709032228fe47ebf21e69237f82204094e58bd313b6035f907798952a9b9c407</p>
-            <p class="artifact-sha">windows.zip · 8e65aedf79acd6c9f36f4474a7ed04700021852a106652b381f0fc2ef8541ccd</p>
+            <p class="artifact-sha">setup.exe · <span data-canal-sha="windows-setup">709032228fe47ebf21e69237f82204094e58bd313b6035f907798952a9b9c407</span></p>
+            <p class="artifact-sha">windows.zip · <span data-canal-sha="windows-zip">8e65aedf79acd6c9f36f4474a7ed04700021852a106652b381f0fc2ef8541ccd</span></p>
             <p>No PowerShell, na pasta onde os arquivos foram salvos:</p>
-            <pre><code>(Get-FileHash .\AgendaInk-2.0.3-windows-setup.exe -Algorithm SHA256).Hash
-(Get-FileHash .\AgendaInk-2.0.3-windows.zip -Algorithm SHA256).Hash</code></pre>
-            <p>Arquivos oficiais: <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.3/checksum.sha256">checksum.sha256 da v2.0.3</a> · <a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.3">release v2.0.3</a> · <a href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.1">versão anterior v2.0.1</a>.</p>
+            <pre><code>(Get-FileHash .\AgendaInk-<span data-canal-versao-semv>2.0.3</span>-windows-setup.exe -Algorithm SHA256).Hash
+(Get-FileHash .\AgendaInk-<span data-canal-versao-semv>2.0.3</span>-windows.zip -Algorithm SHA256).Hash</code></pre>
+            <p>Arquivos oficiais: <a data-canal-link="checksums" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.3/checksum.sha256">checksum.sha256 desta versão</a> · <a data-canal-link="release" href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.0.3">release <span data-canal-versao>v2.0.3</span></a> · <a href="versoes.html">versões anteriores</a>.</p>
         </details>
 
-        <p style="font-size: 0.95rem; margin: 1.5rem 0 0;"><strong>Outros sistemas:</strong> <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.3/agenda-ink-2.0.3-linux.deb">Linux (.deb)</a> | macOS (.dmg): em breve</p>
-        <p style="font-size: 0.85rem; opacity: 0.8; margin: 0.25rem 0 0;">Pronto para usar · Não exige instalação de Java. No Linux, instale com <code>sudo apt install ./agenda-ink-2.0.3-linux.deb</code>. Na primeira abertura, o sistema pode pedir confirmação por o aplicativo ainda não ter assinatura digital.</p>
+        <p style="font-size: 0.95rem; margin: 1.5rem 0 0;"><strong>Outros sistemas:</strong> <a data-canal-link="linux-deb" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.3/agenda-ink-2.0.3-linux.deb">Linux (.deb)</a> | macOS: sem instalador; versão pelo navegador no <a href="pwa.html">roadmap</a></p>
+        <p style="font-size: 0.85rem; opacity: 0.8; margin: 0.25rem 0 0;">Pronto para usar · Não exige instalação de Java. No Linux, instale com <code data-canal-apt>sudo apt install ./agenda-ink-2.0.3-linux.deb</code>. Na primeira abertura, o sistema pode pedir confirmação por o aplicativo ainda não ter assinatura digital.</p>
 
         <nav class="download-back">
             <a href="index.html">← Voltar ao portal</a>
         </nav>
 
         <footer>
-            <p><a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="pwa.html">Roadmap</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Wiki</a> · <a href="canal-feedback.html">Contato</a></p>
+            <p><a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="versoes.html">Versões</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="pwa.html">Roadmap</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Wiki</a> · <a href="canal-feedback.html">Contato</a></p>
             <p class="footer-legal">Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/">caracore.com.br</a></p>
         </footer>
     </div>
     <script src="assets/js/ink.js"></script>
+    <script src="assets/js/release-channel.js" defer></script>
 </body>
 </html>

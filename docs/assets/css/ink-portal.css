@@ -167,6 +167,17 @@ footer a:hover { text-decoration: underline; }
 .integrity[open] summary { border-bottom: 1px solid var(--border); margin-bottom: 16px; }
 .integrity pre { background: rgba(0, 0, 0, 0.2); padding: 12px; border-radius: 6px; font-size: 0.82rem; overflow-x: auto; margin-bottom: 12px; }
 
+.versoes-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.versoes-table tr + tr { border-top: 1px solid var(--border); }
+.versoes-table td { padding: 12px 10px; vertical-align: top; text-align: left; line-height: 1.65; }
+.versoes-table td:first-child,
+.versoes-table td:nth-child(2),
+.versoes-table td:nth-child(3) { white-space: nowrap; }
+.versoes-table td:nth-child(2) { color: var(--text-primary); }
+.versoes-table td:nth-child(3) { opacity: 0.8; }
+.versoes-table tr.is-atual td:nth-child(2) { color: var(--accent-green); font-weight: 600; }
+.versoes-nota { display: inline-block; margin-top: 8px; font-size: 0.85rem; opacity: 0.8; }
+
 body.download-page .wrapper { max-width: 720px; }
 body.canal-page .wrapper { max-width: 640px; }
 body.tecnologia-page .wrapper { max-width: 720px; }
@@ -213,6 +224,12 @@ body.tecnologia-page .wrapper { max-width: 720px; }
     .methodology { margin: 28px 0 32px; }
     .methodology .card { padding-top: 20px; padding-bottom: 20px; }
     .methodology .card + .card { margin-top: 14px; }
+    .versoes-table, .versoes-table tr, .versoes-table td { display: block; width: 100%; }
+    .versoes-table tr { padding: 10px 0; }
+    .versoes-table td { padding: 2px 0; }
+    .versoes-table td:first-child,
+    .versoes-table td:nth-child(2),
+    .versoes-table td:nth-child(3) { white-space: normal; }
     .nav-grid { gap: 14px; }
     .nav-card { padding: 18px; }
     .nav-card .icon { width: 34px; height: 34px; margin-bottom: 12px; }

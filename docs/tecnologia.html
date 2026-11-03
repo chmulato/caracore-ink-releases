@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologia — Cara Core Ink Agenda | Cara Core Informática</title>
-    <meta name="description" content="Stack do Cara Core Ink Agenda v2.0.3.">
+    <meta name="description" content="Stack do Cara Core Ink Agenda: Java 25, JavaFX, SQLite local, backup criptografado e atualização verificada por assinatura.">
     <link rel="stylesheet" href="assets/css/ink-portal.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
     <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
@@ -18,8 +18,8 @@
         </nav>
 
         <section class="ink-launch-banner" aria-label="Stack atual">
-            <p class="ink-launch-label">Tecnologia · v2.0.3</p>
-            <p class="ink-launch-date">Prerelease para homologação · Java 25 · JavaFX 21.0.11 · SQLite local · runtime embutido no pacote Windows. v2.0.1 continua estável/Latest.</p>
+            <p class="ink-launch-label">Tecnologia · <span data-canal-versao>v2.0.3</span></p>
+            <p class="ink-launch-date">Java 25 · JavaFX 21.0.11 · SQLite local · runtime embutido no pacote Windows · executáveis sem assinatura digital.</p>
         </section>
 
         <header>
@@ -50,7 +50,12 @@
         <section class="card">
             <h2>Senhas e acesso</h2>
             <p>Acesso por <strong>celular + senha local</strong>, sem conta na nuvem. A senha <strong>não fica no SQLite</strong>: fica em um arquivo com hash PBKDF2-HMAC-SHA256 e sal aleatório. A frase de recuperação e os códigos de emergência também são guardados só como hash. “Esqueci minha senha” gera um código de 6 dígitos válido por 15 minutos.</p>
-            <p>“Lembrar senha” guarda a credencial criptografada (AES-GCM) com uma chave derivada de um segredo aleatório criado em cada instalação. O app não traz usuário de fábrica: na primeira abertura vai direto ao <a href="primeiro-acesso.html">primeiro acesso</a>.</p>
+            <p>“Lembrar senha” guarda a credencial protegida pelo Windows (DPAPI), sem texto legível no disco, e vale por 12 horas ou até você clicar em <strong>Sair</strong>. No Linux, a credencial é cifrada com AES-GCM e um segredo aleatório criado nesta instalação. O app não traz usuário de fábrica: na primeira abertura vai direto ao <a href="primeiro-acesso.html">primeiro acesso</a>.</p>
+        </section>
+
+        <section class="card">
+            <h2>Atualizações</h2>
+            <p>A verificação é manual, em <strong>Configurações → Verificar atualizações</strong>: ao abrir o app, nenhuma conexão é feita. A resposta do canal oficial é conferida com uma assinatura digital Ed25519 embutida no aplicativo; links de download só são aceitos de <code>github.com/chmulato</code> e de <code>*.caracore.com.br</code>, sempre por HTTPS, e o SHA-256 é conferido antes de abrir o instalador. Se a assinatura ou o hash não baterem, o app não oferece o download.</p>
         </section>
 
         <section class="card">
@@ -82,9 +87,10 @@
         <section class="roadmap" aria-label="Próximos passos" style="margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: 4px solid var(--accent-blue); background: rgba(37,99,235,0.06); border-radius: 0 8px 8px 0;">
             <p style="font-weight: 600; margin-bottom: 0.5rem;">Status e próximos passos</p>
             <ul style="margin: 0; padding-left: 1.25rem;">
-                <li><strong>v2.0.1</strong> — versão estável/Latest Desktop Windows (EXE/ZIP)</li>
-                <li><strong>v2.0.3</strong> — versão atual, sem assinatura digital; inclui verificação manual de atualizações</li>
+                <li><strong><span data-canal-versao>v2.0.3</span></strong> — versão atual do Desktop Windows (instalador e ZIP), sem assinatura digital</li>
+                <li>Atualização: verificação manual em Configurações, resposta assinada e SHA-256 conferido antes de abrir o instalador</li>
                 <li>Lançamento oficial da linha 2.0 (Windows) <strong>26 de junho de 2026</strong></li>
+                <li>Histórico completo em <a href="versoes.html">Versões</a></li>
                 <li>Roadmap: <a href="pwa.html">Ink Agenda 3.0 em PWA</a> (<strong>não antes de 2028</strong>) — web, Android, iPhone, Windows, Mac e Linux pelo browser, com as regras da v2. <strong>Sem</strong> instalador nativo para desktop. Servidor na nuvem com HTTPS e uma base SQLite por estúdio. Substitui o Desktop depois de existir a importação dos dados da v2</li>
             </ul>
         </section>
@@ -94,10 +100,11 @@
         </nav>
 
         <footer>
-            <p><a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="pwa.html">Roadmap</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Wiki</a> · <a href="canal-feedback.html">Contato</a></p>
+            <p><a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="versoes.html">Versões</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="pwa.html">Roadmap</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Wiki</a> · <a href="canal-feedback.html">Contato</a></p>
             <p class="footer-legal">Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/">caracore.com.br</a></p>
         </footer>
     </div>
     <script src="assets/js/ink.js"></script>
+    <script src="assets/js/release-channel.js" defer></script>
 </body>
 </html>
