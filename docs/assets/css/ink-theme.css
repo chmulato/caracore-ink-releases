@@ -1,0 +1,412 @@
+/* CaraCore Ink Agenda — tema institucional da loja sobre ink-portal.css.
+   Mesma família visual das lojas do PDV, Hub e CSO: breadcrumb institucional,
+   cabeçalho sticky com logo de 48 px e o par CTA (.cta-link / .cta-btn).
+   O layout é próprio (sem Tailwind) para a loja seguir sem dependência externa. */
+
+:root {
+  --brand-a: #0d1117;
+  --brand-b: #161b22;
+  --brand-c: #21262d;
+
+  --green: #a855f7;
+  --green2: #c084fc;
+
+  /* Espelha o padding lateral e inferior do body para as faixas do cabeçalho e do rodapé. */
+  --cc-page-gutter: 20px;
+  --cc-page-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --cc-page-gutter: 12px;
+    --cc-page-bottom: 28px;
+  }
+}
+
+/* manual.html usa loja.css, que mantém 20 px e 40 px mesmo em telas pequenas. */
+body.page-manual {
+  --cc-page-gutter: 20px;
+  --cc-page-bottom: 40px;
+}
+
+[data-active-skin="dental"] {
+  --green: #06b6d4;
+  --green2: #22d3ee;
+}
+
+[data-active-skin="beauty"] {
+  --green: #eab308;
+  --green2: #facc15;
+}
+
+/* CTA do cabeçalho — estrutura e classes iguais nas três lojas irmãs.
+   Só a cor muda, e ela vem das variáveis do tema (e da skin ativa). */
+.cta-link {
+  color: #374151;
+  font-weight: 500;
+}
+
+.cta-link:hover {
+  color: var(--green);
+}
+
+.cta-btn {
+  background: linear-gradient(135deg, var(--green) 0%, var(--green2) 100%);
+  color: #ffffff;
+}
+
+/* Breadcrumb institucional, sobre o fundo escuro da loja. */
+.cc-breadcrumb {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 16px 24px 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary, #8b949e);
+}
+
+.cc-breadcrumb a {
+  color: var(--text-soft, #bcc7d1);
+  text-decoration: none;
+}
+
+.cc-breadcrumb a:hover {
+  color: var(--green);
+}
+
+.cc-breadcrumb-current {
+  color: var(--text-primary, #e6edf3);
+}
+
+/* Cabeçalho sticky. Margens negativas anulam o padding lateral do body
+   para a faixa branca ir de ponta a ponta, como nas lojas irmãs. */
+.cc-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  margin: 12px calc(var(--cc-page-gutter) * -1) 28px;
+  padding: 0;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  backdrop-filter: saturate(180%) blur(14px);
+}
+
+.cc-header-nav {
+  width: 100%;
+}
+
+/* loja.css aplica padding ao header de body.page-manual; o cabeçalho institucional não usa. */
+body.page-manual header.cc-header {
+  padding: 0;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.cc-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1180px;
+  min-height: 80px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cc-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  text-decoration: none;
+}
+
+.cc-brand img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  flex: none;
+}
+
+.cc-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.cc-brand-title {
+  color: #111827;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cc-brand-sub {
+  color: #4b5563;
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+.cc-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cc-menu > a {
+  color: #374151;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cc-menu > a:not(.cta-btn):hover {
+  color: var(--green);
+}
+
+.cc-menu > .cta-link {
+  font-size: 0.875rem;
+}
+
+.cc-menu > .cta-btn {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+  transition: box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.cc-menu > .cta-btn:hover {
+  color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.18);
+  filter: brightness(1.03);
+}
+
+.cc-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.cc-menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: #374151;
+}
+
+.cc-header a:focus-visible,
+.cc-menu-toggle:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+/* Compensa o cabeçalho fixo ao saltar para uma âncora do menu. */
+#especialidades,
+#novidades {
+  scroll-margin-top: 96px;
+}
+
+@media (max-width: 1120px) {
+  .cc-menu-toggle {
+    display: flex;
+    flex: none;
+  }
+
+  .cc-header-inner {
+    flex-wrap: wrap;
+    gap: 12px;
+    min-height: 72px;
+    padding: 12px 16px;
+  }
+
+  .cc-brand {
+    flex: 1 1 0;
+  }
+
+  .cc-menu {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    margin-top: 12px;
+    padding: 8px 0 4px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .cc-menu.is-open {
+    display: flex;
+  }
+
+  .cc-menu > a {
+    padding: 10px 4px;
+  }
+
+  .cc-menu > .cta-btn {
+    margin-top: 8px;
+    padding: 12px 20px;
+  }
+
+  .cc-breadcrumb {
+    padding: 14px 16px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .cc-header {
+    margin: 10px calc(var(--cc-page-gutter) * -1) 22px;
+  }
+
+  .cc-brand-title {
+    font-size: 1.1rem;
+  }
+
+  .cc-brand-sub {
+    font-size: 0.7rem;
+  }
+}
+
+/* Rodapé institucional — mesma família visual das lojas do PDV, Hub e CSO.
+   A faixa ocupa a largura toda e anula o padding do body, como o cabeçalho. */
+.cc-footer {
+  margin: 56px calc(var(--cc-page-gutter) * -1) calc(var(--cc-page-bottom) * -1);
+  padding: 48px 0 24px;
+  background: #111827;
+  border-top: 1px solid #1f2937;
+  color: #d1d5db;
+}
+
+.cc-footer-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cc-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px 32px;
+}
+
+.cc-footer-brand-title {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cc-footer-text {
+  margin: 0;
+  color: #d1d5db;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+.cc-footer-meta {
+  margin-top: 10px;
+  color: #9ca3af;
+  font-size: 0.8125rem;
+}
+
+.cc-footer-heading {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.cc-footer-links {
+  display: grid;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cc-footer-links a {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cc-footer-links a:hover {
+  color: var(--green);
+}
+
+.cc-footer-bottom {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid #1f2937;
+  color: #9ca3af;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.cc-footer-bottom p {
+  margin: 0;
+}
+
+.cc-footer-bottom a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cc-footer-bottom a:hover {
+  color: var(--green);
+}
+
+.cc-footer a:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+@media (max-width: 991px) {
+  .cc-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 639px) {
+  .cc-footer {
+    padding: 36px 0 20px;
+  }
+
+  .cc-footer-container {
+    padding: 0 16px;
+  }
+
+  .cc-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+/* Troca de imagem do hero por skin (skin-switcher.js) */
+.hero-cta .hero-contexto-image {
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+}
+
+.hero-cta .hero-contexto-image.is-fading {
+  opacity: 0.2;
+  transform: scale(0.99);
+}

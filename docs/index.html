@@ -3,27 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cara Core Ink Agenda — Agenda e financeiro para estúdios de tatuagem</title>
-    <meta name="description" content="Cara Core Ink Agenda: agenda de sessões, clientes, orçamentos, financeiro e painel de resultados para estúdios de tatuagem. Funciona offline, com backup criptografado. Download para Windows 10/11.">
+    <title>Cara Core Ink Agenda — Agenda e financeiro para estúdios, consultórios e espaços de beleza</title>
+    <meta name="description" content="Cara Core Ink Agenda: agenda, clientes, orçamentos, financeiro e painel de resultados para estúdios de tatuagem, consultórios odontológicos e espaços de beleza. Funciona offline, com backup criptografado. Download para Windows 10/11.">
     <link rel="stylesheet" href="assets/css/ink-portal.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
     <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
+    <link rel="stylesheet" href="assets/css/ink-theme.css">
+    <link rel="stylesheet" href="assets/css/skin-switcher.css">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
 </head>
-<body class="cc-i-page">
-    <div class="wrapper">
-        <nav class="topbar" aria-label="Cara Core">
-            <a href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
-        </nav>
+<body class="cc-i-page" data-active-skin="tattoo">
+    <nav class="cc-breadcrumb" aria-label="Navegação institucional">
+        <a href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
+        <span aria-hidden="true"> · </span>
+        <a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a>
+        <span aria-hidden="true"> · </span>
+        <span class="cc-breadcrumb-current">CaraCore Ink Agenda</span>
+    </nav>
 
+    <header class="cc-header">
+        <nav class="cc-header-nav" aria-label="Menu da loja">
+            <div class="cc-header-inner">
+                <a href="index.html" class="cc-brand">
+                    <img src="assets/brand/caracore-logo.svg" alt="" width="48" height="48" aria-hidden="true">
+                    <span class="cc-brand-text">
+                        <span class="cc-brand-title">CaraCore Ink Agenda</span>
+                        <span class="cc-brand-sub">Gestão offline para profissionais com hora marcada</span>
+                    </span>
+                </a>
+                <button type="button" class="cc-menu-toggle" id="cc-menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="cc-menu">
+                    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                </button>
+                <div class="cc-menu" id="cc-menu">
+                    <a href="index.html#novidades">Novidades v2.1.0</a>
+                    <a href="index.html#especialidades">Especialidades</a>
+                    <a href="manual.html">Manual</a>
+                    <a href="tecnologia.html">Tecnologia</a>
+                    <a href="versoes.html" class="cta-link">Notas da versão</a>
+                    <a href="download.html" class="cta-btn">Baixar para Windows</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="wrapper">
         <section class="hero-cta hero-cta--simple" aria-labelledby="hero-title">
-            <p class="hero-label">Gestão para estúdios de tatuagem</p>
-            <h1 class="hero-title" id="hero-title">Agenda e financeiro do seu estúdio de tatuagem, no seu computador.</h1>
+            <div class="skin-switcher" id="especialidades" role="group" aria-labelledby="skin-switcher-title">
+                <p class="skin-switcher-title" id="skin-switcher-title">Experimente a metamorfose do produto (3 especialidades em 1 único software):</p>
+                <div class="skin-switcher-options">
+                    <button type="button" class="skin-option is-active" data-skin-btn="tattoo" aria-pressed="true">
+                        <span class="skin-option-emoji" aria-hidden="true">🎨</span>
+                        <span class="skin-option-label">Tatuagem &amp; Arte Corporal</span>
+                        <span class="skin-option-swatch" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="skin-option" data-skin-btn="dental" aria-pressed="false">
+                        <span class="skin-option-emoji" aria-hidden="true">🦷</span>
+                        <span class="skin-option-label">Odontologia &amp; Saúde</span>
+                        <span class="skin-option-swatch" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="skin-option" data-skin-btn="beauty" aria-pressed="false">
+                        <span class="skin-option-emoji" aria-hidden="true">✨</span>
+                        <span class="skin-option-label">Beleza &amp; Estética</span>
+                        <span class="skin-option-swatch" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <p class="skin-switcher-live" aria-live="polite" aria-atomic="true">
+                    Terminologia aplicada: <strong data-term="session-plural">Sessões</strong> ·
+                    <strong data-term="client-plural">Clientes</strong> ·
+                    <strong data-term="workspace">Estúdio</strong>
+                </p>
+            </div>
+            <p class="hero-label">Gestão para estúdios, consultórios e espaços de beleza</p>
+            <h1 class="hero-title" id="hero-title">Agenda e financeiro do seu <span class="term-highlight" data-term="workspace" data-term-case="lower">estúdio</span>, no seu computador.</h1>
             <figure class="hero-contexto-cliente">
-                <img class="hero-contexto-image" src="assets/img/caracore_ink.png" alt="Tatuadora organizando a agenda do estúdio" width="640" height="427" />
+                <img class="hero-contexto-image" src="assets/img/caracore_ink.png" alt="Profissional organizando a agenda no computador" width="640" height="427" />
             </figure>
-            <p class="hero-desc">Sessões, clientes, orçamentos, entradas e saídas e faturamento em um só lugar. Funciona sem internet, com backup criptografado.</p>
+            <p class="hero-desc"><span data-term="sessions">Sessões</span>, <span data-term="clients">clientes</span>, orçamentos e financeiro em um só lugar. Funciona sem internet, com backup criptografado.</p>
             <div class="cta-buttons">
-                <a href="download.html" class="cta-btn cta-btn-primary">Baixar para Windows</a>
+                <a href="download.html" class="cta-btn cta-btn-primary">Baixar para <span data-term="target">Tatuadores</span></a>
             </div>
             <div class="hero-meta">
                 <p class="hero-micro">Windows 10/11 64 bits · <span data-canal-versao>v2.0.4</span> · funciona offline</p>
@@ -33,10 +91,75 @@
             </div>
         </section>
 
+        <section class="ink-mockup-section" id="novidades" aria-labelledby="ink-mockup-title">
+            <div class="ink-mockup-heading">
+                <h2 id="ink-mockup-title">Veja o Ink Agenda no seu dia a dia</h2>
+                <span class="ink-mockup-badge">prévia v2.1.0</span>
+            </div>
+            <p class="ink-mockup-lede">A mesma janela e o mesmo executável: o que muda é o vocabulário do seu perfil.</p>
+            <div class="ink-mockup" role="img" aria-label="Prévia da janela do Ink Agenda 2.1.0 com indicadores e a agenda do dia">
+                <div class="ink-mockup-titlebar">
+                    <span class="ink-mockup-mark" aria-hidden="true"></span>
+                    <span class="ink-mockup-title" data-term="window-title">Ink Agenda 2.1.0 — Estúdio</span>
+                    <span class="ink-mockup-window-controls" aria-hidden="true">
+                        <span class="ink-mockup-window-control">&#8211;</span>
+                        <span class="ink-mockup-window-control">&#9633;</span>
+                        <span class="ink-mockup-window-control is-close">&#215;</span>
+                    </span>
+                </div>
+                <div class="ink-mockup-body">
+                    <div class="ink-mockup-kpis">
+                        <div class="ink-mockup-kpi">
+                            <span class="ink-mockup-kpi-label">Faturamento do mês</span>
+                            <strong class="ink-mockup-kpi-value">R$ 12.480,00</strong>
+                            <span class="ink-mockup-kpi-hint">+18% no mês</span>
+                        </div>
+                        <div class="ink-mockup-kpi">
+                            <span class="ink-mockup-kpi-label" data-term="appointments">Atendimentos</span>
+                            <strong class="ink-mockup-kpi-value">42</strong>
+                            <span class="ink-mockup-kpi-hint">no mês</span>
+                        </div>
+                        <div class="ink-mockup-kpi">
+                            <span class="ink-mockup-kpi-label">Ticket médio</span>
+                            <strong class="ink-mockup-kpi-value">R$ 297,14</strong>
+                            <span class="ink-mockup-kpi-hint">por <span data-term="appointment" data-term-case="lower">atendimento</span></span>
+                        </div>
+                    </div>
+                    <div class="ink-mockup-day">
+                        <div class="ink-mockup-day-head">
+                            <span>Hoje · 03/11</span>
+                            <span class="ink-mockup-day-count">4 compromissos</span>
+                        </div>
+                        <div class="ink-mockup-appointment">
+                            <div class="ink-mockup-time">
+                                <span>14:00</span>
+                                <small>15:30</small>
+                            </div>
+                            <div class="ink-mockup-appointment-info">
+                                <strong>Marina Silveira</strong>
+                                <span data-term="procedure">Sessão de fechamento de braço — R$ 800,00</span>
+                            </div>
+                            <span class="ink-mockup-status">Confirmado</span>
+                        </div>
+                        <p class="ink-mockup-foot">Agenda do dia salva no próprio dispositivo</p>
+                    </div>
+                </div>
+                <div class="ink-mockup-nav" role="presentation">
+                    <span class="ink-mockup-nav-item is-active">Hoje</span>
+                    <span class="ink-mockup-nav-item">Calendário</span>
+                    <span class="ink-mockup-nav-item">Finanças</span>
+                    <span class="ink-mockup-nav-item">Dashboard</span>
+                    <span class="ink-mockup-nav-item">Orçamentos</span>
+                    <span class="ink-mockup-nav-item" data-term="client-plural">Clientes</span>
+                    <span class="ink-mockup-nav-item">Config</span>
+                </div>
+            </div>
+        </section>
+
         <section class="methodology">
             <div class="card">
                 <h2>O que você controla</h2>
-                <p>Agenda de sessões com cliente, data, horário, duração, valor e pagamento; clientes e orçamentos; financeiro com entradas, saídas e saldo; e painel com faturamento e médias por período.</p>
+                <p>Agenda de <span data-term="sessions" data-term-case="lower">sessões</span> com <span data-term="client" data-term-case="lower">cliente</span>, data, horário, duração, valor e pagamento; <span data-term="client-plural" data-term-case="lower">clientes</span> e orçamentos; financeiro com entradas, saídas e saldo; e painel com faturamento e médias por período.</p>
             </div>
             <div class="card card-differential">
                 <h2>Seus dados no seu computador</h2>
@@ -52,18 +175,67 @@
             </div>
         </section>
 
-        <section class="ink-cta-block" aria-label="Baixar o Ink Agenda" style="margin: 2rem 0; padding: 1.5rem; border: 1px solid var(--accent-blue, #2563eb); border-radius: 8px; background: rgba(37,99,235,0.08);">
-            <p class="ink-cta-title" style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: #ffffff;">Pronto para organizar o estúdio?</p>
-            <a href="download.html" class="cta-btn cta-btn-primary">Baixar para Windows</a>
+        <section class="ink-cta-block" aria-label="Baixar o Ink Agenda">
+            <p class="ink-cta-title">Pronto para organizar o seu <span data-term="workspace" data-term-case="lower">estúdio</span>?</p>
+            <a href="download.html" class="cta-btn cta-btn-primary">Baixar para <span data-term="target">Tatuadores</span></a>
             <p class="ink-cta-secondary"><a href="canal-feedback.html">Fale com a Cara Core</a></p>
         </section>
 
-        <footer>
-            <p><a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="versoes.html">Versões</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="pwa.html">Roadmap</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Wiki</a> · <a href="canal-feedback.html">Contato</a></p>
-            <p class="footer-legal">Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/">caracore.com.br</a></p>
-        </footer>
     </div>
+
+    <footer class="cc-footer" role="contentinfo">
+        <div class="cc-footer-container">
+            <div class="cc-footer-grid">
+                <div class="cc-footer-col">
+                    <p class="cc-footer-brand-title">Cara Core Informática</p>
+                    <p class="cc-footer-text">
+                        Gestão offline e segura para profissionais com hora marcada — Estúdios de Tatuagem, Consultórios e Salões de Beleza.
+                    </p>
+                    <p class="cc-footer-text cc-footer-meta">
+                        Dados 100% locais no computador do cliente, com backup criptografado (.inkbak).
+                    </p>
+                </div>
+
+                <div class="cc-footer-col">
+                    <h3 class="cc-footer-heading">O produto</h3>
+                    <ul class="cc-footer-links">
+                        <li><a href="download.html">Download para Windows</a></li>
+                        <li><a href="primeiro-acesso.html">Primeiro acesso assistido</a></li>
+                        <li><a href="versoes.html">Versões e changelog</a></li>
+                        <li><a href="tecnologia.html">Tecnologia e arquitetura</a></li>
+                        <li><a href="pwa.html">Trilha PWA (Roadmap)</a></li>
+                    </ul>
+                </div>
+
+                <div class="cc-footer-col">
+                    <h3 class="cc-footer-heading">Documentação</h3>
+                    <ul class="cc-footer-links">
+                        <li><a href="manual.html">Manual do operador</a></li>
+                        <li><a href="https://wiki.caracore.com.br/projeto-ink.html" rel="noopener">Wiki do Ink Agenda</a></li>
+                        <li><a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio Cara Core</a></li>
+                        <li><a href="https://download.caracore.com.br/" rel="noopener">Central de downloads</a></li>
+                    </ul>
+                </div>
+
+                <div class="cc-footer-col">
+                    <h3 class="cc-footer-heading">Contato</h3>
+                    <ul class="cc-footer-links">
+                        <li><a href="canal-feedback.html">Canal da loja</a></li>
+                        <li><a href="https://wa.me/5541999097797" rel="noopener">WhatsApp oficial</a></li>
+                        <li><a href="https://t.me/chmulato" rel="noopener">Telegram</a></li>
+                        <li><a href="mailto:suporte@caracore.com.br">suporte@caracore.com.br</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cc-footer-bottom">
+                <p>&copy; 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></p>
+            </div>
+        </div>
+    </footer>
     <script src="assets/js/ink.js"></script>
+    <script src="assets/js/portal-nav.js" defer></script>
+    <script src="assets/js/skin-switcher.js" defer></script>
     <script src="assets/js/release-channel.js" defer></script>
 </body>
 </html>

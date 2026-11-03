@@ -8,15 +8,45 @@
     <link rel="stylesheet" href="assets/css/ink-portal.css">
     <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
     <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
+    <link rel="stylesheet" href="assets/css/ink-theme.css">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
 </head>
 <body class="canal-page">
-    <div class="wrapper">
-        <nav class="breadcrumb" aria-label="Navegação">
-            <a href="index.html">Cara Core Ink Agenda</a>
-            <span> · </span>
-            <span>Canal de feedback</span>
-        </nav>
+    <nav class="cc-breadcrumb" aria-label="Navegação institucional">
+        <a href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
+        <span aria-hidden="true"> · </span>
+        <a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a>
+        <span aria-hidden="true"> · </span>
+        <span class="cc-breadcrumb-current">CaraCore Ink Agenda</span>
+    </nav>
 
+    <header class="cc-header">
+        <nav class="cc-header-nav" aria-label="Menu da loja">
+            <div class="cc-header-inner">
+                <a href="index.html" class="cc-brand">
+                    <img src="assets/brand/caracore-logo.svg" alt="" width="48" height="48" aria-hidden="true">
+                    <span class="cc-brand-text">
+                        <span class="cc-brand-title">CaraCore Ink Agenda</span>
+                        <span class="cc-brand-sub">Gestão offline para profissionais com hora marcada</span>
+                    </span>
+                </a>
+                <button type="button" class="cc-menu-toggle" id="cc-menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="cc-menu">
+                    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                </button>
+                <div class="cc-menu" id="cc-menu">
+                    <a href="index.html#novidades">Novidades v2.1.0</a>
+                    <a href="index.html#especialidades">Especialidades</a>
+                    <a href="manual.html">Manual</a>
+                    <a href="tecnologia.html">Tecnologia</a>
+                    <a href="versoes.html" class="cta-link">Notas da versão</a>
+                    <a href="download.html" class="cta-btn">Baixar para Windows</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="wrapper">
         <section class="ink-launch-banner" aria-label="Versão atual">
             <p class="ink-launch-label">Ink Agenda <span data-canal-versao>v2.0.4</span></p>
             <p class="ink-launch-date">Canal de suporte e feedback. Download Windows na <a href="download.html">página de download</a>.</p>
@@ -61,12 +91,60 @@
             <a href="index.html">← Voltar ao portal</a>
         </nav>
 
-        <footer>
-            <p><a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="pwa.html">Roadmap</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Wiki</a> · <a href="canal-feedback.html">Contato</a></p>
-            <p class="footer-legal">Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/">caracore.com.br</a></p>
-        </footer>
     </div>
+
+    <footer class="cc-footer" role="contentinfo">
+        <div class="cc-footer-container">
+            <div class="cc-footer-grid">
+                <div class="cc-footer-col">
+                    <p class="cc-footer-brand-title">Cara Core Informática</p>
+                    <p class="cc-footer-text">
+                        Gestão offline e segura para profissionais com hora marcada — Estúdios de Tatuagem, Consultórios e Salões de Beleza.
+                    </p>
+                    <p class="cc-footer-text cc-footer-meta">
+                        Dados 100% locais no computador do cliente, com backup criptografado (.inkbak).
+                    </p>
+                </div>
+
+                <div class="cc-footer-col">
+                    <h3 class="cc-footer-heading">O produto</h3>
+                    <ul class="cc-footer-links">
+                        <li><a href="download.html">Download para Windows</a></li>
+                        <li><a href="primeiro-acesso.html">Primeiro acesso assistido</a></li>
+                        <li><a href="versoes.html">Versões e changelog</a></li>
+                        <li><a href="tecnologia.html">Tecnologia e arquitetura</a></li>
+                        <li><a href="pwa.html">Trilha PWA (Roadmap)</a></li>
+                    </ul>
+                </div>
+
+                <div class="cc-footer-col">
+                    <h3 class="cc-footer-heading">Documentação</h3>
+                    <ul class="cc-footer-links">
+                        <li><a href="manual.html">Manual do operador</a></li>
+                        <li><a href="https://wiki.caracore.com.br/projeto-ink.html" rel="noopener">Wiki do Ink Agenda</a></li>
+                        <li><a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio Cara Core</a></li>
+                        <li><a href="https://download.caracore.com.br/" rel="noopener">Central de downloads</a></li>
+                    </ul>
+                </div>
+
+                <div class="cc-footer-col">
+                    <h3 class="cc-footer-heading">Contato</h3>
+                    <ul class="cc-footer-links">
+                        <li><a href="canal-feedback.html">Canal da loja</a></li>
+                        <li><a href="https://wa.me/5541999097797" rel="noopener">WhatsApp oficial</a></li>
+                        <li><a href="https://t.me/chmulato" rel="noopener">Telegram</a></li>
+                        <li><a href="mailto:suporte@caracore.com.br">suporte@caracore.com.br</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cc-footer-bottom">
+                <p>&copy; 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></p>
+            </div>
+        </div>
+    </footer>
     <script src="assets/js/ink.js"></script>
+    <script src="assets/js/portal-nav.js" defer></script>
     <script src="assets/js/release-channel.js" defer></script>
 </body>
 </html>
