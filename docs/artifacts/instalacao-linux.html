@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linux — Ink Agenda via PWA | Cara Core Informática</title>
-    <meta name="description" content="Não haverá DEB nativo do Ink Agenda. No Linux o canal é o PWA.">
+    <title>Instalação Linux (.deb) — Cara Core Ink Agenda</title>
+    <meta name="description" content="Como instalar o Ink Agenda 2.1.0 no Linux Ubuntu/Debian pelo pacote .deb, com runtime Java 25 embutido.">
     <link rel="stylesheet" href="../assets/css/ink-portal.css">
     <link rel="stylesheet" href="../assets/css/caracore-core-typography.css">
 </head>
@@ -13,13 +13,60 @@
         <nav class="breadcrumb" aria-label="Navegação">
             <a href="../index.html">Loja</a> · <a href="../download.html">Download</a> · <span>Linux</span>
         </nav>
-        <header>
-            <h1>Linux — PWA, não DEB</h1>
-            <p class="subtitle">Não vamos publicar instalador nativo para Linux. O canal é o PWA, <strong>não antes de 2028</strong> (mesmo backend da v2).</p>
-        </header>
-        <section class="card">
-            <p>Desktop oficial hoje: <a href="../download.html">Windows</a>. Mac, Linux e Android: <a href="../pwa.html">página do PWA</a>.</p>
+
+        <section class="ink-launch-banner" aria-label="Versão atual">
+            <p class="ink-launch-label">Instalação Linux · <span data-canal-versao>v2.1.0</span></p>
+            <p class="ink-launch-date">Pacote <code>.deb</code> · três perfis · Java 25 embutido · sem instalação de JDK.</p>
         </section>
+
+        <header>
+            <h1>Instalação Linux — Cara Core Ink Agenda</h1>
+            <p class="subtitle">Ubuntu / Debian · 64 bits · pacote <code>.deb</code> com runtime Java 25 embutido (sem JDK)</p>
+        </header>
+        <p role="note">O pacote não tem assinatura digital. Faça backup dos dados antes de atualizar. O app não abre porta nem faz conexão: funciona offline.</p>
+
+        <section class="card" id="download">
+            <h2>Download (versão <span data-canal-versao>v2.1.0</span>)</h2>
+            <p>Arquivo oficial da release
+                <a data-canal-link="release" href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.1.0"><span data-canal-versao>v2.1.0</span></a>.
+                Valide com o
+                <a data-canal-link="checksums" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/checksum.sha256">checksum.sha256</a>
+                ou com o <code>checksum-linux-2.1.0.txt</code> da release.</p>
+            <p style="margin: 1rem 0;">
+                <a class="cta-btn cta-btn-primary" data-canal-link="linux-deb" style="display: inline-block; padding: 10px 22px; border-radius: 6px;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/agenda-ink-2.1.0-linux.deb">↓ agenda-ink-<span data-canal-versao-semv>2.1.0</span>-linux.deb</a>
+            </p>
+            <p class="artifact-sha">SHA256 DEB <span data-canal-sha="linux-deb">58c0d3f0024c9b4ef06fd727283439490325a6dca053a5d93e000169f870bf18</span></p>
+        </section>
+
+        <section class="card" id="instalar">
+            <h2>Instalar o pacote</h2>
+            <ol>
+                <li>Baixe <code>agenda-ink-<span data-canal-versao-semv>2.1.0</span>-linux.deb</code>.</li>
+                <li>Confira o SHA256 com o arquivo oficial da release.</li>
+                <li>No terminal, na pasta do download: <code data-canal-apt>sudo apt install ./agenda-ink-2.1.0-linux.deb</code>.</li>
+                <li>Abra o Ink Agenda pelo menu de aplicativos.</li>
+            </ol>
+            <p>O <code>apt</code> resolve as dependências do sistema; o runtime Java 25 já vai no pacote.</p>
+        </section>
+
+        <section class="card" id="dados">
+            <h2>Onde ficam os dados</h2>
+            <p>No Linux, o banco e os arquivos locais ficam em <code>~/.caracore-ink/</code> (banco <code>agenda.db</code>, backup automático em <code>backups/</code> e registro técnico em <code>logs/</code>). Reinstalar o pacote não apaga essa pasta. Faça backup antes de atualizar.</p>
+        </section>
+
+        <section class="card" id="primeiro-acesso">
+            <h2>Primeiro acesso</h2>
+            <p>O Ink Agenda não traz usuário de fábrica. Na primeira abertura, escolha o perfil do espaço — Tatuagem, Odontologia ou Beleza —, informe o celular do responsável e conclua a senha e a recuperação local. Guia completo em <a href="../primeiro-acesso.html">Primeiro acesso</a>.</p>
+        </section>
+
+        <section class="card" id="pwa">
+            <h2>Linux na linha 3.0</h2>
+            <p>O Desktop v2.1.0 é o canal atual para Linux. A linha 3.0 atenderá pelo navegador, <strong>não antes de 2028</strong>; a página do roadmap é <a href="../pwa.html">PWA</a>.</p>
+        </section>
+
+        <nav class="download-back">
+            <a href="../download.html">← Download</a>
+        </nav>
     </div>
 </body>
 </html>

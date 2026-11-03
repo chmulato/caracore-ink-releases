@@ -1,6 +1,6 @@
 # Cara Core Ink Agenda v2.1.0
 
-> Windows 10/11, ZIP portátil com runtime Java 25 embutido. O instalador com wizard é gerado no pipeline com WiX. macOS e Linux continuam sem pacote nesta linha; a 3.0 atenderá pelo navegador.
+> Windows 10/11 (ZIP portátil e instalador com wizard gerado no pipeline com WiX) e Linux Ubuntu/Debian (`.deb`), ambos com runtime Java 25 embutido. macOS não tem instalador nesta linha; a 3.0 atenderá pelo navegador, não antes de 2028.
 
 Release de produto do Desktop. Bases das versões 2.0.1 a 2.0.4 abrem na 2.1.0 com migração automática para o esquema V25. Sem preferência gravada, o perfil Tatuador continua sendo o padrão. O executável **não tem assinatura digital**: o SmartScreen ou o antivírus pode avisar ou bloquear a abertura.
 
@@ -37,14 +37,22 @@ O título da janela reflete o espaço de trabalho (`Ink Agenda 2.1.0 — Estúdi
 - **V25** acrescenta ao catálogo financeiro as sugestões de receita de Odontologia e Beleza & Estética; as linhas do Tatuador continuam válidas.
 - Nenhum dado existente é reescrito pela troca de skin.
 - O mesmo executável atende aos três nichos; não há instaladores separados por especialidade.
-- Windows 10/11 com runtime Java 25 embutido. Faça backup dos dados antes de atualizar.
+- Windows 10/11 com runtime Java 25 embutido (ZIP portátil e instalador `.exe`).
+- Linux Ubuntu/Debian com o pacote `agenda-ink-2.1.0-linux.deb`, também com runtime embutido.
+- macOS não tem instalador nesta linha; a 3.0 atenderá pelo navegador, não antes de 2028. Faça backup dos dados antes de atualizar.
 
 ## Integridade dos artefatos
 
-Os hashes oficiais ficam em `checksum.sha256`, `checksum.md5` e `SHA256SUMS` na release, ao lado do ZIP. No PowerShell:
+Os hashes oficiais ficam em `checksum.sha256`, `checksum.md5`, `SHA256SUMS` e `checksum-linux-2.1.0.txt` na release, ao lado dos pacotes. No PowerShell:
 
 ```powershell
 (Get-FileHash .\AgendaInk-2.1.0-windows.zip -Algorithm SHA256).Hash
+```
+
+No Linux:
+
+```bash
+sha256sum -c checksum-linux-2.1.0.txt
 ```
 
 ## Loja
