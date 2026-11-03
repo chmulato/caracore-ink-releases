@@ -1,6 +1,6 @@
 # Cara Core Ink Agenda v2.0.4
 
-> Windows (instalador e ZIP) e Linux (.deb). O pacote macOS não faz parte desta versão.
+> Windows (instalador e ZIP) e Linux (.deb). macOS não tem suporte nesta versão: a linha 3.0 atenderá pelo navegador.
 
 Atualização corretiva do Desktop. Bases das versões 2.0.1, 2.0.2 e 2.0.3 abrem na 2.0.4 sem perda de dados; não há mudança de esquema. O executável **não tem assinatura digital**: o SmartScreen ou o antivírus pode avisar ou bloquear a abertura. Não há promessa de instalação sem alertas.
 
