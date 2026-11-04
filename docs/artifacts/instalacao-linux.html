@@ -1,72 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html class="no-js" lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instalação Linux (.deb) — Cara Core Ink Agenda</title>
-    <meta name="description" content="Como instalar o Ink Agenda 2.1.0 no Linux Ubuntu/Debian pelo pacote .deb, com runtime Java 25 embutido.">
-    <link rel="stylesheet" href="../assets/css/ink-portal.css">
-    <link rel="stylesheet" href="../assets/css/caracore-core-typography.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CaraCore Ink Agenda — instalação no Linux</title>
+<meta content="Passo a passo para instalar o pacote .deb do CaraCore Ink Agenda no Linux e validar o SHA-256." name="description"/>
+<meta content="CaraCore Ink Agenda — instalação no Linux" property="og:title"/>
+<meta content="Passo a passo para instalar o pacote .deb do CaraCore Ink Agenda no Linux e validar o SHA-256." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="https://ink.caracore.com.br/artifacts/instalacao-linux.html" property="og:url"/>
+<meta content="https://ink.caracore.com.br/assets/img/og-ink-neutral.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="CaraCore Ink Agenda — gestão offline para profissionais com hora marcada" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://ink.caracore.com.br/artifacts/instalacao-linux.html" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=optional" rel="stylesheet"/>
+<link href="../assets/css/portal-style.css" rel="stylesheet"/>
+<link href="../assets/css/ink-theme.css" rel="stylesheet"/>
+<meta content="#4f46e5" name="theme-color"/>
+<link href="../favicon.ico" rel="icon" sizes="any"/>
+<link href="../assets/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
+<script>document.documentElement.classList.remove("no-js");</script>
 </head>
-<body class="page-manual">
-    <div class="wrapper">
-        <nav class="breadcrumb" aria-label="Navegação">
-            <a href="../index.html">Loja</a> · <a href="../download.html">Download</a> · <span>Linux</span>
-        </nav>
-
-        <section class="ink-launch-banner" aria-label="Versão atual">
-            <p class="ink-launch-label">Instalação Linux · <span data-canal-versao>v2.1.0</span></p>
-            <p class="ink-launch-date">Pacote <code>.deb</code> · três perfis · Java 25 embutido · sem instalação de JDK.</p>
-        </section>
-
-        <header>
-            <h1>Instalação Linux — Cara Core Ink Agenda</h1>
-            <p class="subtitle">Ubuntu / Debian · 64 bits · pacote <code>.deb</code> com runtime Java 25 embutido (sem JDK)</p>
-        </header>
-        <p role="note">O pacote não tem assinatura digital. Faça backup dos dados antes de atualizar. O app não abre porta e não faz conexão em segundo plano: funciona offline. A única conexão é a verificação manual de atualizações, que envia apenas a versão do app e o sistema operacional.</p>
-
-        <section class="card" id="download">
-            <h2>Download (versão <span data-canal-versao>v2.1.0</span>)</h2>
-            <p>Arquivo oficial da release
-                <a data-canal-link="release" href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.1.0"><span data-canal-versao>v2.1.0</span></a>.
+<body class="smooth-scroll bg-gray-50" data-page="content">
+<nav aria-label="Navegação institucional" class="breadcrumb container mx-auto px-4 sm:px-6 lg:px-8 pt-3 text-sm text-gray-600">
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="../index.html">CaraCore Ink Agenda</a>
+<span aria-hidden="true"> · </span>
+<span class="text-gray-900">Instalação no Linux</span>
+</nav>
+<header class="portal-header bg-white shadow-sm sticky top-0 z-50">
+<nav aria-label="Menu da loja" class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a class="flex items-center space-x-3" href="../index.html">
+<img alt="" aria-hidden="true" class="w-12 h-12 rounded-lg" height="48" src="../assets/brand/caracore-logo.svg" width="48"/>
+<div>
+<p class="text-xl font-bold text-gray-900">CaraCore Ink Agenda</p>
+<p class="text-xs text-gray-600">Gestão offline para profissionais com hora marcada</p>
+</div>
+</a>
+<div class="hidden lg:flex absolute lg:static top-full left-0 w-full lg:w-auto bg-white p-4 lg:p-0 flex-col lg:flex-row gap-3 lg:gap-6 lg:items-center" id="mobile-menu">
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../index.html#dores">O que resolvemos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../index.html#jornada">Como funciona</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../index.html#planos">Planos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../versoes.html">Versões e download</a>
+<a class="cta-btn text-white px-6 py-2 rounded-lg font-semibold transition text-center" href="../download.html">
+                        Baixar <span class="ml-1 text-xs font-normal opacity-90">v2.1.0</span>
+</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="lg:hidden text-gray-700" id="mobile-menu-button">
+<span aria-hidden="true">☰</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="wrapper">
+<section aria-label="Versão atual" class="ink-launch-banner">
+<p class="ink-launch-label">Instalação Linux · <span data-canal-versao="">v2.1.0</span></p>
+<p class="ink-launch-date">Pacote <code>.deb</code> · três perfis · Java 25 embutido · sem instalação de JDK.</p>
+</section>
+<header class="ink-page-head">
+<h1>Instalação Linux — CaraCore Ink Agenda</h1>
+<p class="subtitle">Ubuntu / Debian · 64 bits · pacote <code>.deb</code> com runtime Java 25 embutido (sem JDK)</p>
+</header>
+<p role="note">O pacote não tem assinatura digital. Faça backup dos dados antes de atualizar. O app não abre porta e não faz conexão em segundo plano: funciona offline. A única conexão é a verificação manual de atualizações, que envia apenas a versão do app e o sistema operacional.</p>
+<section class="card" id="download">
+<h2>Download (versão <span data-canal-versao="">v2.1.0</span>)</h2>
+<p>Arquivo oficial da release
+                <a data-canal-link="release" href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.1.0"><span data-canal-versao="">v2.1.0</span></a>.
                 Valide com o
-                <a data-canal-link="checksums" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/checksum.sha256">checksum.sha256</a>
-                ou com o <code>checksum-linux-2.1.0.txt</code> da release.</p>
-            <p style="margin: 1rem 0;">
-                <a class="cta-btn cta-btn-primary" data-canal-link="linux-deb" style="display: inline-block; padding: 10px 22px; border-radius: 6px;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/agenda-ink-2.1.0-linux.deb">↓ agenda-ink-<span data-canal-versao-semv>2.1.0</span>-linux.deb</a>
-            </p>
-            <p class="artifact-sha">SHA256 DEB <span data-canal-sha="linux-deb">58c0d3f0024c9b4ef06fd727283439490325a6dca053a5d93e000169f870bf18</span></p>
-        </section>
-
-        <section class="card" id="instalar">
-            <h2>Instalar o pacote</h2>
-            <ol>
-                <li>Baixe <code>agenda-ink-<span data-canal-versao-semv>2.1.0</span>-linux.deb</code>.</li>
-                <li>Confira o SHA256 com o arquivo oficial da release.</li>
-                <li>No terminal, na pasta do download: <code data-canal-apt>sudo apt install ./agenda-ink-2.1.0-linux.deb</code>.</li>
-                <li>Abra o Ink Agenda pelo menu de aplicativos.</li>
-            </ol>
-            <p>O <code>apt</code> resolve as dependências do sistema; o runtime Java 25 já vai no pacote.</p>
-        </section>
-
-        <section class="card" id="dados">
-            <h2>Onde ficam os dados</h2>
-            <p>No Linux, o banco e os arquivos locais ficam em <code>~/.caracore-ink/</code> (banco <code>agenda.db</code>, backup automático em <code>backups/</code> e registro técnico em <code>logs/</code>). Reinstalar o pacote não apaga essa pasta. Faça backup antes de atualizar.</p>
-        </section>
-
-        <section class="card" id="primeiro-acesso">
-            <h2>Primeiro acesso</h2>
-            <p>O Ink Agenda não traz usuário de fábrica. Na primeira abertura, escolha o perfil do espaço — Tatuagem, Odontologia ou Beleza —, informe o celular do responsável e conclua a senha e a recuperação local. Guia completo em <a href="../primeiro-acesso.html">Primeiro acesso</a>.</p>
-        </section>
-
-        <section class="card" id="pwa">
-            <h2>Linux na linha 3.0</h2>
-            <p>O Desktop v2.1.0 é o canal atual para Linux. A linha 3.0 atenderá pelo navegador, <strong>não antes de 2028</strong>; a página do roadmap é <a href="../pwa.html">PWA</a>.</p>
-        </section>
-
-        <nav class="download-back">
-            <a href="../download.html">← Download</a>
-        </nav>
-    </div>
+                <a data-canal-link="checksums-linux" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/checksum-linux-2.1.0.txt">checksum-linux-<span data-canal-versao-semv="">2.1.0</span>.txt</a>
+                da release (o <a data-canal-link="checksums" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/checksum.sha256">checksum.sha256</a> cobre os arquivos do Windows).</p>
+<p style="margin: 1rem 0;">
+<a class="cta-btn cta-btn-primary" data-canal-link="linux-deb" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/agenda-ink-2.1.0-linux.deb" style="display: inline-block; padding: 10px 22px; border-radius: 6px;">↓ agenda-ink-<span data-canal-versao-semv="">2.1.0</span>-linux.deb</a>
+</p>
+<p class="artifact-sha">SHA256 DEB <span data-canal-sha="linux-deb">58c0d3f0024c9b4ef06fd727283439490325a6dca053a5d93e000169f870bf18</span></p>
+</section>
+<section class="card" id="instalar">
+<h2>Instalar o pacote</h2>
+<ol>
+<li>Baixe <code>agenda-ink-<span data-canal-versao-semv="">2.1.0</span>-linux.deb</code>.</li>
+<li>Confira o SHA256 com o arquivo oficial da release.</li>
+<li>No terminal, na pasta do download: <code data-canal-apt="">sudo apt install ./agenda-ink-2.1.0-linux.deb</code>.</li>
+<li>Abra o Ink Agenda pelo menu de aplicativos.</li>
+</ol>
+<p>O <code>apt</code> resolve as dependências do sistema; o runtime Java 25 já vai no pacote.</p>
+</section>
+<section class="card" id="dados">
+<h2>Onde ficam os dados</h2>
+<p>No Linux, o banco e os arquivos locais ficam em <code>~/.caracore-ink/</code> (banco <code>agenda.db</code>, backup automático em <code>backups/</code> e registro técnico em <code>logs/</code>). Reinstalar o pacote não apaga essa pasta. Faça backup antes de atualizar.</p>
+</section>
+<section class="card" id="primeiro-acesso">
+<h2>Primeiro acesso</h2>
+<p>O Ink Agenda não traz usuário de fábrica. Na primeira abertura, escolha o perfil do espaço — Tatuagem, Odontologia ou Beleza —, informe o celular do responsável e conclua a senha e a recuperação local. Guia completo em <a href="../primeiro-acesso.html">Primeiro acesso</a>.</p>
+</section>
+<section class="card" id="pwa">
+<h2>Linux na linha 3.0</h2>
+<p>O Desktop v2.1.0 é o canal atual para Linux. A linha 3.0 atenderá pelo navegador, <strong>não antes de 2028</strong>; a página do roadmap é <a href="../pwa.html">PWA</a>.</p>
+</section>
+<nav class="download-back">
+<a href="../download.html">← Download</a>
+</nav>
+</main>
+<footer class="ink-footer bg-gray-900 text-gray-300 py-12">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<p class="ink-footer-title text-white font-bold mb-2">Cara Core Informática</p>
+<p class="text-sm text-gray-400">Gestão offline para profissionais com hora marcada — estúdios de tatuagem, consultórios e espaços de beleza.</p>
+<p class="text-sm text-gray-400 mt-3">Dados de clientes no computador do espaço, com backup <code>.inkbak</code> criptografado.</p>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">O produto</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="../download.html">Download e versões</a></li>
+<li><a class="hover:text-white" href="../tecnologia.html">Tecnologia</a></li>
+<li><a class="hover:text-white" href="../manual.html">Manual</a></li>
+<li><a class="hover:text-white" href="https://wiki.caracore.com.br/projeto-ink.html" rel="noopener">Wiki do Ink</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a></li>
+<li><a class="hover:text-white" href="https://download.caracore.com.br/" rel="noopener">Central de downloads</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Documentação</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="../primeiro-acesso.html">Primeiro acesso</a></li>
+<li><a class="hover:text-white" href="../versoes.html">Notas da versão</a></li>
+<li><a class="hover:text-white" href="../pwa.html">Roadmap PWA</a></li>
+<li><a class="hover:text-white" href="../canal-feedback.html">Canal da loja</a></li>
+<li><a class="hover:text-white" href="mailto:suporte@caracore.com.br">suporte@caracore.com.br</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Contato</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="https://wa.me/5541999097797" rel="noopener noreferrer" target="_blank">WhatsApp</a></li>
+<li><a class="hover:text-white" href="https://t.me/chmulato" rel="noopener noreferrer" target="_blank">Telegram</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></li>
+</ul>
+</div>
+</div>
+<div class="ink-footer-bottom border-t border-gray-800 pt-6 text-sm text-gray-400">
+<p class="mb-2">Versão atual: Windows 10/11 e Linux <span data-canal-versao="">v2.1.0</span> · sem assinatura digital · macOS pela PWA, não antes de 2028.</p>
+<p>© 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></p>
+</div>
+</div>
+</footer>
+<script defer="" src="../assets/js/ink.js"></script>
+<script defer="" src="../assets/js/portal-nav.js"></script>
+<script defer="" src="../assets/js/release-channel.js"></script>
 </body>
 </html>

@@ -1,169 +1,237 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html class="no-js" lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instalação Windows — Cara Core Ink Agenda | Cara Core Informática</title>
-    <meta name="description" content="Instalação do Cara Core Ink Agenda no Windows 10/11: setup ou ZIP portátil, dados locais e aviso do SmartScreen.">
-    <link rel="stylesheet" href="../assets/css/ink-portal.css">
-    <link rel="stylesheet" href="../assets/css/loja.css">
-    <link rel="stylesheet" href="../assets/css/caracore-core-typography.css">
-    <link rel="stylesheet" href="../assets/css/caracore-institutional-components.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CaraCore Ink Agenda — instalação no Windows</title>
+<meta content="Passo a passo para instalar ou extrair o CaraCore Ink Agenda no Windows 10/11 e validar o SHA-256." name="description"/>
+<meta content="CaraCore Ink Agenda — instalação no Windows" property="og:title"/>
+<meta content="Passo a passo para instalar ou extrair o CaraCore Ink Agenda no Windows 10/11 e validar o SHA-256." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="https://ink.caracore.com.br/artifacts/instalacao-windows.html" property="og:url"/>
+<meta content="https://ink.caracore.com.br/assets/img/og-ink-neutral.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="CaraCore Ink Agenda — gestão offline para profissionais com hora marcada" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://ink.caracore.com.br/artifacts/instalacao-windows.html" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=optional" rel="stylesheet"/>
+<link href="../assets/css/portal-style.css" rel="stylesheet"/>
+<link href="../assets/css/ink-theme.css" rel="stylesheet"/>
+<meta content="#4f46e5" name="theme-color"/>
+<link href="../favicon.ico" rel="icon" sizes="any"/>
+<link href="../assets/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
+<script>document.documentElement.classList.remove("no-js");</script>
 </head>
-<body class="page-manual">
-    <div class="wrapper">
-        <nav class="breadcrumb" aria-label="Navegação">
-            <a href="../index.html">Cara Core Ink Agenda — Loja</a>
-            <span> · </span>
-            <a href="../download.html">Download</a>
-            <span> · </span>
-            <span>Instalação Windows</span>
-        </nav>
-
-        <section class="ink-launch-banner" aria-label="Versão atual">
-            <p class="ink-launch-label">Instalação Windows · <span data-canal-versao>v2.1.0</span></p>
-            <p class="ink-launch-date">Setup + ZIP portátil · três perfis · Java 25 embutido · sem instalação de JDK.</p>
-        </section>
-
-        <header>
-            <h1>Instalação Windows — Cara Core Ink Agenda</h1>
-            <p class="subtitle">Windows 10 / 11 · 64 bits · setup ou ZIP portátil · Java 25 embutido (sem JDK)</p>
-        </header>
-        <p role="note">Os executáveis não têm assinatura digital. O SmartScreen ou antivírus pode avisar ou bloquear; faça backup dos dados antes de atualizar. Não há promessa de instalação sem alertas.</p>
-
-        <p style="font-size: 0.92rem; margin: 0 0 1.25rem;">
-            <a href="#primeiro-acesso">Primeiro acesso</a> ·
+<body class="smooth-scroll bg-gray-50" data-page="content">
+<nav aria-label="Navegação institucional" class="breadcrumb container mx-auto px-4 sm:px-6 lg:px-8 pt-3 text-sm text-gray-600">
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="../index.html">CaraCore Ink Agenda</a>
+<span aria-hidden="true"> · </span>
+<span class="text-gray-900">Instalação no Windows</span>
+</nav>
+<header class="portal-header bg-white shadow-sm sticky top-0 z-50">
+<nav aria-label="Menu da loja" class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a class="flex items-center space-x-3" href="../index.html">
+<img alt="" aria-hidden="true" class="w-12 h-12 rounded-lg" height="48" src="../assets/brand/caracore-logo.svg" width="48"/>
+<div>
+<p class="text-xl font-bold text-gray-900">CaraCore Ink Agenda</p>
+<p class="text-xs text-gray-600">Gestão offline para profissionais com hora marcada</p>
+</div>
+</a>
+<div class="hidden lg:flex absolute lg:static top-full left-0 w-full lg:w-auto bg-white p-4 lg:p-0 flex-col lg:flex-row gap-3 lg:gap-6 lg:items-center" id="mobile-menu">
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../index.html#dores">O que resolvemos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../index.html#jornada">Como funciona</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../index.html#planos">Planos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../versoes.html">Versões e download</a>
+<a class="cta-btn text-white px-6 py-2 rounded-lg font-semibold transition text-center" href="../download.html">
+                        Baixar <span class="ml-1 text-xs font-normal opacity-90">v2.1.0</span>
+</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="lg:hidden text-gray-700" id="mobile-menu-button">
+<span aria-hidden="true">☰</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="wrapper">
+<section aria-label="Versão atual" class="ink-launch-banner">
+<p class="ink-launch-label">Instalação Windows · <span data-canal-versao="">v2.1.0</span></p>
+<p class="ink-launch-date">Setup + ZIP portátil · três perfis · Java 25 embutido · sem instalação de JDK.</p>
+</section>
+<header class="ink-page-head">
+<h1>Instalação Windows — CaraCore Ink Agenda</h1>
+<p class="subtitle">Windows 10 / 11 · 64 bits · setup ou ZIP portátil · Java 25 embutido (sem JDK)</p>
+</header>
+<p role="note">Os executáveis não têm assinatura digital. O SmartScreen ou antivírus pode avisar ou bloquear; faça backup dos dados antes de atualizar. Não há promessa de instalação sem alertas.</p>
+<p style="font-size: 0.92rem; margin: 0 0 1.25rem;">
+<a href="#primeiro-acesso">Primeiro acesso</a> ·
             <a href="../primeiro-acesso.html">página dedicada</a> ·
             <a href="#backup">Backup</a> ·
             <a href="../download.html">Download e SHA256</a>
-        </p>
-
-        <div class="manual-content">
-            <section class="manual-card manual-card--intro" id="requisitos">
-                <h2>Requisitos</h2>
-                <ul>
-                    <li><strong>Windows 10</strong> ou <strong>11</strong> (64 bits)</li>
-                    <li>Cerca de <strong>200 MB</strong> livres em disco</li>
-                    <li><strong>Sem JDK:</strong> o runtime Java 25 vem no pacote</li>
-                    <li>Internet para baixar e, depois, apenas se você clicar em <strong>Verificar atualizações</strong>. Fora isso, o app funciona <strong>offline</strong>: não abre porta e não faz conexão em segundo plano</li>
-                    <li>ZIP portátil não exige administrador. O setup pode pedir confirmação do Windows</li>
-                </ul>
-            </section>
-
-            <section class="manual-card" id="download">
-                <h2>Download (versão <span data-canal-versao>v2.1.0</span>)</h2>
-                <p>Arquivos oficiais da release
-                    <a data-canal-link="release" href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.1.0"><span data-canal-versao>v2.1.0</span></a>.
+</p>
+<div class="manual-content">
+<section class="manual-card manual-card--intro" id="requisitos">
+<h2>Requisitos</h2>
+<ul>
+<li><strong>Windows 10</strong> ou <strong>11</strong> (64 bits)</li>
+<li>Cerca de <strong>200 MB</strong> livres em disco</li>
+<li><strong>Sem JDK:</strong> o runtime Java 25 vem no pacote</li>
+<li>Internet para baixar e, depois, apenas se você clicar em <strong>Verificar atualizações</strong>. Fora isso, o app funciona <strong>offline</strong>: não abre porta e não faz conexão em segundo plano</li>
+<li>ZIP portátil não exige administrador. O setup pode pedir confirmação do Windows</li>
+</ul>
+</section>
+<section class="manual-card" id="download">
+<h2>Download (versão <span data-canal-versao="">v2.1.0</span>)</h2>
+<p>Arquivos oficiais da release
+                    <a data-canal-link="release" href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.1.0"><span data-canal-versao="">v2.1.0</span></a>.
                     Valide com o
                     <a data-canal-link="checksums" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/checksum.sha256">checksum.sha256</a>
                     (os mesmos SHA estão em <a href="../download.html">download.html</a>).</p>
-                <p style="margin: 1rem 0; display: flex; flex-wrap: wrap; gap: 0.75rem;">
-                    <a class="cta-btn cta-btn-primary" data-canal-link="windows-setup" style="display: inline-block; padding: 10px 22px; border-radius: 6px;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/AgendaInk-2.1.0-windows-setup.exe">↓ AgendaInk-<span data-canal-versao-semv>2.1.0</span>-windows-setup.exe</a>
-                    <a class="cta-btn cta-btn-secondary" data-canal-link="windows-zip" style="display: inline-block; padding: 10px 22px; border-radius: 6px;" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/AgendaInk-2.1.0-windows.zip">↓ AgendaInk-<span data-canal-versao-semv>2.1.0</span>-windows.zip</a>
-                </p>
-                <p class="artifact-sha">SHA256 setup <span data-canal-sha="windows-setup">81fd338fdc3ae8dbcb406ced7bcbb9a54fb05a447c28d999c6c5482a1aed4dbd</span></p>
-                <p class="artifact-sha">SHA256 ZIP <span data-canal-sha="windows-zip">4e8b66667d875561ba6ee67295724a15c70051928256423a316f8e89055e2551</span></p>
-                <p>Versões anteriores e notas: <a href="../versoes.html">Versões</a>.</p>
-            </section>
-
-            <section class="manual-card" id="setup">
-                <h2>Instalar com o setup (.exe)</h2>
-                <ol>
-                    <li>Baixe <code>AgendaInk-<span data-canal-versao-semv>2.1.0</span>-windows-setup.exe</code>.</li>
-                    <li>Confira o SHA256 com o <code>checksum.sha256</code> da versão baixada.</li>
-                    <li>Execute o instalador e siga o assistente. Faça backup dos dados antes de testar.</li>
-                    <li>Abra o Ink Agenda pelo atalho ou por <code>AgendaInk.exe</code>.</li>
-                </ol>
-            </section>
-
-            <section class="manual-card" id="zip">
-                <h2>Usar o ZIP (portable)</h2>
-                <ol>
-                    <li>Baixe <code>AgendaInk-<span data-canal-versao-semv>2.1.0</span>-windows.zip</code>.</li>
-                    <li>Opcional: confira o SHA256.</li>
-                    <li>Clique direito → Extrair aqui.</li>
-                    <li>Abra a pasta <code>AgendaInk\</code> extraída e execute <strong><code>AgendaInk.exe</code></strong>.</li>
-                </ol>
-            </section>
-
-            <section class="manual-card" id="dados">
-                <h2>Onde ficam os dados</h2>
-                <p>Na primeira execução o banco é criado em:</p>
-                <p><code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>agenda.db</code></p>
-                <p>Reinstalar o setup ou apagar a pasta do ZIP <strong>não apaga</strong> essa pasta. A atualização foi projetada para preservar a agenda existente; faça backup antes de atualizar.</p>
-                <p>Na mesma pasta ficam a subpasta <code>backups\</code> (backup automático) e a subpasta <code>logs\</code> (registro técnico, sem senha, telefone ou e-mail; 5 arquivos de até 1 MB, o mais antigo é apagado).</p>
-            </section>
-
-            <section class="manual-card" id="antivirus">
-                <h2>Aviso de antivírus / SmartScreen</h2>
-                <p>Os executáveis não têm assinatura digital. O SmartScreen ou o antivírus pode avisar ou bloquear ao abrir <code>AgendaInk.exe</code> ou o setup. Não há promessa de instalação sem alertas.</p>
-                <ul>
-                    <li>No SmartScreen: <strong>Mais informações</strong> → <strong>Executar mesmo assim</strong>.</li>
-                    <li>Só execute depois de conferir o SHA256 oficial.</li>
-                </ul>
-            </section>
-
-            <section class="manual-card" id="primeiro-acesso">
-                <h2>Primeiro acesso</h2>
-                <p>O Ink Agenda <strong>não traz usuário pronto</strong>. Não existe login <code>admin</code>. Isto <strong>não é</strong> o PDV Cara Core (nem <code>admin</code>/<code>admin</code> do Java, nem <code>admin</code>/<code>admin123</code> do Rust).</p>
-                <p>Não é e-mail. Não é conta Cara Core na nuvem. Tudo fica neste computador.</p>
-
-                <h3>O que a primeira abertura mostra</h3>
-                <ol>
-                    <li>Abra <code>AgendaInk.exe</code> (Java 25 já vem no pacote). Um aviso abre junto com a janela: “Seus dados ficam só neste computador. O Ink Agenda está pronto para uso.” Clique em OK.</li>
-                    <li>A primeira tela é <strong>Passo 1 de 3 — Identificação</strong> (“Bem-vindo ao Ink Agenda”). Escolha o <strong>perfil do seu espaço</strong> — <strong>Tatuagem &amp; Arte Corporal</strong>, <strong>Odontologia &amp; Saúde</strong> ou <strong>Beleza &amp; Estética</strong> —, informe o <strong>celular do responsável</strong> (máscara <code>(11) 99999-9999</code>) e clique em <strong>Continuar</strong>. A escolha ajusta a paleta e o vocabulário e pode ser trocada depois em <strong>Config → Identidade e Visual do Posto</strong>.</li>
-                    <li><strong>Passo 2 de 3 — Senha e recuperação local:</strong> escolha o perfil de acesso (<strong>Proprietário</strong>, <strong>Tatuador Sr</strong> ou <strong>Tatuador Jr</strong>), defina a <strong>senha</strong> (mínimo 8 caracteres, com confirmação) e a <strong>frase de recuperação</strong> (mínimo 10 caracteres, com confirmação). Recomendado: gerar os 8 códigos de emergência (anote — o app mostra uma vez). Clique em <strong>Concluir configuração</strong>.</li>
-                    <li><strong>Passo 3:</strong> a tela de login aparece só agora. Entre com o <strong>mesmo celular</strong> e a <strong>senha</strong> que acabou de criar.</li>
-                </ol>
-
-                <h3>Já existe usuário neste Windows</h3>
-                <p>Se <code>agenda.db</code> já tiver credencial, a primeira tela é o login (celular e senha). Pode marcar “Lembrar da minha senha” neste dispositivo (até 12 horas ou até sair). Quem usava essa opção em uma versão anterior digita a senha mais uma vez. Após 5 tentativas erradas o acesso bloqueia cerca de 10 minutos.</p>
-
-                <h3>Esqueci minha senha</h3>
-                <p>Não há recuperação por SMS, e-mail ou internet. No login, <strong>Esqueci minha senha</strong> gera um código de 6 dígitos <strong>só nesta tela, neste computador</strong> (válido por 15 minutos). Exige a frase de recuperação definida no primeiro acesso. Se você gerou códigos de emergência, um deles também serve (uso único). Sem a frase (e sem código de emergência), o caminho honesto é restaurar um backup ou começar de novo apagando a pasta de dados — isso apaga a agenda deste PC.</p>
-
-                <h3>Depois de entrar</h3>
-                <ul>
-                    <li>1 cliente (aba <strong>Clientes</strong>)</li>
-                    <li>1 agendamento com horário, duração e valor</li>
-                    <li>1 receita ou despesa</li>
-                    <li>1 backup com senha (<strong>Config → Backup do estúdio</strong>)</li>
-                </ul>
-            </section>
-
-            <section class="manual-card" id="backup">
-                <h2>Backup</h2>
-                <h3>Backup com senha (.inkbak)</h3>
-                <p>Em <strong>Config → Backup do estúdio → Salvar backup com senha</strong> você escolhe a pasta e o nome do arquivo (sugestão: <code>backup_AAAA-MM-DD_HH-MM.inkbak</code> em <code>Documentos\AgendaInk\Backups</code>). Se já existir um arquivo com o mesmo nome, o app grava ao lado com “(2)”, “(3)”… — nunca sobrescreve. O arquivo é criptografado com a senha que você digitar (mínimo 8 caracteres). <strong>Sem essa senha o backup não abre.</strong> Ao terminar, o app mostra o caminho onde salvou.</p>
-                <p>Para restaurar: <strong>Restaurar backup</strong>, escolha o arquivo e digite a senha. Backups <code>.inkbak</code> da v2.0.0 (sem senha) também restauram. O app confere o arquivo antes de trocar os dados e fecha ao terminar; abra de novo para continuar.</p>
-                <h3>Backup automático</h3>
-                <p>Ligado de fábrica: a cada hora e ao fechar o app, uma cópia <code>agenda_AAAA-MM-DD_HH-MM-SS.db.gz</code> vai para <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>backups\<wbr></code>. O app guarda as <strong>30 mais recentes</strong> e apaga as mais antigas. Essas cópias ficam neste computador e não têm senha. Para desligar ou religar, desmarque ou marque <strong>“Fazer backup automático a cada hora e ao fechar”</strong> em <strong>Config → Backup do estúdio</strong>.</p>
-                <h3>Backup CSV</h3>
-                <p>Em <strong>Config</strong> há também a exportação CSV compactada e criptografada com senha. O CSV leva agendamentos (com valor e duração) e os lançamentos do Financeiro; clientes, orçamentos, cobranças e recebimentos ficam só no backup <code>.inkbak</code>. Importar o mesmo arquivo duas vezes não duplica nada; horários em conflito viram aviso e lista de ignorados.</p>
-            </section>
-
-            <section class="manual-card" id="desinstalacao">
-                <h2>Desinstalação</h2>
-                <p><strong>Setup:</strong> use Aplicativos do Windows para remover o programa. <strong>ZIP:</strong> apague a pasta extraída. Os dados em <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr></code> só saem se você apagar essa pasta.</p>
-            </section>
-
-            <section class="manual-card" id="nav">
-                <h2>Próximos passos</h2>
-                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
-                    <a href="../primeiro-acesso.html" class="cta-btn cta-btn-primary" style="padding: 9px 18px; font-size: 0.9rem;">Primeiro acesso</a>
-                    <a href="../manual.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Manual</a>
-                    <a href="../download.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Download</a>
-                    <a href="https://wiki.caracore.com.br/projeto-ink.html#primeiros-passos" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Wiki — primeiros passos</a>
-                    <a href="../canal-feedback.html" class="cta-btn cta-btn-secondary" style="padding: 9px 18px; font-size: 0.9rem;">Canal de feedback</a>
-                </div>
-            </section>
-        </div>
-
-        <footer>
-            <p><a href="../download.html">Download</a> · <a href="../manual.html">Manual</a> · <a href="../versoes.html">Versões</a> · <a href="../tecnologia.html">Tecnologia</a> · <a href="../pwa.html">Roadmap</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Wiki</a> · <a href="../canal-feedback.html">Contato</a></p>
-            <p class="footer-legal">Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/">caracore.com.br</a></p>
-        </footer>
-    </div>
-    <script src="../assets/js/release-channel.js" defer></script>
+<p style="margin: 1rem 0; display: flex; flex-wrap: wrap; gap: 0.75rem;">
+<a class="cta-btn cta-btn-primary" data-canal-link="windows-setup" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/AgendaInk-2.1.0-windows-setup.exe" style="display: inline-block; padding: 10px 22px; border-radius: 6px;">↓ AgendaInk-<span data-canal-versao-semv="">2.1.0</span>-windows-setup.exe</a>
+<a class="cta-btn cta-btn-secondary" data-canal-link="windows-zip" href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/AgendaInk-2.1.0-windows.zip" style="display: inline-block; padding: 10px 22px; border-radius: 6px;">↓ AgendaInk-<span data-canal-versao-semv="">2.1.0</span>-windows.zip</a>
+</p>
+<p class="artifact-sha">SHA256 setup <span data-canal-sha="windows-setup">81fd338fdc3ae8dbcb406ced7bcbb9a54fb05a447c28d999c6c5482a1aed4dbd</span></p>
+<p class="artifact-sha">SHA256 ZIP <span data-canal-sha="windows-zip">4e8b66667d875561ba6ee67295724a15c70051928256423a316f8e89055e2551</span></p>
+<p>Versões anteriores e notas: <a href="../versoes.html">Versões</a>.</p>
+</section>
+<section class="manual-card" id="setup">
+<h2>Instalar com o setup (.exe)</h2>
+<ol>
+<li>Baixe <code>AgendaInk-<span data-canal-versao-semv="">2.1.0</span>-windows-setup.exe</code>.</li>
+<li>Confira o SHA256 com o <code>checksum.sha256</code> da versão baixada.</li>
+<li>Execute o instalador e siga o assistente. Faça backup dos dados antes de testar.</li>
+<li>Abra o Ink Agenda pelo atalho ou por <code>AgendaInk.exe</code>.</li>
+</ol>
+</section>
+<section class="manual-card" id="zip">
+<h2>Usar o ZIP (portable)</h2>
+<ol>
+<li>Baixe <code>AgendaInk-<span data-canal-versao-semv="">2.1.0</span>-windows.zip</code>.</li>
+<li>Opcional: confira o SHA256.</li>
+<li>Clique direito → Extrair aqui.</li>
+<li>Abra a pasta <code>AgendaInk\</code> extraída e execute <strong><code>AgendaInk.exe</code></strong>.</li>
+</ol>
+</section>
+<section class="manual-card" id="dados">
+<h2>Onde ficam os dados</h2>
+<p>Na primeira execução o banco é criado em:</p>
+<p><code>%LOCALAPPDATA%\<wbr/>CaraCore\<wbr/>AgendaInk\<wbr/>agenda.db</code></p>
+<p>Reinstalar o setup ou apagar a pasta do ZIP <strong>não apaga</strong> essa pasta. A atualização foi projetada para preservar a agenda existente; faça backup antes de atualizar.</p>
+<p>Na mesma pasta ficam a subpasta <code>backups\</code> (backup automático) e a subpasta <code>logs\</code> (registro técnico, sem senha, telefone ou e-mail; 5 arquivos de até 1 MB, o mais antigo é apagado).</p>
+</section>
+<section class="manual-card" id="antivirus">
+<h2>Aviso de antivírus / SmartScreen</h2>
+<p>Os executáveis não têm assinatura digital. O SmartScreen ou o antivírus pode avisar ou bloquear ao abrir <code>AgendaInk.exe</code> ou o setup. Não há promessa de instalação sem alertas.</p>
+<ul>
+<li>No SmartScreen: <strong>Mais informações</strong> → <strong>Executar mesmo assim</strong>.</li>
+<li>Só execute depois de conferir o SHA256 oficial.</li>
+</ul>
+</section>
+<section class="manual-card" id="primeiro-acesso">
+<h2>Primeiro acesso</h2>
+<p>O Ink Agenda <strong>não traz usuário pronto</strong>. Não existe login <code>admin</code>. Isto <strong>não é</strong> o PDV Cara Core (nem <code>admin</code>/<code>admin</code> do Java, nem <code>admin</code>/<code>admin123</code> do Rust).</p>
+<p>Não é e-mail. Não é conta Cara Core na nuvem. Tudo fica neste computador.</p>
+<h3>O que a primeira abertura mostra</h3>
+<ol>
+<li>Abra <code>AgendaInk.exe</code> (Java 25 já vem no pacote). Um aviso abre junto com a janela: “Seus dados ficam só neste computador. O Ink Agenda está pronto para uso.” Clique em OK.</li>
+<li>A primeira tela é <strong>Passo 1 de 3 — Identificação</strong> (“Bem-vindo ao Ink Agenda”). Escolha o <strong>perfil do seu espaço</strong> — <strong>Tatuagem &amp; Arte Corporal</strong>, <strong>Odontologia &amp; Saúde</strong> ou <strong>Beleza &amp; Estética</strong> —, informe o <strong>celular do responsável</strong> (máscara <code>(11) 99999-9999</code>) e clique em <strong>Continuar</strong>. A escolha ajusta a paleta e o vocabulário e pode ser trocada depois em <strong>Config → Identidade e Visual do Posto</strong>.</li>
+<li><strong>Passo 2 de 3 — Senha e recuperação local:</strong> escolha o perfil de acesso (<strong>Proprietário</strong>, <strong>Tatuador Sr</strong> ou <strong>Tatuador Jr</strong>), defina a <strong>senha</strong> (mínimo 8 caracteres, com confirmação) e a <strong>frase de recuperação</strong> (mínimo 10 caracteres, com confirmação). Recomendado: gerar os 8 códigos de emergência (anote — o app mostra uma vez). Clique em <strong>Concluir configuração</strong>.</li>
+<li><strong>Passo 3:</strong> a tela de login aparece só agora. Entre com o <strong>mesmo celular</strong> e a <strong>senha</strong> que acabou de criar.</li>
+</ol>
+<h3>Já existe usuário neste Windows</h3>
+<p>Se <code>agenda.db</code> já tiver credencial, a primeira tela é o login (celular e senha). Pode marcar “Lembrar da minha senha” neste dispositivo (até 12 horas ou até sair). Quem usava essa opção em uma versão anterior digita a senha mais uma vez. Após 5 tentativas erradas o acesso bloqueia cerca de 10 minutos.</p>
+<h3>Esqueci minha senha</h3>
+<p>Não há recuperação por SMS, e-mail ou internet. No login, <strong>Esqueci minha senha</strong> gera um código de 6 dígitos <strong>só nesta tela, neste computador</strong> (válido por 15 minutos). Exige a frase de recuperação definida no primeiro acesso. Se você gerou códigos de emergência, um deles também serve (uso único). Sem a frase (e sem código de emergência), o caminho honesto é restaurar um backup ou começar de novo apagando a pasta de dados — isso apaga a agenda deste PC.</p>
+<h3>Depois de entrar</h3>
+<ul>
+<li>1 cliente (aba <strong>Clientes</strong>)</li>
+<li>1 agendamento com horário, duração e valor</li>
+<li>1 receita ou despesa</li>
+<li>1 backup com senha (<strong>Config → Backup do estúdio</strong>)</li>
+</ul>
+</section>
+<section class="manual-card" id="backup">
+<h2>Backup</h2>
+<h3>Backup com senha (.inkbak)</h3>
+<p>Em <strong>Config → Backup do estúdio → Salvar backup com senha</strong> você escolhe a pasta e o nome do arquivo (sugestão: <code>backup_AAAA-MM-DD_HH-MM.inkbak</code> em <code>Documentos\AgendaInk\Backups</code>). Se já existir um arquivo com o mesmo nome, o app grava ao lado com “(2)”, “(3)”… — nunca sobrescreve. O arquivo é criptografado com a senha que você digitar (mínimo 8 caracteres). <strong>Sem essa senha o backup não abre.</strong> Ao terminar, o app mostra o caminho onde salvou.</p>
+<p>Para restaurar: <strong>Restaurar backup</strong>, escolha o arquivo e digite a senha. Backups <code>.inkbak</code> da v2.0.0 (sem senha) também restauram. O app confere o arquivo antes de trocar os dados e fecha ao terminar; abra de novo para continuar.</p>
+<h3>Backup automático</h3>
+<p>Ligado de fábrica: a cada hora e ao fechar o app, uma cópia <code>agenda_AAAA-MM-DD_HH-MM-SS.db.gz</code> vai para <code>%LOCALAPPDATA%\<wbr/>CaraCore\<wbr/>AgendaInk\<wbr/>backups\<wbr/></code>. O app guarda as <strong>30 mais recentes</strong> e apaga as mais antigas. Essas cópias ficam neste computador e não têm senha. Para desligar ou religar, desmarque ou marque <strong>“Fazer backup automático a cada hora e ao fechar”</strong> em <strong>Config → Backup do estúdio</strong>.</p>
+<h3>Backup CSV</h3>
+<p>Em <strong>Config</strong> há também a exportação CSV compactada e criptografada com senha. O CSV leva agendamentos (com valor e duração) e os lançamentos do Financeiro; clientes, orçamentos, cobranças e recebimentos ficam só no backup <code>.inkbak</code>. Importar o mesmo arquivo duas vezes não duplica nada; horários em conflito viram aviso e lista de ignorados.</p>
+</section>
+<section class="manual-card" id="desinstalacao">
+<h2>Desinstalação</h2>
+<p><strong>Setup:</strong> use Aplicativos do Windows para remover o programa. <strong>ZIP:</strong> apague a pasta extraída. Os dados em <code>%LOCALAPPDATA%\<wbr/>CaraCore\<wbr/>AgendaInk\<wbr/></code> só saem se você apagar essa pasta.</p>
+</section>
+<section class="manual-card" id="nav">
+<h2>Próximos passos</h2>
+<div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
+<a class="cta-btn cta-btn-primary" href="../primeiro-acesso.html" style="padding: 9px 18px; font-size: 0.9rem;">Primeiro acesso</a>
+<a class="cta-btn cta-btn-secondary" href="../manual.html" style="padding: 9px 18px; font-size: 0.9rem;">Manual</a>
+<a class="cta-btn cta-btn-secondary" href="../download.html" style="padding: 9px 18px; font-size: 0.9rem;">Download</a>
+<a class="cta-btn cta-btn-secondary" href="https://wiki.caracore.com.br/projeto-ink.html#primeiros-passos" style="padding: 9px 18px; font-size: 0.9rem;">Wiki — primeiros passos</a>
+<a class="cta-btn cta-btn-secondary" href="../canal-feedback.html" style="padding: 9px 18px; font-size: 0.9rem;">Canal de feedback</a>
+</div>
+</section>
+</div>
+</main>
+<footer class="ink-footer bg-gray-900 text-gray-300 py-12">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<p class="ink-footer-title text-white font-bold mb-2">Cara Core Informática</p>
+<p class="text-sm text-gray-400">Gestão offline para profissionais com hora marcada — estúdios de tatuagem, consultórios e espaços de beleza.</p>
+<p class="text-sm text-gray-400 mt-3">Dados de clientes no computador do espaço, com backup <code>.inkbak</code> criptografado.</p>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">O produto</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="../download.html">Download e versões</a></li>
+<li><a class="hover:text-white" href="../tecnologia.html">Tecnologia</a></li>
+<li><a class="hover:text-white" href="../manual.html">Manual</a></li>
+<li><a class="hover:text-white" href="https://wiki.caracore.com.br/projeto-ink.html" rel="noopener">Wiki do Ink</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a></li>
+<li><a class="hover:text-white" href="https://download.caracore.com.br/" rel="noopener">Central de downloads</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Documentação</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="../primeiro-acesso.html">Primeiro acesso</a></li>
+<li><a class="hover:text-white" href="../versoes.html">Notas da versão</a></li>
+<li><a class="hover:text-white" href="../pwa.html">Roadmap PWA</a></li>
+<li><a class="hover:text-white" href="../canal-feedback.html">Canal da loja</a></li>
+<li><a class="hover:text-white" href="mailto:suporte@caracore.com.br">suporte@caracore.com.br</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Contato</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="https://wa.me/5541999097797" rel="noopener noreferrer" target="_blank">WhatsApp</a></li>
+<li><a class="hover:text-white" href="https://t.me/chmulato" rel="noopener noreferrer" target="_blank">Telegram</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></li>
+</ul>
+</div>
+</div>
+<div class="ink-footer-bottom border-t border-gray-800 pt-6 text-sm text-gray-400">
+<p class="mb-2">Versão atual: Windows 10/11 e Linux <span data-canal-versao="">v2.1.0</span> · sem assinatura digital · macOS pela PWA, não antes de 2028.</p>
+<p>© 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></p>
+</div>
+</div>
+</footer>
+<script defer="" src="../assets/js/ink.js"></script>
+<script defer="" src="../assets/js/portal-nav.js"></script>
+<script defer="" src="../assets/js/release-channel.js"></script>
 </body>
 </html>

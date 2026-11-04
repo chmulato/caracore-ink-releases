@@ -1,245 +1,236 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html class="no-js" lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual do usuário — Cara Core Ink Agenda | Cara Core Informática</title>
-    <meta name="description" content="Manual do Cara Core Ink Agenda para Windows: primeiro acesso, agenda, clientes, orçamentos, finanças e backup.">
-    <link rel="stylesheet" href="assets/css/loja.css">
-    <link rel="stylesheet" href="assets/css/evolution-status.css">
-    <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
-    <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
-    <link rel="stylesheet" href="assets/css/ink-theme.css">
-    <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CaraCore Ink Agenda — manual do operador</title>
+<meta content="Manual do CaraCore Ink Agenda: primeiro acesso, agenda, clientes, orçamentos, finanças, painel de resultados e backup." name="description"/>
+<meta content="CaraCore Ink Agenda — manual do operador" property="og:title"/>
+<meta content="Manual do CaraCore Ink Agenda: primeiro acesso, agenda, clientes, orçamentos, finanças, painel de resultados e backup." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="https://ink.caracore.com.br/manual.html" property="og:url"/>
+<meta content="https://ink.caracore.com.br/assets/img/og-ink-neutral.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="CaraCore Ink Agenda — gestão offline para profissionais com hora marcada" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://ink.caracore.com.br/manual.html" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=optional" rel="stylesheet"/>
+<link href="assets/css/portal-style.css" rel="stylesheet"/>
+<link href="assets/css/ink-theme.css" rel="stylesheet"/>
+<meta content="#4f46e5" name="theme-color"/>
+<link href="favicon.ico" rel="icon" sizes="any"/>
+<link href="assets/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
+<script>document.documentElement.classList.remove("no-js");</script>
 </head>
-<body class="page-manual">
-    <nav class="cc-breadcrumb" aria-label="Navegação institucional">
-        <a href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
-        <span aria-hidden="true"> · </span>
-        <a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a>
-        <span aria-hidden="true"> · </span>
-        <span class="cc-breadcrumb-current">CaraCore Ink Agenda</span>
-    </nav>
-
-    <header class="cc-header">
-        <nav class="cc-header-nav" aria-label="Menu da loja">
-            <div class="cc-header-inner">
-                <a href="index.html" class="cc-brand">
-                    <img src="assets/brand/caracore-logo.svg" alt="" width="48" height="48" aria-hidden="true">
-                    <span class="cc-brand-text">
-                        <span class="cc-brand-title">CaraCore Ink Agenda</span>
-                        <span class="cc-brand-sub">Gestão offline para profissionais com hora marcada</span>
-                    </span>
-                </a>
-                <button type="button" class="cc-menu-toggle" id="cc-menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="cc-menu">
-                    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-                </button>
-                <div class="cc-menu" id="cc-menu">
-                    <a href="index.html#novidades">Novidades v2.1.0</a>
-                    <a href="index.html#especialidades">Especialidades</a>
-                    <a href="index.html#dados">Proteção de dados</a>
-                    <a href="manual.html">Manual</a>
-                    <a href="tecnologia.html">Tecnologia</a>
-                    <a href="versoes.html" class="cta-link">Notas da versão</a>
-                    <a href="download.html" class="cta-btn">Baixar para Windows</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <div class="wrapper">
-        <section class="ink-launch-banner" aria-label="Versão">
-            <p class="ink-launch-label">Manual · <span data-canal-versao>v2.1.0</span></p>
-            <p class="ink-launch-date">Os executáveis não têm assinatura digital; o SmartScreen ou antivírus pode avisar ou bloquear a abertura.</p>
-        </section>
-
-        <header>
-            <h1>Manual do usuário — Ink Agenda</h1>
-            <p class="subtitle">Primeiro acesso, agenda do dia, calendário, clientes, orçamentos, financeiro, painel de resultados e backup.</p>
-        </header>
-
-        <nav class="manual-toc" aria-label="Índice do manual">
-            <h2 class="manual-toc-title">Índice</h2>
-            <ul class="manual-toc-list">
-                <li><a href="#visao-geral">Visão geral</a></li>
-                <li><a href="#requisitos-instalacao">Requisitos e instalação</a></li>
-                <li><a href="#login">Primeiro acesso e login</a></li>
-                <li><a href="#agenda">Hoje e calendário</a></li>
-                <li><a href="#clientes">Clientes</a></li>
-                <li><a href="#orcamentos">Orçamentos</a></li>
-                <li><a href="#financeiro">Finanças</a></li>
-                <li><a href="#painel">Dashboard (resultados)</a></li>
-                <li><a href="#backup">Backup e restauração</a></li>
-                <li><a href="#troubleshooting">Problemas comuns</a></li>
-            </ul>
-        </nav>
-
-        <div class="manual-content">
-            <section class="manual-card manual-card--intro" id="visao-geral">
-                <h2>Visão geral</h2>
-                <p>O <strong>Ink Agenda</strong> é um aplicativo desktop para profissionais com hora marcada: estúdios de tatuagem, consultórios odontológicos e espaços de beleza. Agenda, clientes, orçamentos, entradas e saídas e o desempenho do negócio, com um executável e três perfis — <strong>Tatuagem</strong>, <strong>Odontologia</strong> e <strong>Beleza</strong> — que adaptam paleta e vocabulário (sessão/consulta/procedimento). Os dados ficam no seu computador (SQLite local). O app funciona offline e não faz conexão em segundo plano: a única conexão é a verificação manual de atualizações, que envia apenas a versão do app e o sistema operacional — nunca dados de clientes. Veja <a href="index.html#dados">proteção de dados e domínio local</a>.</p>
-                <p>O menu inferior tem as abas <strong>Hoje</strong>, <strong>Calendário</strong>, <strong>Finanças</strong>, <strong>Dashboard</strong>, <strong>Orçamentos</strong>, <strong>Clientes</strong>, <strong>Usuário</strong>, <strong>Config</strong> e <strong>Sair</strong>.</p>
-                <p>Valores em reais (R$ 350,00) e datas no formato brasileiro (07/10/2026) na tela, no gráfico e no PDF.</p>
-            </section>
-
-            <section class="manual-card" id="requisitos-instalacao">
-                <h2>Requisitos e instalação</h2>
-                <ul>
-                    <li>Windows 10 ou 11, 64 bits, com setup (<code>.exe</code>) ou ZIP portátil; ou Linux Ubuntu/Debian com o pacote <code>.deb</code>. Não precisa instalar Java: o runtime vem no pacote.</li>
-                    <li>Downloads na página de <a href="download.html">Download</a>. Passo a passo: <a href="artifacts/instalacao-windows.html">Instalação Windows</a> e <a href="artifacts/instalacao-linux.html">Instalação Linux</a>.</li>
-                    <li>A janela cabe em telas de 1366×768 e pode ser redimensionada.</li>
-                </ul>
-                <p>Dados em <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr></code>: banco <code>agenda.db</code>, backup automático em <code>backups\</code> e registro técnico em <code>logs\</code>.</p>
-            </section>
-
-            <section class="manual-card" id="login">
-                <h2>Primeiro acesso e login</h2>
-                <p>O app não traz usuário de fábrica. Na primeira abertura ele vai direto ao <strong>Passo 1 de 3 — Identificação</strong>: escolha o perfil do espaço (Tatuagem, Odontologia ou Beleza) e informe o celular do responsável; depois vem o <strong>Passo 2 de 3 — Senha e recuperação local</strong> (perfil de acesso, senha de 8+ caracteres, frase de recuperação de 10+ caracteres e, recomendado, 8 códigos de emergência). Só então aparece o login com celular e senha. Detalhes em <a href="primeiro-acesso.html">Primeiro acesso</a>.</p>
-                <p><strong>Esqueci minha senha</strong> gera um código de 6 dígitos válido por 15 minutos, só neste computador, depois da frase de recuperação.</p>
-            </section>
-
-            <section class="manual-card" id="agenda">
-                <h2>Hoje e calendário</h2>
-                <p>A aba <strong>Hoje</strong> mostra os agendamentos do dia, do mais cedo ao mais tarde, com o intervalo de horário (ex.: 14:30–16:00) e o valor.</p>
-                <h3>Novo agendamento</h3>
-                <ul>
-                    <li>Clique em <strong>✚ Novo agendamento</strong>. Campos: cliente (nome e celular), data, <strong>horário</strong>, <strong>duração</strong> e <strong>valor</strong>.</li>
-                    <li><strong>Horário:</strong> escolha na lista (de 15 em 15 minutos, das 06:00 às 23:45) ou digite, por exemplo, <code>9:30</code> ou <code>1430</code>.</li>
-                    <li><strong>Duração:</strong> 30 min, 1 h, 1 h 30, 2 h, 3 h, 4 h, 5 h, 6 h ou 8 h. Agendamentos antigos ficam com 1 h.</li>
-                    <li>O app <strong>não deixa sobrepor sessões</strong>: se o intervalo encostar em outra sessão, mostra o conflito e pede outro horário.</li>
-                </ul>
-                <h3>Check “Pagou”</h3>
-                <p>Em cada sessão da lista do dia, marque <strong>Pagou</strong> quando o cliente pagar. O valor entra no Financeiro e no Dashboard como recebimento; desmarcar volta a sessão para pendente.</p>
-                <h3>Calendário</h3>
-                <p>A aba <strong>Calendário</strong> mostra o mês; clique em um dia para ver e editar as sessões daquele dia.</p>
-            </section>
-
-            <section class="manual-card" id="clientes">
-                <h2>Clientes</h2>
-                <p>A aba <strong>Clientes</strong> lista todos os clientes com nome, telefone, contato preferido (WhatsApp, ligação, Instagram, e-mail ou outro) e situação (ativo ou inativo).</p>
-                <ul>
-                    <li><strong>Buscar:</strong> por nome (com ou sem acento) ou pelos dígitos do telefone.</li>
-                    <li><strong>Novo cliente</strong> e <strong>Editar</strong> (ou duplo clique na linha): nome, celular, outro telefone, contato preferido, ativo e observações.</li>
-                    <li>Não aceita dois clientes com o mesmo telefone.</li>
-                    <li>Ao editar nome ou telefone, as sessões desse cliente na agenda são atualizadas.</li>
-                </ul>
-            </section>
-
-            <section class="manual-card" id="orcamentos">
-                <h2>Orçamentos</h2>
-                <p>A aba <strong>Orçamentos</strong> lista os orçamentos com cliente, descrição, valores, validade, situação e origem (manual, agendamento ou ficha do cliente).</p>
-                <ul>
-                    <li><strong>Novo orçamento:</strong> cliente (existente ou novo, com telefone), descrição, valor total, sinal, validade (padrão: 15 dias), situação e observações.</li>
-                    <li><strong>Editar</strong> (ou duplo clique): orçamentos criados nesta aba. Os que vêm de um agendamento são ajustados pelo agendamento, na aba Hoje.</li>
-                </ul>
-            </section>
-
-            <section class="manual-card" id="financeiro">
-                <h2>Finanças</h2>
-                <p>Registre <strong>entradas</strong> (sessões, retoques, vendas) e <strong>saídas</strong> (materiais, aluguel, contas) com descrição, valor, data e categoria. O app calcula o saldo e mostra o gráfico anual.</p>
-                <ul>
-                    <li><strong>Novo lançamento</strong>, <strong>Alterar</strong> e <strong>Excluir</strong> na lista de movimentações.</li>
-                    <li><strong>Exportar PDF do balanço:</strong> balanço mensal com receitas, despesas, resultado e despesas por categoria. O mês sai em português (ex.: “outubro de 2026”).</li>
-                </ul>
-            </section>
-
-            <section class="manual-card" id="painel">
-                <h2>Dashboard (resultados)</h2>
-                <p>A seção <strong>Resultados</strong> do Dashboard mostra:</p>
-                <ul>
-                    <li><strong>Faturamento do mês</strong>, <strong>ticket médio do mês</strong> (faturamento ÷ entradas recebidas) e <strong>saldo do mês</strong> (faturamento menos saídas);</li>
-                    <li><strong>Faturamento do ano</strong>, <strong>média mensal do ano</strong> (faturamento ÷ meses até agora) e <strong>ticket médio do ano</strong>.</li>
-                </ul>
-                <p>Faturamento segue a regra do Financeiro: recebimentos (inclusive os das sessões marcadas como pagas) mais entradas lançadas à mão. Os números atualizam ao abrir a aba.</p>
-            </section>
-
-            <section class="manual-card" id="backup">
-                <h2>Backup e restauração</h2>
-                <h3>Backup com senha (.inkbak)</h3>
-                <p>Em <strong>Config → Backup do estúdio</strong>:</p>
-                <ul>
-                    <li><strong>Salvar backup com senha:</strong> você escolhe pasta e nome (sugestão <code>backup_AAAA-MM-DD_HH-MM.inkbak</code> em <code>Documentos\AgendaInk\Backups</code>). Nada é sobrescrito: se o nome existir, o app grava “(2)”, “(3)”… O arquivo é criptografado com a senha (mínimo 8 caracteres). <strong>Sem a senha ele não abre.</strong> No fim, o app mostra o caminho salvo.</li>
-                    <li><strong>Restaurar backup:</strong> escolha o arquivo e digite a senha. Backups da v2.0.0 (sem senha) também restauram. O app confere o arquivo antes de trocar os dados e fecha ao terminar; abra de novo.</li>
-                </ul>
-                <p>O app lembra você quando o último backup com senha tem mais de 7 dias.</p>
-                <h3>Backup automático</h3>
-                <p>Ligado de fábrica: a cada hora e ao fechar o app, uma cópia <code>agenda_*.db.gz</code> vai para <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>backups\<wbr></code>. Ficam as 30 mais recentes. Essas cópias ficam no mesmo computador e não têm senha. Para desligar, desmarque <strong>“Fazer backup automático a cada hora e ao fechar”</strong> em <strong>Config → Backup do estúdio</strong>.</p>
-                <h3>Backup CSV</h3>
-                <p>Em <strong>Config</strong>, a exportação CSV (compactada e criptografada com senha) leva agendamentos e lançamentos do Financeiro. Clientes, orçamentos, cobranças e recebimentos ficam só no <code>.inkbak</code>. Importar o mesmo arquivo duas vezes não muda nada; horários em conflito viram aviso e lista de ignorados.</p>
-            </section>
-
-            <section class="manual-card manual-card--troubleshoot" id="troubleshooting">
-                <h2>Problemas comuns</h2>
-                <ul>
-                    <li><strong>ZIP/EXE não inicia</strong> — Confirme que o arquivo veio do <a href="download.html">download oficial</a> e confira o SHA256 antes de executar.</li>
-                    <li><strong>Horário já ocupado ao salvar</strong> — O app impede sobrepor sessões. Escolha outro horário, encurte a duração ou edite a sessão existente.</li>
-                    <li><strong>“Senha incorreta” ao restaurar</strong> — Use a senha digitada ao salvar aquele backup (não é a senha de login, a menos que você tenha usado a mesma).</li>
-                    <li><strong>Precisa de ajuda</strong> — O registro técnico fica em <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>logs\<wbr></code> (sem senhas, telefones ou e-mails). Fale pelo <a href="canal-feedback.html">Canal de feedback</a>.</li>
-                </ul>
-            </section>
-        </div>
-
-        <nav class="back">
-            <a href="index.html">← Voltar ao portal</a>
-        </nav>
-
-    </div>
-
-    <footer class="cc-footer" role="contentinfo">
-        <div class="cc-footer-container">
-            <div class="cc-footer-grid">
-                <div class="cc-footer-col">
-                    <p class="cc-footer-brand-title">Cara Core Informática</p>
-                    <p class="cc-footer-text">
-                        Gestão offline e segura para profissionais com hora marcada — Estúdios de Tatuagem, Consultórios e Salões de Beleza.
-                    </p>
-                    <p class="cc-footer-text cc-footer-meta">
-                        Dados de clientes no computador do estúdio, com backup .inkbak criptografado.
-                    </p>
-                </div>
-
-                <div class="cc-footer-col">
-                    <h3 class="cc-footer-heading">O produto</h3>
-                    <ul class="cc-footer-links">
-                        <li><a href="download.html">Download para Windows</a></li>
-                        <li><a href="primeiro-acesso.html">Primeiro acesso assistido</a></li>
-                        <li><a href="versoes.html">Versões e changelog</a></li>
-                        <li><a href="tecnologia.html">Tecnologia e arquitetura</a></li>
-                        <li><a href="pwa.html">Trilha PWA (Roadmap)</a></li>
-                    </ul>
-                </div>
-
-                <div class="cc-footer-col">
-                    <h3 class="cc-footer-heading">Documentação</h3>
-                    <ul class="cc-footer-links">
-                        <li><a href="manual.html">Manual do operador</a></li>
-                        <li><a href="https://wiki.caracore.com.br/projeto-ink.html" rel="noopener">Wiki do Ink Agenda</a></li>
-                        <li><a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio Cara Core</a></li>
-                        <li><a href="https://download.caracore.com.br/" rel="noopener">Central de downloads</a></li>
-                    </ul>
-                </div>
-
-                <div class="cc-footer-col">
-                    <h3 class="cc-footer-heading">Contato</h3>
-                    <ul class="cc-footer-links">
-                        <li><a href="canal-feedback.html">Canal da loja</a></li>
-                        <li><a href="https://wa.me/5541999097797" rel="noopener">WhatsApp oficial</a></li>
-                        <li><a href="https://t.me/chmulato" rel="noopener">Telegram</a></li>
-                        <li><a href="mailto:suporte@caracore.com.br">suporte@caracore.com.br</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="cc-footer-bottom">
-                <p>&copy; 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></p>
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/loja.js"></script>
-    <script src="assets/js/portal-nav.js" defer></script>
-    <script src="assets/js/release-channel.js" defer></script>
-    <div class="evo-beta-wrap" aria-hidden="true"><span class="evo-beta-badge" title="Loja oficial">Oficial<span class="evo-beta-tooltip">Cara Core Ink Agenda — loja oficial Cara Core Informática.</span></span></div>
-    <div class="evo-feedback-fab"><a href="canal-feedback.html" class="evo-feedback-btn" aria-label="Canal de feedback"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Sugira uma melhoria</a></div>
+<body class="smooth-scroll bg-gray-50" data-page="content">
+<nav aria-label="Navegação institucional" class="breadcrumb container mx-auto px-4 sm:px-6 lg:px-8 pt-3 text-sm text-gray-600">
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="index.html">CaraCore Ink Agenda</a>
+<span aria-hidden="true"> · </span>
+<span class="text-gray-900">Manual</span>
+</nav>
+<header class="portal-header bg-white shadow-sm sticky top-0 z-50">
+<nav aria-label="Menu da loja" class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a class="flex items-center space-x-3" href="index.html">
+<img alt="" aria-hidden="true" class="w-12 h-12 rounded-lg" height="48" src="assets/brand/caracore-logo.svg" width="48"/>
+<div>
+<p class="text-xl font-bold text-gray-900">CaraCore Ink Agenda</p>
+<p class="text-xs text-gray-600">Gestão offline para profissionais com hora marcada</p>
+</div>
+</a>
+<div class="hidden lg:flex absolute lg:static top-full left-0 w-full lg:w-auto bg-white p-4 lg:p-0 flex-col lg:flex-row gap-3 lg:gap-6 lg:items-center" id="mobile-menu">
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="index.html#dores">O que resolvemos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="index.html#jornada">Como funciona</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="index.html#planos">Planos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="versoes.html">Versões e download</a>
+<a class="cta-btn text-white px-6 py-2 rounded-lg font-semibold transition text-center" href="download.html">
+                        Baixar <span class="ml-1 text-xs font-normal opacity-90">v2.1.0</span>
+</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="lg:hidden text-gray-700" id="mobile-menu-button">
+<span aria-hidden="true">☰</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="wrapper">
+<section aria-label="Versão" class="ink-launch-banner">
+<p class="ink-launch-label">Manual · <span data-canal-versao="">v2.1.0</span></p>
+<p class="ink-launch-date">Os executáveis não têm assinatura digital; o SmartScreen ou antivírus pode avisar ou bloquear a abertura.</p>
+</section>
+<header class="ink-page-head">
+<h1>Manual do usuário — Ink Agenda</h1>
+<p class="subtitle">Primeiro acesso, agenda do dia, calendário, clientes, orçamentos, financeiro, painel de resultados e backup.</p>
+</header>
+<nav aria-label="Índice do manual" class="manual-toc">
+<h2 class="manual-toc-title">Índice</h2>
+<ul class="manual-toc-list">
+<li><a href="#visao-geral">Visão geral</a></li>
+<li><a href="#requisitos-instalacao">Requisitos e instalação</a></li>
+<li><a href="#login">Primeiro acesso e login</a></li>
+<li><a href="#agenda">Hoje e calendário</a></li>
+<li><a href="#clientes">Clientes</a></li>
+<li><a href="#orcamentos">Orçamentos</a></li>
+<li><a href="#financeiro">Finanças</a></li>
+<li><a href="#painel">Dashboard (resultados)</a></li>
+<li><a href="#backup">Backup e restauração</a></li>
+<li><a href="#troubleshooting">Problemas comuns</a></li>
+</ul>
+</nav>
+<div class="manual-content">
+<section class="manual-card manual-card--intro" id="visao-geral">
+<h2>Visão geral</h2>
+<p>O <strong>Ink Agenda</strong> é um aplicativo desktop para profissionais com hora marcada: estúdios de tatuagem, consultórios odontológicos e espaços de beleza. Agenda, clientes, orçamentos, entradas e saídas e o desempenho do negócio, com um executável e três perfis — <strong>Tatuagem</strong>, <strong>Odontologia</strong> e <strong>Beleza</strong> — que adaptam paleta e vocabulário (sessão/consulta/procedimento). Os dados ficam no seu computador (SQLite local). O app funciona offline e não faz conexão em segundo plano: a única conexão é a verificação manual de atualizações, que envia apenas a versão do app e o sistema operacional — nunca dados de clientes. Veja <a href="index.html#dados">proteção de dados e domínio local</a>.</p>
+<p>O menu inferior tem as abas <strong>Hoje</strong>, <strong>Calendário</strong>, <strong>Finanças</strong>, <strong>Dashboard</strong>, <strong>Orçamentos</strong>, <strong>Clientes</strong>, <strong>Usuário</strong>, <strong>Config</strong> e <strong>Sair</strong>.</p>
+<p>Valores em reais (R$ 350,00) e datas no formato brasileiro (07/10/2026) na tela, no gráfico e no PDF.</p>
+</section>
+<section class="manual-card" id="requisitos-instalacao">
+<h2>Requisitos e instalação</h2>
+<ul>
+<li>Windows 10 ou 11, 64 bits, com setup (<code>.exe</code>) ou ZIP portátil; ou Linux Ubuntu/Debian com o pacote <code>.deb</code>. Não precisa instalar Java: o runtime vem no pacote.</li>
+<li>Downloads na página de <a href="download.html">Download</a>. Passo a passo: <a href="artifacts/instalacao-windows.html">Instalação Windows</a> e <a href="artifacts/instalacao-linux.html">Instalação Linux</a>.</li>
+<li>A janela cabe em telas de 1366×768 e pode ser redimensionada.</li>
+</ul>
+<p>Dados em <code>%LOCALAPPDATA%\<wbr/>CaraCore\<wbr/>AgendaInk\<wbr/></code>: banco <code>agenda.db</code>, backup automático em <code>backups\</code> e registro técnico em <code>logs\</code>.</p>
+</section>
+<section class="manual-card" id="login">
+<h2>Primeiro acesso e login</h2>
+<p>O app não traz usuário de fábrica. Na primeira abertura ele vai direto ao <strong>Passo 1 de 3 — Identificação</strong>: escolha o perfil do espaço (Tatuagem, Odontologia ou Beleza) e informe o celular do responsável; depois vem o <strong>Passo 2 de 3 — Senha e recuperação local</strong> (perfil de acesso, senha de 8+ caracteres, frase de recuperação de 10+ caracteres e, recomendado, 8 códigos de emergência). Só então aparece o login com celular e senha. Detalhes em <a href="primeiro-acesso.html">Primeiro acesso</a>.</p>
+<p><strong>Esqueci minha senha</strong> gera um código de 6 dígitos válido por 15 minutos, só neste computador, depois da frase de recuperação.</p>
+</section>
+<section class="manual-card" id="agenda">
+<h2>Hoje e calendário</h2>
+<p>A aba <strong>Hoje</strong> mostra os agendamentos do dia, do mais cedo ao mais tarde, com o intervalo de horário (ex.: 14:30–16:00) e o valor.</p>
+<h3>Novo agendamento</h3>
+<ul>
+<li>Clique em <strong>✚ Novo agendamento</strong>. Campos: cliente (nome e celular), data, <strong>horário</strong>, <strong>duração</strong> e <strong>valor</strong>.</li>
+<li><strong>Horário:</strong> escolha na lista (de 15 em 15 minutos, das 06:00 às 23:45) ou digite, por exemplo, <code>9:30</code> ou <code>1430</code>.</li>
+<li><strong>Duração:</strong> 30 min, 1 h, 1 h 30, 2 h, 3 h, 4 h, 5 h, 6 h ou 8 h. Agendamentos antigos ficam com 1 h.</li>
+<li>O app <strong>não deixa sobrepor sessões</strong>: se o intervalo encostar em outra sessão, mostra o conflito e pede outro horário.</li>
+</ul>
+<h3>Check “Pagou”</h3>
+<p>Em cada sessão da lista do dia, marque <strong>Pagou</strong> quando o cliente pagar. O valor entra no Financeiro e no Dashboard como recebimento; desmarcar volta a sessão para pendente.</p>
+<h3>Calendário</h3>
+<p>A aba <strong>Calendário</strong> mostra o mês; clique em um dia para ver e editar as sessões daquele dia.</p>
+</section>
+<section class="manual-card" id="clientes">
+<h2>Clientes</h2>
+<p>A aba <strong>Clientes</strong> lista todos os clientes com nome, telefone, contato preferido (WhatsApp, ligação, Instagram, e-mail ou outro) e situação (ativo ou inativo).</p>
+<ul>
+<li><strong>Buscar:</strong> por nome (com ou sem acento) ou pelos dígitos do telefone.</li>
+<li><strong>Novo cliente</strong> e <strong>Editar</strong> (ou duplo clique na linha): nome, celular, outro telefone, contato preferido, ativo e observações.</li>
+<li>Não aceita dois clientes com o mesmo telefone.</li>
+<li>Ao editar nome ou telefone, as sessões desse cliente na agenda são atualizadas.</li>
+</ul>
+</section>
+<section class="manual-card" id="orcamentos">
+<h2>Orçamentos</h2>
+<p>A aba <strong>Orçamentos</strong> lista os orçamentos com cliente, descrição, valores, validade, situação e origem (manual, agendamento ou ficha do cliente).</p>
+<ul>
+<li><strong>Novo orçamento:</strong> cliente (existente ou novo, com telefone), descrição, valor total, sinal, validade (padrão: 15 dias), situação e observações.</li>
+<li><strong>Editar</strong> (ou duplo clique): orçamentos criados nesta aba. Os que vêm de um agendamento são ajustados pelo agendamento, na aba Hoje.</li>
+</ul>
+</section>
+<section class="manual-card" id="financeiro">
+<h2>Finanças</h2>
+<p>Registre <strong>entradas</strong> (sessões, retoques, vendas) e <strong>saídas</strong> (materiais, aluguel, contas) com descrição, valor, data e categoria. O app calcula o saldo e mostra o gráfico anual.</p>
+<ul>
+<li><strong>Novo lançamento</strong>, <strong>Alterar</strong> e <strong>Excluir</strong> na lista de movimentações.</li>
+<li><strong>Exportar PDF do balanço:</strong> balanço mensal com receitas, despesas, resultado e despesas por categoria. O mês sai em português (ex.: “outubro de 2026”).</li>
+</ul>
+</section>
+<section class="manual-card" id="painel">
+<h2>Dashboard (resultados)</h2>
+<p>A seção <strong>Resultados</strong> do Dashboard mostra:</p>
+<ul>
+<li><strong>Faturamento do mês</strong>, <strong>ticket médio do mês</strong> (faturamento ÷ entradas recebidas) e <strong>saldo do mês</strong> (faturamento menos saídas);</li>
+<li><strong>Faturamento do ano</strong>, <strong>média mensal do ano</strong> (faturamento ÷ meses até agora) e <strong>ticket médio do ano</strong>.</li>
+</ul>
+<p>Faturamento segue a regra do Financeiro: recebimentos (inclusive os das sessões marcadas como pagas) mais entradas lançadas à mão. Os números atualizam ao abrir a aba.</p>
+</section>
+<section class="manual-card" id="backup">
+<h2>Backup e restauração</h2>
+<h3>Backup com senha (.inkbak)</h3>
+<p>Em <strong>Config → Backup do estúdio</strong>:</p>
+<ul>
+<li><strong>Salvar backup com senha:</strong> você escolhe pasta e nome (sugestão <code>backup_AAAA-MM-DD_HH-MM.inkbak</code> em <code>Documentos\AgendaInk\Backups</code>). Nada é sobrescrito: se o nome existir, o app grava “(2)”, “(3)”… O arquivo é criptografado com a senha (mínimo 8 caracteres). <strong>Sem a senha ele não abre.</strong> No fim, o app mostra o caminho salvo.</li>
+<li><strong>Restaurar backup:</strong> escolha o arquivo e digite a senha. Backups da v2.0.0 (sem senha) também restauram. O app confere o arquivo antes de trocar os dados e fecha ao terminar; abra de novo.</li>
+</ul>
+<p>O app lembra você quando o último backup com senha tem mais de 7 dias.</p>
+<h3>Backup automático</h3>
+<p>Ligado de fábrica: a cada hora e ao fechar o app, uma cópia <code>agenda_*.db.gz</code> vai para <code>%LOCALAPPDATA%\<wbr/>CaraCore\<wbr/>AgendaInk\<wbr/>backups\<wbr/></code>. Ficam as 30 mais recentes. Essas cópias ficam no mesmo computador e não têm senha. Para desligar, desmarque <strong>“Fazer backup automático a cada hora e ao fechar”</strong> em <strong>Config → Backup do estúdio</strong>.</p>
+<h3>Backup CSV</h3>
+<p>Em <strong>Config</strong>, a exportação CSV (compactada e criptografada com senha) leva agendamentos e lançamentos do Financeiro. Clientes, orçamentos, cobranças e recebimentos ficam só no <code>.inkbak</code>. Importar o mesmo arquivo duas vezes não muda nada; horários em conflito viram aviso e lista de ignorados.</p>
+</section>
+<section class="manual-card manual-card--troubleshoot" id="troubleshooting">
+<h2>Problemas comuns</h2>
+<ul>
+<li><strong>ZIP/EXE não inicia</strong> — Confirme que o arquivo veio do <a href="download.html">download oficial</a> e confira o SHA256 antes de executar.</li>
+<li><strong>Horário já ocupado ao salvar</strong> — O app impede sobrepor sessões. Escolha outro horário, encurte a duração ou edite a sessão existente.</li>
+<li><strong>“Senha incorreta” ao restaurar</strong> — Use a senha digitada ao salvar aquele backup (não é a senha de login, a menos que você tenha usado a mesma).</li>
+<li><strong>Precisa de ajuda</strong> — O registro técnico fica em <code>%LOCALAPPDATA%\<wbr/>CaraCore\<wbr/>AgendaInk\<wbr/>logs\<wbr/></code> (sem senhas, telefones ou e-mails). Fale pelo <a href="canal-feedback.html">Canal de feedback</a>.</li>
+</ul>
+</section>
+</div>
+<nav class="back">
+<a href="index.html">← Voltar ao portal</a>
+</nav>
+</main>
+<footer class="ink-footer bg-gray-900 text-gray-300 py-12">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<p class="ink-footer-title text-white font-bold mb-2">Cara Core Informática</p>
+<p class="text-sm text-gray-400">Gestão offline para profissionais com hora marcada — estúdios de tatuagem, consultórios e espaços de beleza.</p>
+<p class="text-sm text-gray-400 mt-3">Dados de clientes no computador do espaço, com backup <code>.inkbak</code> criptografado.</p>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">O produto</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="download.html">Download e versões</a></li>
+<li><a class="hover:text-white" href="tecnologia.html">Tecnologia</a></li>
+<li><a class="hover:text-white" href="manual.html">Manual</a></li>
+<li><a class="hover:text-white" href="https://wiki.caracore.com.br/projeto-ink.html" rel="noopener">Wiki do Ink</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a></li>
+<li><a class="hover:text-white" href="https://download.caracore.com.br/" rel="noopener">Central de downloads</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Documentação</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="primeiro-acesso.html">Primeiro acesso</a></li>
+<li><a class="hover:text-white" href="versoes.html">Notas da versão</a></li>
+<li><a class="hover:text-white" href="pwa.html">Roadmap PWA</a></li>
+<li><a class="hover:text-white" href="canal-feedback.html">Canal da loja</a></li>
+<li><a class="hover:text-white" href="mailto:suporte@caracore.com.br">suporte@caracore.com.br</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Contato</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="https://wa.me/5541999097797" rel="noopener noreferrer" target="_blank">WhatsApp</a></li>
+<li><a class="hover:text-white" href="https://t.me/chmulato" rel="noopener noreferrer" target="_blank">Telegram</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></li>
+</ul>
+</div>
+</div>
+<div class="ink-footer-bottom border-t border-gray-800 pt-6 text-sm text-gray-400">
+<p class="mb-2">Versão atual: Windows 10/11 e Linux <span data-canal-versao="">v2.1.0</span> · sem assinatura digital · macOS pela PWA, não antes de 2028.</p>
+<p>© 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></p>
+</div>
+</div>
+</footer>
+<script defer="" src="assets/js/ink.js"></script>
+<script defer="" src="assets/js/portal-nav.js"></script>
+<script defer="" src="assets/js/release-channel.js"></script>
 </body>
 </html>

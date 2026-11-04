@@ -1,25 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html class="no-js" lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>macOS — Ink Agenda via PWA | Cara Core Informática</title>
-    <meta name="description" content="Não haverá DMG nativo do Ink Agenda. No Mac o canal é o PWA.">
-    <link rel="stylesheet" href="../assets/css/ink-portal.css">
-    <link rel="stylesheet" href="../assets/css/caracore-core-typography.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CaraCore Ink Agenda — macOS e a trilha PWA</title>
+<meta content="O CaraCore Ink Agenda não tem instalador nativo para macOS nesta versão; a linha 3.0 atenderá pelo navegador, não antes de 2028." name="description"/>
+<meta content="CaraCore Ink Agenda — macOS e a trilha PWA" property="og:title"/>
+<meta content="O CaraCore Ink Agenda não tem instalador nativo para macOS nesta versão; a linha 3.0 atenderá pelo navegador, não antes de 2028." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="https://ink.caracore.com.br/artifacts/instalacao-macos.html" property="og:url"/>
+<meta content="https://ink.caracore.com.br/assets/img/og-ink-neutral.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="CaraCore Ink Agenda — gestão offline para profissionais com hora marcada" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://ink.caracore.com.br/artifacts/instalacao-macos.html" rel="canonical"/>
+<meta content="noindex" name="robots"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=optional" rel="stylesheet"/>
+<link href="../assets/css/portal-style.css" rel="stylesheet"/>
+<link href="../assets/css/ink-theme.css" rel="stylesheet"/>
+<meta content="#4f46e5" name="theme-color"/>
+<link href="../favicon.ico" rel="icon" sizes="any"/>
+<link href="../assets/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
+<script>document.documentElement.classList.remove("no-js");</script>
 </head>
-<body class="page-manual">
-    <div class="wrapper">
-        <nav class="breadcrumb" aria-label="Navegação">
-            <a href="../index.html">Loja</a> · <a href="../download.html">Download</a> · <span>macOS</span>
-        </nav>
-        <header>
-            <h1>macOS — PWA, não DMG</h1>
-            <p class="subtitle">Não vamos publicar instalador nativo para Mac. O canal é o PWA, <strong>não antes de 2028</strong> (mesmo backend da v2).</p>
-        </header>
-        <section class="card">
-            <p>Desktop oficial hoje: <a href="../download.html">Windows e Linux</a>. Mac e Android: <a href="../pwa.html">página do PWA</a>.</p>
-        </section>
-    </div>
+<body class="smooth-scroll bg-gray-50" data-page="content">
+<nav aria-label="Navegação institucional" class="breadcrumb container mx-auto px-4 sm:px-6 lg:px-8 pt-3 text-sm text-gray-600">
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="../index.html">CaraCore Ink Agenda</a>
+<span aria-hidden="true"> · </span>
+<span class="text-gray-900">macOS</span>
+</nav>
+<header class="portal-header bg-white shadow-sm sticky top-0 z-50">
+<nav aria-label="Menu da loja" class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a class="flex items-center space-x-3" href="../index.html">
+<img alt="" aria-hidden="true" class="w-12 h-12 rounded-lg" height="48" src="../assets/brand/caracore-logo.svg" width="48"/>
+<div>
+<p class="text-xl font-bold text-gray-900">CaraCore Ink Agenda</p>
+<p class="text-xs text-gray-600">Gestão offline para profissionais com hora marcada</p>
+</div>
+</a>
+<div class="hidden lg:flex absolute lg:static top-full left-0 w-full lg:w-auto bg-white p-4 lg:p-0 flex-col lg:flex-row gap-3 lg:gap-6 lg:items-center" id="mobile-menu">
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../index.html#dores">O que resolvemos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../index.html#jornada">Como funciona</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../index.html#planos">Planos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="../versoes.html">Versões e download</a>
+<a class="cta-btn text-white px-6 py-2 rounded-lg font-semibold transition text-center" href="../download.html">
+                        Baixar <span class="ml-1 text-xs font-normal opacity-90">v2.1.0</span>
+</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="lg:hidden text-gray-700" id="mobile-menu-button">
+<span aria-hidden="true">☰</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="wrapper">
+<header class="ink-page-head">
+<h1>macOS — PWA, não DMG</h1>
+<p class="subtitle">Não vamos publicar instalador nativo para Mac. O canal é o PWA, <strong>não antes de 2028</strong> (mesmo backend da v2).</p>
+</header>
+<section class="card">
+<p>Desktop oficial hoje: <a href="../download.html">Windows e Linux</a>. Mac e Android: <a href="../pwa.html">página do PWA</a>.</p>
+</section>
+</main>
+<footer class="ink-footer bg-gray-900 text-gray-300 py-12">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<p class="ink-footer-title text-white font-bold mb-2">Cara Core Informática</p>
+<p class="text-sm text-gray-400">Gestão offline para profissionais com hora marcada — estúdios de tatuagem, consultórios e espaços de beleza.</p>
+<p class="text-sm text-gray-400 mt-3">Dados de clientes no computador do espaço, com backup <code>.inkbak</code> criptografado.</p>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">O produto</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="../download.html">Download e versões</a></li>
+<li><a class="hover:text-white" href="../tecnologia.html">Tecnologia</a></li>
+<li><a class="hover:text-white" href="../manual.html">Manual</a></li>
+<li><a class="hover:text-white" href="https://wiki.caracore.com.br/projeto-ink.html" rel="noopener">Wiki do Ink</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a></li>
+<li><a class="hover:text-white" href="https://download.caracore.com.br/" rel="noopener">Central de downloads</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Documentação</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="../primeiro-acesso.html">Primeiro acesso</a></li>
+<li><a class="hover:text-white" href="../versoes.html">Notas da versão</a></li>
+<li><a class="hover:text-white" href="../pwa.html">Roadmap PWA</a></li>
+<li><a class="hover:text-white" href="../canal-feedback.html">Canal da loja</a></li>
+<li><a class="hover:text-white" href="mailto:suporte@caracore.com.br">suporte@caracore.com.br</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Contato</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="https://wa.me/5541999097797" rel="noopener noreferrer" target="_blank">WhatsApp</a></li>
+<li><a class="hover:text-white" href="https://t.me/chmulato" rel="noopener noreferrer" target="_blank">Telegram</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></li>
+</ul>
+</div>
+</div>
+<div class="ink-footer-bottom border-t border-gray-800 pt-6 text-sm text-gray-400">
+<p class="mb-2">Versão atual: Windows 10/11 e Linux <span data-canal-versao="">v2.1.0</span> · sem assinatura digital · macOS pela PWA, não antes de 2028.</p>
+<p>© 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></p>
+</div>
+</div>
+</footer>
+<script defer="" src="../assets/js/ink.js"></script>
+<script defer="" src="../assets/js/portal-nav.js"></script>
+<script defer="" src="../assets/js/release-channel.js"></script>
 </body>
 </html>

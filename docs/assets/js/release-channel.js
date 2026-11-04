@@ -61,6 +61,8 @@
                 destino = RELEASES + "/tag/v" + versao;
             } else if (tipo === "checksums") {
                 destino = RELEASES + "/download/v" + versao + "/checksum.sha256";
+            } else if (tipo === "checksums-linux") {
+                destino = RELEASES + "/download/v" + versao + "/checksum-linux-" + versao + ".txt";
             } else {
                 var asset = assetValido(assets, tipo);
                 destino = asset ? asset.url : null;

@@ -1,253 +1,285 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cara Core Ink Agenda — Agenda e financeiro para estúdios, consultórios e espaços de beleza</title>
-    <meta name="description" content="Cara Core Ink Agenda: agenda, clientes, orçamentos, financeiro e painel de resultados para estúdios, consultórios e espaços de beleza. Funciona offline; os dados de clientes ficam no seu computador, com backup .inkbak criptografado. Download para Windows 10/11 e Linux.">
-    <link rel="stylesheet" href="assets/css/ink-portal.css">
-    <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
-    <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
+    <title>CaraCore Ink Agenda — agenda, financeiro e dados no computador</title>
+    <meta name="description" content="CaraCore Ink Agenda: agenda, clientes, orçamentos, financeiro e painel de resultados para estúdios, consultórios e espaços de beleza. Funciona offline; os dados de clientes ficam no seu computador, com backup .inkbak criptografado. Download para Windows 10/11 e Linux.">
+    <meta property="og:title" content="CaraCore Ink Agenda — agenda, financeiro e dados no computador">
+    <meta property="og:description" content="CaraCore Ink Agenda: agenda, clientes, orçamentos, financeiro e painel de resultados para estúdios, consultórios e espaços de beleza. Funciona offline; os dados de clientes ficam no seu computador, com backup .inkbak criptografado. Download para Windows 10/11 e Linux.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://ink.caracore.com.br/">
+    <meta property="og:image" content="https://ink.caracore.com.br/assets/img/og-ink-neutral.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="CaraCore Ink Agenda — agenda, financeiro e dados no computador">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://ink.caracore.com.br/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/portal-style.css">
     <link rel="stylesheet" href="assets/css/ink-theme.css">
-    <link rel="stylesheet" href="assets/css/skin-switcher.css">
+    <meta name="theme-color" content="#4f46e5">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+    <script>document.documentElement.classList.remove("no-js");</script>
 </head>
-<body class="cc-i-page" data-active-skin="tattoo">
-    <nav class="cc-breadcrumb" aria-label="Navegação institucional">
-        <a href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
+<body class="smooth-scroll bg-gray-50" data-page="home">
+    <nav class="breadcrumb container mx-auto px-4 sm:px-6 lg:px-8 pt-3 text-sm text-gray-600" aria-label="Navegação institucional">
+        <a href="https://www.caracore.com.br/" class="hover:text-indigo-600" rel="noopener">Cara Core Informática</a>
         <span aria-hidden="true"> · </span>
-        <a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a>
+        <a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" class="hover:text-indigo-600" rel="noopener">Portfólio</a>
         <span aria-hidden="true"> · </span>
-        <span class="cc-breadcrumb-current">CaraCore Ink Agenda</span>
+        <span class="text-gray-900">CaraCore Ink Agenda</span>
     </nav>
 
-    <header class="cc-header">
-        <nav class="cc-header-nav" aria-label="Menu da loja">
-            <div class="cc-header-inner">
-                <a href="index.html" class="cc-brand">
-                    <img src="assets/brand/caracore-logo.svg" alt="" width="48" height="48" aria-hidden="true">
-                    <span class="cc-brand-text">
-                        <span class="cc-brand-title">CaraCore Ink Agenda</span>
-                        <span class="cc-brand-sub">Gestão offline para profissionais com hora marcada</span>
-                    </span>
+    <header class="portal-header bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8" aria-label="Menu da loja">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="assets/brand/caracore-logo.svg" alt="" width="48" height="48" class="w-12 h-12 rounded-lg" aria-hidden="true">
+                    <div>
+                        <p class="text-xl font-bold text-gray-900">CaraCore Ink Agenda</p>
+                        <p class="text-xs text-gray-600">Gestão offline para profissionais com hora marcada</p>
+                    </div>
                 </a>
-                <button type="button" class="cc-menu-toggle" id="cc-menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="cc-menu">
-                    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-                </button>
-                <div class="cc-menu" id="cc-menu">
-                    <a href="index.html#novidades">Novidades v2.1.0</a>
-                    <a href="index.html#especialidades">Especialidades</a>
-                    <a href="index.html#dados">Proteção de dados</a>
-                    <a href="manual.html">Manual</a>
-                    <a href="tecnologia.html">Tecnologia</a>
-                    <a href="versoes.html" class="cta-link">Notas da versão</a>
-                    <a href="download.html" class="cta-btn">Baixar para Windows</a>
+                <div id="mobile-menu" class="hidden lg:flex absolute lg:static top-full left-0 w-full lg:w-auto bg-white p-4 lg:p-0 flex-col lg:flex-row gap-3 lg:gap-6 lg:items-center">
+                    <a href="#dores" class="text-gray-700 hover:text-indigo-600 font-medium transition">O que resolvemos</a>
+                    <a href="#jornada" class="text-gray-700 hover:text-indigo-600 font-medium transition">Como funciona</a>
+                    <a href="#planos" class="text-gray-700 hover:text-indigo-600 font-medium transition">Planos</a>
+                    <a href="versoes.html" class="text-gray-700 hover:text-indigo-600 font-medium transition">Versões e download</a>
+                    <a href="download.html" class="cta-btn text-white px-6 py-2 rounded-lg font-semibold transition text-center">
+                        Baixar <span class="ml-1 text-xs font-normal opacity-90">v2.1.0</span>
+                    </a>
                 </div>
+                <button id="mobile-menu-button" class="lg:hidden text-gray-700" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span aria-hidden="true">☰</span>
+                </button>
             </div>
         </nav>
     </header>
 
-    <div class="wrapper">
-        <section class="hero-cta hero-cta--simple" aria-labelledby="hero-title">
-            <div class="skin-switcher" id="especialidades" role="group" aria-labelledby="skin-switcher-title">
-                <p class="skin-switcher-title" id="skin-switcher-title">Experimente a metamorfose do produto (3 especialidades em 1 único software):</p>
-                <div class="skin-switcher-options">
-                    <button type="button" class="skin-option is-active" data-skin-btn="tattoo" aria-pressed="true">
-                        <span class="skin-option-emoji" aria-hidden="true">🎨</span>
-                        <span class="skin-option-label">Tatuagem &amp; Arte Corporal</span>
-                        <span class="skin-option-swatch" aria-hidden="true"></span>
+    <main id="conteudo">
+    <section class="portal-hero ink-hero text-white py-20 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-sm uppercase tracking-wide text-indigo-100 mb-4">Windows 10/11 e Linux · <span data-canal-versao>v2.1.0</span> · funciona offline</p>
+
+                <div class="ink-selector" role="radiogroup" aria-label="Escolha o segmento do seu espaço">
+                    <button type="button" class="ink-segment-btn" data-segment-target="tattoo" data-route="tattoo/" aria-pressed="false">
+                        <span class="ink-segment-dot" data-swatch="tattoo" aria-hidden="true"></span>
+                        Tatuagem
                     </button>
-                    <button type="button" class="skin-option" data-skin-btn="dental" aria-pressed="false">
-                        <span class="skin-option-emoji" aria-hidden="true">🦷</span>
-                        <span class="skin-option-label">Odontologia &amp; Saúde</span>
-                        <span class="skin-option-swatch" aria-hidden="true"></span>
+                    <button type="button" class="ink-segment-btn" data-segment-target="odontologia" data-route="odontologia/" aria-pressed="false">
+                        <span class="ink-segment-dot" data-swatch="odontologia" aria-hidden="true"></span>
+                        Odontologia
                     </button>
-                    <button type="button" class="skin-option" data-skin-btn="beauty" aria-pressed="false">
-                        <span class="skin-option-emoji" aria-hidden="true">✨</span>
-                        <span class="skin-option-label">Beleza &amp; Estética</span>
-                        <span class="skin-option-swatch" aria-hidden="true"></span>
+                    <button type="button" class="ink-segment-btn" data-segment-target="beleza" data-route="beleza/" aria-pressed="false">
+                        <span class="ink-segment-dot" data-swatch="beleza" aria-hidden="true"></span>
+                        Beleza
                     </button>
                 </div>
-                <p class="skin-switcher-live" aria-live="polite" aria-atomic="true">
-                    Terminologia aplicada: <strong data-term="session-plural">Sessões</strong> ·
-                    <strong data-term="client-plural">Clientes</strong> ·
-                    <strong data-term="workspace">Estúdio</strong>
-                </p>
+
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Agenda e financeiro do seu espaço, no seu computador.</h1>
+                <p class="ink-hero-lede text-xl md:text-2xl mb-10">Atendimentos, clientes, orçamentos e financeiro em um só lugar. Funciona offline. Os dados de clientes ficam no seu computador, sem conta na nuvem; o backup com senha (<code>.inkbak</code>) é criptografado.</p>
+
+                <div class="ink-hero-actions">
+                    <a href="download.html" class="ink-btn-light">Baixar para Windows</a>
+                    <a href="versoes.html" class="ink-btn-ghost">Ver as versões</a>
+                </div>
+
+                <div class="ink-suggestion" data-skin-suggestion hidden>
+                    <span data-suggestion-text>Você já usou a vitrine em outro segmento.</span>
+                    <a data-suggestion-link href="tattoo/">Ver como Tatuagem</a>
+                    <button type="button" data-suggestion-dismiss>Agora não</button>
+                </div>
             </div>
-            <p class="hero-label">Gestão para estúdios, consultórios e espaços de beleza</p>
-            <h1 class="hero-title" id="hero-title">Agenda e financeiro do seu <span class="term-highlight" data-term="workspace" data-term-case="lower">estúdio</span>, no seu computador.</h1>
-            <figure class="hero-contexto-cliente">
-                <img class="hero-contexto-image" src="assets/img/caracore_ink.png" alt="Profissional organizando a agenda no computador" width="640" height="427" />
+
+            <figure class="ink-hero-figure">
+                <img src="assets/img/caracore_ink.png" alt="Profissional organizando a agenda do espaço no computador" width="1200" height="630">
+                <figcaption>Prévia do Ink Agenda com a agenda do dia.</figcaption>
             </figure>
-            <p class="hero-desc"><span data-term="sessions">Sessões</span>, <span data-term="clients">clientes</span>, orçamentos e financeiro em um só lugar. Funciona offline. Os dados de clientes ficam no seu computador, sem conta na nuvem; o backup com senha (<code>.inkbak</code>) é criptografado.</p>
-            <div class="cta-buttons">
-                <a href="download.html" class="cta-btn cta-btn-primary">Baixar para <span data-term="target">Tatuadores</span></a>
-                <a href="#dados" class="cta-btn cta-btn-secondary">Dados locais e LGPD</a>
-            </div>
-            <div class="hero-meta">
-                <p class="hero-micro">Windows 10/11 e Linux · <span data-canal-versao>v2.1.0</span> · funciona offline</p>
-                <p class="hero-micro" role="note">Os executáveis não têm assinatura digital: o SmartScreen ou o antivírus pode avisar ou bloquear a abertura. Faça backup dos dados antes de atualizar.</p>
-                <p class="hero-secondary"><a href="versoes.html">Ver as versões publicadas</a> · <a data-canal-link="release" href="https://github.com/chmulato/caracore-ink-releases/releases/tag/v2.1.0">Notas da versão</a></p>
-                <p class="hero-secondary"><a href="primeiro-acesso.html">Já baixou? Veja o primeiro acesso</a></p>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="ink-mockup-section" id="novidades" aria-labelledby="ink-mockup-title">
-            <div class="ink-mockup-heading">
-                <h2 id="ink-mockup-title">Veja o Ink Agenda no seu dia a dia</h2>
-                <span class="ink-mockup-badge">prévia v2.1.0</span>
+    <section id="dores" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="ink-section-head">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">O que resolvemos</h2>
+                <p>Quatro tarefas do dia a dia em um único aplicativo, com os dados no seu computador.</p>
             </div>
-            <p class="ink-mockup-lede">A mesma janela e o mesmo executável: o que muda é o vocabulário do seu perfil.</p>
-            <div class="ink-mockup" role="img" aria-label="Prévia da janela do Ink Agenda 2.1.0 com indicadores e a agenda do dia">
-                <div class="ink-mockup-titlebar">
-                    <span class="ink-mockup-mark" aria-hidden="true"></span>
-                    <span class="ink-mockup-title" data-term="window-title">Ink Agenda 2.1.0 — Estúdio</span>
-                    <span class="ink-mockup-window-controls" aria-hidden="true">
-                        <span class="ink-mockup-window-control">&#8211;</span>
-                        <span class="ink-mockup-window-control">&#9633;</span>
-                        <span class="ink-mockup-window-control is-close">&#215;</span>
-                    </span>
-                </div>
-                <div class="ink-mockup-body">
-                    <div class="ink-mockup-kpis">
-                        <div class="ink-mockup-kpi">
-                            <span class="ink-mockup-kpi-label">Faturamento do mês</span>
-                            <strong class="ink-mockup-kpi-value">R$ 12.480,00</strong>
-                            <span class="ink-mockup-kpi-hint">+18% no mês</span>
-                        </div>
-                        <div class="ink-mockup-kpi">
-                            <span class="ink-mockup-kpi-label" data-term="appointments">Atendimentos</span>
-                            <strong class="ink-mockup-kpi-value">42</strong>
-                            <span class="ink-mockup-kpi-hint">no mês</span>
-                        </div>
-                        <div class="ink-mockup-kpi">
-                            <span class="ink-mockup-kpi-label">Ticket médio</span>
-                            <strong class="ink-mockup-kpi-value">R$ 297,14</strong>
-                            <span class="ink-mockup-kpi-hint">por <span data-term="appointment" data-term-case="lower">atendimento</span></span>
-                        </div>
-                    </div>
-                    <div class="ink-mockup-day">
-                        <div class="ink-mockup-day-head">
-                            <span>Hoje · 03/11</span>
-                            <span class="ink-mockup-day-count">4 compromissos</span>
-                        </div>
-                        <div class="ink-mockup-appointment">
-                            <div class="ink-mockup-time">
-                                <span>14:00</span>
-                                <small>15:30</small>
-                            </div>
-                            <div class="ink-mockup-appointment-info">
-                                <strong>Marina Silveira</strong>
-                                <span data-term="procedure">Sessão de fechamento de braço — R$ 800,00</span>
-                            </div>
-                            <span class="ink-mockup-status">Confirmado</span>
-                        </div>
-                        <p class="ink-mockup-foot">Agenda do dia salva no próprio dispositivo</p>
-                    </div>
-                </div>
-                <div class="ink-mockup-nav" role="presentation">
-                    <span class="ink-mockup-nav-item is-active">Hoje</span>
-                    <span class="ink-mockup-nav-item">Calendário</span>
-                    <span class="ink-mockup-nav-item">Finanças</span>
-                    <span class="ink-mockup-nav-item">Dashboard</span>
-                    <span class="ink-mockup-nav-item">Orçamentos</span>
-                    <span class="ink-mockup-nav-item" data-term="client-plural">Clientes</span>
-                    <span class="ink-mockup-nav-item">Config</span>
-                </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <article class="ink-feature">
+                    <span class="ink-feature-icon" aria-hidden="true">1</span>
+                    <h3>Agenda com horário, duração e valor</h3>
+                    <p>Atendimentos com o cliente, data, horário, duração, valor e situação de pagamento.</p>
+                </article>
+                <article class="ink-feature">
+                    <span class="ink-feature-icon" aria-hidden="true">2</span>
+                    <h3>Clientes e orçamentos</h3>
+                    <p>Cadastro de clientes e orçamentos vinculados ao atendimento.</p>
+                </article>
+                <article class="ink-feature">
+                    <span class="ink-feature-icon" aria-hidden="true">3</span>
+                    <h3>Financeiro com saldo</h3>
+                    <p>Entradas, saídas e saldo por período, sem planilha paralela.</p>
+                </article>
+                <article class="ink-feature">
+                    <span class="ink-feature-icon" aria-hidden="true">4</span>
+                    <h3>Painel de resultados</h3>
+                    <p>Faturamento e médias por período para acompanhar o mês.</p>
+                </article>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="methodology">
-            <div class="card">
-                <h2>O que você controla</h2>
-                <p>Agenda de <span data-term="sessions" data-term-case="lower">sessões</span> com <span data-term="client" data-term-case="lower">cliente</span>, data, horário, duração, valor e pagamento; <span data-term="client-plural" data-term-case="lower">clientes</span> e orçamentos; financeiro com entradas, saídas e saldo; e painel com faturamento e médias por período.</p>
+    <section id="jornada" class="py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="ink-section-head">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Como funciona</h2>
+                <p>Três telas do dia a dia. Capturas da edição Windows <span data-canal-versao>v2.1.0</span>.</p>
             </div>
-            <div class="card card-differential" id="dados">
-                <h2>Proteção de dados e domínio local</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <figure class="ink-step">
+                    <img src="assets/img/ink-login-tattoo.png" alt="Tela de login do Ink Agenda com celular e senha" width="1020" height="729" loading="lazy">
+                    <figcaption>
+                        <h3>Entrada com celular e senha</h3>
+                        <p>Login local, com opção de lembrar a senha por 12 horas neste computador.</p>
+                    </figcaption>
+                </figure>
+                <figure class="ink-step">
+                    <img src="assets/img/ink-dia-tattoo.png" alt="Agenda do dia do Ink Agenda com horário, cliente, telefone, valor e marcação de pagamento" width="1020" height="729" loading="lazy">
+                    <figcaption>
+                        <h3>O dia no seu espaço</h3>
+                        <p>Agendamentos do dia com cliente, telefone, valor e marcação de pagamento na mesma lista.</p>
+                    </figcaption>
+                </figure>
+                <figure class="ink-step">
+                    <img src="assets/img/ink-financas-tattoo.png" alt="Tela de finanças do Ink Agenda com entradas, saídas e saldo" width="1020" height="729" loading="lazy">
+                    <figcaption>
+                        <h3>Finanças e orçamentos</h3>
+                        <p>Entradas, saídas e saldo por período; orçamentos ligados ao atendimento.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="dados" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="ink-section-head">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Proteção de dados e domínio local</h2>
                 <p>O Ink Agenda foi desenhado para manter os dados de clientes sob o seu controle — no seu computador, não na nuvem.</p>
-                <ul>
-                    <li><strong>Dados no seu computador:</strong> agenda, clientes, orçamentos e financeiro ficam em um banco SQLite local. Não há conta do estúdio na nuvem.</li>
-                    <li><strong>Nenhum dado de cliente na internet:</strong> o aplicativo não envia clientes, agendamentos ou valores para servidores. A verificação manual de atualizações transmite apenas a versão do app e o sistema operacional.</li>
-                    <li><strong>Backup com senha:</strong> o arquivo <code>.inkbak</code> é criptografado com AES-256-GCM e chave derivada da sua senha. O backup automático é local, compactado e sem senha.</li>
-                    <li><strong>Registro técnico sem dados pessoais:</strong> senhas, telefones e e-mails são mascarados antes de gravar os logs.</li>
+            </div>
+            <ul class="ink-data-list">
+                <li>
+                    <strong>Dados no seu computador</strong>
+                    <span>Atendimentos, clientes, orçamentos e financeiro ficam em um banco SQLite local. Não há conta do espaço na nuvem.</span>
+                </li>
+                <li>
+                    <strong>Nenhum dado de cliente na internet</strong>
+                    <span>O aplicativo não envia clientes, agendamentos ou valores para servidores. A verificação manual de atualizações transmite apenas a versão do app e o sistema operacional.</span>
+                </li>
+                <li>
+                    <strong>Backup com senha</strong>
+                    <span>O arquivo <code>.inkbak</code> é criptografado com AES-256-GCM e chave derivada da sua senha. O backup automático é local, compactado e sem senha.</span>
+                </li>
+                <li>
+                    <strong>Registro técnico sem dados pessoais</strong>
+                    <span>Senhas, telefones e e-mails são mascarados antes de gravar os logs.</span>
+                </li>
+            </ul>
+            <p class="ink-note"><strong>LGPD:</strong> esses recursos apoiam o seu dever de proteger dados pessoais. A conformidade depende também dos seus processos e do uso do sistema; o Ink não substitui essa responsabilidade. <a href="tecnologia.html#lgpd">Ver como funciona</a></p>
+        </div>
+    </section>
+
+    <section id="planos" class="py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="ink-section-head">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Planos</h2>
+                <p>Um plano único para tatuagem, odontologia e beleza, com suporte, correções e novas versões incluídas.</p>
+            </div>
+            <div class="ink-plan-card">
+                <p class="ink-plan-kicker">Assinatura mensal</p>
+                <p class="ink-plan-price"><strong>R$ 79,90</strong><span>/mês</span></p>
+                <p class="ink-plan-lede">O Ink Agenda completo para profissionais com hora marcada, com suporte da Cara Core, correções de bug e novas versões incluídas.</p>
+                <ul class="ink-plan-list">
+                    <li>Agenda, financeiro e orçamentos no seu computador</li>
+                    <li>Funciona offline, sem depender de internet</li>
+                    <li>Suporte da Cara Core por e-mail, WhatsApp e Telegram</li>
+                    <li>Correções de bug e novas versões enquanto a assinatura estiver ativa</li>
                 </ul>
-                <p><strong>LGPD:</strong> esses recursos apoiam o seu dever de proteger dados pessoais. A conformidade depende também dos seus processos e do uso do sistema; o Ink não substitui essa responsabilidade.</p>
-                <div class="download-actions">
-                    <a href="download.html" class="cta-btn cta-btn-primary">Baixar e manter os dados no meu computador</a>
-                    <a href="tecnologia.html#lgpd" class="cta-btn cta-btn-secondary">Ver como funciona</a>
+                <div class="ink-actions" style="justify-content:center">
+                    <a href="canal-feedback.html" class="cta-btn">Assinar pelo suporte</a>
+                    <a href="download.html" class="cta-btn-secondary">Baixar a versão atual</a>
+                </div>
+                <p class="ink-note">Assinatura mensal por instalação, contratada pelo canal de atendimento da Cara Core.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="py-16 md:py-20 ink-hero text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Avalie o Ink Agenda no seu computador.</h2>
+                <p class="ink-hero-lede text-xl mb-8">Baixe a versão para Windows ou Linux, faça o primeiro acesso e veja se o fluxo cabe na rotina do seu espaço. Se algo não fechar, escreva para o canal da loja.</p>
+                <div class="ink-hero-actions" style="margin-bottom:0">
+                    <a href="download.html" class="ink-btn-light">Baixar a versão atual</a>
+                    <a href="canal-feedback.html" class="ink-btn-ghost">Falar com a Cara Core</a>
                 </div>
             </div>
-            <div class="card card-differential">
-                <h2>Como começar em 3 passos</h2>
-                <ol>
-                    <li>Baixe a versão para Windows ou Linux nesta página.</li>
-                    <li>Windows: abra o <code>AgendaInk.exe</code>; Linux: instale o <code>.deb</code>.</li>
-                    <li>Faça o primeiro acesso em 3 passos: celular, senha e login.</li>
-                </ol>
-            </div>
-        </section>
+        </div>
+    </section>
+    </main>
 
-        <section class="ink-cta-block" aria-label="Baixar o Ink Agenda">
-            <p class="ink-cta-title">Pronto para organizar o seu <span data-term="workspace" data-term-case="lower">estúdio</span>?</p>
-            <a href="download.html" class="cta-btn cta-btn-primary">Baixar para <span data-term="target">Tatuadores</span></a>
-            <p class="ink-cta-secondary"><a href="#dados">Proteção de dados e domínio local</a> · <a href="canal-feedback.html">Fale com a Cara Core</a></p>
-        </section>
-
-    </div>
-
-    <footer class="cc-footer" role="contentinfo">
-        <div class="cc-footer-container">
-            <div class="cc-footer-grid">
-                <div class="cc-footer-col">
-                    <p class="cc-footer-brand-title">Cara Core Informática</p>
-                    <p class="cc-footer-text">
-                        Gestão offline e segura para profissionais com hora marcada — Estúdios de Tatuagem, Consultórios e Salões de Beleza.
-                    </p>
-                    <p class="cc-footer-text cc-footer-meta">
-                        Dados de clientes no computador do estúdio, com backup .inkbak criptografado.
-                    </p>
+    <footer class="ink-footer bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <p class="ink-footer-title text-white font-bold mb-2">Cara Core Informática</p>
+                    <p class="text-sm text-gray-400">Gestão offline para profissionais com hora marcada — estúdios de tatuagem, consultórios e espaços de beleza.</p>
+                    <p class="text-sm text-gray-400 mt-3">Dados de clientes no computador do seu espaço, com backup <code>.inkbak</code> criptografado.</p>
                 </div>
-
-                <div class="cc-footer-col">
-                    <h3 class="cc-footer-heading">O produto</h3>
-                    <ul class="cc-footer-links">
-                        <li><a href="download.html">Download para Windows e Linux</a></li>
-                        <li><a href="index.html#dados">Proteção de dados e domínio local</a></li>
-                        <li><a href="primeiro-acesso.html">Primeiro acesso assistido</a></li>
-                        <li><a href="versoes.html">Versões e changelog</a></li>
-                        <li><a href="tecnologia.html">Tecnologia e arquitetura</a></li>
-                        <li><a href="pwa.html">Trilha PWA (Roadmap)</a></li>
+                <div>
+                    <h3 class="text-white font-bold mb-3">O produto</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="download.html" class="hover:text-white">Download e versões</a></li>
+                        <li><a href="tecnologia.html" class="hover:text-white">Tecnologia</a></li>
+                        <li><a href="manual.html" class="hover:text-white">Manual</a></li>
+                        <li><a href="https://wiki.caracore.com.br/projeto-ink.html" class="hover:text-white" rel="noopener">Wiki do Ink</a></li>
+                        <li><a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" class="hover:text-white" rel="noopener">Portfólio</a></li>
+                        <li><a href="https://download.caracore.com.br/" class="hover:text-white" rel="noopener">Central de downloads</a></li>
                     </ul>
                 </div>
-
-                <div class="cc-footer-col">
-                    <h3 class="cc-footer-heading">Documentação</h3>
-                    <ul class="cc-footer-links">
-                        <li><a href="manual.html">Manual do operador</a></li>
-                        <li><a href="https://wiki.caracore.com.br/projeto-ink.html" rel="noopener">Wiki do Ink Agenda</a></li>
-                        <li><a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio Cara Core</a></li>
-                        <li><a href="https://download.caracore.com.br/" rel="noopener">Central de downloads</a></li>
+                <div>
+                    <h3 class="text-white font-bold mb-3">Documentação</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="primeiro-acesso.html" class="hover:text-white">Primeiro acesso</a></li>
+                        <li><a href="versoes.html" class="hover:text-white">Notas da versão</a></li>
+                        <li><a href="pwa.html" class="hover:text-white">Roadmap PWA</a></li>
+                        <li><a href="canal-feedback.html" class="hover:text-white">Canal da loja</a></li>
+                        <li><a href="mailto:suporte@caracore.com.br" class="hover:text-white">suporte@caracore.com.br</a></li>
                     </ul>
                 </div>
-
-                <div class="cc-footer-col">
-                    <h3 class="cc-footer-heading">Contato</h3>
-                    <ul class="cc-footer-links">
-                        <li><a href="canal-feedback.html">Canal da loja</a></li>
-                        <li><a href="https://wa.me/5541999097797" rel="noopener">WhatsApp oficial</a></li>
-                        <li><a href="https://t.me/chmulato" rel="noopener">Telegram</a></li>
-                        <li><a href="mailto:suporte@caracore.com.br">suporte@caracore.com.br</a></li>
+                <div>
+                    <h3 class="text-white font-bold mb-3">Contato</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://wa.me/5541999097797" class="hover:text-white" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                        <li><a href="https://t.me/chmulato" class="hover:text-white" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                        <li><a href="https://www.caracore.com.br/" class="hover:text-white" rel="noopener">www.caracore.com.br</a></li>
                     </ul>
                 </div>
             </div>
-
-            <div class="cc-footer-bottom">
-                <p>&copy; 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></p>
+            <div class="ink-footer-bottom border-t border-gray-800 pt-6 text-sm text-gray-400">
+                <p class="mb-2">Versão atual: Windows 10/11 e Linux <span data-canal-versao>v2.1.0</span> · macOS pela PWA, não antes de 2028.</p>
+                <p>&copy; 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/" class="hover:text-white" rel="noopener">www.caracore.com.br</a></p>
             </div>
         </div>
     </footer>
-    <script src="assets/js/ink.js"></script>
+
+    <script src="assets/js/ink.js" defer></script>
     <script src="assets/js/portal-nav.js" defer></script>
     <script src="assets/js/skin-switcher.js" defer></script>
     <script src="assets/js/release-channel.js" defer></script>

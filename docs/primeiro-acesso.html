@@ -1,90 +1,166 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html class="no-js" lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro acesso — Cara Core Ink Agenda | Cara Core Informática</title>
-    <meta name="description" content="Guia do primeiro acesso ao Cara Core Ink Agenda no Windows: celular, senha e login.">
-    <link rel="stylesheet" href="assets/css/ink-portal.css">
-    <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
-    <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CaraCore Ink Agenda — primeiro acesso no Windows e Linux</title>
+<meta content="Guia do primeiro acesso ao CaraCore Ink Agenda: perfil do espaço, celular, senha, frase de recuperação e login." name="description"/>
+<meta content="CaraCore Ink Agenda — primeiro acesso no Windows e Linux" property="og:title"/>
+<meta content="Guia do primeiro acesso ao CaraCore Ink Agenda: perfil do espaço, celular, senha, frase de recuperação e login." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="https://ink.caracore.com.br/primeiro-acesso.html" property="og:url"/>
+<meta content="https://ink.caracore.com.br/assets/img/og-ink-neutral.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="CaraCore Ink Agenda — gestão offline para profissionais com hora marcada" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://ink.caracore.com.br/primeiro-acesso.html" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=optional" rel="stylesheet"/>
+<link href="assets/css/portal-style.css" rel="stylesheet"/>
+<link href="assets/css/ink-theme.css" rel="stylesheet"/>
+<meta content="#4f46e5" name="theme-color"/>
+<link href="favicon.ico" rel="icon" sizes="any"/>
+<link href="assets/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
+<script>document.documentElement.classList.remove("no-js");</script>
 </head>
-<body class="download-page">
-    <div class="wrapper">
-        <nav class="breadcrumb" aria-label="Navegação">
-            <a href="index.html">Cara Core Ink Agenda — Loja</a>
-            <span> · </span>
-            <a href="download.html">Download</a>
-            <span> · </span>
-            <span>Primeiro acesso</span>
-        </nav>
-
-        <section class="ink-launch-banner" aria-label="Primeiro acesso">
-            <p class="ink-launch-label">Primeiro acesso · <span data-canal-versao>v2.1.0</span></p>
-            <p class="ink-launch-date">Os executáveis não têm assinatura digital; o SmartScreen ou antivírus pode avisar. Faça backup dos dados antes de atualizar.</p>
-        </section>
-
-        <header>
-            <h1>Primeiro acesso</h1>
-            <p>Guia do primeiro acesso do Ink Agenda no Windows e no Linux. Não é o PDV Cara Core.</p>
-        </header>
-
-        <section class="card" style="border-left: 4px solid var(--accent-gold);">
-            <h2>Isto não é o PDV</h2>
-            <p>Não use <code>admin</code>/<code>admin</code> (PDV Java) nem <code>admin</code>/<code>admin123</code> (PDV Rust). O Ink <strong>não cria usuário de fábrica</strong>: na primeira abertura você cadastra o responsável.</p>
-        </section>
-
-        <section class="card">
-            <h2>Antes de abrir</h2>
-            <ol>
-                <li>Baixe o setup ou o ZIP (Windows) ou o pacote <code>.deb</code> (Linux) em <a href="download.html">download.html</a> e, se quiser, valide o SHA256.</li>
-                <li>Instale ou extraia. Passo a passo: <a href="artifacts/instalacao-windows.html">Instalação Windows</a> ou <a href="artifacts/instalacao-linux.html">Instalação Linux</a>.</li>
-                <li>Abra <code>AgendaInk.exe</code>. O Java 25 já vem no pacote — não instale JDK.</li>
-            </ol>
-        </section>
-
-        <section class="card" id="primeira-abertura">
-            <h2>O que a primeira abertura mostra</h2>
-            <ol>
-                <li>Um aviso abre junto com a janela: “Seus dados ficam só neste computador. O Ink Agenda está pronto para uso.” Clique em OK.</li>
-                <li><strong>Passo 1 de 3 — Identificação</strong> (“Bem-vindo ao Ink Agenda”): escolha o <strong>perfil do seu espaço</strong> — Tatuagem &amp; Arte Corporal, Odontologia &amp; Saúde ou Beleza &amp; Estética —, informe o <strong>celular do responsável</strong> (máscara <code>(11) 99999-9999</code>) e clique em <strong>Continuar</strong>. Ainda não há tela de login. A escolha pode ser trocada depois em Config.</li>
-                <li><strong>Passo 2 de 3 — Senha e recuperação local:</strong> perfil (<strong>Proprietário</strong>, <strong>Tatuador Sr</strong> ou <strong>Tatuador Jr</strong>), senha (mínimo 8 caracteres + confirmação) e frase de recuperação (mínimo 10 caracteres + confirmação). Recomendado: gerar os 8 códigos de emergência — anote; o app mostra uma vez. Clique em <strong>Concluir configuração</strong>.</li>
-                <li><strong>Passo 3:</strong> o login aparece só agora. Entre com o <strong>mesmo celular</strong> e a <strong>senha</strong> que acabou de criar.</li>
-            </ol>
-            <p>Não é e-mail obrigatório. Não é conta Cara Core online.</p>
-        </section>
-
-        <section class="card" id="reinstalacao">
-            <h2>Já instalei de novo — como entro?</h2>
-            <p>Os dados ficam em <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>agenda.db</code>, fora da pasta do ZIP/setup. Se o banco já tiver usuário, a primeira tela é o login (celular e senha). “Lembrar da minha senha” vale só neste PC (até 12 horas ou até sair). Cinco senhas erradas bloqueiam cerca de 10 minutos.</p>
-        </section>
-
-        <section class="card" id="esqueci">
-            <h2>Esqueci minha senha</h2>
-            <p><strong>Não há recuperação remota</strong> (sem SMS, e-mail ou site). No login, <strong>Esqueci minha senha</strong> gera um código de 6 dígitos <strong>neste computador</strong> (válido por 15 minutos), depois da frase de recuperação do primeiro acesso. Código de emergência, se você gerou, é uso único. Sem frase nem código: restaure um backup ou apague a pasta de dados (a agenda deste PC some).</p>
-        </section>
-
-        <section class="card" id="checklist">
-            <h2>Checklist depois de entrar</h2>
-            <ul>
-                <li>1 cliente (aba <strong>Clientes</strong>)</li>
-                <li>1 agendamento com horário, duração e valor</li>
-                <li>1 receita ou despesa</li>
-                <li>1 backup com senha (<strong>Config → Backup do estúdio</strong>)</li>
-            </ul>
-            <p>O mesmo fluxo está no <a href="manual.html">manual</a> e na <a href="https://wiki.caracore.com.br/projeto-ink.html#primeiros-passos">wiki</a>.</p>
-        </section>
-
-        <nav class="download-back">
-            <a href="download.html">← Download</a>
-        </nav>
-
-        <footer>
-            <p><a href="download.html">Download</a> · <a href="manual.html">Manual</a> · <a href="versoes.html">Versões</a> · <a href="tecnologia.html">Tecnologia</a> · <a href="pwa.html">Roadmap</a> · <a href="https://wiki.caracore.com.br/projeto-ink.html">Wiki</a> · <a href="canal-feedback.html">Contato</a></p>
-            <p class="footer-legal">Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/">caracore.com.br</a></p>
-        </footer>
-    </div>
-    <script src="assets/js/ink.js"></script>
-    <script src="assets/js/release-channel.js" defer></script>
+<body class="smooth-scroll bg-gray-50" data-page="content">
+<nav aria-label="Navegação institucional" class="breadcrumb container mx-auto px-4 sm:px-6 lg:px-8 pt-3 text-sm text-gray-600">
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="index.html">CaraCore Ink Agenda</a>
+<span aria-hidden="true"> · </span>
+<span class="text-gray-900">Primeiro acesso</span>
+</nav>
+<header class="portal-header bg-white shadow-sm sticky top-0 z-50">
+<nav aria-label="Menu da loja" class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a class="flex items-center space-x-3" href="index.html">
+<img alt="" aria-hidden="true" class="w-12 h-12 rounded-lg" height="48" src="assets/brand/caracore-logo.svg" width="48"/>
+<div>
+<p class="text-xl font-bold text-gray-900">CaraCore Ink Agenda</p>
+<p class="text-xs text-gray-600">Gestão offline para profissionais com hora marcada</p>
+</div>
+</a>
+<div class="hidden lg:flex absolute lg:static top-full left-0 w-full lg:w-auto bg-white p-4 lg:p-0 flex-col lg:flex-row gap-3 lg:gap-6 lg:items-center" id="mobile-menu">
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="index.html#dores">O que resolvemos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="index.html#jornada">Como funciona</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="index.html#planos">Planos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="versoes.html">Versões e download</a>
+<a class="cta-btn text-white px-6 py-2 rounded-lg font-semibold transition text-center" href="download.html">
+                        Baixar <span class="ml-1 text-xs font-normal opacity-90">v2.1.0</span>
+</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="lg:hidden text-gray-700" id="mobile-menu-button">
+<span aria-hidden="true">☰</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="wrapper">
+<section aria-label="Primeiro acesso" class="ink-launch-banner">
+<p class="ink-launch-label">Primeiro acesso · <span data-canal-versao="">v2.1.0</span></p>
+<p class="ink-launch-date">Os executáveis não têm assinatura digital; o SmartScreen ou antivírus pode avisar. Faça backup dos dados antes de atualizar.</p>
+</section>
+<header class="ink-page-head">
+<h1>Primeiro acesso</h1>
+<p>Guia do primeiro acesso do Ink Agenda no Windows e no Linux. Não é o PDV Cara Core.</p>
+</header>
+<section class="card" style="border-left: 4px solid var(--accent-gold);">
+<h2>Isto não é o PDV</h2>
+<p>Não use <code>admin</code>/<code>admin</code> (PDV Java) nem <code>admin</code>/<code>admin123</code> (PDV Rust). O Ink <strong>não cria usuário de fábrica</strong>: na primeira abertura você cadastra o responsável.</p>
+</section>
+<section class="card">
+<h2>Antes de abrir</h2>
+<ol>
+<li>Baixe o setup ou o ZIP (Windows) ou o pacote <code>.deb</code> (Linux) em <a href="download.html">download.html</a> e, se quiser, valide o SHA256.</li>
+<li>Instale ou extraia. Passo a passo: <a href="artifacts/instalacao-windows.html">Instalação Windows</a> ou <a href="artifacts/instalacao-linux.html">Instalação Linux</a>.</li>
+<li>Abra <code>AgendaInk.exe</code>. O Java 25 já vem no pacote — não instale JDK.</li>
+</ol>
+</section>
+<section class="card" id="primeira-abertura">
+<h2>O que a primeira abertura mostra</h2>
+<ol>
+<li>Um aviso abre junto com a janela: “Seus dados ficam só neste computador. O Ink Agenda está pronto para uso.” Clique em OK.</li>
+<li><strong>Passo 1 de 3 — Identificação</strong> (“Bem-vindo ao Ink Agenda”): escolha o <strong>perfil do seu espaço</strong> — Tatuagem &amp; Arte Corporal, Odontologia &amp; Saúde ou Beleza &amp; Estética —, informe o <strong>celular do responsável</strong> (máscara <code>(11) 99999-9999</code>) e clique em <strong>Continuar</strong>. Ainda não há tela de login. A escolha pode ser trocada depois em Config.</li>
+<li><strong>Passo 2 de 3 — Senha e recuperação local:</strong> perfil (<strong>Proprietário</strong>, <strong>Tatuador Sr</strong> ou <strong>Tatuador Jr</strong>), senha (mínimo 8 caracteres + confirmação) e frase de recuperação (mínimo 10 caracteres + confirmação). Recomendado: gerar os 8 códigos de emergência — anote; o app mostra uma vez. Clique em <strong>Concluir configuração</strong>.</li>
+<li><strong>Passo 3:</strong> o login aparece só agora. Entre com o <strong>mesmo celular</strong> e a <strong>senha</strong> que acabou de criar.</li>
+</ol>
+<p>Não é e-mail obrigatório. Não é conta Cara Core online.</p>
+</section>
+<section class="card" id="reinstalacao">
+<h2>Já instalei de novo — como entro?</h2>
+<p>Os dados ficam em <code>%LOCALAPPDATA%\<wbr/>CaraCore\<wbr/>AgendaInk\<wbr/>agenda.db</code>, fora da pasta do ZIP/setup. Se o banco já tiver usuário, a primeira tela é o login (celular e senha). “Lembrar da minha senha” vale só neste PC (até 12 horas ou até sair). Cinco senhas erradas bloqueiam cerca de 10 minutos.</p>
+</section>
+<section class="card" id="esqueci">
+<h2>Esqueci minha senha</h2>
+<p><strong>Não há recuperação remota</strong> (sem SMS, e-mail ou site). No login, <strong>Esqueci minha senha</strong> gera um código de 6 dígitos <strong>neste computador</strong> (válido por 15 minutos), depois da frase de recuperação do primeiro acesso. Código de emergência, se você gerou, é uso único. Sem frase nem código: restaure um backup ou apague a pasta de dados (a agenda deste PC some).</p>
+</section>
+<section class="card" id="checklist">
+<h2>Checklist depois de entrar</h2>
+<ul>
+<li>1 cliente (aba <strong>Clientes</strong>)</li>
+<li>1 agendamento com horário, duração e valor</li>
+<li>1 receita ou despesa</li>
+<li>1 backup com senha (<strong>Config → Backup do estúdio</strong>)</li>
+</ul>
+<p>O mesmo fluxo está no <a href="manual.html">manual</a> e na <a href="https://wiki.caracore.com.br/projeto-ink.html#primeiros-passos">wiki</a>.</p>
+</section>
+<nav class="download-back">
+<a href="download.html">← Download</a>
+</nav>
+</main>
+<footer class="ink-footer bg-gray-900 text-gray-300 py-12">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<p class="ink-footer-title text-white font-bold mb-2">Cara Core Informática</p>
+<p class="text-sm text-gray-400">Gestão offline para profissionais com hora marcada — estúdios de tatuagem, consultórios e espaços de beleza.</p>
+<p class="text-sm text-gray-400 mt-3">Dados de clientes no computador do espaço, com backup <code>.inkbak</code> criptografado.</p>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">O produto</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="download.html">Download e versões</a></li>
+<li><a class="hover:text-white" href="tecnologia.html">Tecnologia</a></li>
+<li><a class="hover:text-white" href="manual.html">Manual</a></li>
+<li><a class="hover:text-white" href="https://wiki.caracore.com.br/projeto-ink.html" rel="noopener">Wiki do Ink</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a></li>
+<li><a class="hover:text-white" href="https://download.caracore.com.br/" rel="noopener">Central de downloads</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Documentação</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="primeiro-acesso.html">Primeiro acesso</a></li>
+<li><a class="hover:text-white" href="versoes.html">Notas da versão</a></li>
+<li><a class="hover:text-white" href="pwa.html">Roadmap PWA</a></li>
+<li><a class="hover:text-white" href="canal-feedback.html">Canal da loja</a></li>
+<li><a class="hover:text-white" href="mailto:suporte@caracore.com.br">suporte@caracore.com.br</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Contato</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="https://wa.me/5541999097797" rel="noopener noreferrer" target="_blank">WhatsApp</a></li>
+<li><a class="hover:text-white" href="https://t.me/chmulato" rel="noopener noreferrer" target="_blank">Telegram</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></li>
+</ul>
+</div>
+</div>
+<div class="ink-footer-bottom border-t border-gray-800 pt-6 text-sm text-gray-400">
+<p class="mb-2">Versão atual: Windows 10/11 e Linux <span data-canal-versao="">v2.1.0</span> · sem assinatura digital · macOS pela PWA, não antes de 2028.</p>
+<p>© 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></p>
+</div>
+</div>
+</footer>
+<script defer="" src="assets/js/ink.js"></script>
+<script defer="" src="assets/js/portal-nav.js"></script>
+<script defer="" src="assets/js/release-channel.js"></script>
 </body>
 </html>

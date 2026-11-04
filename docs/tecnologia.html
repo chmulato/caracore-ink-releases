@@ -1,196 +1,189 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html class="no-js" lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnologia — Cara Core Ink Agenda | Cara Core Informática</title>
-    <meta name="description" content="Stack do Cara Core Ink Agenda: Java 25, JavaFX, SQLite local, dados de clientes no computador, backup .inkbak criptografado e atualização verificada por assinatura.">
-    <link rel="stylesheet" href="assets/css/ink-portal.css">
-    <link rel="stylesheet" href="assets/css/caracore-core-typography.css">
-    <link rel="stylesheet" href="assets/css/caracore-institutional-components.css">
-    <link rel="stylesheet" href="assets/css/ink-theme.css">
-    <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CaraCore Ink Agenda — tecnologia, arquitetura e LGPD</title>
+<meta content="Stack do CaraCore Ink Agenda: Java 25, JavaFX 21, Maven, SQLite com Flyway, backup .inkbak criptografado e arquitetura em camadas." name="description"/>
+<meta content="CaraCore Ink Agenda — tecnologia, arquitetura e LGPD" property="og:title"/>
+<meta content="Stack do CaraCore Ink Agenda: Java 25, JavaFX 21, Maven, SQLite com Flyway, backup .inkbak criptografado e arquitetura em camadas." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="https://ink.caracore.com.br/tecnologia.html" property="og:url"/>
+<meta content="https://ink.caracore.com.br/assets/img/og-ink-neutral.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="CaraCore Ink Agenda — gestão offline para profissionais com hora marcada" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://ink.caracore.com.br/tecnologia.html" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=optional" rel="stylesheet"/>
+<link href="assets/css/portal-style.css" rel="stylesheet"/>
+<link href="assets/css/ink-theme.css" rel="stylesheet"/>
+<meta content="#4f46e5" name="theme-color"/>
+<link href="favicon.ico" rel="icon" sizes="any"/>
+<link href="assets/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
+<script>document.documentElement.classList.remove("no-js");</script>
 </head>
-<body class="tecnologia-page">
-    <nav class="cc-breadcrumb" aria-label="Navegação institucional">
-        <a href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
-        <span aria-hidden="true"> · </span>
-        <a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a>
-        <span aria-hidden="true"> · </span>
-        <span class="cc-breadcrumb-current">CaraCore Ink Agenda</span>
-    </nav>
-
-    <header class="cc-header">
-        <nav class="cc-header-nav" aria-label="Menu da loja">
-            <div class="cc-header-inner">
-                <a href="index.html" class="cc-brand">
-                    <img src="assets/brand/caracore-logo.svg" alt="" width="48" height="48" aria-hidden="true">
-                    <span class="cc-brand-text">
-                        <span class="cc-brand-title">CaraCore Ink Agenda</span>
-                        <span class="cc-brand-sub">Gestão offline para profissionais com hora marcada</span>
-                    </span>
-                </a>
-                <button type="button" class="cc-menu-toggle" id="cc-menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="cc-menu">
-                    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-                </button>
-                <div class="cc-menu" id="cc-menu">
-                    <a href="index.html#novidades">Novidades v2.1.0</a>
-                    <a href="index.html#especialidades">Especialidades</a>
-                    <a href="tecnologia.html#lgpd">Proteção de dados</a>
-                    <a href="manual.html">Manual</a>
-                    <a href="tecnologia.html">Tecnologia</a>
-                    <a href="versoes.html" class="cta-link">Notas da versão</a>
-                    <a href="download.html" class="cta-btn">Baixar para Windows</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <div class="wrapper">
-        <section class="ink-launch-banner" aria-label="Stack atual">
-            <p class="ink-launch-label">Tecnologia · <span data-canal-versao>v2.1.0</span></p>
-            <p class="ink-launch-date">Java 25 · JavaFX 21.0.11 · SQLite local · três perfis (Tatuagem, Odontologia e Beleza) · runtime embutido nos pacotes Windows e Linux · executáveis sem assinatura digital.</p>
-        </section>
-
-        <header>
-            <h1>Tecnologia — Cara Core Ink Agenda</h1>
-            <p>Stack e arquitetura do aplicativo desktop para estúdios de tatuagem.</p>
-        </header>
-
-        <section class="card">
-            <h2>Java 25 e JavaFX 21.0.11</h2>
-            <p>O Ink Agenda é desenvolvido em <strong>Java 25</strong> (LTS) com interface em <strong>JavaFX 21.0.11</strong>. Moeda, datas e meses usam o locale fixo <strong>pt-BR</strong> (R$ 350,00 · 07/10/2026 · outubro de 2026) na tela, no gráfico e no PDF.</p>
-        </section>
-
-        <section class="card">
-            <h2>Banco local</h2>
-            <p>Persistência em <strong>SQLite</strong> (<code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>agenda.db</code>) com WAL, verificação de integridade na abertura e migrações versionadas com <strong>Flyway</strong>. O app não abre porta e não faz conexão em segundo plano: funciona offline. A única conexão é a verificação manual de atualizações, explicada abaixo.</p>
-        </section>
-
-        <section class="card" id="lgpd">
-            <h2>LGPD e domínio local</h2>
-            <p>Agenda, clientes, orçamentos e financeiro ficam em SQLite no computador do estúdio, sem conta na nuvem. O aplicativo não envia dados de clientes para servidores; a verificação manual de atualizações transmite apenas a versão instalada e o sistema operacional.</p>
-            <p>O backup manual <code>.inkbak</code> é criptografado com AES-256-GCM e senha; o backup automático é local, compactado e sem senha. O registro técnico mascara senhas, telefones e e-mails. Esses recursos apoiam o seu dever de proteger dados pessoais. A conformidade com a LGPD depende também dos seus processos, do controle de acesso ao computador e do uso do sistema; o Ink não substitui essa responsabilidade.</p>
-            <p><a href="download.html">Baixar e manter os dados no meu computador</a></p>
-        </section>
-
-        <section class="card">
-            <h2>Arquitetura em camadas</h2>
-            <ul>
-                <li><strong>Telas (JavaFX):</strong> Hoje, Calendário, Finanças, Dashboard, Orçamentos, Clientes, Usuário e Config.</li>
-                <li><strong>Controladores e serviços:</strong> regras de agenda (sem sobreposição de sessões, duração e valor), cadastro de clientes e orçamentos, indicadores do painel, importação idempotente e relatórios.</li>
-                <li><strong>Domínio:</strong> clientes, agendamentos, orçamentos, cobranças, recebimentos e lançamentos financeiros. Operações que podem falhar devolvem um tipo <code>Result</code>.</li>
-                <li><strong>Infraestrutura:</strong> repositórios SQLite, backup, PDF (OpenPDF com fonte Unicode embutida) e log.</li>
-            </ul>
-        </section>
-
-        <section class="card">
-            <h2>Senhas e acesso</h2>
-            <p>Acesso por <strong>celular + senha local</strong>, sem conta na nuvem. A senha <strong>não fica no SQLite</strong>: fica em um arquivo com hash PBKDF2-HMAC-SHA256 e sal aleatório. A frase de recuperação e os códigos de emergência também são guardados só como hash. “Esqueci minha senha” gera um código de 6 dígitos válido por 15 minutos.</p>
-            <p>“Lembrar senha” guarda a credencial protegida pelo Windows (DPAPI), sem texto legível no disco, e vale por 12 horas ou até você clicar em <strong>Sair</strong>. No Linux, a credencial é cifrada com AES-GCM e um segredo aleatório criado nesta instalação. O app não traz usuário de fábrica: na primeira abertura vai direto ao <a href="primeiro-acesso.html">primeiro acesso</a>.</p>
-        </section>
-
-        <section class="card">
-            <h2>Atualizações</h2>
-            <p>A verificação é manual, em <strong>Configurações → Verificar atualizações</strong>: ao abrir o app, nenhuma conexão é feita. Quando você pede a verificação, o app envia apenas a versão instalada e o sistema operacional; nenhum dado de cliente. A resposta do canal oficial é conferida com uma assinatura digital Ed25519 embutida no aplicativo; links de download só são aceitos de <code>github.com/chmulato</code> e de <code>*.caracore.com.br</code>, sempre por HTTPS, e o SHA-256 é conferido antes de abrir o instalador. Se a assinatura ou o hash não baterem, o app não oferece o download.</p>
-        </section>
-
-        <section class="card">
-            <h2>Backup</h2>
-            <ul>
-                <li><strong>.inkbak:</strong> cópia completa do banco, compactada e criptografada com AES-256-GCM, com chave derivada da senha do backup (PBKDF2). Backups <code>.inkbak</code> da v2.0.0 continuam restaurando.</li>
-                <li><strong>Automático:</strong> a cada hora e ao fechar, <code>agenda_*.db.gz</code> em <code>backups\</code>, mantendo os 30 mais recentes. Pode ser desligado em Config.</li>
-                <li><strong>CSV:</strong> agendamentos e lançamentos financeiros, compactado e criptografado com senha. Importar duas vezes não duplica nada.</li>
-            </ul>
-        </section>
-
-        <section class="card">
-            <h2>Log</h2>
-            <p>Registro técnico em <code>%LOCALAPPDATA%\<wbr>CaraCore\<wbr>AgendaInk\<wbr>logs\<wbr></code> (<code>agenda-0.log</code> a <code>agenda-4.log</code>, até 1 MB cada, com rotação). Senhas, telefones e e-mails são mascarados antes de gravar.</p>
-        </section>
-
-        <section class="card">
-            <h2>Build e testes</h2>
-            <p><strong>Maven</strong> para build e dependências. <strong>JUnit 5</strong> e <strong>TestFX</strong> para testes; <strong>JaCoCo</strong> exige no mínimo 80% de cobertura de linhas nos serviços e no domínio, com metas próprias para persistência e log. O pacote de produção passa por um teste que barra dados de demonstração, credenciais e scripts de desenvolvimento.</p>
-        </section>
-
-        <section class="card">
-            <h2>Distribuição</h2>
-            <p>ZIP portátil e instalador <code>.exe</code> para Windows gerados com <code>jpackage</code>. O runtime Java 25 vem embutido (jlink, com os dados de locale e sem ferramentas de desenvolvimento como depurador, jshell e compilador): não é preciso instalar JDK. O jar da aplicação é ofuscado com <strong>ProGuard</strong> antes do empacotamento.</p>
-        </section>
-
-        <p class="tech-selo" style="margin: 24px 0; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; font-size: 0.95rem; color: var(--text-secondary);"><strong style="color: var(--accent-green);">Ecossistema Cara Core Informática</strong> — Produtos desktop e web com foco em simplicidade, manutenção e entrega clara. Ink Agenda integra o portfólio Cara Core.</p>
-
-        <section class="roadmap" aria-label="Próximos passos" style="margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: 4px solid var(--accent-blue); background: rgba(37,99,235,0.06); border-radius: 0 8px 8px 0;">
-            <p style="font-weight: 600; margin-bottom: 0.5rem;">Status e próximos passos</p>
-            <ul style="margin: 0; padding-left: 1.25rem;">
-                <li><strong><span data-canal-versao>v2.1.0</span></strong> — versão atual do Desktop Windows e Linux (instalador/ZIP e <code>.deb</code>), com três perfis, sem assinatura digital</li>
-                <li>Atualização: verificação manual em Configurações, resposta assinada e SHA-256 conferido antes de abrir o instalador</li>
-                <li>Lançamento oficial da linha 2.0 (Windows) <strong>26 de junho de 2026</strong></li>
-                <li>Histórico completo em <a href="versoes.html">Versões</a></li>
-                <li>Roadmap: <a href="pwa.html">Ink Agenda 3.0 em PWA</a> (<strong>não antes de 2028</strong>) — web, Android, iPhone, Windows, Mac e Linux pelo browser, com as regras da v2. <strong>Sem</strong> instalador nativo para macOS e sem lojas de apps. Servidor na nuvem com HTTPS e uma base SQLite por estúdio. Substitui o Desktop depois de existir a importação dos dados da v2</li>
-            </ul>
-        </section>
-
-        <nav class="download-back">
-            <a href="index.html">← Voltar ao portal</a>
-        </nav>
-
-    </div>
-
-    <footer class="cc-footer" role="contentinfo">
-        <div class="cc-footer-container">
-            <div class="cc-footer-grid">
-                <div class="cc-footer-col">
-                    <p class="cc-footer-brand-title">Cara Core Informática</p>
-                    <p class="cc-footer-text">
-                        Gestão offline e segura para profissionais com hora marcada — Estúdios de Tatuagem, Consultórios e Salões de Beleza.
-                    </p>
-                    <p class="cc-footer-text cc-footer-meta">
-                        Dados de clientes no computador do estúdio, com backup .inkbak criptografado.
-                    </p>
-                </div>
-
-                <div class="cc-footer-col">
-                    <h3 class="cc-footer-heading">O produto</h3>
-                    <ul class="cc-footer-links">
-                        <li><a href="download.html">Download para Windows</a></li>
-                        <li><a href="primeiro-acesso.html">Primeiro acesso assistido</a></li>
-                        <li><a href="versoes.html">Versões e changelog</a></li>
-                        <li><a href="tecnologia.html">Tecnologia e arquitetura</a></li>
-                        <li><a href="pwa.html">Trilha PWA (Roadmap)</a></li>
-                    </ul>
-                </div>
-
-                <div class="cc-footer-col">
-                    <h3 class="cc-footer-heading">Documentação</h3>
-                    <ul class="cc-footer-links">
-                        <li><a href="manual.html">Manual do operador</a></li>
-                        <li><a href="https://wiki.caracore.com.br/projeto-ink.html" rel="noopener">Wiki do Ink Agenda</a></li>
-                        <li><a href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio Cara Core</a></li>
-                        <li><a href="https://download.caracore.com.br/" rel="noopener">Central de downloads</a></li>
-                    </ul>
-                </div>
-
-                <div class="cc-footer-col">
-                    <h3 class="cc-footer-heading">Contato</h3>
-                    <ul class="cc-footer-links">
-                        <li><a href="canal-feedback.html">Canal da loja</a></li>
-                        <li><a href="https://wa.me/5541999097797" rel="noopener">WhatsApp oficial</a></li>
-                        <li><a href="https://t.me/chmulato" rel="noopener">Telegram</a></li>
-                        <li><a href="mailto:suporte@caracore.com.br">suporte@caracore.com.br</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="cc-footer-bottom">
-                <p>&copy; 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></p>
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/ink.js"></script>
-    <script src="assets/js/portal-nav.js" defer></script>
-    <script src="assets/js/release-channel.js" defer></script>
+<body class="smooth-scroll bg-gray-50" data-page="content">
+<nav aria-label="Navegação institucional" class="breadcrumb container mx-auto px-4 sm:px-6 lg:px-8 pt-3 text-sm text-gray-600">
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/" rel="noopener">Cara Core Informática</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a>
+<span aria-hidden="true"> · </span>
+<a class="hover:text-indigo-600" href="index.html">CaraCore Ink Agenda</a>
+<span aria-hidden="true"> · </span>
+<span class="text-gray-900">Tecnologia</span>
+</nav>
+<header class="portal-header bg-white shadow-sm sticky top-0 z-50">
+<nav aria-label="Menu da loja" class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a class="flex items-center space-x-3" href="index.html">
+<img alt="" aria-hidden="true" class="w-12 h-12 rounded-lg" height="48" src="assets/brand/caracore-logo.svg" width="48"/>
+<div>
+<p class="text-xl font-bold text-gray-900">CaraCore Ink Agenda</p>
+<p class="text-xs text-gray-600">Gestão offline para profissionais com hora marcada</p>
+</div>
+</a>
+<div class="hidden lg:flex absolute lg:static top-full left-0 w-full lg:w-auto bg-white p-4 lg:p-0 flex-col lg:flex-row gap-3 lg:gap-6 lg:items-center" id="mobile-menu">
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="index.html#dores">O que resolvemos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="index.html#jornada">Como funciona</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="index.html#planos">Planos</a>
+<a class="text-gray-700 hover:text-indigo-600 font-medium transition" href="versoes.html">Versões e download</a>
+<a class="cta-btn text-white px-6 py-2 rounded-lg font-semibold transition text-center" href="download.html">
+                        Baixar <span class="ml-1 text-xs font-normal opacity-90">v2.1.0</span>
+</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="lg:hidden text-gray-700" id="mobile-menu-button">
+<span aria-hidden="true">☰</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="wrapper">
+<section aria-label="Stack atual" class="ink-launch-banner">
+<p class="ink-launch-label">Tecnologia · <span data-canal-versao="">v2.1.0</span></p>
+<p class="ink-launch-date">Java 25 · JavaFX 21.0.11 · SQLite local · três perfis (Tatuagem, Odontologia e Beleza) · runtime embutido nos pacotes Windows e Linux · executáveis sem assinatura digital.</p>
+</section>
+<header class="ink-page-head">
+<h1>Tecnologia — CaraCore Ink Agenda</h1>
+<p>Stack e arquitetura do aplicativo desktop para estúdios de tatuagem, consultórios e espaços de beleza.</p>
+</header>
+<section class="card">
+<h2>Java 25 e JavaFX 21.0.11</h2>
+<p>O Ink Agenda é desenvolvido em <strong>Java 25</strong> (LTS) com interface em <strong>JavaFX 21.0.11</strong>. Moeda, datas e meses usam o locale fixo <strong>pt-BR</strong> (R$ 350,00 · 07/10/2026 · outubro de 2026) na tela, no gráfico e no PDF.</p>
+</section>
+<section class="card">
+<h2>Banco local</h2>
+<p>Persistência em <strong>SQLite</strong> (<code>%LOCALAPPDATA%\<wbr/>CaraCore\<wbr/>AgendaInk\<wbr/>agenda.db</code>) com WAL, verificação de integridade na abertura e migrações versionadas com <strong>Flyway</strong>. O app não abre porta e não faz conexão em segundo plano: funciona offline. A única conexão é a verificação manual de atualizações, explicada abaixo.</p>
+</section>
+<section class="card" id="lgpd">
+<h2>LGPD e domínio local</h2>
+<p>Agenda, clientes, orçamentos e financeiro ficam em SQLite no computador do estúdio, sem conta na nuvem. O aplicativo não envia dados de clientes para servidores; a verificação manual de atualizações transmite apenas a versão instalada e o sistema operacional.</p>
+<p>O backup manual <code>.inkbak</code> é criptografado com AES-256-GCM e senha; o backup automático é local, compactado e sem senha. O registro técnico mascara senhas, telefones e e-mails. Esses recursos apoiam o seu dever de proteger dados pessoais. A conformidade com a LGPD depende também dos seus processos, do controle de acesso ao computador e do uso do sistema; o Ink não substitui essa responsabilidade.</p>
+<p><a href="download.html">Baixar e manter os dados no meu computador</a></p>
+</section>
+<section class="card">
+<h2>Arquitetura em camadas</h2>
+<ul>
+<li><strong>Telas (JavaFX):</strong> Hoje, Calendário, Finanças, Dashboard, Orçamentos, Clientes, Usuário e Config.</li>
+<li><strong>Controladores e serviços:</strong> regras de agenda (sem sobreposição de sessões, duração e valor), cadastro de clientes e orçamentos, indicadores do painel, importação idempotente e relatórios.</li>
+<li><strong>Domínio:</strong> clientes, agendamentos, orçamentos, cobranças, recebimentos e lançamentos financeiros. Operações que podem falhar devolvem um tipo <code>Result</code>.</li>
+<li><strong>Infraestrutura:</strong> repositórios SQLite, backup, PDF (OpenPDF com fonte Unicode embutida) e log.</li>
+</ul>
+</section>
+<section class="card">
+<h2>Senhas e acesso</h2>
+<p>Acesso por <strong>celular + senha local</strong>, sem conta na nuvem. A senha <strong>não fica no SQLite</strong>: fica em um arquivo com hash PBKDF2-HMAC-SHA256 e sal aleatório. A frase de recuperação e os códigos de emergência também são guardados só como hash. “Esqueci minha senha” gera um código de 6 dígitos válido por 15 minutos.</p>
+<p>“Lembrar senha” guarda a credencial protegida pelo Windows (DPAPI), sem texto legível no disco, e vale por 12 horas ou até você clicar em <strong>Sair</strong>. No Linux, a credencial é cifrada com AES-GCM e um segredo aleatório criado nesta instalação. O app não traz usuário de fábrica: na primeira abertura vai direto ao <a href="primeiro-acesso.html">primeiro acesso</a>.</p>
+</section>
+<section class="card">
+<h2>Atualizações</h2>
+<p>A verificação é manual, em <strong>Configurações → Verificar atualizações</strong>: ao abrir o app, nenhuma conexão é feita. Quando você pede a verificação, o app envia apenas a versão instalada e o sistema operacional; nenhum dado de cliente. A resposta do canal oficial é conferida com uma assinatura digital Ed25519 embutida no aplicativo; links de download só são aceitos de <code>github.com/chmulato</code> e de <code>*.caracore.com.br</code>, sempre por HTTPS, e o SHA-256 é conferido antes de abrir o instalador. Se a assinatura ou o hash não baterem, o app não oferece o download.</p>
+</section>
+<section class="card">
+<h2>Backup</h2>
+<ul>
+<li><strong>.inkbak:</strong> cópia completa do banco, compactada e criptografada com AES-256-GCM, com chave derivada da senha do backup (PBKDF2). Backups <code>.inkbak</code> da v2.0.0 continuam restaurando.</li>
+<li><strong>Automático:</strong> a cada hora e ao fechar, <code>agenda_*.db.gz</code> em <code>backups\</code>, mantendo os 30 mais recentes. Pode ser desligado em Config.</li>
+<li><strong>CSV:</strong> agendamentos e lançamentos financeiros, compactado e criptografado com senha. Importar duas vezes não duplica nada.</li>
+</ul>
+</section>
+<section class="card">
+<h2>Log</h2>
+<p>Registro técnico em <code>%LOCALAPPDATA%\<wbr/>CaraCore\<wbr/>AgendaInk\<wbr/>logs\<wbr/></code> (<code>agenda-0.log</code> a <code>agenda-4.log</code>, até 1 MB cada, com rotação). Senhas, telefones e e-mails são mascarados antes de gravar.</p>
+</section>
+<section class="card">
+<h2>Build e testes</h2>
+<p><strong>Maven</strong> para build e dependências. <strong>JUnit 5</strong> e <strong>TestFX</strong> para testes; <strong>JaCoCo</strong> exige no mínimo 80% de cobertura de linhas nos serviços e no domínio, com metas próprias para persistência e log. O pacote de produção passa por um teste que barra dados de demonstração, credenciais e scripts de desenvolvimento.</p>
+</section>
+<section class="card">
+<h2>Distribuição</h2>
+<p>ZIP portátil e instalador <code>.exe</code> para Windows gerados com <code>jpackage</code>. O runtime Java 25 vem embutido (jlink, com os dados de locale e sem ferramentas de desenvolvimento como depurador, jshell e compilador): não é preciso instalar JDK. O jar da aplicação é ofuscado com <strong>ProGuard</strong> antes do empacotamento.</p>
+</section>
+<p class="tech-selo" style="margin: 24px 0; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; font-size: 0.95rem; color: var(--text-secondary);"><strong style="color: var(--accent-green);">Ecossistema Cara Core Informática</strong> — Produtos desktop e web com foco em simplicidade, manutenção e entrega clara. Ink Agenda integra o portfólio Cara Core.</p>
+<section aria-label="Próximos passos" class="roadmap" style="margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: 4px solid var(--accent-blue); background: rgba(37,99,235,0.06); border-radius: 0 8px 8px 0;">
+<p style="font-weight: 600; margin-bottom: 0.5rem;">Status e próximos passos</p>
+<ul style="margin: 0; padding-left: 1.25rem;">
+<li><strong><span data-canal-versao="">v2.1.0</span></strong> — versão atual do Desktop Windows e Linux (instalador/ZIP e <code>.deb</code>), com três perfis, sem assinatura digital</li>
+<li>Atualização: verificação manual em Configurações, resposta assinada e SHA-256 conferido antes de abrir o instalador</li>
+<li>Lançamento oficial da linha 2.0 (Windows) <strong>26 de junho de 2026</strong></li>
+<li>Histórico completo em <a href="versoes.html">Versões</a></li>
+<li>Roadmap: <a href="pwa.html">Ink Agenda 3.0 em PWA</a> (<strong>não antes de 2028</strong>) — web, Android, iPhone, Windows, Mac e Linux pelo browser, com as regras da v2. <strong>Sem</strong> instalador nativo para macOS e sem lojas de apps. Servidor na nuvem com HTTPS e uma base SQLite por estúdio. Substitui o Desktop depois de existir a importação dos dados da v2</li>
+</ul>
+</section>
+<nav class="download-back">
+<a href="index.html">← Voltar ao portal</a>
+</nav>
+</main>
+<footer class="ink-footer bg-gray-900 text-gray-300 py-12">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<p class="ink-footer-title text-white font-bold mb-2">Cara Core Informática</p>
+<p class="text-sm text-gray-400">Gestão offline para profissionais com hora marcada — estúdios de tatuagem, consultórios e espaços de beleza.</p>
+<p class="text-sm text-gray-400 mt-3">Dados de clientes no computador do espaço, com backup <code>.inkbak</code> criptografado.</p>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">O produto</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="download.html">Download e versões</a></li>
+<li><a class="hover:text-white" href="tecnologia.html">Tecnologia</a></li>
+<li><a class="hover:text-white" href="manual.html">Manual</a></li>
+<li><a class="hover:text-white" href="https://wiki.caracore.com.br/projeto-ink.html" rel="noopener">Wiki do Ink</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/portfolio.html#caracore-ink-agenda" rel="noopener">Portfólio</a></li>
+<li><a class="hover:text-white" href="https://download.caracore.com.br/" rel="noopener">Central de downloads</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Documentação</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="primeiro-acesso.html">Primeiro acesso</a></li>
+<li><a class="hover:text-white" href="versoes.html">Notas da versão</a></li>
+<li><a class="hover:text-white" href="pwa.html">Roadmap PWA</a></li>
+<li><a class="hover:text-white" href="canal-feedback.html">Canal da loja</a></li>
+<li><a class="hover:text-white" href="mailto:suporte@caracore.com.br">suporte@caracore.com.br</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white font-bold mb-3">Contato</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-white" href="https://wa.me/5541999097797" rel="noopener noreferrer" target="_blank">WhatsApp</a></li>
+<li><a class="hover:text-white" href="https://t.me/chmulato" rel="noopener noreferrer" target="_blank">Telegram</a></li>
+<li><a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></li>
+</ul>
+</div>
+</div>
+<div class="ink-footer-bottom border-t border-gray-800 pt-6 text-sm text-gray-400">
+<p class="mb-2">Versão atual: Windows 10/11 e Linux <span data-canal-versao="">v2.1.0</span> · sem assinatura digital · macOS pela PWA, não antes de 2028.</p>
+<p>© 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a class="hover:text-white" href="https://www.caracore.com.br/" rel="noopener">www.caracore.com.br</a></p>
+</div>
+</div>
+</footer>
+<script defer="" src="assets/js/ink.js"></script>
+<script defer="" src="assets/js/portal-nav.js"></script>
+<script defer="" src="assets/js/release-channel.js"></script>
 </body>
 </html>
