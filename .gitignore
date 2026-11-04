@@ -1,14 +1,46 @@
-# OS
+# Sistema operacional
 .DS_Store
+._*
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# IDE
-.idea
-.vscode
+# Editores e IDEs
+.idea/
+.vscode/
+*.iml
 *.swp
 *.swo
+*~
 
-# Local
-*.local
+# Segredos e configuração local
 .env
 .env.*
+!.env.example
+!.env.sample
+*.local
+*.key.enc
+*.p12
+*.jks
+*.pfx
+*.keystore
+# Chave ou fixture pública entra por exceção explícita (!), nunca por git add -f.
+
+# Temporários e ferramentas de QA
+tmp/
+*.log
+*.tmp
+*.bak
+
+# Node (auditorias locais)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+coverage/
+
+# Python (scripts de documentação)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
