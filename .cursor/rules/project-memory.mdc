@@ -1,5 +1,5 @@
 ---
-description: Memória da loja Ink Agenda — caracore-ink-releases; vitrine ink.caracore.com.br; v2.0.0 publicada; v2.0.1 gerada localmente (aprovação pendente)
+description: Memória da loja Ink Agenda — caracore-ink-releases; vitrine ink.caracore.com.br; v2.2.1 publicada em 04/11/2026
 alwaysApply: true
 ---
 
@@ -10,8 +10,8 @@ alwaysApply: true
 - **URL:** https://ink.caracore.com.br/
 - **Publicação:** GitHub Pages a partir de **docs/**.
 - **Oficina:** caracore-ink
-- **Versão no checkout:** v2.0.1 (`VERSION`), correções do QA da v2.0.0 (07/10/2026). **Ainda não publicada:** tag, release, edição de corpo de releases e deploy da loja só com aprovação do dono.
-- **Publicada no GitHub:** v2.0.1 (Windows, Latest desde 07/10/2026; jar ofuscado). v2.0.0 no histórico, corpo da release aponta para a v2.0.1. Não haverá macOS/Linux nativos (PWA não antes de 2028).
+- **Versão no checkout:** v2.2.1 (`VERSION`), correção do download da atualização e Jackson 3.1.7 (04/11/2026). Tag, release, edição de corpo de releases e deploy da loja só com aprovação do dono.
+- **Publicada no GitHub:** v2.2.1 (Windows e Linux, Latest desde 04/11/2026; jar ofuscado). v2.1.0, v2.0.4, v2.0.3, v2.0.2, v2.0.1 e v2.0.0 no histórico. Não haverá macOS nativo (PWA não antes de 2028).
 - **Suporte ao Desktop:** correções 2.0.x (achados de QA, sem funcionalidade nova) até o S9 da 3.0.
 
 ## Matriz
@@ -21,9 +21,10 @@ alwaysApply: true
 
 ## Canal público (não misturar)
 - Tag **v2.0.0** (publicada): ZIP `3f331dcf8d7f70769debc15f32879338677cfe62c30d19182b931ac07f554832` · setup `7fb35a24a79a05115d021bce6428c938425216a1fcd75a07ff569dd978ff1bba`. Não apagar a tag.
-- Tag **v2.0.1** (local): `AgendaInk-2.0.1-windows.zip` e `AgendaInk-2.0.1-windows-setup.exe`. O SHA256 tem de ser idêntico em `download.html`, `artifacts/instalacao-windows.html`, `artifacts/checksum.sha256`, `checksum.sha256` da raiz, `RELEASE_NOTES_v2.0.1.md`, README e release GitHub.
+- Tag **v2.2.1** (publicada): setup `39eafa4af39a439cf5c905ad08d4f552fd6cfbe1ef98f54b4c937bfc270c124b` · ZIP `4baf257d5136bb497f93c2927ec8ec536af91c853219bb71d0abe6e1deef98b1` · deb `1b89bb7655bf504ab6e19c702e70d78e32683ef3b7653cbfe8227d1f841cef14`. O SHA256 tem de ser idêntico em `download.html`, `versoes.html`, `artifacts/checksum.sha256`, `checksum.sha256` da raiz, `RELEASE_NOTES_v2.2.1.md`, README e release GitHub.
+- O canal (`api.caracore.com.br/releases/ink/latest.json`) acompanha a release Latest do GitHub em até 15 min; o manifesto é assinado no Railway com a chave `ink-2026-11`.
 - Dados do app: `%LOCALAPPDATA%\CaraCore\AgendaInk\` (`agenda.db`, `backups\`, `logs\`).
-- Não anunciar DMG/DEB. `.dmg`/`.deb` com Java 21 só com aprovação do dono. RC1–RC8 substituídas pela linha 2.0.
+- macOS nativo não é anunciado (a 3.0 atende pelo navegador). O `.deb` Linux é entregue desde a 2.1.0. RC1–RC8 substituídas pela linha 2.0.
 
 ## Ink Agenda 3.0 em PWA (roadmap, não antes de 2028)
 - Página `pwa.html`; cartão na `index.html`; linha em `tecnologia.html`. Sem botão Instalar até o GA.

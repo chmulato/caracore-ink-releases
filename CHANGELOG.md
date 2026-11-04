@@ -2,6 +2,21 @@
 
 Todos os cambios notáveis neste projeto são documentados neste arquivo.
 
+## [2.2.1] - 04 de novembro de 2026
+
+Correção do canal de atualização sobre a 2.1.0. Notas completas em [`RELEASE_NOTES_v2.2.1.md`](RELEASE_NOTES_v2.2.1.md).
+
+### Corrigido
+- «Baixar e abrir instalador» dentro do aplicativo falhava nas versões 2.1.0 e 2.2.0: o GitHub responde 302 ao servir o asset e o app só aceitava 200. O download agora segue até 5 redirecionamentos, valida cada salto pela mesma política de URL (HTTPS, `github.com/chmulato`, `*.githubusercontent.com`, `*.caracore.com.br`), descarta o corpo intermediário e mantém a exigência do SHA-256 assinado.
+- Redirecionamento sem `Location` ou acima do limite falha com `DOWNLOAD_FAILED`; destino fora da política falha com `UNSAFE_DOWNLOAD_URL` sem baixar.
+
+### Dependências
+- Jackson 3.1.1 → 3.1.7 (`jackson-core`, `jackson-databind`; `jackson-annotations` 2.21).
+
+### Loja
+- Download, versões e notas alinhados à 2.2.1, com tamanhos e SHA-256 medidos nos artefatos publicados.
+- Aviso explícito de que quem está na 2.1.0 ou 2.2.0 precisa baixar a 2.2.1 pela loja uma vez.
+
 ## [2.0.2] - Prerelease para homologação (não estável)
 
 Correções propostas para o Desktop Windows, disponíveis em prerelease para homologação. A build não tem assinatura digital e ainda não foi aprovada como estável; a v2.0.1 continua Latest.
