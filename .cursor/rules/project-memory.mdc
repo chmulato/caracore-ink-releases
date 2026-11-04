@@ -10,9 +10,9 @@ alwaysApply: true
 - **URL:** https://ink.caracore.com.br/
 - **Publicação:** GitHub Pages a partir de **docs/**.
 - **Oficina:** caracore-ink
-- **Versão no checkout:** v2.2.1 (`VERSION`), correção do download da atualização e Jackson 3.1.7 (04/11/2026). Tag, release, edição de corpo de releases e deploy da loja só com aprovação do dono.
+- **Versão no checkout:** v2.2.1 (`agenda-java/pom.xml`; não existe arquivo `VERSION` na raiz), correção do download da atualização e Jackson 3.1.7 (04/11/2026). Tag, release, edição de corpo de releases e deploy da loja só com aprovação do dono.
 - **Publicada no GitHub:** v2.2.1 (Windows e Linux, Latest desde 04/11/2026; jar ofuscado). v2.1.0, v2.0.4, v2.0.3, v2.0.2, v2.0.1 e v2.0.0 no histórico. Não haverá macOS nativo (PWA não antes de 2028).
-- **Suporte ao Desktop:** correções 2.0.x (achados de QA, sem funcionalidade nova) até o S9 da 3.0.
+- **Suporte ao Desktop:** correções 2.2.x (achados de QA, sem funcionalidade nova) até o S9 da 3.0.
 
 ## Matriz
 - **Portfólio:** `portfolio.html#caracore-ink-agenda`
@@ -32,13 +32,14 @@ alwaysApply: true
 - A 3.0 **substitui** o Desktop v2. O download da v2 só sai da loja depois da importação dos dados e de aviso com data (S9).
 - Não prometer a 3.0 offline-first nem disponível. Canónico: `caracore-ink/docs/PLANO_PWA.md`.
 
-## Primeiro acesso (v2.0.1, fiel ao app)
+## Primeiro acesso (fiel ao app 2.2.1)
 - Sem usuário seed nem credencial na tela. Não documentar admin/admin nem admin/admin123.
 - 1ª abertura: aviso “Seus dados ficam só neste computador” → **Passo 1 de 3 — Identificação** (celular, Continuar) → **Passo 2 de 3 — Senha e recuperação local** (perfil, senha 8+, frase 10+, 8 códigos de emergência, “Concluir configuração”) → só então o login.
 - “Esqueci minha senha”: código de 6 dígitos válido por 15 minutos, só neste PC (frase ou código de emergência; sem SMS/e-mail).
 - Páginas: `primeiro-acesso.html` · `artifacts/instalacao-windows.html#primeiro-acesso` · `manual.html` · wiki `#primeiros-passos`
 
-## Funções que a loja promete (todas existem na v2.0.1)
+## Funções que a loja promete (todas existem na v2.2.1)
+- Três perfis — Tatuagem, Odontologia e Beleza — no mesmo executável; equipe com papéis (Administrador, Agenda, Financeiro); mensageria por WhatsApp ou Telegram (o app **abre** a conversa com o texto; não envia, não confirma e não lê mensagens).
 - Sessão com horário em minutos, duração (30 min a 8 h) e valor; check “Pagou”; sem sobreposição.
 - Dashboard → Resultados: faturamento, ticket médio e saldo do mês; faturamento, média mensal e ticket médio do ano.
 - Orçamentos (Novo/Editar) e aba Clientes (lista, busca, novo, editar).
