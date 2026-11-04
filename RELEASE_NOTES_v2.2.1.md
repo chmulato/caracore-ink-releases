@@ -31,7 +31,7 @@ Cada salto é validado pela mesma política de URL — um redirecionamento para 
 
 ## Compatibilidade
 
-- Sem mudança de esquema: nenhuma migração nova; a base nasce ou permanece na V25.
+- Sem mudança de esquema: nenhuma migração nova; a base nasce ou permanece na V26.
 - Mesmo banco local em `%LOCALAPPDATA%\CaraCore\AgendaInk\agenda.db` (Windows) e `~/.caracore-ink/` (Linux).
 - Mesma chave de assinatura do canal (`ink-2026-11`); manifesto da 2.2.1 verificado pelo aplicativo antes de oferecer o download.
 

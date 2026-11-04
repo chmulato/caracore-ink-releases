@@ -5,16 +5,16 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>CaraCore Ink Agenda — manual do operador</title>
-<meta content="Manual do CaraCore Ink Agenda: primeiro acesso, agenda, clientes, orçamentos, finanças, painel de resultados e backup." name="description"/>
+<meta content="Manual do CaraCore Ink Agenda: primeiro acesso, equipe e perfis, agenda, clientes, orçamentos, finanças, painel de resultados, mensagem no WhatsApp ou Telegram, backup, atualização e identidade visual." name="description"/>
 <meta content="CaraCore Ink Agenda — manual do operador" property="og:title"/>
-<meta content="Manual do CaraCore Ink Agenda: primeiro acesso, agenda, clientes, orçamentos, finanças, painel de resultados e backup." property="og:description"/>
+<meta content="Manual do CaraCore Ink Agenda: primeiro acesso, equipe e perfis, agenda, clientes, orçamentos, finanças, painel de resultados, mensagem no WhatsApp ou Telegram, backup, atualização e identidade visual." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="pt_BR" property="og:locale"/>
 <meta content="https://ink.caracore.com.br/manual.html" property="og:url"/>
 <meta content="https://ink.caracore.com.br/assets/img/og-ink-neutral.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="CaraCore Ink Agenda — gestão offline para profissionais com hora marcada" property="og:image:alt"/>
+<meta content="CaraCore Ink Agenda — agenda e financeiro para profissionais com hora marcada" property="og:image:alt"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <link href="https://ink.caracore.com.br/manual.html" rel="canonical"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -44,7 +44,7 @@
 <img alt="" aria-hidden="true" class="w-12 h-12 rounded-lg" height="48" src="assets/brand/caracore-logo.svg" width="48"/>
 <div>
 <p class="text-xl font-bold text-gray-900">CaraCore Ink Agenda</p>
-<p class="text-xs text-gray-600">Gestão offline para profissionais com hora marcada</p>
+<p class="text-xs text-gray-600">Agenda e financeiro para profissionais com hora marcada</p>
 </div>
 </a>
 <div class="hidden lg:flex absolute lg:static top-full left-0 w-full lg:w-auto bg-white p-4 lg:p-0 flex-col lg:flex-row gap-3 lg:gap-6 lg:items-center" id="mobile-menu">
@@ -69,7 +69,7 @@
 </section>
 <header class="ink-page-head">
 <h1>Manual do usuário — Ink Agenda</h1>
-<p class="subtitle">Primeiro acesso, agenda do dia, calendário, clientes, orçamentos, financeiro, painel de resultados e backup.</p>
+<p class="subtitle">Primeiro acesso, equipe e perfis, agenda do dia, calendário, clientes, orçamentos, financeiro, painel de resultados, mensagem ao cliente, backup, atualização e identidade visual.</p>
 </header>
 <nav aria-label="Índice do manual" class="manual-toc">
 <h2 class="manual-toc-title">Índice</h2>
@@ -77,20 +77,25 @@
 <li><a href="#visao-geral">Visão geral</a></li>
 <li><a href="#requisitos-instalacao">Requisitos e instalação</a></li>
 <li><a href="#login">Primeiro acesso e login</a></li>
+<li><a href="#equipe">Equipe e perfis</a></li>
+<li><a href="#identidade">Identidade visual do posto</a></li>
 <li><a href="#agenda">Hoje e calendário</a></li>
 <li><a href="#clientes">Clientes</a></li>
 <li><a href="#orcamentos">Orçamentos</a></li>
 <li><a href="#financeiro">Finanças</a></li>
 <li><a href="#painel">Dashboard (resultados)</a></li>
+<li><a href="#mensagem">Mensagem ao cliente</a></li>
 <li><a href="#backup">Backup e restauração</a></li>
+<li><a href="#atualizacao">Atualização do aplicativo</a></li>
 <li><a href="#troubleshooting">Problemas comuns</a></li>
 </ul>
 </nav>
 <div class="manual-content">
 <section class="manual-card manual-card--intro" id="visao-geral">
 <h2>Visão geral</h2>
-<p>O <strong>Ink Agenda</strong> é um aplicativo desktop para profissionais com hora marcada: estúdios de tatuagem, consultórios odontológicos e espaços de beleza. Agenda, clientes, orçamentos, entradas e saídas e o desempenho do negócio, com um executável e três perfis — <strong>Tatuagem</strong>, <strong>Odontologia</strong> e <strong>Beleza</strong> — que adaptam paleta e vocabulário (sessão/consulta/procedimento). Os dados ficam no seu computador (SQLite local). O app funciona offline e não faz conexão em segundo plano: a única conexão é a verificação manual de atualizações, que envia apenas a versão do app e o sistema operacional — nunca dados de clientes. Veja <a href="index.html#dados">proteção de dados e domínio local</a>.</p>
-<p>O menu inferior tem as abas <strong>Hoje</strong>, <strong>Calendário</strong>, <strong>Finanças</strong>, <strong>Dashboard</strong>, <strong>Orçamentos</strong>, <strong>Clientes</strong>, <strong>Usuário</strong>, <strong>Config</strong> e <strong>Sair</strong>.</p>
+<p>O <strong>Ink Agenda</strong> é um aplicativo desktop para profissionais com hora marcada: estúdios de tatuagem, consultórios odontológicos e espaços de beleza. Agenda, clientes, orçamentos, entradas e saídas e o desempenho do negócio, com um executável e três perfis — <strong>Tatuagem</strong>, <strong>Odontologia</strong> e <strong>Beleza</strong> — que adaptam paleta e vocabulário (sessão/consulta/procedimento). Os dados ficam no seu computador (SQLite local). O app funciona offline e não faz conexão em segundo plano: a única conexão é a verificação manual de atualizações, que envia apenas a versão do app e o sistema operacional — nunca dados de clientes. Veja <a href="index.html#dados">onde ficam os seus dados</a>.</p>
+<p>O menu inferior tem as abas <strong>Hoje</strong>, <strong>Calendário</strong>, <strong>Finanças</strong>, <strong>Dashboard</strong>, <strong>Orçamentos</strong>, <strong>Clientes</strong>, <strong>Usuário</strong>, <strong>Config</strong> e <strong>Sair</strong>. As abas visíveis dependem do perfil de acesso: veja <a href="#equipe">Equipe e perfis</a>.</p>
+<p>A aba <strong>Config</strong> reúne, nesta ordem: <strong>Identidade e Visual do Posto</strong>, <strong>1. Backup do estúdio (.inkbak)</strong>, <strong>2. Desastre e Recovery (CSV em GZIP)</strong>, <strong>3. Usuários e perfis</strong> (somente o responsável) e <strong>4. Atualizações</strong>.</p>
 <p>Valores em reais (R$ 350,00) e datas no formato brasileiro (07/10/2026) na tela, no gráfico e no PDF.</p>
 </section>
 <section class="manual-card" id="requisitos-instalacao">
@@ -106,6 +111,33 @@
 <h2>Primeiro acesso e login</h2>
 <p>O app não traz usuário de fábrica. Na primeira abertura ele vai direto ao <strong>Passo 1 de 3 — Identificação</strong>: escolha o perfil do espaço (Tatuagem, Odontologia ou Beleza) e informe o celular do responsável; depois vem o <strong>Passo 2 de 3 — Senha e recuperação local</strong> (perfil de acesso, senha de 8+ caracteres, frase de recuperação de 10+ caracteres e, recomendado, 8 códigos de emergência). Só então aparece o login com celular e senha. Detalhes em <a href="primeiro-acesso.html">Primeiro acesso</a>.</p>
 <p><strong>Esqueci minha senha</strong> gera um código de 6 dígitos válido por 15 minutos, só neste computador, depois da frase de recuperação.</p>
+<p><strong>Lembrar da minha senha</strong> guarda a credencial neste computador por até 12 horas (no Windows, protegida pelo DPAPI); ao sair, o lembrete é removido. Para apagar antes, use <strong>Usuário → Segurança → Remover senha lembrada</strong>.</p>
+</section>
+<section class="manual-card" id="equipe">
+<h2>Equipe e perfis</h2>
+<p>O <strong>responsável pela instalação</strong> é o administrador: vê todas as abas e gerencia a equipe. As demais pessoas entram com <strong>celular e senha próprios</strong>, cadastrados por ele em <strong>Config → 3. Usuários e perfis → Gerenciar usuários e perfis…</strong>.</p>
+<ul>
+<li><strong>Administrador (responsável):</strong> vê Hoje, Calendário, Finanças, Dashboard, Orçamentos, Clientes, Usuário e Config; gerencia usuários e pode enviar mensagens. A credencial dele fica fora do banco e não é cadastrada como usuário da equipe.</li>
+<li><strong>Agenda:</strong> vê Hoje, Calendário, Clientes e Usuário. Não vê Finanças, Dashboard, Orçamentos nem Config, e os valores e o check <strong>Pagou</strong> não aparecem nos agendamentos. Pode enviar mensagens ao cliente.</li>
+<li><strong>Financeiro:</strong> vê Hoje, Calendário, Finanças, Dashboard, Orçamentos, Clientes e Usuário. Não gerencia usuários nem envia mensagens ao cliente.</li>
+</ul>
+<h3>Cadastrar e manter a equipe</h3>
+<ul>
+<li>Antes da primeira pessoa, defina a <strong>frase de recuperação</strong> na aba <strong>Usuário</strong>. Sem ela, o app não libera o cadastro — é o que impede a recuperação da senha do responsável só pelo código na tela.</li>
+<li><strong>Adicionar usuário:</strong> nome, celular, perfil (Agenda ou Financeiro) e senha de pelo menos 8 caracteres. No fim, entregue o celular e a senha à pessoa; o primeiro acesso dela é pelo login comum.</li>
+<li><strong>Desativar</strong> tira o acesso sem apagar o histórico; <strong>Ativar</strong> devolve. <strong>Redefinir senha</strong> define uma nova senha para a pessoa.</li>
+<li>Os perfis separam o que cada pessoa vê dentro do Ink Agenda. Quem usa a mesma conta do Windows continua com acesso ao arquivo de dados do computador.</li>
+</ul>
+<p><strong>Backup:</strong> dossiês feitos a partir da 2.2 guardam a equipe, e os logins continuam válidos após restaurar. Ao restaurar um backup anterior à 2.2, os usuários da equipe precisam ser cadastrados de novo; o responsável continua entrando com o mesmo celular e senha.</p>
+</section>
+<section class="manual-card" id="identidade">
+<h2>Identidade visual do posto</h2>
+<p>A seção <strong>Identidade e Visual do Posto</strong>, no topo de <strong>Config</strong>, troca a especialidade do aplicativo: <strong>Tatuador</strong> (lilás), <strong>Dentista / Saúde</strong> (turquesa) ou <strong>Beleza &amp; Estética</strong> (dourado).</p>
+<ul>
+<li>A troca é imediata: paleta, título da janela e vocabulário (sessão/consulta/procedimento, cliente/paciente, estúdio/consultório/espaço). Não é preciso reiniciar nem reinstalar.</li>
+<li>A escolha vale para esta instalação e fica gravada. Sem escolha gravada, o padrão é Tatuador.</li>
+<li>Trocar a identidade não altera os dados existentes. O catálogo financeiro sugerido por especialidade só nasce em instalações novas.</li>
+</ul>
 </section>
 <section class="manual-card" id="agenda">
 <h2>Hoje e calendário</h2>
@@ -157,13 +189,32 @@
 </ul>
 <p>Faturamento segue a regra do Financeiro: recebimentos (inclusive os das sessões marcadas como pagas) mais entradas lançadas à mão. Os números atualizam ao abrir a aba.</p>
 </section>
+<section class="manual-card" id="mensagem">
+<h2>Mensagem ao cliente</h2>
+<p>O Ink <strong>não tem conta</strong> de WhatsApp nem de Telegram e <strong>não envia mensagens sozinho</strong>: ele abre o aplicativo instalado no computador com o texto pronto, e você confere e envia. O Ink não recebe as respostas nem guarda o conteúdo da conversa.</p>
+<h3>Configurar o envio</h3>
+<p>Na aba <strong>Usuário → WhatsApp e Telegram → Configurar envio</strong>, a configuração tem 4 passos:</p>
+<ol>
+<li>O app explica o limite: a conversa fica no seu aplicativo de mensagens.</li>
+<li>Escolha <strong>WhatsApp</strong> ou <strong>Telegram</strong>. Você pode trocar depois, sem perder a configuração.</li>
+<li>Confirme o celular de quem está logado agora como remetente — é o número que o cliente verá.</li>
+<li>O app abre uma mensagem de teste para o seu próprio número. Se o aplicativo não abrir, instale-o e abra-o uma vez no computador; depois repita o teste.</li>
+</ol>
+<h3>Enviar a partir do agendamento</h3>
+<ul>
+<li>Na aba <strong>Hoje</strong>, o botão <strong>Mensagem</strong> aparece em cada agendamento para o administrador e para o perfil Agenda. O perfil Financeiro não vê o botão.</li>
+<li>Escolha o modelo <strong>Confirmar horário</strong>, <strong>Remarcar</strong> ou <strong>Alinhar detalhes</strong>. O texto pode ser editado antes de abrir.</li>
+<li><strong>Abrir no WhatsApp</strong> abre a conversa do cliente direto; o celular do cliente precisa estar completo, com DDD. <strong>Abrir no Telegram</strong> abre a tela de compartilhar — escolha o contato na lista, porque o Telegram não permite abrir a conversa do cliente diretamente.</li>
+<li><strong>Copiar mensagem</strong> leva o texto para a área de transferência, para colar em qualquer conversa.</li>
+</ul>
+</section>
 <section class="manual-card" id="backup">
 <h2>Backup e restauração</h2>
 <h3>Backup com senha (.inkbak)</h3>
 <p>Em <strong>Config → Backup do estúdio</strong>:</p>
 <ul>
 <li><strong>Salvar backup com senha:</strong> você escolhe pasta e nome (sugestão <code>backup_AAAA-MM-DD_HH-MM.inkbak</code> em <code>Documentos\AgendaInk\Backups</code>). Nada é sobrescrito: se o nome existir, o app grava “(2)”, “(3)”… O arquivo é criptografado com a senha (mínimo 8 caracteres). <strong>Sem a senha ele não abre.</strong> No fim, o app mostra o caminho salvo.</li>
-<li><strong>Restaurar backup:</strong> escolha o arquivo e digite a senha. Backups da v2.0.0 (sem senha) também restauram. O app confere o arquivo antes de trocar os dados e fecha ao terminar; abra de novo.</li>
+<li><strong>Restaurar backup:</strong> escolha o arquivo e digite a senha. Backups da v2.0.0 (sem senha) também restauram. O app confere o arquivo antes de trocar os dados e fecha ao terminar; abra de novo. Backups anteriores à 2.2 não guardam os usuários da equipe: eles precisam ser cadastrados de novo, e o app avisa antes de trocar os dados.</li>
 </ul>
 <p>O app lembra você quando o último backup com senha tem mais de 7 dias.</p>
 <h3>Backup automático</h3>
@@ -171,12 +222,26 @@
 <h3>Backup CSV</h3>
 <p>Em <strong>Config</strong>, a exportação CSV (compactada e criptografada com senha) leva agendamentos e lançamentos do Financeiro. Clientes, orçamentos, cobranças e recebimentos ficam só no <code>.inkbak</code>. Importar o mesmo arquivo duas vezes não muda nada; horários em conflito viram aviso e lista de ignorados.</p>
 </section>
+<section class="manual-card" id="atualizacao">
+<h2>Atualização do aplicativo</h2>
+<p>A verificação é <strong>manual</strong>: em <strong>Config → 4. Atualizações → Verificar atualizações</strong>. Ao abrir, o app não faz nenhuma conexão. Na verificação, ele envia apenas a versão do app e o sistema operacional — nunca dados de clientes.</p>
+<ul>
+<li>Quando há versão nova, o app mostra o número e o que mudou, com <strong>Baixar e abrir instalador</strong> e <strong>Abrir página de download</strong>.</li>
+<li>O download é conferido pelo <strong>SHA-256</strong> do manifesto assinado com a chave embutida no aplicativo. Se a assinatura ou o hash não conferirem, o app avisa e não abre o instalador.</li>
+<li>O aplicativo não baixa nem instala sozinho: o instalador aberto segue as telas do Windows e pode pedir permissão de administrador.</li>
+<li><strong>Versões 2.1.0 e 2.2.0:</strong> o botão de download falhava por um redirecionamento do GitHub. Quem está em uma dessas versões baixa a 2.2.1 uma vez pela <a href="download.html">página de download</a>; da 2.2.1 em diante a atualização volta a funcionar pelo próprio aplicativo.</li>
+</ul>
+</section>
 <section class="manual-card manual-card--troubleshoot" id="troubleshooting">
 <h2>Problemas comuns</h2>
 <ul>
 <li><strong>ZIP/EXE não inicia</strong> — Confirme que o arquivo veio do <a href="download.html">download oficial</a> e confira o SHA256 antes de executar.</li>
 <li><strong>Horário já ocupado ao salvar</strong> — O app impede sobrepor sessões. Escolha outro horário, encurte a duração ou edite a sessão existente.</li>
 <li><strong>“Senha incorreta” ao restaurar</strong> — Use a senha digitada ao salvar aquele backup (não é a senha de login, a menos que você tenha usado a mesma).</li>
+<li><strong>Uma aba não aparece</strong> — As abas dependem do perfil. O perfil Agenda não vê Finanças, Dashboard, Orçamentos nem Config; o Financeiro não vê a gestão de usuários. O responsável ajusta o perfil em <strong>Config → 3. Usuários e perfis</strong>.</li>
+<li><strong>O botão Mensagem não aparece no agendamento</strong> — O envio ainda não foi configurado para o celular de quem está logado (<strong>Usuário → WhatsApp e Telegram</strong>) ou o perfil é Financeiro.</li>
+<li><strong>A mensagem não abre o WhatsApp ou o Telegram</strong> — Instale o aplicativo no computador e abra-o uma vez; depois repita o teste em <strong>Usuário → WhatsApp e Telegram</strong>. Se o cliente tiver celular sem DDD, o WhatsApp não encontra a conversa.</li>
+<li><strong>Atualização “não foi possível baixar o instalador”</strong> — Nas versões 2.1.0 e 2.2.0 esse botão falhava. Baixe a 2.2.1 pela <a href="download.html">página de download</a> uma vez; a partir dela a atualização funciona pelo próprio aplicativo.</li>
 <li><strong>Precisa de ajuda</strong> — O registro técnico fica em <code>%LOCALAPPDATA%\<wbr/>CaraCore\<wbr/>AgendaInk\<wbr/>logs\<wbr/></code> (sem senhas, telefones ou e-mails). Fale pelo <a href="canal-feedback.html">Canal de feedback</a>.</li>
 </ul>
 </section>
@@ -190,7 +255,7 @@
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
 <div>
 <p class="ink-footer-title text-white font-bold mb-2">Cara Core Informática</p>
-<p class="text-sm text-gray-400">Gestão offline para profissionais com hora marcada — estúdios de tatuagem, consultórios e espaços de beleza.</p>
+<p class="text-sm text-gray-400">Agenda e financeiro para profissionais com hora marcada — estúdios de tatuagem, consultórios e espaços de beleza.</p>
 <p class="text-sm text-gray-400 mt-3">Dados de clientes no computador do espaço, com backup <code>.inkbak</code> criptografado.</p>
 </div>
 <div>
