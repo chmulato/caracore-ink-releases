@@ -763,10 +763,16 @@ a:hover {
   color: #ffffff;
 }
 
+.ink-footer h2,
 .ink-footer h3,
 .ink-footer p.ink-footer-title {
   color: #ffffff;
   font-weight: 700;
+}
+
+/* Mantém o tamanho de h3 nos títulos de coluna que precisaram virar h2 */
+.ink-footer .footer-col-title {
+  font-size: 1.17em;
 }
 
 .ink-footer ul {
